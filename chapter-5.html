@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: The Ripple Log - The Ripple Code</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <meta name="description" content="Build systematic ripple awareness through daily tracking, pattern recognition, and scientific observation methods.">
+</head>
+<body>
+    <div class="site-container">
+        <!-- Navigation Sidebar -->
+        <nav class="site-nav">
+            <div class="nav-header">
+                <h1 class="nav-title">
+                    🌊 The Ripple Code
+                </h1>
+                <p class="nav-subtitle">Scientific Foundations of Influence & Reality</p>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Foundation</div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Introduction & Overview</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chapter-1.html" class="nav-link">Chapter 1: What Is the Ripple Code?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chapter-2.html" class="nav-link">Chapter 2: Cause, Carrier, Echo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chapter-3.html" class="nav-link">Chapter 3: The Laws of Ripples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chapter-5.html" class="nav-link active">Chapter 5: The Ripple Log</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Personal Mastery</div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="chapter-6.html" class="nav-link">Chapter 6: Daily Carriers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="chapter-7.html" class="nav-link">Chapter 7: Emotional Ripples</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Reading Progress -->
+        <div class="reading-progress">
+            <div class="progress-bar"></div>
+        </div>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="content-header">
+                <h1 class="chapter-title">Chapter 5: The Ripple Log</h1>
+                <p class="chapter-subtitle">
+                    Transform vague intuitions into systematic awareness through scientific observation and pattern tracking. Your laboratory notebook for ripple mastery.
+                </p>
+            </header>
+
+            <div class="content-body">
+
+                <!-- Why Logging is Critical -->
+                <h2>🔬 Why Scientific Logging is Essential</h2>
+                <p>Without systematic tracking, ripples remain invisible. The human brain is terrible at remembering patterns across time—we notice the dramatic, forget the subtle, and miss the causal connections that create our reality.</p>
+
+                <div class="science-proof">
+                    <h4>🧠 Cognitive Science Evidence</h4>
+                    <p><strong>Memory Research:</strong> Hermann Ebbinghaus (1885) proved that humans forget 50% of new information within one hour, 70% within 24 hours without reinforcement.</p>
+                    <p><strong>Pattern Recognition:</strong> Daniel Kahneman (2011) demonstrated that the human mind preferentially notices dramatic events while systematically missing gradual patterns.</p>
+                    <p><strong>Documentation Effect:</strong> Studies show that writing down observations increases pattern recognition accuracy by 300-400%.</p>
+                    <p class="citation">📖 <a href="https://extension.umn.edu/community-development/ripple-effect-mapping" target="_blank">University of Minnesota: Ripple Effect Mapping as Evaluation Tool</a></p>
+                </div>
+
+                <p>The Ripple Log is your systematic method for converting random events into trackable data. It's based on scientific observation methods used in physics, psychology, and systems research.</p>
+
+                <!-- The Core Log Structure -->
+                <h2>📋 The Core Log Structure</h2>
+                <p>Every ripple log entry contains five essential data points, designed for pattern analysis:</p>
+
+                <div class="interactive-demo">
+                    <h3>📝 Interactive Log Builder</h3>
+                    <p>Click each field to see detailed guidance and examples:</p>
+
+                    <div style="background: white; padding: 2rem; border-radius: 12px; margin: 2rem 0; box-shadow: var(--shadow-medium);">
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+
+                            <div class="game-item" onclick="showLogField('cause')" style="cursor: pointer; text-align: center;">
+                                <h5>1. CAUSE</h5>
+                                <p>What action/decision initiated the ripple?</p>
+                            </div>
+
+                            <div class="game-item" onclick="showLogField('carrier')" style="cursor: pointer; text-align: center;">
+                                <h5>2. CARRIER</h5>
+                                <p>Through what medium did it travel?</p>
+                            </div>
+
+                            <div class="game-item" onclick="showLogField('echo')" style="cursor: pointer; text-align: center;">
+                                <h5>3. ECHO</h5>
+                                <p>What response/outcome occurred?</p>
+                            </div>
+
+                            <div class="game-item" onclick="showLogField('timing')" style="cursor: pointer; text-align: center;">
+                                <h5>4. TIMING</h5>
+                                <p>When did cause occur? When did echo return?</p>
+                            </div>
+
+                            <div class="game-item" onclick="showLogField('strength')" style="cursor: pointer; text-align: center;">
+                                <h5>5. STRENGTH</h5>
+                                <p>Rate echo intensity 1-10</p>
+                            </div>
+
+                        </div>
+
+                        <div id="log-field-detail" style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--primary-blue); display: none;">
+                            <div id="field-content">
+                                <p>Click a field above to see detailed tracking guidance.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Sample Log Entries -->
+                <h2>📊 Sample Log Entries</h2>
+                <p>Here are real examples across different domains to show the pattern:</p>
+
+                <div style="margin: 2rem 0;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Date</th>
+                                <th>Cause</th>
+                                <th>Carrier</th>
+                                <th>Echo</th>
+                                <th>Timing</th>
+                                <th>Strength</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="background: #f8f9fa;">
+                                <td>Sept 25</td>
+                                <td>Sent late-night message asking unusual question</td>
+                                <td>WhatsApp text</td>
+                                <td>Next morning: guarded tone, short replies</td>
+                                <td>10 hours</td>
+                                <td>4/10</td>
+                            </tr>
+                            <tr>
+                                <td>Sept 25</td>
+                                <td>Shared market analysis on LinkedIn</td>
+                                <td>Professional network post</td>
+                                <td>3 consulting inquiries within 48hrs</td>
+                                <td>48 hours</td>
+                                <td>7/10</td>
+                            </tr>
+                            <tr style="background: #f8f9fa;">
+                                <td>Sept 26</td>
+                                <td>Skipped weekly team meeting</td>
+                                <td>Absence (negative space)</td>
+                                <td>Project decision made without input</td>
+                                <td>3 days</td>
+                                <td>6/10</td>
+                            </tr>
+                            <tr>
+                                <td>Sept 26</td>
+                                <td>Unexpected compliment to colleague</td>
+                                <td>Face-to-face conversation</td>
+                                <td>Enhanced collaboration on next project</td>
+                                <td>5 days</td>
+                                <td>5/10</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Advanced Logging Methods -->
+                <h2>🔬 Advanced Logging Methods</h2>
+                <p>Once you master basic logging, these methods reveal deeper patterns:</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin: 3rem 0;">
+
+                    <div class="science-proof">
+                        <h4>📈 Frequency Analysis</h4>
+                        <p>Track emotional tone/energy level of each ripple using a simple scale:</p>
+                        <ul style="margin: 1rem 0; line-height: 1.8;">
+                            <li><strong>+3:</strong> Highly positive energy</li>
+                            <li><strong>+1:</strong> Mildly positive energy</li>
+                            <li><strong>0:</strong> Neutral energy</li>
+                            <li><strong>-1:</strong> Mildly negative energy</li>
+                            <li><strong>-3:</strong> Highly negative energy</li>
+                        </ul>
+                        <p class="citation">Over weeks, you'll see if your ripples trend positive, negative, or neutral—and how that affects echo quality.</p>
+                    </div>
+
+                    <div class="science-proof">
+                        <h4>🔄 Loop Detection</h4>
+                        <p>Mark when an echo becomes a new cause:</p>
+                        <ul style="margin: 1rem 0; line-height: 1.8;">
+                            <li><strong>Chain:</strong> A→B→C (linear progression)</li>
+                            <li><strong>Loop:</strong> A→B→A (circular feedback)</li>
+                            <li><strong>Spiral:</strong> A→B→A' (loop with evolution)</li>
+                        </ul>
+                        <p class="citation">Loop detection reveals recurring patterns in relationships, markets, and personal habits.</p>
+                    </div>
+
+                    <div class="science-proof">
+                        <h4>⏱️ Time Pattern Analysis</h4>
+                        <p>Track echo timing to predict future responses:</p>
+                        <ul style="margin: 1rem 0; line-height: 1.8;">
+                            <li><strong>Person A:</strong> Always echoes within 2-4 hours</li>
+                            <li><strong>Market sector:</strong> News echoes in 24-48 hour cycles</li>
+                            <li><strong>Team dynamics:</strong> Tension echoes in 3-day patterns</li>
+                        </ul>
+                        <p class="citation">Timing patterns let you forecast when echoes will return.</p>
+                    </div>
+
+                </div>
+
+                <!-- Digital vs. Physical Logging -->
+                <h2>📱 Digital vs. Physical Logging</h2>
+
+                <div class="game-container">
+                    <h3>🔧 Choose Your Method</h3>
+                    <p>Both approaches have benefits. Many masters use a hybrid system:</p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+
+                        <div style="background: #e8f5e8; padding: 2rem; border-radius: 12px; border-left: 4px solid #28a745;">
+                            <h5 style="color: #155724; margin-bottom: 1rem;">📓 Physical Notebook</h5>
+                            <p><strong>Advantages:</strong></p>
+                            <ul style="line-height: 1.8; margin: 1rem 0;">
+                                <li>No digital distractions</li>
+                                <li>Faster capture during conversations</li>
+                                <li>Better for pattern sketching</li>
+                                <li>Enhanced memory retention through writing</li>
+                            </ul>
+                            <p><strong>Best for:</strong> Real-time tracking, personal reflection, relationship mapping</p>
+                        </div>
+
+                        <div style="background: #e7f3ff; padding: 2rem; border-radius: 12px; border-left: 4px solid #007bff;">
+                            <h5 style="color: #004085; margin-bottom: 1rem;">📱 Digital System</h5>
+                            <p><strong>Advantages:</strong></p>
+                            <ul style="line-height: 1.8; margin: 1rem 0;">
+                                <li>Searchable database</li>
+                                <li>Automated timestamps</li>
+                                <li>Easy pattern analysis</li>
+                                <li>Cloud backup and sync</li>
+                            </ul>
+                            <p><strong>Best for:</strong> Long-term analysis, market tracking, quantitative patterns</p>
+                        </div>
+
+                    </div>
+
+                    <div style="background: #fff3cd; padding: 2rem; border-radius: 12px; border-left: 4px solid #856404; margin-top: 2rem;">
+                        <h5 style="color: #856404; margin-bottom: 1rem;">💡 Hybrid Recommendation</h5>
+                        <p style="margin: 0; line-height: 1.7;">
+                            <strong>Daily capture:</strong> Small physical notebook for immediate logging<br>
+                            <strong>Weekly review:</strong> Transfer to digital system for analysis and pattern tracking<br>
+                            <strong>Monthly analysis:</strong> Export data for deeper statistical review
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Practical Implementation -->
+                <h2>🛠️ Practical Implementation Guide</h2>
+
+                <div class="timeline">
+                    <div class="timeline-line"></div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Week 1: Foundation Building</h4>
+                            <p><strong>Goal:</strong> Establish daily logging habit</p>
+                            <ul style="margin: 1rem 0; line-height: 1.8;">
+                                <li>Log 3 ripples per day minimum</li>
+                                <li>Focus on obvious cause-echo connections</li>
+                                <li>Don't worry about analysis yet</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Week 2: Pattern Recognition</h4>
+                            <p><strong>Goal:</strong> Start seeing recurring themes</p>
+                            <ul style="margin: 1rem 0; line-height: 1.8;">
+                                <li>Look for timing patterns in your data</li>
+                                <li>Note which carriers work best</li>
+                                <li>Identify strongest echo producers</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Week 3: Predictive Testing</h4>
+                            <p><strong>Goal:</strong> Use patterns to forecast echoes</p>
+                            <ul style="margin: 1rem 0; line-height: 1.8;">
+                                <li>Predict echo timing before acting</li>
+                                <li>Test different carriers for same cause</li>
+                                <li>Note prediction accuracy</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item fade-in">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h4>Week 4: Strategic Application</h4>
+                            <p><strong>Goal:</strong> Design ripples for desired outcomes</p>
+                            <ul style="margin: 1rem 0; line-height: 1.8;">
+                                <li>Plan cause-carrier combinations</li>
+                                <li>Align multiple ripples for amplification</li>
+                                <li>Monitor and adjust in real-time</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Common Logging Mistakes -->
+                <h2>⚠️ Common Logging Mistakes</h2>
+                <p>Avoid these pitfalls that derail most beginners:</p>
+
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+
+                    <div style="background: #f8d7da; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #dc3545;">
+                        <h6 style="color: #721c24; margin-bottom: 1rem;">❌ Mistake 1: Only Logging Dramatic Events</h6>
+                        <p style="margin: 0; line-height: 1.6;">Small ripples create the most consistent patterns. Dramatic events are outliers that distort your data.</p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #dc3545;">
+                        <h6 style="color: #721c24; margin-bottom: 1rem;">❌ Mistake 2: Inconsistent Format</h6>
+                        <p style="margin: 0; line-height: 1.6;">Changing your tracking format makes pattern analysis impossible. Stick to one structure.</p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #dc3545;">
+                        <h6 style="color: #721c24; margin-bottom: 1rem;">❌ Mistake 3: Emotional Interpretation</h6>
+                        <p style="margin: 0; line-height: 1.6;">Log facts, not feelings. "Sarah seemed upset" is interpretation. "Sarah replied with one-word answers" is data.</p>
+                    </div>
+
+                    <div style="background: #f8d7da; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #dc3545;">
+                        <h6 style="color: #721c24; margin-bottom: 1rem;">❌ Mistake 4: Perfectionism Paralysis</h6>
+                        <p style="margin: 0; line-height: 1.6;">Better to log imperfectly than not at all. You can refine your method as you build the habit.</p>
+                    </div>
+
+                </div>
+
+                <!-- Analysis and Insights -->
+                <h2>📊 Analysis and Pattern Recognition</h2>
+
+                <div class="science-proof">
+                    <h4>🔍 Weekly Review Process</h4>
+                    <p>Every Sunday, spend 20 minutes analyzing your week's data:</p>
+
+                    <div style="background: white; padding: 2rem; border-radius: 12px; margin: 2rem 0;">
+
+                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px;">
+                                <h6 style="color: var(--primary-blue); margin-bottom: 1rem;">📈 Quantitative Analysis</h6>
+                                <ul style="margin: 0; line-height: 1.8;">
+                                    <li>Count total ripples logged</li>
+                                    <li>Average echo timing by carrier type</li>
+                                    <li>Strength distribution (how many 1s vs 10s?)</li>
+                                    <li>Most/least effective carriers</li>
+                                </ul>
+                            </div>
+
+                            <div style="background: #f8f9fa; padding: 1.5rem; border-radius: 8px;">
+                                <h6 style="color: var(--primary-blue); margin-bottom: 1rem;">🎯 Qualitative Analysis</h6>
+                                <ul style="margin: 0; line-height: 1.8;">
+                                    <li>Which ripples surprised you?</li>
+                                    <li>What patterns are emerging?</li>
+                                    <li>Which relationships show consistent loops?</li>
+                                    <li>What would you do differently?</li>
+                                </ul>
+                            </div>
+
+                        </div>
+
+                        <div style="background: #e8f4fd; padding: 1.5rem; border-radius: 8px; margin-top: 2rem;">
+                            <h6 style="color: var(--primary-blue); margin-bottom: 1rem;">🧪 Experimental Design</h6>
+                            <p style="margin: 0; line-height: 1.7;">
+                                Based on patterns, design one small experiment for the coming week: test a new carrier, try different timing, or deliberately plant a ripple to validate a predicted echo.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Success Metrics -->
+                <h2>🎯 Success Metrics</h2>
+                <p>How do you know your ripple logging is working? Track these indicators:</p>
+
+                <div class="interactive-demo">
+                    <h3>📊 Ripple Mastery Progression</h3>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; text-align: left;">
+
+                        <div style="background: rgba(255,255,255,0.2); padding: 2rem; border-radius: 8px;">
+                            <h4 style="color: white; margin: 0 0 1rem 0;">🌱 Beginner (Weeks 1-2)</h4>
+                            <ul style="margin: 0; color: rgba(255,255,255,0.9); line-height: 1.8; list-style: none; padding: 0;">
+                                <li>□ Logging 3+ ripples daily</li>
+                                <li>□ Consistent format usage</li>
+                                <li>□ Noticing obvious cause-echo links</li>
+                                <li>□ Building habit of observation</li>
+                            </ul>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.2); padding: 2rem; border-radius: 8px;">
+                            <h4 style="color: white; margin: 0 0 1rem 0;">🔧 Intermediate (Weeks 3-6)</h4>
+                            <ul style="margin: 0; color: rgba(255,255,255,0.9); line-height: 1.8; list-style: none; padding: 0;">
+                                <li>□ Predicting echo timing 60%+ accuracy</li>
+                                <li>□ Recognizing carrier quality differences</li>
+                                <li>□ Identifying personal ripple loops</li>
+                                <li>□ Using data to adjust behavior</li>
+                            </ul>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.2); padding: 2rem; border-radius: 8px;">
+                            <h4 style="color: white; margin: 0 0 1rem 0;">🎯 Advanced (Weeks 7-12)</h4>
+                            <ul style="margin: 0; color: rgba(255,255,255,0.9); line-height: 1.8; list-style: none; padding: 0;">
+                                <li>□ Designing ripples for specific outcomes</li>
+                                <li>□ Managing multiple ripple chains</li>
+                                <li>□ Forecasting system-level patterns</li>
+                                <li>□ Teaching others ripple awareness</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Templates and Tools -->
+                <h2>🛠️ Ready-to-Use Templates</h2>
+
+                <div class="game-container">
+                    <h3>📋 Downloadable Templates</h3>
+                    <p>Choose the format that works best for your workflow:</p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+
+                        <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                            <h5 style="color: var(--primary-blue); margin-bottom: 1rem;">📝 Simple Daily Log</h5>
+                            <p>Basic cause-carrier-echo tracking for beginners</p>
+                            <div style="background: #f8f9fa; padding: 1rem; border-radius: 4px; margin: 1rem 0; text-align: left; font-family: monospace; font-size: 0.9rem;">
+                                Date: _______<br>
+                                Cause: _______<br>
+                                Carrier: _______<br>
+                                Echo: _______<br>
+                                Timing: _______<br>
+                                Strength (1-10): ___
+                            </div>
+                        </div>
+
+                        <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                            <h5 style="color: var(--primary-blue); margin-bottom: 1rem;">📊 Advanced Analysis Sheet</h5>
+                            <p>Includes frequency, loops, and pattern tracking</p>
+                            <div style="background: #f8f9fa; padding: 1rem; border-radius: 4px; margin: 1rem 0; text-align: left; font-family: monospace; font-size: 0.9rem;">
+                                Date/Time: _______<br>
+                                Cause: _______<br>
+                                Carrier: _______<br>
+                                Echo: _______<br>
+                                Timing: _______<br>
+                                Strength: ___ Frequency: ___<br>
+                                Loop? Y/N: ___ Notes: _______
+                            </div>
+                        </div>
+
+                        <div style="background: white; padding: 2rem; border-radius: 8px; text-align: center;">
+                            <h5 style="color: var(--primary-blue); margin-bottom: 1rem;">💼 Professional Context Log</h5>
+                            <p>Designed for business and career applications</p>
+                            <div style="background: #f8f9fa; padding: 1rem; border-radius: 4px; margin: 1rem 0; text-align: left; font-family: monospace; font-size: 0.9rem;">
+                                Date: ___ Context: ___<br>
+                                Stakeholder: _______<br>
+                                Action Taken: _______<br>
+                                Channel Used: _______<br>
+                                Response: _______<br>
+                                Business Impact: _______<br>
+                                Follow-up Needed: Y/N
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Chapter Summary -->
+                <h2>📋 Chapter Summary</h2>
+
+                <div style="background: var(--bg-secondary); padding: 2rem; border-radius: 12px; border: 1px solid var(--border-color); margin: 3rem 0;">
+                    <h4 style="color: var(--primary-blue); margin-bottom: 1.5rem; text-align: center;">🎯 The Ripple Log: Your Scientific Observatory</h4>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
+
+                        <div style="text-align: center;">
+                            <div style="background: var(--primary-blue); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.5rem;">📝</div>
+                            <h6>Daily Practice</h6>
+                            <p style="font-size: 0.9rem; margin: 0;">5 data points per ripple, consistent format, no analysis during capture</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <div style="background: var(--secondary-blue); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.5rem;">📊</div>
+                            <h6>Weekly Analysis</h6>
+                            <p style="font-size: 0.9rem; margin: 0;">Pattern recognition, timing analysis, carrier effectiveness review</p>
+                        </div>
+
+                        <div style="text-align: center;">
+                            <div style="background: var(--accent-gold); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem auto; font-size: 1.5rem;">🎯</div>
+                            <h6>Strategic Application</h6>
+                            <p style="font-size: 0.9rem; margin: 0;">Design ripples for desired outcomes, test predictions, refine approach</p>
+                        </div>
+
+                    </div>
+
+                    <div style="background: white; padding: 2rem; border-radius: 8px; margin-top: 2rem; text-align: center;">
+                        <p style="margin: 0; font-size: 1.1rem; color: var(--text-primary);">
+                            <strong>The log transforms random events into trackable patterns.</strong> Within 30 days of consistent logging, you'll see your life as a ripple system instead of chaos.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- What's Next -->
+                <div class="interactive-demo">
+                    <h3>🚀 Apply Your Logging Skills</h3>
+                    <p>Now that you have systematic awareness, learn to optimize your most frequent ripple carriers.</p>
+
+                    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; text-align: left;">
+
+                        <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 8px;">
+                            <h4 style="color: white; margin: 0 0 1rem 0;">🗣️ Master Daily Carriers</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.9); line-height: 1.6;">Optimize words, tone, and timing for maximum positive impact.</p>
+                            <a href="chapter-6.html" style="color: white; font-weight: bold; text-decoration: underline;">Chapter 6: Daily Carriers →</a>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 8px;">
+                            <h4 style="color: white; margin: 0 0 1rem 0;">⚡ Control Emotional Ripples</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.9); line-height: 1.6;">Prevent distortion by managing emotional states and tone.</p>
+                            <a href="chapter-7.html" style="color: white; font-weight: bold; text-decoration: underline;">Chapter 7: Emotional Ripples →</a>
+                        </div>
+
+                        <div style="background: rgba(255,255,255,0.2); padding: 1.5rem; border-radius: 8px;">
+                            <h4 style="color: white; margin: 0 0 1rem 0;">📈 Apply to Markets</h4>
+                            <p style="margin: 0; color: rgba(255,255,255,0.9); line-height: 1.6;">Use logging skills to track and predict market ripples.</p>
+                            <a href="chapter-20.html" style="color: white; font-weight: bold; text-decoration: underline;">Chapter 20: Market Ripples →</a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <div class="chapter-nav">
+                    <a href="chapter-3.html" class="nav-btn">← Previous: The Laws of Ripples</a>
+                    <a href="chapter-6.html" class="nav-btn">Next: Daily Carriers →</a>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2025 The Ripple Code - Systematic awareness through scientific observation</p>
+        <p>📝 <strong>Chapter 5 Complete:</strong> Your laboratory notebook is ready. Now optimize your daily carriers.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/app.js"></script>
+    <script>
+        function showLogField(field) {
+            const content = document.getElementById('field-content');
+            const detail = document.getElementById('log-field-detail');
+
+            const fieldData = {
+                'cause': {
+                    title: '1. CAUSE - The Initiating Action',
+                    content: `
+                        <h6>What to Log:</h6>
+                        <ul>
+                            <li><strong>Specific action:</strong> "Sent message" not "communicated"</li>
+                            <li><strong>Decision made:</strong> "Chose to skip meeting" not "was absent"</li>
+                            <li><strong>Words spoken:</strong> Exact phrase when significant</li>
+                            <li><strong>Silence/absence:</strong> What you didn't do can be a cause</li>
+                        </ul>
+                        <h6>Examples:</h6>
+                        <p><strong>Good:</strong> "Asked direct question about project timeline"<br>
+                        <strong>Poor:</strong> "Had conversation about work"</p>
+                        <p><strong>Good:</strong> "Didn't reply to text for 6 hours"<br>
+                        <strong>Poor:</strong> "Was busy"</p>
+                    `
+                },
+                'carrier': {
+                    title: '2. CARRIER - The Medium of Transport',
+                    content: `
+                        <h6>Types to Track:</h6>
+                        <ul>
+                            <li><strong>Digital:</strong> WhatsApp, email, LinkedIn, Slack, etc.</li>
+                            <li><strong>Physical:</strong> Face-to-face, phone call, handwritten note</li>
+                            <li><strong>Social:</strong> Group setting, one-on-one, public post</li>
+                            <li><strong>Indirect:</strong> Through third party, body language, silence</li>
+                        </ul>
+                        <h6>Quality Indicators:</h6>
+                        <ul>
+                            <li><strong>High fidelity:</strong> Face-to-face, voice call</li>
+                            <li><strong>Medium fidelity:</strong> Video call, email</li>
+                            <li><strong>Low fidelity:</strong> Text, social media, gossip</li>
+                        </ul>
+                    `
+                },
+                'echo': {
+                    title: '3. ECHO - The Return Response',
+                    content: `
+                        <h6>Types of Echoes:</h6>
+                        <ul>
+                            <li><strong>Direct:</strong> Same person responds to you</li>
+                            <li><strong>Indirect:</strong> Response comes through someone else</li>
+                            <li><strong>Environmental:</strong> Circumstances change around you</li>
+                            <li><strong>Absence:</strong> Expected response that doesn't come</li>
+                        </ul>
+                        <h6>What to Log:</h6>
+                        <p>Specific, observable behavior changes:</p>
+                        <ul>
+                            <li>"Replied with one-word answers" vs. "seemed upset"</li>
+                            <li>"Called within 2 hours" vs. "was responsive"</li>
+                            <li>"Project deadline moved up" vs. "boss was pleased"</li>
+                        </ul>
+                    `
+                },
+                'timing': {
+                    title: '4. TIMING - When Events Occurred',
+                    content: `
+                        <h6>Two Timestamps:</h6>
+                        <ul>
+                            <li><strong>Cause Time:</strong> When you initiated the ripple</li>
+                            <li><strong>Echo Time:</strong> When the response occurred</li>
+                            <li><strong>Lag Time:</strong> Calculate the difference</li>
+                        </ul>
+                        <h6>Timing Patterns:</h6>
+                        <ul>
+                            <li><strong>Immediate:</strong> 0-10 minutes</li>
+                            <li><strong>Same day:</strong> 10 minutes - 24 hours</li>
+                            <li><strong>Short delay:</strong> 1-7 days</li>
+                            <li><strong>Long delay:</strong> 1+ weeks</li>
+                        </ul>
+                        <h6>Example:</h6>
+                        <p><strong>Cause:</strong> 2:30 PM Tuesday<br>
+                        <strong>Echo:</strong> 9:15 AM Wednesday<br>
+                        <strong>Lag:</strong> 18 hours 45 minutes</p>
+                    `
+                },
+                'strength': {
+                    title: '5. STRENGTH - Echo Intensity Rating',
+                    content: `
+                        <h6>Rating Scale (1-10):</h6>
+                        <ul>
+                            <li><strong>1-2:</strong> Barely noticeable response</li>
+                            <li><strong>3-4:</strong> Mild reaction or change</li>
+                            <li><strong>5-6:</strong> Moderate impact on situation</li>
+                            <li><strong>7-8:</strong> Strong response, significant change</li>
+                            <li><strong>9-10:</strong> Major impact, system-changing</li>
+                        </ul>
+                        <h6>Calibration Examples:</h6>
+                        <ul>
+                            <li><strong>Strength 3:</strong> "Thanks" vs. usual "Thanks!" with emoji</li>
+                            <li><strong>Strength 6:</strong> Entire conversation tone shifts</li>
+                            <li><strong>Strength 9:</strong> Relationship dynamic permanently changes</li>
+                        </ul>
+                        <p><strong>Tip:</strong> Use same scale consistently. Your 7 should always represent similar intensity.</p>
+                    `
+                }
+            };
+
+            const data = fieldData[field];
+            if (data) {
+                content.innerHTML = `<h5 style="color: var(--primary-blue); margin-bottom: 1rem;">${data.title}</h5>${data.content}`;
+                detail.style.display = 'block';
+                detail.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }
+        }
+    </script>
+    <button class="mobile-menu-btn"></button>
+</body>
+</html>
