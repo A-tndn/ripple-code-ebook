@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 1: The First Ripple - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="index.html" class="prev">← Home</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter2.html" class="next">Chapter 2 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 1: The First Ripple</h1>
+            <p class="subtitle">Every Action Creates Magic Circles That Spread Forever!</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>🌊 What Happens When You Drop a Stone in Water?</h2>
+
+                <div class="simple-explanation">
+                    <p>Imagine you're standing by a calm lake. You pick up a small stone and drop it in. What happens? SPLASH! But that's not all - beautiful circles spread out from where the stone landed, getting bigger and bigger!</p>
+
+                    <div class="ripple-demo">
+                        <div class="lake-surface">
+                            <div class="drop-point">💧</div>
+                            <div class="ripple-circle ring1"></div>
+                            <div class="ripple-circle ring2"></div>
+                            <div class="ripple-circle ring3"></div>
+                            <div class="ripple-circle ring4"></div>
+                        </div>
+                        <p class="demo-text">Click the water drop to see ripples!</p>
+                    </div>
+                </div>
+
+                <div class="amazing-fact">
+                    <h3>🤯 The Amazing Truth!</h3>
+                    <p>Everything you do in life works exactly like that stone! Every word you speak, every smile you give, every action you take creates invisible ripples that spread out and touch other people!</p>
+                    <div class="fact-highlight">This is the secret of the Ripple Code! 🎉</div>
+                </div>
+            </section>
+
+            <section class="ripple-examples">
+                <h2>🏠 Ripples Are Everywhere!</h2>
+
+                <div class="example-grid">
+                    <div class="example-card happy">
+                        <div class="example-icon">😊</div>
+                        <h3>Happy Ripples</h3>
+                        <p><strong>You do:</strong> Smile at a sad friend</p>
+                        <p><strong>The ripple:</strong> They feel better and smile at someone else</p>
+                        <p><strong>The magic:</strong> Soon lots of people are happier!</p>
+                    </div>
+
+                    <div class="example-card helpful">
+                        <div class="example-icon">🤝</div>
+                        <h3>Helpful Ripples</h3>
+                        <p><strong>You do:</strong> Help carry someone's heavy bag</p>
+                        <p><strong>The ripple:</strong> They help another person later</p>
+                        <p><strong>The magic:</strong> Kindness spreads like wildfire!</p>
+                    </div>
+
+                    <div class="example-card creative">
+                        <div class="example-icon">🎨</div>
+                        <h3>Creative Ripples</h3>
+                        <p><strong>You do:</strong> Draw an amazing picture</p>
+                        <p><strong>The ripple:</strong> Your friend gets inspired to create art too</p>
+                        <p><strong>The magic:</strong> Soon everyone is being creative!</p>
+                    </div>
+
+                    <div class="example-card learning">
+                        <div class="example-icon">🧠</div>
+                        <h3>Learning Ripples</h3>
+                        <p><strong>You do:</strong> Share a cool fact you learned</p>
+                        <p><strong>The ripple:</strong> Others get curious and learn more</p>
+                        <p><strong>The magic:</strong> Knowledge grows and spreads!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-ripple-maker">
+                <h2>🎯 Create Your Own Ripples!</h2>
+
+                <div class="ripple-maker-interface">
+                    <h3>The Ripple Maker Game</h3>
+                    <p>Choose different actions and see what ripples they create!</p>
+
+                    <div class="action-selector">
+                        <h4>What action will you take?</h4>
+                        <div class="action-buttons">
+                            <button onclick="createRipple('compliment')" class="action-btn compliment">
+                                😊 Give a Compliment
+                            </button>
+                            <button onclick="createRipple('help')" class="action-btn help">
+                                🤝 Help Someone
+                            </button>
+                            <button onclick="createRipple('share')" class="action-btn share">
+                                🎁 Share Something
+                            </button>
+                            <button onclick="createRipple('teach')" class="action-btn teach">
+                                📚 Teach Something
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="ripple-result" class="ripple-result-display">
+                        <div class="ripple-animation">
+                            <div class="ripple-center">YOU</div>
+                            <div class="animated-ripples">
+                                <div class="anim-ripple anim-ring1"></div>
+                                <div class="anim-ripple anim-ring2"></div>
+                                <div class="anim-ripple anim-ring3"></div>
+                            </div>
+                        </div>
+                        <div id="ripple-story" class="ripple-story"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ripple-science">
+                <h2>🧪 The Science Behind Ripples</h2>
+
+                <div class="science-explanation">
+                    <h3>Real Scientists Study This!</h3>
+                    <p>Did you know that scientists have proven that our actions really do create ripples? It's not just pretend!</p>
+
+                    <div class="science-facts">
+                        <div class="science-fact verified">
+                            <h4>🔬 Mirror Neurons</h4>
+                            <div class="evidence-badge">✅ Real Science!</div>
+                            <p>Special brain cells called "mirror neurons" make people copy what they see! When you smile, their brain automatically wants to smile back!</p>
+                        </div>
+
+                        <div class="science-fact verified">
+                            <h4>📊 The 3-Person Rule</h4>
+                            <div class="evidence-badge">✅ Proven by Research!</div>
+                            <p>Scientists found that your actions can influence up to 3 degrees of separation - that means your friend's friend's friend!</p>
+                        </div>
+
+                        <div class="science-fact theoretical">
+                            <h4>🌐 The Butterfly Effect</h4>
+                            <div class="evidence-badge">🤔 Cool Theory!</div>
+                            <p>Some scientists think even tiny actions (like a butterfly flapping its wings) can cause big changes far away!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ripple-tracker-intro">
+                <h2>📓 Your Personal Ripple Journal</h2>
+
+                <div class="journal-explanation">
+                    <p>The best way to see ripples is to write them down! Start your very first ripple entry:</p>
+
+                    <div class="first-journal-entry">
+                        <h4>My First Ripple Entry</h4>
+                        <div class="journal-form">
+                            <label>📅 Today's Date:</label>
+                            <input type="date" id="entryDate" class="journal-input">
+
+                            <label>🎯 What good action did I do?</label>
+                            <textarea id="goodAction" placeholder="Example: I helped my friend with homework..." class="journal-textarea"></textarea>
+
+                            <label>🌊 What ripple did I see?</label>
+                            <textarea id="rippleObserved" placeholder="Example: My friend smiled and then helped someone else..." class="journal-textarea"></textarea>
+
+                            <button onclick="saveFirstEntry()" class="save-entry-btn">Save My Ripple! 🌟</button>
+                        </div>
+
+                        <div id="entry-saved" class="entry-confirmation"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="daily-ripple-challenge">
+                <h2>🏆 Your First Ripple Challenge</h2>
+
+                <div class="challenge-container">
+                    <h3>The 7-Day Ripple Discovery Challenge</h3>
+                    <p>For the next 7 days, try to spot one ripple you create each day!</p>
+
+                    <div class="challenge-calendar">
+                        <div class="challenge-day">
+                            <div class="day-number">1</div>
+                            <div class="day-challenge">Give someone a genuine compliment</div>
+                            <input type="checkbox" class="day-checkbox" id="day1">
+                            <label for="day1">Complete! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">2</div>
+                            <div class="day-challenge">Help someone without being asked</div>
+                            <input type="checkbox" class="day-checkbox" id="day2">
+                            <label for="day2">Complete! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">3</div>
+                            <div class="day-challenge">Share something you love</div>
+                            <input type="checkbox" class="day-checkbox" id="day3">
+                            <label for="day3">Complete! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">4</div>
+                            <div class="day-challenge">Teach someone something new</div>
+                            <input type="checkbox" class="day-checkbox" id="day4">
+                            <label for="day4">Complete! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">5</div>
+                            <div class="day-challenge">Listen really carefully to someone</div>
+                            <input type="checkbox" class="day-checkbox" id="day5">
+                            <label for="day5">Complete! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">6</div>
+                            <div class="day-challenge">Do something creative and share it</div>
+                            <input type="checkbox" class="day-checkbox" id="day6">
+                            <label for="day6">Complete! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">7</div>
+                            <div class="day-challenge">Start a positive conversation</div>
+                            <input type="checkbox" class="day-checkbox" id="day7">
+                            <label for="day7">Complete! ✅</label>
+                        </div>
+                    </div>
+
+                    <div class="progress-tracker">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="challengeProgress"></div>
+                        </div>
+                        <div id="progress-text" class="progress-text">0/7 days complete</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="positive-vs-negative">
+                <h2>😇 Good Ripples vs Not-So-Good Ripples</h2>
+
+                <div class="ripple-comparison">
+                    <div class="good-ripples">
+                        <h3>🌟 Good Ripples Spread Joy!</h3>
+                        <div class="ripple-examples-list">
+                            <div class="ripple-item">😊 Kindness → More kindness</div>
+                            <div class="ripple-item">🤝 Helping → More helping</div>
+                            <div class="ripple-item">🎉 Celebrating → More celebration</div>
+                            <div class="ripple-item">📚 Learning → More curiosity</div>
+                            <div class="ripple-item">💪 Encouraging → More confidence</div>
+                        </div>
+                    </div>
+
+                    <div class="not-so-good-ripples">
+                        <h3>⚠️ Not-So-Good Ripples Spread Sadness</h3>
+                        <div class="ripple-examples-list">
+                            <div class="ripple-item">😠 Mean words → Hurt feelings</div>
+                            <div class="ripple-item">🙄 Ignoring → Loneliness</div>
+                            <div class="ripple-item">😒 Complaining → More negativity</div>
+                            <div class="ripple-item">🚫 Excluding → More exclusion</div>
+                            <div class="ripple-item">😔 Giving up → Less confidence</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="choice-power">
+                    <h3>💪 You Have the Power to Choose!</h3>
+                    <p>Every moment, you get to decide: Will I create good ripples or not-so-good ripples? The choice is always yours!</p>
+                    <div class="choice-highlight">Choose good ripples and watch the world become more awesome! 🌈</div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>📝 What We Learned About Ripples</h2>
+
+                <div class="summary-points">
+                    <div class="summary-point">
+                        <div class="point-icon">🌊</div>
+                        <p>Every action you take creates ripples that spread out and touch other people</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🧠</div>
+                        <p>Scientists have proven this is real - mirror neurons make people copy what they see!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🎯</div>
+                        <p>Your ripples can reach 3 degrees of separation - friend's friend's friend!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">⚖️</div>
+                        <p>You can choose to create good ripples or not-so-good ripples</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">📓</div>
+                        <p>Keeping a ripple journal helps you see the magic happening around you</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🌟</div>
+                        <p>Good ripples make the world more awesome for everyone!</p>
+                    </div>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Cause, Carrier, Echo</h3>
+                    <p>In the next chapter, we'll learn the secret formula that shows exactly HOW ripples work: Cause → Carrier → Echo!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="index.html" class="nav-button prev">← Back to Home</a>
+                <a href="chapter2.html" class="nav-button next">Next: Cause, Carrier, Echo →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Interactive ripple demo
+        document.querySelector('.drop-point').addEventListener('click', function() {
+            const rings = document.querySelectorAll('.ripple-circle');
+            rings.forEach((ring, index) => {
+                setTimeout(() => {
+                    ring.style.animation = 'none';
+                    ring.offsetHeight; // Trigger reflow
+                    ring.style.animation = 'rippleExpand 2s ease-out';
+                }, index * 200);
+            });
+        });
+
+        // Ripple maker game
+        function createRipple(actionType) {
+            const stories = {
+                compliment: {
+                    title: "Amazing Compliment Ripple! 😊",
+                    story: "You tell your friend 'You're really good at drawing!' → Your friend feels happy and confident → They compliment someone else → That person feels great and passes on more kindness → Soon everyone is feeling appreciated!",
+                    effect: "Your compliment created a wave of appreciation that made 5 people feel better today!"
+                },
+                help: {
+                    title: "Incredible Helping Ripple! 🤝", 
+                    story: "You help someone carry their books → They feel grateful and supported → They help another person later → That person learns that helping feels good → They start helping others too → A chain of helpfulness spreads!",
+                    effect: "Your helping hand created a network of people who now help each other!"
+                },
+                share: {
+                    title: "Wonderful Sharing Ripple! 🎁",
+                    story: "You share your favorite book with a friend → They love it and feel excited → They share it with their sibling → The sibling shares it with classmates → Soon lots of people discover this awesome book!",
+                    effect: "Your sharing created a reading club that brought joy to many people!"
+                },
+                teach: {
+                    title: "Brilliant Teaching Ripple! 📚",
+                    story: "You teach your friend how to solve a puzzle → They feel smart and capable → They teach it to someone else → That person feels confident in learning → They start teaching others new things → Knowledge spreads everywhere!",
+                    effect: "Your teaching started a learning chain that made everyone smarter and more confident!"
+                }
+            };
+
+            const result = stories[actionType];
+            const rippleResult = document.getElementById('ripple-result');
+            const rippleStory = document.getElementById('ripple-story');
+
+            // Start animation
+            const animatedRipples = document.querySelectorAll('.anim-ripple');
+            animatedRipples.forEach((ripple, index) => {
+                setTimeout(() => {
+                    ripple.style.animation = 'none';
+                    ripple.offsetHeight; // Trigger reflow
+                    ripple.style.animation = 'rippleGrow 3s ease-out infinite';
+                }, index * 500);
+            });
+
+            // Show story
+            rippleStory.innerHTML = `
+                <div class="ripple-result-content">
+                    <h4>${result.title}</h4>
+                    <div class="ripple-chain">${result.story}</div>
+                    <div class="ripple-effect">${result.effect}</div>
+                    <div class="try-again">
+                        <p><strong>🎯 Real Life Challenge:</strong> Try this action today and watch for the ripples!</p>
+                    </div>
+                </div>
+            `;
+
+            rippleResult.style.display = 'block';
+        }
+
+        // Journal entry saving
+        function saveFirstEntry() {
+            const date = document.getElementById('entryDate').value;
+            const action = document.getElementById('goodAction').value.trim();
+            const ripple = document.getElementById('rippleObserved').value.trim();
+
+            if (!date || !action) {
+                alert('Please fill in the date and your good action!');
+                return;
+            }
+
+            const confirmation = document.getElementById('entry-saved');
+            confirmation.innerHTML = `
+                <div class="entry-success">
+                    <h4>🎉 Your Ripple Has Been Saved!</h4>
+                    <p><strong>Date:</strong> ${date}</p>
+                    <p><strong>Your Action:</strong> ${action}</p>
+                    ${ripple ? `<p><strong>Ripple You Saw:</strong> ${ripple}</p>` : '<p><em>Keep watching for the ripple - it might appear later!</em></p>'}
+                    <div class="success-message">You're officially a Ripple Detective! Keep looking for more ripples every day! 🕵️‍♂️✨</div>
+                </div>
+            `;
+
+            // Clear form
+            document.getElementById('goodAction').value = '';
+            document.getElementById('rippleObserved').value = '';
+        }
+
+        // Set today's date by default
+        document.getElementById('entryDate').valueAsDate = new Date();
+
+        // Challenge progress tracker
+        const checkboxes = document.querySelectorAll('.day-checkbox');
+        const progressBar = document.getElementById('challengeProgress');
+        const progressText = document.getElementById('progress-text');
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateProgress);
+        });
+
+        function updateProgress() {
+            const completed = document.querySelectorAll('.day-checkbox:checked').length;
+            const total = checkboxes.length;
+            const percentage = (completed / total) * 100;
+
+            progressBar.style.width = percentage + '%';
+            progressText.textContent = `${completed}/${total} days complete`;
+
+            if (completed === total) {
+                progressText.innerHTML = `🎉 Challenge Complete! You're a Ripple Master! 🎉`;
+                confetti();
+            }
+        }
+
+        function confetti() {
+            // Simple confetti effect
+            for (let i = 0; i < 50; i++) {
+                setTimeout(() => {
+                    const emoji = ['🎉', '✨', '🌟', '💫'][Math.floor(Math.random() * 4)];
+                    const confettiPiece = document.createElement('div');
+                    confettiPiece.innerHTML = emoji;
+                    confettiPiece.style.position = 'fixed';
+                    confettiPiece.style.left = Math.random() * 100 + 'vw';
+                    confettiPiece.style.top = '-50px';
+                    confettiPiece.style.fontSize = '2rem';
+                    confettiPiece.style.pointerEvents = 'none';
+                    confettiPiece.style.zIndex = '1000';
+                    confettiPiece.style.animation = 'fall 3s linear forwards';
+                    document.body.appendChild(confettiPiece);
+
+                    setTimeout(() => {
+                        document.body.removeChild(confettiPiece);
+                    }, 3000);
+                }, i * 100);
+            }
+        }
+    </script>
+
+    <style>
+        .ripple-demo {
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-radius: 20px;
+        }
+
+        .lake-surface {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, #81d4fa 0%, #29b6f6 100%);
+            border-radius: 50%;
+            margin: 2rem auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .lake-surface:hover {
+            transform: scale(1.05);
+        }
+
+        .drop-point {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            z-index: 10;
+        }
+
+        .ripple-circle {
+            position: absolute;
+            border: 3px solid rgba(255, 255, 255, 0.7);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ring1 { width: 80px; height: 80px; }
+        .ring2 { width: 140px; height: 140px; }
+        .ring3 { width: 200px; height: 200px; }
+        .ring4 { width: 260px; height: 260px; }
+
+        @keyframes rippleExpand {
+            0% {
+                width: 20px;
+                height: 20px;
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(1.5);
+            }
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .example-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+            border-top: 5px solid #4CAF50;
+        }
+
+        .example-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .example-card.happy {
+            border-top-color: #FFD700;
+        }
+
+        .example-card.helpful {
+            border-top-color: #4CAF50;
+        }
+
+        .example-card.creative {
+            border-top-color: #FF9800;
+        }
+
+        .example-card.learning {
+            border-top-color: #2196F3;
+        }
+
+        .example-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .ripple-maker-interface {
+            background: linear-gradient(135deg, #f3e5f5 0%, #e1bee7 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #9C27B0;
+        }
+
+        .action-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .action-btn {
+            background: linear-gradient(135deg, #9C27B0, #7B1FA2);
+            color: white;
+            border: none;
+            padding: 1rem 1.5rem;
+            border-radius: 15px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 3px solid transparent;
+        }
+
+        .action-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(156, 39, 176, 0.3);
+            border-color: #9C27B0;
+            background: white;
+            color: #9C27B0;
+        }
+
+        .ripple-result-display {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .ripple-animation {
+            text-align: center;
+            position: relative;
+            height: 200px;
+            margin-bottom: 2rem;
+        }
+
+        .ripple-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: #FFD700;
+            color: #333;
+            padding: 1rem;
+            border-radius: 50%;
+            font-weight: bold;
+            z-index: 10;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .animated-ripples {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .anim-ripple {
+            position: absolute;
+            border: 3px solid rgba(255, 215, 0, 0.6);
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .anim-ring1 { width: 100px; height: 100px; }
+        .anim-ring2 { width: 140px; height: 140px; }
+        .anim-ring3 { width: 180px; height: 180px; }
+
+        @keyframes rippleGrow {
+            0% { opacity: 0.8; transform: translate(-50%, -50%) scale(0.5); }
+            50% { opacity: 0.6; transform: translate(-50%, -50%) scale(1); }
+            100% { opacity: 0.2; transform: translate(-50%, -50%) scale(1.3); }
+        }
+
+        .ripple-chain {
+            background: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 5px solid #4CAF50;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .ripple-effect {
+            background: #fff3e0;
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #FF9800;
+            font-weight: bold;
+            color: #E65100;
+        }
+
+        .try-again {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #2196F3;
+        }
+
+        .science-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .science-fact {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .science-fact.verified {
+            border-top: 6px solid #4CAF50;
+        }
+
+        .science-fact.theoretical {
+            border-top: 6px solid #FFC107;
+        }
+
+        .evidence-badge {
+            background: #4CAF50;
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+
+        .theoretical .evidence-badge {
+            background: #FFC107;
+            color: #333;
+        }
+
+        .first-journal-entry {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #FF9800;
+        }
+
+        .journal-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .journal-input, .journal-textarea {
+            padding: 1rem;
+            border: 2px solid #FF9800;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: inherit;
+        }
+
+        .journal-textarea {
+            resize: vertical;
+            min-height: 80px;
+        }
+
+        .save-entry-btn {
+            background: linear-gradient(135deg, #FF9800, #F57C00);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .entry-confirmation {
+            margin-top: 2rem;
+        }
+
+        .entry-success {
+            background: #e8f5e8;
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #4CAF50;
+        }
+
+        .success-message {
+            background: rgba(76, 175, 80, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #2E7D32;
+        }
+
+        .challenge-container {
+            background: linear-gradient(135deg, #f1f8e9 0%, #dcedc8 100%);
+            padding: 3rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #4CAF50;
+        }
+
+        .challenge-calendar {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .challenge-day {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .challenge-day:hover {
+            transform: translateY(-2px);
+        }
+
+        .day-number {
+            background: #4CAF50;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        .day-challenge {
+            flex-grow: 1;
+            font-weight: 500;
+        }
+
+        .day-checkbox {
+            transform: scale(1.5);
+        }
+
+        .progress-tracker {
+            margin-top: 2rem;
+        }
+
+        .progress-bar {
+            background: #E8F5E8;
+            height: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-bottom: 1rem;
+        }
+
+        .progress-fill {
+            background: linear-gradient(90deg, #4CAF50, #66BB6A);
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+            border-radius: 10px;
+        }
+
+        .progress-text {
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #4CAF50;
+        }
+
+        .ripple-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .good-ripples {
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c8 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            border-left: 6px solid #4CAF50;
+        }
+
+        .not-so-good-ripples {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            border-left: 6px solid #f44336;
+        }
+
+        .ripple-examples-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .ripple-item {
+            background: rgba(255,255,255,0.7);
+            padding: 1rem;
+            border-radius: 10px;
+            font-weight: 500;
+        }
+
+        .choice-power {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffe0b2 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #FF9800;
+            text-align: center;
+        }
+
+        .choice-highlight {
+            background: rgba(255, 152, 0, 0.1);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-weight: bold;
+            color: #E65100;
+            font-size: 1.1em;
+        }
+
+        .summary-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .summary-point {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #4ECDC4;
+        }
+
+        .point-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .next-preview {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #FF69B4;
+        }
+
+        @keyframes fall {
+            to {
+                transform: translateY(100vh);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .lake-surface {
+                width: 250px;
+                height: 250px;
+            }
+
+            .example-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .challenge-calendar {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
