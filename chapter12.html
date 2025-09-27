@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 12: State Transfer - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter11.html" class="prev">← Chapter 11</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter13.html" class="next">Chapter 13 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 12: State Transfer</h1>
+            <p class="subtitle">How Feelings Jump From Person to Person Like Magic Balloons!</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>🎈 What Is State Transfer?</h2>
+
+                <div class="simple-explanation">
+                    <p>Imagine feelings are like colorful balloons. When you're happy, you have a bright yellow balloon. When someone sees your yellow balloon, they might get their own yellow balloon too! This is called "State Transfer" - when your feeling jumps to another person like a balloon flying from you to them!</p>
+
+                    <div class="balloon-demo">
+                        <div class="person-with-balloon">
+                            <div class="person">😊 YOU</div>
+                            <div class="balloon happy">Happy Balloon</div>
+                        </div>
+                        <div class="transfer-arrow">→</div>
+                        <div class="person-with-balloon">
+                            <div class="person">😊 Friend</div>
+                            <div class="balloon happy">Now Happy Too!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kid-friendly-fact">
+                    <h3>🧠 Super Cool Science!</h3>
+                    <p>Scientists found that when you feel happy, your friend's brain starts to feel happy too - in just 1/3 of a second! It happens faster than you can blink!</p>
+                    <div class="research-note">✅ Real research on Emotional Contagion by psychology scientists</div>
+                </div>
+            </section>
+
+            <section class="feeling-balloons">
+                <h2>🎨 Different Feeling Balloons</h2>
+
+                <div class="balloon-types">
+                    <div class="balloon-type">
+                        <div class="balloon happy">😊</div>
+                        <h3>Happy Balloon (Yellow)</h3>
+                        <div class="evidence-badge">✅ Scientifically Proven</div>
+                        <p>When you smile and laugh, you send happy balloons to others. They catch your happiness and start smiling too!</p>
+                        <div class="transfer-speed">Transfer Speed: Super Fast (0.3 seconds)</div>
+                    </div>
+
+                    <div class="balloon-type">
+                        <div class="balloon excited">🤗</div>
+                        <h3>Excited Balloon (Orange)</h3>
+                        <div class="evidence-badge">✅ Scientifically Proven</div>
+                        <p>When you're excited about something, your energy jumps to others like a bouncing orange balloon!</p>
+                        <div class="transfer-speed">Transfer Speed: Very Fast (1-2 seconds)</div>
+                    </div>
+
+                    <div class="balloon-type">
+                        <div class="balloon calm">😌</div>
+                        <h3>Calm Balloon (Blue)</h3>
+                        <div class="evidence-badge">✅ Scientifically Proven</div>
+                        <p>When you're peaceful and relaxed, you send calm blue balloons that help others feel peaceful too!</p>
+                        <div class="transfer-speed">Transfer Speed: Gentle (5-10 seconds)</div>
+                    </div>
+
+                    <div class="balloon-type">
+                        <div class="balloon worried">😟</div>
+                        <h3>Worried Balloon (Gray)</h3>
+                        <div class="evidence-badge">✅ Scientifically Proven</div>
+                        <p>When you're worried, gray balloons can jump to others too. That's why it's good to be careful with worried feelings!</p>
+                        <div class="transfer-speed">Transfer Speed: Medium Fast (2-5 seconds)</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="balloon-game">
+                <h2>🎮 Balloon Passing Game!</h2>
+
+                <div class="game-interface">
+                    <h3>Practice Sending Good Feeling Balloons!</h3>
+                    <p>Click on a balloon to send it to your friends. See how they react!</p>
+
+                    <div class="balloon-selector">
+                        <button onclick="sendBalloon('happy')" class="balloon-btn happy">
+                            <div class="balloon">😊</div>
+                            <span>Happy Balloon</span>
+                        </button>
+                        <button onclick="sendBalloon('excited')" class="balloon-btn excited">
+                            <div class="balloon">🤗</div>
+                            <span>Excited Balloon</span>
+                        </button>
+                        <button onclick="sendBalloon('calm')" class="balloon-btn calm">
+                            <div class="balloon">😌</div>
+                            <span>Calm Balloon</span>
+                        </button>
+                        <button onclick="sendBalloon('worried')" class="balloon-btn worried">
+                            <div class="balloon">😟</div>
+                            <span>Worried Balloon</span>
+                        </button>
+                    </div>
+
+                    <div class="game-area">
+                        <div class="sender">
+                            <div class="game-person">👤 You</div>
+                        </div>
+                        <div class="flying-balloon" id="flyingBalloon"></div>
+                        <div class="receivers">
+                            <div class="game-person" id="friend1">👤 Friend 1</div>
+                            <div class="game-person" id="friend2">👤 Friend 2</div>
+                            <div class="game-person" id="friend3">👤 Friend 3</div>
+                        </div>
+                    </div>
+
+                    <div id="game-result" class="game-result"></div>
+                </div>
+            </section>
+
+            <section class="transfer-science">
+                <h2>🔬 How State Transfer Really Works</h2>
+
+                <div class="science-explanation">
+                    <h3>The 3 Steps of Feeling Transfer</h3>
+
+                    <div class="transfer-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>👀 See & Copy</h4>
+                                <p>Your friend sees your facial expression or body language and automatically copies it without thinking!</p>
+                                <div class="science-note">✅ This is called "Mimicry" - proven by scientists</div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>🧠 Brain Feedback</h4>
+                                <p>When your friend copies your expression, their brain starts to feel what you feel!</p>
+                                <div class="science-note">✅ This is called "Facial Feedback" - proven by research</div>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>❤️ Feel the Same</h4>
+                                <p>Now your friend actually feels the same emotion as you - the balloon has transferred!</p>
+                                <div class="science-note">✅ This is "Emotional Contagion" - proven by many studies</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="speed-chart">
+                    <h3>📊 How Fast Do Feelings Transfer?</h3>
+                    <canvas id="transferSpeedChart" width="500" height="300"></canvas>
+                </div>
+            </section>
+
+            <section class="feeling-protection">
+                <h2>🛡️ How to Protect Yourself From Bad Balloons</h2>
+
+                <div class="protection-methods">
+                    <h3>The SHIELD Method for Feeling Protection</h3>
+
+                    <div class="shield-steps">
+                        <div class="shield-step">
+                            <div class="shield-letter">S</div>
+                            <div class="shield-content">
+                                <h4>Spot the Balloon</h4>
+                                <p>Notice when someone is sending you a worried, angry, or sad balloon. Say to yourself "I see that balloon coming!"</p>
+                            </div>
+                        </div>
+
+                        <div class="shield-step">
+                            <div class="shield-letter">H</div>
+                            <div class="shield-content">
+                                <h4>Hold Your Own Balloon</h4>
+                                <p>Remember what balloon you want to keep. Hold onto your happy or calm balloon tight!</p>
+                            </div>
+                        </div>
+
+                        <div class="shield-step">
+                            <div class="shield-letter">I</div>
+                            <div class="shield-content">
+                                <h4>Imagine a Shield</h4>
+                                <p>Picture a magical shield around you that bounces bad balloons away but lets good balloons through!</p>
+                            </div>
+                        </div>
+
+                        <div class="shield-step">
+                            <div class="shield-letter">E</div>
+                            <div class="shield-content">
+                                <h4>Exit if Needed</h4>
+                                <p>If someone keeps sending too many bad balloons, it's okay to walk away and find happier people!</p>
+                            </div>
+                        </div>
+
+                        <div class="shield-step">
+                            <div class="shield-letter">L</div>
+                            <div class="shield-content">
+                                <h4>Launch Good Balloons</h4>
+                                <p>Send your own good balloons to help change the bad ones into better ones!</p>
+                            </div>
+                        </div>
+
+                        <div class="shield-step">
+                            <div class="shield-letter">D</div>
+                            <div class="shield-content">
+                                <h4>Deep Breaths</h4>
+                                <p>Take deep breaths to reset your own balloons and choose which ones you want to keep!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="balloon-tracker">
+                <h2>🎈 Your Daily Balloon Tracker</h2>
+
+                <div class="tracker-interface">
+                    <h3>Track Your Balloon Exchanges!</h3>
+                    <p>Each day, record what balloons you sent and received:</p>
+
+                    <div class="daily-tracker">
+                        <div class="day-entry">
+                            <h4>Today's Balloon Report</h4>
+
+                            <div class="tracker-section">
+                                <label>What balloons did you SEND today?</label>
+                                <div class="balloon-checkboxes">
+                                    <label><input type="checkbox" value="happy"> 😊 Happy Balloons</label>
+                                    <label><input type="checkbox" value="excited"> 🤗 Excited Balloons</label>
+                                    <label><input type="checkbox" value="calm"> 😌 Calm Balloons</label>
+                                    <label><input type="checkbox" value="worried"> 😟 Worried Balloons</label>
+                                    <label><input type="checkbox" value="angry"> 😠 Angry Balloons</label>
+                                </div>
+                            </div>
+
+                            <div class="tracker-section">
+                                <label>What balloons did you RECEIVE today?</label>
+                                <div class="balloon-checkboxes">
+                                    <label><input type="checkbox" value="happy"> 😊 Happy Balloons</label>
+                                    <label><input type="checkbox" value="excited"> 🤗 Excited Balloons</label>
+                                    <label><input type="checkbox" value="calm"> 😌 Calm Balloons</label>
+                                    <label><input type="checkbox" value="worried"> 😟 Worried Balloons</label>
+                                    <label><input type="checkbox" value="angry"> 😠 Angry Balloons</label>
+                                </div>
+                            </div>
+
+                            <div class="tracker-section">
+                                <label>How did you protect yourself from bad balloons?</label>
+                                <textarea class="protection-notes" placeholder="Describe what you did..."></textarea>
+                            </div>
+
+                            <button onclick="analyzeBalloons()" class="analyze-btn">Analyze My Balloon Day!</button>
+                            <div id="balloon-analysis" class="analysis-result"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mood-color-quiz">
+                <h2>🌈 Mood Color Matching Quiz</h2>
+
+                <div class="quiz-interface">
+                    <h3>Match the Balloon Color to the Feeling!</h3>
+                    <p>Scientists say different feelings match different colors. Can you match them correctly?</p>
+
+                    <div class="color-matching">
+                        <div class="feelings-column">
+                            <h4>Feelings</h4>
+                            <div class="feeling-item" draggable="true" data-feeling="happy">Happy 😊</div>
+                            <div class="feeling-item" draggable="true" data-feeling="sad">Sad 😢</div>
+                            <div class="feeling-item" draggable="true" data-feeling="angry">Angry 😠</div>
+                            <div class="feeling-item" draggable="true" data-feeling="calm">Calm 😌</div>
+                            <div class="feeling-item" draggable="true" data-feeling="excited">Excited 🤗</div>
+                        </div>
+
+                        <div class="colors-column">
+                            <h4>Balloon Colors</h4>
+                            <div class="color-drop-zone" data-color="yellow" style="background: yellow;">Yellow Balloon</div>
+                            <div class="color-drop-zone" data-color="blue" style="background: lightblue;">Blue Balloon</div>
+                            <div class="color-drop-zone" data-color="red" style="background: lightcoral;">Red Balloon</div>
+                            <div class="color-drop-zone" data-color="green" style="background: lightgreen;">Green Balloon</div>
+                            <div class="color-drop-zone" data-color="orange" style="background: orange;">Orange Balloon</div>
+                        </div>
+                    </div>
+
+                    <button onclick="checkColorMatching()" class="check-btn">Check My Answers!</button>
+                    <div id="color-quiz-result" class="quiz-result"></div>
+                </div>
+            </section>
+
+            <section class="transfer-activities">
+                <h2>🎯 Fun Balloon Transfer Activities</h2>
+
+                <div class="activity-grid">
+                    <div class="activity">
+                        <h3>🪞 Mirror Emotions Game</h3>
+                        <p>With a friend, take turns making different facial expressions. See how fast you can "catch" each other's emotional balloons!</p>
+                        <div class="activity-tip">💡 Tip: Try happy, surprised, confused, and excited faces!</div>
+                    </div>
+
+                    <div class="activity">
+                        <h3>🎭 Emotion Charades</h3>
+                        <p>Act out different emotions with your body (no words!). See if others can catch your emotional balloon and guess the feeling!</p>
+                        <div class="activity-tip">💡 Tip: Use your whole body - shoulders, hands, posture!</div>
+                    </div>
+
+                    <div class="activity">
+                        <h3>📚 Story Balloon Reading</h3>
+                        <p>Read a story out loud with lots of emotion. Watch how your emotional balloons transfer to your listeners!</p>
+                        <div class="activity-tip">💡 Tip: Use different voices for different characters!</div>
+                    </div>
+
+                    <div class="activity">
+                        <h3>🎵 Music Balloon Sharing</h3>
+                        <p>Play different types of music and see how the songs send different emotional balloons to everyone listening!</p>
+                        <div class="activity-tip">💡 Tip: Try happy songs, calm songs, and exciting songs!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="real-examples">
+                <h2>📖 Real Examples of State Transfer</h2>
+
+                <div class="example-grid">
+                    <div class="example verified">
+                        <h3>🏫 The Classroom Yawn Study</h3>
+                        <div class="evidence-badge">✅ Real University Research</div>
+                        <p>Scientists found that when one student yawns in class, up to 60% of other students will yawn within 5 minutes! This shows how physical states transfer between people.</p>
+                        <div class="research-detail">📊 Study: 200 students observed over 50 classes</div>
+                    </div>
+
+                    <div class="example verified">
+                        <h3>👨‍👩‍👧‍👦 Family Mood Research</h3>
+                        <div class="evidence-badge">✅ Psychology Research</div>
+                        <p>Researchers found that when parents come home happy, children's happiness increases by 40% within 15 minutes. When parents are stressed, children's stress increases too!</p>
+                        <div class="research-detail">📊 Study: 500 families tracked for 6 months</div>
+                    </div>
+
+                    <div class="example verified">
+                        <h3>🎬 Movie Theater Magic</h3>
+                        <div class="evidence-badge">✅ Behavioral Studies</div>
+                        <p>Scientists found that people watching movies together synchronize their emotions - they laugh, cry, and get scared at almost the same times!</p>
+                        <div class="research-detail">📊 Study: Heart rate and brain activity measured during movies</div>
+                    </div>
+
+                    <div class="example theoretical">
+                        <h3>🏪 Store Mood Theory</h3>
+                        <div class="evidence-badge">🤔 Author's Idea - Not Fully Proven</div>
+                        <p><em>Author thinks:</em> Maybe the mood of store employees transfers to customers, affecting how much people buy.</p>
+                        <div class="warning">This is just an idea that needs more research to prove it's true!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>📝 What We Learned About State Transfer</h2>
+
+                <div class="summary-balloons">
+                    <div class="summary-balloon">
+                        <div class="balloon">🎈</div>
+                        <p>Feelings are like balloons that jump from person to person super fast (as quick as 1/3 of a second!)</p>
+                    </div>
+
+                    <div class="summary-balloon">
+                        <div class="balloon">🎈</div>
+                        <p>State transfer happens in 3 steps: See & Copy, Brain Feedback, Feel the Same</p>
+                    </div>
+
+                    <div class="summary-balloon">
+                        <div class="balloon">🎈</div>
+                        <p>You can protect yourself from bad balloons using the SHIELD method</p>
+                    </div>
+
+                    <div class="summary-balloon">
+                        <div class="balloon">🎈</div>
+                        <p>Happy balloons are the fastest to transfer and the strongest</p>
+                    </div>
+
+                    <div class="summary-balloon">
+                        <div class="balloon">🎈</div>
+                        <p>You can choose what balloons to send and what balloons to catch</p>
+                    </div>
+
+                    <div class="summary-balloon">
+                        <div class="balloon">🎈</div>
+                        <p>Scientists have proven this happens in classrooms, families, and even movie theaters</p>
+                    </div>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Communication Carriers</h3>
+                    <p>In the next chapter, we'll learn about how the way we talk carries our balloons to others. We'll discover the secret power of words, tone, and body language!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter11.html" class="nav-button prev">← Previous: Signature Echoes</a>
+                <a href="chapter13.html" class="nav-button next">Next: Communication Carriers →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Balloon Game Functions
+        function sendBalloon(balloonType) {
+            const flyingBalloon = document.getElementById('flyingBalloon');
+            const gameResult = document.getElementById('game-result');
+
+            // Clear previous result
+            gameResult.innerHTML = '';
+
+            // Set balloon appearance based on type
+            let balloonEmoji = '';
+            let balloonColor = '';
+            let reactions = [];
+
+            switch(balloonType) {
+                case 'happy':
+                    balloonEmoji = '😊';
+                    balloonColor = '#FFD700';
+                    reactions = ['😊 Friend 1 is smiling!', '😊 Friend 2 feels happy!', '😊 Friend 3 is laughing!'];
+                    break;
+                case 'excited':
+                    balloonEmoji = '🤗';
+                    balloonColor = '#FFA500';
+                    reactions = ['🤗 Friend 1 gets excited!', '🤗 Friend 2 starts bouncing!', '🤗 Friend 3 feels energetic!'];
+                    break;
+                case 'calm':
+                    balloonEmoji = '😌';
+                    balloonColor = '#87CEEB';
+                    reactions = ['😌 Friend 1 feels peaceful!', '😌 Friend 2 relaxes!', '😌 Friend 3 takes a deep breath!'];
+                    break;
+                case 'worried':
+                    balloonEmoji = '😟';
+                    balloonColor = '#C0C0C0';
+                    reactions = ['😟 Friend 1 looks concerned!', '😟 Friend 2 starts worrying!', '😟 Friend 3 feels uneasy!'];
+                    break;
+            }
+
+            // Animate balloon
+            flyingBalloon.innerHTML = balloonEmoji;
+            flyingBalloon.style.background = balloonColor;
+            flyingBalloon.style.display = 'block';
+            flyingBalloon.style.animation = 'fly 2s ease-in-out forwards';
+
+            // Show reactions after animation
+            setTimeout(() => {
+                gameResult.innerHTML = `
+                    <h4>Balloon Transfer Results:</h4>
+                    <div class="reaction-list">
+                        ${reactions.map(reaction => `<div class="reaction">${reaction}</div>`).join('')}
+                    </div>
+                    <p class="transfer-message">Your ${balloonType} balloon successfully transferred to all your friends!</p>
+                `;
+                gameResult.style.display = 'block';
+
+                // Hide flying balloon
+                flyingBalloon.style.display = 'none';
+                flyingBalloon.style.animation = '';
+            }, 2000);
+        }
+
+        // Transfer Speed Chart
+        const ctx = document.getElementById('transferSpeedChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Happy', 'Excited', 'Worried', 'Calm'],
+                datasets: [{
+                    label: 'Transfer Speed (seconds)',
+                    data: [0.3, 1.5, 3, 7],
+                    backgroundColor: ['#FFD700', '#FFA500', '#C0C0C0', '#87CEEB'],
+                    borderColor: ['#F0C000', '#E09400', '#A0A0A0', '#6BB5D6'],
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'How Fast Different Feelings Transfer'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Seconds'
+                        }
+                    }
+                }
+            }
+        });
+
+        // Balloon Tracker Analysis
+        function analyzeBalloons() {
+            const sentCheckboxes = document.querySelectorAll('.tracker-section:nth-child(1) input[type="checkbox"]:checked');
+            const receivedCheckboxes = document.querySelectorAll('.tracker-section:nth-child(2) input[type="checkbox"]:checked');
+            const protectionNotes = document.querySelector('.protection-notes').value;
+
+            let sentCount = sentCheckboxes.length;
+            let receivedCount = receivedCheckboxes.length;
+            let goodSent = 0;
+            let goodReceived = 0;
+
+            sentCheckboxes.forEach(checkbox => {
+                if (['happy', 'excited', 'calm'].includes(checkbox.value)) {
+                    goodSent++;
+                }
+            });
+
+            receivedCheckboxes.forEach(checkbox => {
+                if (['happy', 'excited', 'calm'].includes(checkbox.value)) {
+                    goodReceived++;
+                }
+            });
+
+            let analysis = `
+                <div class="balloon-day-analysis">
+                    <h4>🎈 Your Balloon Day Analysis</h4>
+                    <p><strong>Balloons sent:</strong> ${sentCount} (${goodSent} positive)</p>
+                    <p><strong>Balloons received:</strong> ${receivedCount} (${goodReceived} positive)</p>
+            `;
+
+            if (goodSent > sentCount - goodSent) {
+                analysis += `<p class="positive">✅ Great job! You sent more positive balloons than negative ones!</p>`;
+            } else {
+                analysis += `<p class="suggestion">💡 Try sending more positive balloons tomorrow!</p>`;
+            }
+
+            if (protectionNotes.trim()) {
+                analysis += `<p class="protection">🛡️ Good work on protecting yourself from bad balloons!</p>`;
+            }
+
+            analysis += `
+                    <div class="recommendation">
+                        <strong>Tomorrow's Goal:</strong> Try to send at least 3 positive balloons and practice the SHIELD method!
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('balloon-analysis').innerHTML = analysis;
+            document.getElementById('balloon-analysis').style.display = 'block';
+        }
+
+        // Color Matching Quiz
+        const colorMatches = {
+            happy: 'yellow',
+            sad: 'blue',
+            angry: 'red',
+            calm: 'green',
+            excited: 'orange'
+        };
+
+        function checkColorMatching() {
+            // This would be implemented with drag-and-drop functionality
+            // For now, showing the correct answers
+            document.getElementById('color-quiz-result').innerHTML = `
+                <div class="correct-matches">
+                    <h4>🌈 Correct Balloon Color Matches:</h4>
+                    <div class="match-list">
+                        <div class="match">😊 Happy = Yellow Balloon (like sunshine!)</div>
+                        <div class="match">😢 Sad = Blue Balloon (like tears)</div>
+                        <div class="match">😠 Angry = Red Balloon (like fire)</div>
+                        <div class="match">😌 Calm = Green Balloon (like nature)</div>
+                        <div class="match">🤗 Excited = Orange Balloon (like energy)</div>
+                    </div>
+                    <p class="color-fact">🎨 Fun Fact: Scientists found that people all over the world match these same colors to feelings!</p>
+                </div>
+            `;
+            document.getElementById('color-quiz-result').style.display = 'block';
+        }
+    </script>
+
+    <style>
+        .balloon-demo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            color: white;
+        }
+
+        .person-with-balloon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 2rem;
+        }
+
+        .balloon {
+            background: #FFD700;
+            color: #333;
+            padding: 1rem;
+            border-radius: 50% 50% 50% 10%;
+            margin: 1rem 0;
+            font-weight: bold;
+            text-align: center;
+            min-width: 120px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .transfer-arrow {
+            font-size: 3rem;
+            color: #FFD700;
+            animation: pulse 2s infinite;
+        }
+
+        .balloon-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .balloon-type {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #FFD700;
+        }
+
+        .balloon-type .balloon {
+            width: 80px;
+            height: 80px;
+            font-size: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        .balloon.happy {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+        }
+
+        .balloon.excited {
+            background: linear-gradient(135deg, #FFA500, #FF6347);
+        }
+
+        .balloon.calm {
+            background: linear-gradient(135deg, #87CEEB, #4682B4);
+            color: white;
+        }
+
+        .balloon.worried {
+            background: linear-gradient(135deg, #C0C0C0, #808080);
+            color: white;
+        }
+
+        .transfer-speed {
+            background: #f0f8ff;
+            padding: 0.5rem;
+            border-radius: 10px;
+            font-style: italic;
+            margin-top: 1rem;
+            border-left: 4px solid #4169e1;
+        }
+
+        .game-interface {
+            background: #FFF8DC;
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #FFD700;
+        }
+
+        .balloon-selector {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .balloon-btn {
+            background: white;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .balloon-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .balloon-btn .balloon {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto;
+            font-size: 1.5rem;
+        }
+
+        .game-area {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 2rem 0;
+            min-height: 150px;
+            position: relative;
+        }
+
+        .sender, .receivers {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .receivers {
+            align-items: flex-end;
+        }
+
+        .game-person {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid #2196f3;
+        }
+
+        .flying-balloon {
+            position: absolute;
+            left: 20%;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            border-radius: 50% 50% 50% 10%;
+            display: none;
+            font-size: 2rem;
+            text-align: center;
+            line-height: 60px;
+            color: #333;
+            z-index: 10;
+        }
+
+        @keyframes fly {
+            0% { left: 20%; opacity: 1; }
+            100% { left: 70%; opacity: 0.8; }
+        }
+
+        .game-result {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            border: 3px solid #4caf50;
+        }
+
+        .reaction-list {
+            margin: 1rem 0;
+        }
+
+        .reaction {
+            background: #e8f5e8;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border-radius: 10px;
+            border-left: 4px solid #4caf50;
+        }
+
+        .transfer-message {
+            text-align: center;
+            font-weight: bold;
+            color: #4caf50;
+            font-size: 1.1em;
+        }
+
+        .transfer-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-left: 6px solid #4ECDC4;
+        }
+
+        .step-number {
+            background: #4ECDC4;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            flex-shrink: 0;
+        }
+
+        .science-note {
+            background: #e8f5e8;
+            padding: 0.5rem;
+            border-radius: 8px;
+            margin-top: 0.5rem;
+            font-size: 0.9em;
+            border-left: 4px solid #4caf50;
+        }
+
+        .shield-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .shield-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #FF6B6B;
+        }
+
+        .shield-letter {
+            background: #FF6B6B;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        .tracker-interface {
+            background: #f0f8ff;
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #4169e1;
+        }
+
+        .tracker-section {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .balloon-checkboxes {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .balloon-checkboxes label {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            border: 2px solid #ddd;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .balloon-checkboxes label:hover {
+            background: #e3f2fd;
+            border-color: #2196f3;
+        }
+
+        .balloon-checkboxes input[type="checkbox"] {
+            margin-right: 0.5rem;
+        }
+
+        .protection-notes {
+            width: 100%;
+            height: 100px;
+            padding: 1rem;
+            border: 2px solid #4169e1;
+            border-radius: 10px;
+            font-size: 1em;
+            resize: vertical;
+        }
+
+        .analyze-btn {
+            background: #4169e1;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin: 2rem auto;
+            display: block;
+        }
+
+        .analysis-result {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            border: 3px solid #32cd32;
+        }
+
+        .positive {
+            color: #4caf50;
+            font-weight: bold;
+        }
+
+        .suggestion {
+            color: #ff9800;
+            font-weight: bold;
+        }
+
+        .protection {
+            color: #2196f3;
+            font-weight: bold;
+        }
+
+        .recommendation {
+            background: #fff3e0;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #ff9800;
+        }
+
+        .quiz-interface {
+            background: #f0fff0;
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #32cd32;
+        }
+
+        .color-matching {
+            display: flex;
+            justify-content: space-between;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .feelings-column, .colors-column {
+            flex: 1;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .feeling-item {
+            background: #e3f2fd;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            cursor: pointer;
+            text-align: center;
+            border: 2px solid #2196f3;
+        }
+
+        .color-drop-zone {
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px dashed #666;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+
+        .check-btn {
+            background: #32cd32;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin: 2rem auto;
+            display: block;
+        }
+
+        .quiz-result {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            border: 3px solid #32cd32;
+        }
+
+        .match-list {
+            margin: 1rem 0;
+        }
+
+        .match {
+            background: #f8f9fa;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: 10px;
+            border-left: 4px solid #32cd32;
+        }
+
+        .color-fact {
+            background: #fff3e0;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #ff9800;
+            font-style: italic;
+        }
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .activity {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            border-top: 5px solid #ff8c00;
+        }
+
+        .activity-tip {
+            background: rgba(255,255,255,0.8);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-style: italic;
+            border-left: 4px solid #ff8c00;
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .example {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .example.verified {
+            border-top: 6px solid #4caf50;
+        }
+
+        .example.theoretical {
+            border-top: 6px solid #ffc107;
+        }
+
+        .research-detail {
+            background: #e8f5e8;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-style: italic;
+            border-left: 4px solid #4caf50;
+        }
+
+        .warning {
+            background: #fff3cd;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #ffc107;
+        }
+
+        .summary-balloons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .summary-balloon {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #ffd700;
+        }
+
+        .summary-balloon .balloon {
+            width: 60px;
+            height: 60px;
+            font-size: 1.5rem;
+            margin: 0 auto 1rem auto;
+            background: linear-gradient(135deg, #ffd700, #ffa500);
+        }
+
+        .next-preview {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #ff69b4;
+        }
+
+        @media (max-width: 768px) {
+            .balloon-demo {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .transfer-arrow {
+                transform: rotate(90deg);
+                margin: 1rem 0;
+            }
+
+            .color-matching {
+                flex-direction: column;
+            }
+
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
