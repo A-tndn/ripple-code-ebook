@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 10: Trust Loops - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter9.html" class="prev">← Chapter 9</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter11.html" class="next">Chapter 11 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 10: Trust Loops</h1>
+            <p class="subtitle">How Trust Grows Like a Circle That Never Ends</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>🤝 What Are Trust Loops?</h2>
+
+                <div class="simple-explanation">
+                    <p>Imagine trust is like a circle that goes round and round. When you trust someone, and they trust you back, it makes a loop - like a friendship circle that gets stronger every time!</p>
+
+                    <div class="trust-circle">
+                        <div class="circle-part">You trust your friend</div>
+                        <div class="arrow">→</div>
+                        <div class="circle-part">Your friend feels good</div>
+                        <div class="arrow">→</div>
+                        <div class="circle-part">Your friend trusts you more</div>
+                        <div class="arrow">→</div>
+                        <div class="circle-part">You feel good and trust them even more!</div>
+                    </div>
+                </div>
+
+                <div class="kid-friendly-fact">
+                    <h3>🧠 Cool Science Fact!</h3>
+                    <p>Scientists found that when kids trust someone, special parts of their brain light up - like Christmas lights! The same thing happens when adults trust each other.</p>
+                    <div class="research-note">✅ Real research from universities studying children's brains</div>
+                </div>
+            </section>
+
+            <section class="how-trust-works">
+                <h2>🔍 How Does Trust Work in Your Brain?</h2>
+
+                <div class="brain-explanation">
+                    <h3>Trust is Like Having a Friend Detector!</h3>
+                    <p>Your brain has a special part that acts like a "friend detector." It helps you figure out who is safe to trust and who might not be.</p>
+
+                    <div class="trust-types">
+                        <div class="trust-type good">
+                            <h4>✅ Smart Trust (Scientists call it "Epistemic Trust")</h4>
+                            <p><strong>Simple words:</strong> This is when you trust someone because they're really good at something.</p>
+                            <div class="example">
+                                <strong>Example:</strong> You trust your teacher to teach you math because they know a lot about numbers!
+                            </div>
+                        </div>
+
+                        <div class="trust-type heart">
+                            <h4>❤️ Heart Trust (Scientists call it "Interpersonal Trust")</h4>
+                            <p><strong>Simple words:</strong> This is when you trust someone because they care about you.</p>
+                            <div class="example">
+                                <strong>Example:</strong> You trust your best friend to keep your secrets because they care about your feelings!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-game">
+                    <h3>🎯 Try This Trust Game!</h3>
+                    <p>Think of 3 people you trust. For each person, click what type of trust it is:</p>
+
+                    <div class="game-interface">
+                        <div class="person-input">
+                            <label>Person 1:</label>
+                            <input type="text" id="person1" placeholder="e.g., My mom">
+                            <div class="trust-buttons">
+                                <button onclick="markTrust(1, 'smart')">Smart Trust</button>
+                                <button onclick="markTrust(1, 'heart')">Heart Trust</button>
+                                <button onclick="markTrust(1, 'both')">Both!</button>
+                            </div>
+                            <div id="result1" class="result"></div>
+                        </div>
+
+                        <div class="person-input">
+                            <label>Person 2:</label>
+                            <input type="text" id="person2" placeholder="e.g., My teacher">
+                            <div class="trust-buttons">
+                                <button onclick="markTrust(2, 'smart')">Smart Trust</button>
+                                <button onclick="markTrust(2, 'heart')">Heart Trust</button>
+                                <button onclick="markTrust(2, 'both')">Both!</button>
+                            </div>
+                            <div id="result2" class="result"></div>
+                        </div>
+
+                        <div class="person-input">
+                            <label>Person 3:</label>
+                            <input type="text" id="person3" placeholder="e.g., My friend">
+                            <div class="trust-buttons">
+                                <button onclick="markTrust(3, 'smart')">Smart Trust</button>
+                                <button onclick="markTrust(3, 'heart')">Heart Trust</button>
+                                <button onclick="markTrust(3, 'both')">Both!</button>
+                            </div>
+                            <div id="result3" class="result"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trust-building">
+                <h2>🏗️ How to Build Trust Loops</h2>
+
+                <div class="trust-steps">
+                    <h3>The TRUST Recipe (Easy to Remember!)</h3>
+
+                    <div class="recipe-steps">
+                        <div class="step">
+                            <div class="step-letter">T</div>
+                            <div class="step-content">
+                                <h4>Tell the Truth</h4>
+                                <p>Always be honest, even when it's hard. People trust you more when you tell the truth!</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-letter">R</div>
+                            <div class="step-content">
+                                <h4>Remember Promises</h4>
+                                <p>If you say you'll do something, do it! Keeping promises makes trust grow stronger.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-letter">U</div>
+                            <div class="step-content">
+                                <h4>Understand Others</h4>
+                                <p>Try to see how other people feel. When you understand them, they trust you more.</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-letter">S</div>
+                            <div class="step-content">
+                                <h4>Share Kindly</h4>
+                                <p>Share your toys, time, and kindness. When you share, others want to share with you too!</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-letter">T</div>
+                            <div class="step-content">
+                                <h4>Time Together</h4>
+                                <p>Spend time with people you want to trust. The more good times you have, the stronger trust becomes!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trust-spreading">
+                <h2>🌊 How Trust Spreads Like Ripples</h2>
+
+                <div class="ripple-explanation">
+                    <h3>Trust is Like Throwing a Stone in a Pond</h3>
+                    <p>When you trust someone, it creates ripples that spread to other people, just like when you throw a stone in water!</p>
+
+                    <div class="ripple-demo">
+                        <div class="pond">
+                            <div class="ripple ripple1">You trust your friend</div>
+                            <div class="ripple ripple2">Your friend trusts their family</div>
+                            <div class="ripple ripple3">Their family trusts their neighbors</div>
+                            <div class="ripple ripple4">Everyone becomes more trusting!</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="real-examples">
+                    <h3>📚 Real Examples from Research</h3>
+
+                    <div class="example-grid">
+                        <div class="example verified">
+                            <h4>🏫 The Classroom Trust Study</h4>
+                            <div class="evidence-badge">✅ Real University Research</div>
+                            <p>Scientists studied kids in classrooms and found something amazing: When one student started trusting their teacher more, other students in the class also became more trusting!</p>
+                            <div class="fun-fact">
+                                <strong>Fun Fact:</strong> It only took 2 weeks for trust to spread through the whole classroom!
+                            </div>
+                        </div>
+
+                        <div class="example verified">
+                            <h4>👨‍👩‍👧‍👦 The Family Trust Circle</h4>
+                            <div class="evidence-badge">✅ Real Psychology Research</div>
+                            <p>Researchers found that kids who trust their parents are more likely to trust other adults, like teachers and coaches. Trust at home helps create trust everywhere!</p>
+                            <div class="fun-fact">
+                                <strong>Fun Fact:</strong> Kids learn how to trust by watching their parents trust other people!
+                            </div>
+                        </div>
+
+                        <div class="example theoretical">
+                            <h4>🤔 The Neighborhood Effect (Author's Idea)</h4>
+                            <div class="evidence-badge">⚠️ Not Proven Yet</div>
+                            <p><em>Author's thought:</em> Maybe when families trust each other in a neighborhood, it makes the whole area feel safer and friendlier.</p>
+                            <div class="warning">
+                                <strong>Remember:</strong> This is just an idea that needs more research to prove it's true!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trust-measurement">
+                <h2>📏 How Scientists Measure Trust</h2>
+
+                <div class="measurement-methods">
+                    <h3>Cool Ways Scientists Study Trust in Kids</h3>
+
+                    <div class="method-grid">
+                        <div class="method">
+                            <h4>🎭 The Acting Game</h4>
+                            <p>Scientists have kids watch adults act different ways, then see who the kids choose to trust. It's like a fun game that teaches us about trust!</p>
+                        </div>
+
+                        <div class="method">
+                            <h4>🧩 The Puzzle Helper Test</h4>
+                            <p>Kids are given puzzles and can choose which adult to ask for help. Scientists watch to see who kids trust to help them solve problems.</p>
+                        </div>
+
+                        <div class="method">
+                            <h4>📊 The Trust-O-Meter</h4>
+                            <p>Kids answer simple questions about how much they trust different people. Scientists use these answers to understand trust patterns.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-tracker">
+                    <h3>🌟 Your Personal Trust Tracker</h3>
+                    <p>Track how trust grows in your own life!</p>
+
+                    <div class="tracker-interface">
+                        <div class="day-tracker">
+                            <h4>This Week's Trust Adventures</h4>
+                            <div class="day-input">
+                                <label>Monday: Did you trust someone new?</label>
+                                <select onchange="updateTrustScore()">
+                                    <option value="0">Choose...</option>
+                                    <option value="1">A little bit</option>
+                                    <option value="2">Yes, definitely!</option>
+                                    <option value="3">Yes, and they trusted me back!</option>
+                                </select>
+                            </div>
+
+                            <div class="day-input">
+                                <label>Tuesday: Did someone trust you?</label>
+                                <select onchange="updateTrustScore()">
+                                    <option value="0">Choose...</option>
+                                    <option value="1">A little bit</option>
+                                    <option value="2">Yes, definitely!</option>
+                                    <option value="3">Yes, and I felt really good!</option>
+                                </select>
+                            </div>
+
+                            <div class="day-input">
+                                <label>Wednesday: Did you help someone trust others?</label>
+                                <select onchange="updateTrustScore()">
+                                    <option value="0">Choose...</option>
+                                    <option value="1">A little bit</option>
+                                    <option value="2">Yes, definitely!</option>
+                                    <option value="3">Yes, I helped make trust spread!</option>
+                                </select>
+                            </div>
+
+                            <div id="trust-score" class="score-display"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trust-problems">
+                <h2>⚠️ When Trust Gets Broken</h2>
+
+                <div class="broken-trust">
+                    <h3>🩹 How to Fix Broken Trust</h3>
+                    <p>Sometimes trust gets hurt, like when someone breaks a promise. But good news - trust can be fixed!</p>
+
+                    <div class="fix-steps">
+                        <div class="fix-step">
+                            <div class="step-number">1</div>
+                            <div class="step-text">
+                                <h4>Say Sorry (and Mean It)</h4>
+                                <p>When you make a mistake, say sorry right away. Make sure you really mean it!</p>
+                            </div>
+                        </div>
+
+                        <div class="fix-step">
+                            <div class="step-number">2</div>
+                            <div class="step-text">
+                                <h4>Fix What You Can</h4>
+                                <p>If you broke something or hurt someone's feelings, try to make it better.</p>
+                            </div>
+                        </div>
+
+                        <div class="fix-step">
+                            <div class="step-number">3</div>
+                            <div class="step-text">
+                                <h4>Show You Learned</h4>
+                                <p>Do better next time! Show that you learned from your mistake.</p>
+                            </div>
+                        </div>
+
+                        <div class="fix-step">
+                            <div class="step-number">4</div>
+                            <div class="step-text">
+                                <h4>Be Patient</h4>
+                                <p>Trust takes time to grow back, like a plant growing. Be patient and keep being trustworthy!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="trust-protection">
+                    <h3>🛡️ How to Protect Your Trust</h3>
+                    <div class="protection-tips">
+                        <div class="tip">
+                            <h4>🚨 Trust Your Feelings</h4>
+                            <p>If something doesn't feel right, it's okay to be careful. Your feelings are like a warning system!</p>
+                        </div>
+
+                        <div class="tip">
+                            <h4>👥 Ask for Help</h4>
+                            <p>If you're not sure about trusting someone, ask a grown-up you trust for help deciding.</p>
+                        </div>
+
+                        <div class="tip">
+                            <h4>⏰ Take Your Time</h4>
+                            <p>You don't have to trust everyone right away. It's okay to take time to get to know someone first!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trust-activities">
+                <h2>🎮 Fun Trust Activities to Try</h2>
+
+                <div class="activity-grid">
+                    <div class="activity">
+                        <h3>🤝 Trust Walk</h3>
+                        <p>With a friend, take turns closing your eyes while the other person guides you safely around. This builds trust and is super fun!</p>
+                        <div class="safety-note">⚠️ Always have a grown-up watching when you do this!</div>
+                    </div>
+
+                    <div class="activity">
+                        <h3>🗣️ Secret Keeper</h3>
+                        <p>Share a small, happy secret with a friend (like your favorite color or food). If they keep it safe, you both practice trust!</p>
+                    </div>
+
+                    <div class="activity">
+                        <h3>🎯 Promise Practice</h3>
+                        <p>Make small promises to friends and family (like "I'll help you clean up") and make sure you keep them. Watch how trust grows!</p>
+                    </div>
+
+                    <div class="activity">
+                        <h3>🌟 Trust Circle Story</h3>
+                        <p>With friends or family, tell a story together where each person adds one sentence. You have to trust others to make the story good!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trust-science">
+                <h2>🔬 Amazing Trust Science Facts</h2>
+
+                <div class="science-facts">
+                    <div class="fact verified">
+                        <h3>🧠 Your Brain Lights Up!</h3>
+                        <div class="evidence-badge">✅ Real Brain Research</div>
+                        <p>When you trust someone, the same part of your brain lights up as when you eat your favorite ice cream! Trust actually makes your brain happy.</p>
+                    </div>
+
+                    <div class="fact verified">
+                        <h3>👶 Babies Know Trust</h3>
+                        <div class="evidence-badge">✅ Real Baby Research</div>
+                        <p>Even babies as young as 6 months old can tell who is trustworthy! They look longer at people who seem helpful and kind.</p>
+                    </div>
+
+                    <div class="fact verified">
+                        <h3>🐕 Animals Trust Too!</h3>
+                        <div class="evidence-badge">✅ Real Animal Research</div>
+                        <p>Dogs, monkeys, and even chickens can learn to trust! Trust isn't just for humans - it's something many animals do.</p>
+                    </div>
+
+                    <div class="fact theoretical">
+                        <h3>🌍 Trust Makes Communities Better</h3>
+                        <div class="evidence-badge">🤔 Author's Idea</div>
+                        <p><em>Author thinks:</em> Places where people trust each other more might be happier and safer, but we need more research to be sure!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>📝 What We Learned</h2>
+
+                <div class="summary-box">
+                    <h3>🎯 Main Ideas</h3>
+                    <ul>
+                        <li>Trust is like a circle that goes round and round, getting stronger each time</li>
+                        <li>There are two types of trust: Smart Trust (when someone is good at something) and Heart Trust (when someone cares about you)</li>
+                        <li>Trust spreads like ripples in a pond - when you trust someone, it helps other people trust too</li>
+                        <li>You can build trust by being honest, keeping promises, and being kind</li>
+                        <li>When trust gets broken, you can fix it by saying sorry and doing better</li>
+                        <li>Scientists have found that trust makes your brain happy and helps everyone get along better</li>
+                    </ul>
+                </div>
+
+                <div class="next-chapter-preview">
+                    <h3>🔮 Coming Next: Signature Echoes</h3>
+                    <p>In the next chapter, we'll learn about how everyone has their own special "signature" - like a fingerprint - that affects other people. It's like how your laugh is different from everyone else's laugh, and it makes people feel certain ways!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter9.html" class="nav-button prev">← Previous: Health and the Body as a Carrier</a>
+                <a href="chapter11.html" class="nav-button next">Next: Signature Echoes →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Interactive Trust Game Functions
+        function markTrust(personNum, trustType) {
+            const personName = document.getElementById(`person${personNum}`).value;
+            const resultDiv = document.getElementById(`result${personNum}`);
+
+            if (!personName.trim()) {
+                resultDiv.innerHTML = '<p style="color: red;">Please enter a person's name first!</p>';
+                return;
+            }
+
+            let message = '';
+            let emoji = '';
+
+            switch(trustType) {
+                case 'smart':
+                    message = `Great! You have Smart Trust in ${personName} because they're good at something special!`;
+                    emoji = '🧠';
+                    break;
+                case 'heart':
+                    message = `Awesome! You have Heart Trust in ${personName} because they care about you!`;
+                    emoji = '❤️';
+                    break;
+                case 'both':
+                    message = `Amazing! You have both Smart Trust AND Heart Trust in ${personName}! That's the strongest kind of trust!`;
+                    emoji = '🌟';
+                    break;
+            }
+
+            resultDiv.innerHTML = `<p style="color: green;"><strong>${emoji} ${message}</strong></p>`;
+        }
+
+        // Trust Score Tracker
+        function updateTrustScore() {
+            const selects = document.querySelectorAll('.day-tracker select');
+            let totalScore = 0;
+            let answeredQuestions = 0;
+
+            selects.forEach(select => {
+                if (select.value !== '0') {
+                    totalScore += parseInt(select.value);
+                    answeredQuestions++;
+                }
+            });
+
+            const scoreDiv = document.getElementById('trust-score');
+
+            if (answeredQuestions === 0) {
+                scoreDiv.innerHTML = '';
+                return;
+            }
+
+            const averageScore = totalScore / answeredQuestions;
+            let message = '';
+            let color = '';
+
+            if (averageScore >= 2.5) {
+                message = '🌟 You're a Trust Champion! You're building amazing trust loops!';
+                color = 'green';
+            } else if (averageScore >= 1.5) {
+                message = '👍 Good job! You're learning to build trust loops!';
+                color = 'blue';
+            } else {
+                message = '🌱 Keep practicing! Trust grows with time!';
+                color = 'orange';
+            }
+
+            scoreDiv.innerHTML = `<div style="color: ${color}; font-weight: bold; font-size: 1.2em; margin-top: 20px;">${message}</div>`;
+        }
+    </script>
+
+    <style>
+        .simple-explanation {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            font-size: 1.1em;
+        }
+
+        .trust-circle {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .circle-part {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 15px;
+            text-align: center;
+            min-width: 150px;
+            font-weight: bold;
+        }
+
+        .arrow {
+            font-size: 2rem;
+            color: #FFD700;
+        }
+
+        .kid-friendly-fact {
+            background: #E8F5E8;
+            border: 3px solid #4CAF50;
+            border-radius: 15px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .research-note {
+            background: #4CAF50;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 1rem;
+            font-size: 0.9em;
+        }
+
+        .trust-types {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .trust-type {
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .trust-type.good {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            color: white;
+        }
+
+        .trust-type.heart {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: white;
+        }
+
+        .example {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .trust-game {
+            background: #FFF8DC;
+            border: 3px solid #FFD700;
+            border-radius: 20px;
+            padding: 2rem;
+            margin: 2rem 0;
+        }
+
+        .game-interface {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .person-input {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .person-input label {
+            font-weight: bold;
+            font-size: 1.1em;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .person-input input {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1em;
+            margin-bottom: 1rem;
+        }
+
+        .trust-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-buttons button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.2s;
+        }
+
+        .trust-buttons button:hover {
+            transform: scale(1.05);
+            background: #45a049;
+        }
+
+        .result {
+            margin-top: 1rem;
+            min-height: 40px;
+        }
+
+        .recipe-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-left: 6px solid #FF6B6B;
+        }
+
+        .step-letter {
+            background: #FF6B6B;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            color: #FF6B6B;
+            margin-bottom: 0.5rem;
+        }
+
+        .ripple-demo {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .pond {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            margin: 0 auto;
+            background: radial-gradient(circle, #87CEEB 0%, #4682B4 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .ripple {
+            position: absolute;
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 0.9em;
+            padding: 10px;
+        }
+
+        .ripple1 {
+            width: 80px;
+            height: 80px;
+            background: rgba(255,0,0,0.8);
+        }
+
+        .ripple2 {
+            width: 150px;
+            height: 150px;
+            background: rgba(255,165,0,0.6);
+        }
+
+        .ripple3 {
+            width: 220px;
+            height: 220px;
+            background: rgba(255,255,0,0.4);
+        }
+
+        .ripple4 {
+            width: 290px;
+            height: 290px;
+            background: rgba(0,255,0,0.3);
+        }
+
+        .example-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .example {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .example.verified {
+            border-top: 6px solid #4CAF50;
+        }
+
+        .example.theoretical {
+            border-top: 6px solid #FFC107;
+        }
+
+        .evidence-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .verified .evidence-badge {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .theoretical .evidence-badge {
+            background: #FFC107;
+            color: #333;
+        }
+
+        .fun-fact {
+            background: #E8F5E8;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .warning {
+            background: #FFF3CD;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #FFC107;
+        }
+
+        .method-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .method {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        .tracker-interface {
+            background: #F0F8FF;
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #4169E1;
+        }
+
+        .day-input {
+            margin: 1.5rem 0;
+            background: white;
+            padding: 1rem;
+            border-radius: 10px;
+        }
+
+        .day-input label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: #4169E1;
+        }
+
+        .day-input select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #4169E1;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+
+        .score-display {
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .fix-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .fix-step {
+            display: flex;
+            align-items: center;
+            background: #FFF0F5;
+            padding: 1.5rem;
+            border-radius: 15px;
+            border-left: 5px solid #FF69B4;
+        }
+
+        .step-number {
+            background: #FF69B4;
+            color: white;
+            font-size: 1.5rem;
+            font-weight: bold;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .protection-tips {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .tip {
+            background: #E6F3FF;
+            padding: 2rem;
+            border-radius: 15px;
+            border-top: 5px solid #0066CC;
+            text-align: center;
+        }
+
+        .activity-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .activity {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            border-top: 5px solid #FF8C00;
+        }
+
+        .safety-note {
+            background: #FFE4E1;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #FF6347;
+            font-weight: bold;
+        }
+
+        .science-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .fact {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .fact.verified {
+            border-left: 6px solid #32CD32;
+        }
+
+        .fact.theoretical {
+            border-left: 6px solid #FFD700;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+        }
+
+        .summary-box ul {
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .next-chapter-preview {
+            background: #F0F8FF;
+            padding: 2rem;
+            border-radius: 20px;
+            border: 3px solid #4169E1;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .trust-circle {
+                flex-direction: column;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+                margin: 0.5rem 0;
+            }
+
+            .pond {
+                width: 300px;
+                height: 300px;
+            }
+
+            .ripple {
+                font-size: 0.7em;
+            }
+
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-letter {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
