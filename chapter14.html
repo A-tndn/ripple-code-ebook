@@ -1,0 +1,1246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 14: Relationship Echo Maps - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter13.html" class="prev">← Chapter 13</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter15.html" class="next">Chapter 15 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 14: Relationship Echo Maps</h1>
+            <p class="subtitle">Drawing Your Personal Treasure Map of How Feelings Flow!</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>🗺️ What Is a Relationship Echo Map?</h2>
+
+                <div class="simple-explanation">
+                    <p>Imagine all the people in your life are islands, and the feelings flowing between you are like bridges of light! A Relationship Echo Map is like drawing a treasure map that shows how good feelings (and sometimes not-so-good ones) travel between you and everyone you know!</p>
+
+                    <div class="map-demo">
+                        <div class="map-center">
+                            <div class="person-island you">🏝️ YOU</div>
+                        </div>
+                        <div class="connection-bridges">
+                            <div class="bridge family">
+                                <div class="bridge-line"></div>
+                                <div class="bridge-feeling">❤️ Love</div>
+                                <div class="person-island">👨‍👩‍👧‍👦 Family</div>
+                            </div>
+                            <div class="bridge friends">
+                                <div class="bridge-line"></div>
+                                <div class="bridge-feeling">😊 Fun</div>
+                                <div class="person-island">👯‍♀️ Friends</div>
+                            </div>
+                            <div class="bridge school">
+                                <div class="bridge-line"></div>
+                                <div class="bridge-feeling">📚 Learning</div>
+                                <div class="person-island">👩‍🏫 Teachers</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kid-friendly-fact">
+                    <h3>🧠 Cool Relationship Science!</h3>
+                    <p>Scientists found that the people closest to you have the BIGGEST influence on your happiness! Your "inner circle" of 3-5 people affects about 80% of how you feel each day!</p>
+                    <div class="research-note">✅ Real research from Harvard's happiness studies - they studied people for over 80 years!</div>
+                </div>
+            </section>
+
+            <section class="map-building">
+                <h2>🏗️ How to Build Your Echo Map</h2>
+
+                <div class="map-builder">
+                    <h3>The ISLAND Method for Mapping Relationships</h3>
+
+                    <div class="island-steps">
+                        <div class="island-step">
+                            <div class="step-letter">I</div>
+                            <div class="step-content">
+                                <h4>Identify Your People</h4>
+                                <p>Make a list of all the important people in your life - family, friends, teachers, coaches, neighbors!</p>
+                            </div>
+                        </div>
+
+                        <div class="island-step">
+                            <div class="step-letter">S</div>
+                            <div class="step-content">
+                                <h4>Sort by Closeness</h4>
+                                <p>Put them in circles around you: Inner Circle (super close), Middle Circle (pretty close), Outer Circle (not as close but still important).</p>
+                            </div>
+                        </div>
+
+                        <div class="island-step">
+                            <div class="step-letter">L</div>
+                            <div class="step-content">
+                                <h4>Label the Feeling Bridges</h4>
+                                <p>What kind of feelings usually flow between you? Happy? Excited? Calm? Sometimes worried?</p>
+                            </div>
+                        </div>
+
+                        <div class="island-step">
+                            <div class="step-letter">A</div>
+                            <div class="step-content">
+                                <h4>Analyze the Flow</h4>
+                                <p>Which bridges carry mostly good feelings? Which ones sometimes carry not-so-good feelings?</p>
+                            </div>
+                        </div>
+
+                        <div class="island-step">
+                            <div class="step-letter">N</div>
+                            <div class="step-content">
+                                <h4>Notice the Patterns</h4>
+                                <p>Do you see any patterns? Do certain people always make you feel certain ways?</p>
+                            </div>
+                        </div>
+
+                        <div class="island-step">
+                            <div class="step-letter">D</div>
+                            <div class="step-content">
+                                <h4>Decide on Improvements</h4>
+                                <p>How can you make the good feeling bridges even stronger? How can you protect yourself from not-so-good bridges?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-mapper">
+                <h2>🎮 Create Your Personal Echo Map!</h2>
+
+                <div class="mapper-interface">
+                    <h3>Build Your Own Relationship Map</h3>
+                    <p>Add people to your map and see how the feelings flow!</p>
+
+                    <div class="map-creator">
+                        <div class="circle-selector">
+                            <h4>1. Choose which circle to add someone to:</h4>
+                            <div class="circle-options">
+                                <button onclick="selectCircle('inner')" class="circle-btn inner" id="innerBtn">Inner Circle (Super Close)</button>
+                                <button onclick="selectCircle('middle')" class="circle-btn middle" id="middleBtn">Middle Circle (Pretty Close)</button>
+                                <button onclick="selectCircle('outer')" class="circle-btn outer" id="outerBtn">Outer Circle (Important but Distant)</button>
+                            </div>
+                            <div id="selectedCircle" class="selected-circle"></div>
+                        </div>
+
+                        <div class="person-adder">
+                            <h4>2. Add a person to your selected circle:</h4>
+                            <input type="text" id="personName" placeholder="Enter person's name (e.g., Mom, Best Friend Alex)" class="person-input">
+
+                            <h4>3. What feeling usually flows between you?</h4>
+                            <select id="feelingType" class="feeling-select">
+                                <option value="">Choose a feeling...</option>
+                                <option value="love">❤️ Love</option>
+                                <option value="fun">😊 Fun</option>
+                                <option value="support">💪 Support</option>
+                                <option value="learning">📚 Learning</option>
+                                <option value="calm">😌 Calm</option>
+                                <option value="excitement">🎉 Excitement</option>
+                                <option value="worry">😟 Worry</option>
+                                <option value="stress">😰 Stress</option>
+                            </select>
+
+                            <button onclick="addPersonToMap()" class="add-btn">Add to My Map!</button>
+                        </div>
+
+                        <div class="visual-map" id="visualMap">
+                            <div class="map-center-visual">
+                                <div class="you-center">😊 YOU</div>
+                            </div>
+                            <div class="inner-circle-visual" id="innerCircleVisual">
+                                <div class="circle-label">Inner Circle</div>
+                            </div>
+                            <div class="middle-circle-visual" id="middleCircleVisual">
+                                <div class="circle-label">Middle Circle</div>
+                            </div>
+                            <div class="outer-circle-visual" id="outerCircleVisual">
+                                <div class="circle-label">Outer Circle</div>
+                            </div>
+                        </div>
+
+                        <button onclick="analyzeMap()" class="analyze-map-btn">Analyze My Echo Map!</button>
+                        <div id="map-analysis" class="map-analysis"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relationship-patterns">
+                <h2>🔍 Understanding Your Echo Patterns</h2>
+
+                <div class="pattern-types">
+                    <h3>Common Echo Map Patterns</h3>
+
+                    <div class="pattern-grid">
+                        <div class="pattern positive">
+                            <h4>🌟 The Sunshine Pattern</h4>
+                            <div class="pattern-icon">☀️</div>
+                            <p><strong>What it is:</strong> Most of your bridges carry positive feelings like love, fun, and support!</p>
+                            <p><strong>How it feels:</strong> You feel happy and energetic most of the time.</p>
+                            <p><strong>Keep doing:</strong> Share your positive energy with others and thank people for the good feelings they give you!</p>
+                        </div>
+
+                        <div class="pattern mixed">
+                            <h4>🌦️ The Weather Mix Pattern</h4>
+                            <div class="pattern-icon">⛅</div>
+                            <p><strong>What it is:</strong> You have some really good feeling bridges and some challenging ones too.</p>
+                            <p><strong>How it feels:</strong> Sometimes great, sometimes tough - like the weather changes!</p>
+                            <p><strong>Focus on:</strong> Spend more time with your positive bridges and protect yourself from the negative ones!</p>
+                        </div>
+
+                        <div class="pattern challenging">
+                            <h4>🌧️ The Stormy Pattern</h4>
+                            <div class="pattern-icon">⛈️</div>
+                            <p><strong>What it is:</strong> Many of your bridges carry worry, stress, or sad feelings.</p>
+                            <p><strong>How it feels:</strong> Often tired, worried, or down.</p>
+                            <p><strong>Time to act:</strong> Talk to a trusted adult about how to build more positive bridges and protect yourself!</p>
+                        </div>
+
+                        <div class="pattern isolated">
+                            <h4>🏝️ The Lonely Island Pattern</h4>
+                            <div class="pattern-icon">🏜️</div>
+                            <p><strong>What it is:</strong> You don't have very many feeling bridges to other people.</p>
+                            <p><strong>How it feels:</strong> Lonely or like you don't fit in.</p>
+                            <p><strong>Let's build:</strong> Start with one new bridge! Join a club, help someone, or talk to a neighbor!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="echo-flow-chart">
+                <h2>📊 Your Echo Flow Analysis</h2>
+
+                <div class="flow-chart-container">
+                    <h3>See How Feelings Flow in Different Relationships</h3>
+                    <canvas id="echoFlowChart" width="500" height="300"></canvas>
+                </div>
+
+                <div class="flow-insights">
+                    <div class="insight-card">
+                        <h4>🔄 Two-Way Bridges Are Best!</h4>
+                        <p>The strongest relationships have feelings flowing BOTH ways - you give good feelings AND receive them!</p>
+                    </div>
+
+                    <div class="insight-card">
+                        <h4>⚖️ Balance Your Echo Map</h4>
+                        <p>Try to have more positive feeling bridges than negative ones. Aim for at least 3 positive bridges for every 1 challenging one!</p>
+                    </div>
+
+                    <div class="insight-card">
+                        <h4>🎯 Quality Over Quantity</h4>
+                        <p>It's better to have 3 really strong, positive bridges than 10 weak or negative ones!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="map-improvement">
+                <h2>🛠️ How to Improve Your Echo Map</h2>
+
+                <div class="improvement-strategies">
+                    <h3>The BRIDGE Building Strategy</h3>
+
+                    <div class="bridge-strategies">
+                        <div class="strategy">
+                            <div class="strategy-letter">B</div>
+                            <div class="strategy-content">
+                                <h4>Build New Positive Bridges</h4>
+                                <p>Look for people who seem kind, happy, or share your interests. Start small conversations!</p>
+                                <div class="strategy-tip">💡 Try: "I like your backpack!" or "Can I help you with that?"</div>
+                            </div>
+                        </div>
+
+                        <div class="strategy">
+                            <div class="strategy-letter">R</div>
+                            <div class="strategy-content">
+                                <h4>Repair Damaged Bridges</h4>
+                                <p>If a good relationship got hurt, try to fix it with an apology or a kind gesture.</p>
+                                <div class="strategy-tip">💡 Try: "I'm sorry I hurt your feelings. Can we be friends again?"</div>
+                            </div>
+                        </div>
+
+                        <div class="strategy">
+                            <div class="strategy-letter">I</div>
+                            <div class="strategy-content">
+                                <h4>Invest in Your Best Bridges</h4>
+                                <p>Spend extra time and energy on the relationships that make you feel really good!</p>
+                                <div class="strategy-tip">💡 Try: Plan fun activities, give compliments, remember important things about them!</div>
+                            </div>
+                        </div>
+
+                        <div class="strategy">
+                            <div class="strategy-letter">D</div>
+                            <div class="strategy-content">
+                                <h4>Distance from Toxic Bridges</h4>
+                                <p>If someone consistently makes you feel bad, it's okay to spend less time with them.</p>
+                                <div class="strategy-tip">💡 Remember: You can be polite but protect your energy!</div>
+                            </div>
+                        </div>
+
+                        <div class="strategy">
+                            <div class="strategy-letter">G</div>
+                            <div class="strategy-content">
+                                <h4>Guard Your Energy</h4>
+                                <p>Pay attention to how you feel after spending time with different people.</p>
+                                <div class="strategy-tip">💡 Ask yourself: "Do I feel better or worse after being with this person?"</div>
+                            </div>
+                        </div>
+
+                        <div class="strategy">
+                            <div class="strategy-letter">E</div>
+                            <div class="strategy-content">
+                                <h4>Expand Your Circle Gradually</h4>
+                                <p>Don't try to be friends with everyone at once. Add new people slowly and thoughtfully.</p>
+                                <div class="strategy-tip">💡 Focus: One new positive relationship per month!</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="real-research">
+                <h2>📚 What Scientists Learned About Relationships</h2>
+
+                <div class="research-findings">
+                    <div class="finding verified">
+                        <h3>🏆 The Harvard Happiness Study</h3>
+                        <div class="evidence-badge">✅ 80+ Years of Real Research</div>
+                        <p>Scientists followed the same people for over 80 years and found that good relationships are the #1 thing that makes people happy and healthy - more than money, fame, or career success!</p>
+                        <div class="research-detail">📊 Key Finding: People with strong relationships live longer and feel happier every day</div>
+                    </div>
+
+                    <div class="finding verified">
+                        <h3>🔢 The Magic Number: 150</h3>
+                        <div class="evidence-badge">✅ Anthropological Research</div>
+                        <p>Scientists found that humans can only maintain about 150 meaningful relationships total, with only 3-5 being super close "inner circle" relationships.</p>
+                        <div class="research-detail">📊 This is called "Dunbar's Number" after the scientist who discovered it</div>
+                    </div>
+
+                    <div class="finding verified">
+                        <h3>😊 The Positivity Ratio</h3>
+                        <div class="evidence-badge">✅ Psychology Research</div>
+                        <p>Research shows that for relationships to feel good, you need at least 3 positive interactions for every 1 negative interaction!</p>
+                        <div class="research-detail">📊 This 3:1 ratio works for friendships, families, and even work relationships</div>
+                    </div>
+
+                    <div class="finding theoretical">
+                        <h3>🌐 Digital Relationship Maps</h3>
+                        <div class="evidence-badge">🤔 Author's Theory - Needs More Study</div>
+                        <p><em>Author thinks:</em> Maybe our online relationships (social media, gaming friends) create their own echo maps that affect our feelings too.</p>
+                        <div class="warning">This is a new idea that needs more research to prove it's true!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="relationship-activities">
+                <h2>🎯 Fun Echo Map Activities</h2>
+
+                <div class="activity-collection">
+                    <div class="activity">
+                        <h3>🗺️ Draw Your Physical Map</h3>
+                        <p>Get paper and colored pencils! Draw yourself in the center, then draw all your important people around you. Use different colors for different types of feelings!</p>
+                        <div class="activity-tip">💡 Make it artistic! Add flowers for happy relationships, sun rays for supportive ones!</div>
+                    </div>
+
+                    <div class="activity">
+                        <h3>🎯 Bridge Strength Test</h3>
+                        <p>For one week, notice how you feel after spending time with each person. Give each relationship a "strength score" from 1-10!</p>
+                        <div class="activity-tip">💡 Score based on: Do they make me feel good? Do I feel energized or drained?</div>
+                    </div>
+
+                    <div class="activity">
+                        <h3>💌 Gratitude Bridge Building</h3>
+                        <p>Write thank-you notes to people who make your echo map brighter! Tell them specifically how they make you feel good.</p>
+                        <div class="activity-tip">💡 Example: "Thank you for always making me laugh when I'm sad!"</div>
+                    </div>
+
+                    <div class="activity">
+                        <h3>🕵️‍♀️ Echo Detective Game</h3>
+                        <p>For one day, be a detective! Notice how other people's moods and energies affect you. Write down what you discover!</p>
+                        <div class="activity-tip">💡 Questions: Who lifts my mood? Who drains my energy? Why?</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>📝 What We Learned About Relationship Echo Maps</h2>
+
+                <div class="summary-islands">
+                    <div class="summary-island">
+                        <div class="island-icon">🗺️</div>
+                        <p>Your Relationship Echo Map shows how feelings flow between you and everyone in your life</p>
+                    </div>
+
+                    <div class="summary-island">
+                        <div class="island-icon">🏝️</div>
+                        <p>You can organize people into Inner Circle (3-5 people), Middle Circle, and Outer Circle</p>
+                    </div>
+
+                    <div class="summary-island">
+                        <div class="island-icon">🌉</div>
+                        <p>Feeling bridges can carry positive emotions (love, fun) or challenging ones (worry, stress)</p>
+                    </div>
+
+                    <div class="summary-island">
+                        <div class="island-icon">📊</div>
+                        <p>Scientists found that good relationships are the #1 factor for happiness and health!</p>
+                    </div>
+
+                    <div class="summary-island">
+                        <div class="island-icon">🛠️</div>
+                        <p>You can improve your map by building new bridges, repairing damaged ones, and protecting your energy</p>
+                    </div>
+
+                    <div class="summary-island">
+                        <div class="island-icon">⚖️</div>
+                        <p>The magic ratio is 3 positive interactions for every 1 negative interaction in relationships</p>
+                    </div>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Collective Ripples</h3>
+                    <p>In our final chapter, we'll discover how individual ripples combine to create massive waves that can change entire communities, schools, and even the world!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter13.html" class="nav-button prev">← Previous: Communication Carriers</a>
+                <a href="chapter15.html" class="nav-button next">Next: Collective Ripples →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let selectedCircleType = '';
+        let echoMap = {
+            inner: [],
+            middle: [],
+            outer: []
+        };
+
+        // Circle Selection
+        function selectCircle(circleType) {
+            selectedCircleType = circleType;
+
+            // Reset all buttons
+            document.querySelectorAll('.circle-btn').forEach(btn => {
+                btn.classList.remove('selected');
+            });
+
+            // Highlight selected button
+            document.getElementById(circleType + 'Btn').classList.add('selected');
+
+            // Update display
+            const circleNames = {
+                inner: 'Inner Circle (Super Close)',
+                middle: 'Middle Circle (Pretty Close)',
+                outer: 'Outer Circle (Important but Distant)'
+            };
+
+            document.getElementById('selectedCircle').innerHTML = `
+                <div class="selection-display">
+                    <strong>Selected:</strong> ${circleNames[circleType]}
+                </div>
+            `;
+        }
+
+        // Add Person to Map
+        function addPersonToMap() {
+            const personName = document.getElementById('personName').value.trim();
+            const feelingType = document.getElementById('feelingType').value;
+
+            if (!selectedCircleType) {
+                alert('Please select a circle first!');
+                return;
+            }
+
+            if (!personName) {
+                alert('Please enter a person's name!');
+                return;
+            }
+
+            if (!feelingType) {
+                alert('Please choose a feeling type!');
+                return;
+            }
+
+            // Add to data
+            echoMap[selectedCircleType].push({
+                name: personName,
+                feeling: feelingType
+            });
+
+            // Update visual
+            updateVisualMap();
+
+            // Clear inputs
+            document.getElementById('personName').value = '';
+            document.getElementById('feelingType').value = '';
+
+            // Show success message
+            alert(`Added ${personName} to your ${selectedCircleType} circle!`);
+        }
+
+        // Update Visual Map
+        function updateVisualMap() {
+            const circleElements = {
+                inner: document.getElementById('innerCircleVisual'),
+                middle: document.getElementById('middleCircleVisual'),
+                outer: document.getElementById('outerCircleVisual')
+            };
+
+            const feelingEmojis = {
+                love: '❤️',
+                fun: '😊',
+                support: '💪',
+                learning: '📚',
+                calm: '😌',
+                excitement: '🎉',
+                worry: '😟',
+                stress: '😰'
+            };
+
+            Object.keys(echoMap).forEach(circleType => {
+                const element = circleElements[circleType];
+                const people = echoMap[circleType];
+
+                // Clear existing people (but keep the label)
+                const label = element.querySelector('.circle-label');
+                element.innerHTML = '';
+                element.appendChild(label);
+
+                // Add people
+                people.forEach(person => {
+                    const personElement = document.createElement('div');
+                    personElement.className = 'map-person';
+                    personElement.innerHTML = `
+                        <div class="person-name">${person.name}</div>
+                        <div class="person-feeling">${feelingEmojis[person.feeling]} ${person.feeling}</div>
+                    `;
+                    element.appendChild(personElement);
+                });
+            });
+        }
+
+        // Analyze Map
+        function analyzeMap() {
+            const totalPeople = echoMap.inner.length + echoMap.middle.length + echoMap.outer.length;
+
+            if (totalPeople === 0) {
+                document.getElementById('map-analysis').innerHTML = 
+                    '<p style="color: red;">Please add at least one person to your map first!</p>';
+                return;
+            }
+
+            // Count positive vs negative feelings
+            let positiveCount = 0;
+            let negativeCount = 0;
+            const positiveFeelings = ['love', 'fun', 'support', 'learning', 'calm', 'excitement'];
+            const negativeFeelings = ['worry', 'stress'];
+
+            Object.values(echoMap).flat().forEach(person => {
+                if (positiveFeelings.includes(person.feeling)) {
+                    positiveCount++;
+                } else if (negativeFeelings.includes(person.feeling)) {
+                    negativeCount++;
+                }
+            });
+
+            // Determine pattern
+            let pattern = '';
+            let patternIcon = '';
+            let advice = '';
+
+            if (negativeCount === 0 && positiveCount > 0) {
+                pattern = 'Sunshine Pattern';
+                patternIcon = '☀️';
+                advice = 'Amazing! Your relationship map is full of positive energy. Keep nurturing these wonderful connections!';
+            } else if (positiveCount >= negativeCount * 3) {
+                pattern = 'Weather Mix Pattern';
+                patternIcon = '⛅';
+                advice = 'Good balance! You have mostly positive relationships with a few challenges. Focus on strengthening the positive ones.';
+            } else if (positiveCount > 0) {
+                pattern = 'Stormy Pattern';
+                patternIcon = '⛈️';
+                advice = 'Time to make some changes! Talk to a trusted adult about building more positive relationships and protecting yourself from negative ones.';
+            } else {
+                pattern = 'Lonely Island Pattern';
+                patternIcon = '🏜️';
+                advice = 'Let's build some bridges! Start by finding one person who shares your interests or seems kind.';
+            }
+
+            const analysis = `
+                <div class="analysis-results">
+                    <h4>${patternIcon} Your Echo Map Pattern: ${pattern}</h4>
+                    <div class="map-stats">
+                        <div class="stat">
+                            <strong>Total People:</strong> ${totalPeople}
+                        </div>
+                        <div class="stat">
+                            <strong>Inner Circle:</strong> ${echoMap.inner.length} people
+                        </div>
+                        <div class="stat">
+                            <strong>Positive Bridges:</strong> ${positiveCount}
+                        </div>
+                        <div class="stat">
+                            <strong>Challenging Bridges:</strong> ${negativeCount}
+                        </div>
+                    </div>
+                    <div class="advice-section">
+                        <h5>💡 Your Personalized Advice:</h5>
+                        <p>${advice}</p>
+                    </div>
+                    <div class="improvement-focus">
+                        <h5>🎯 This Week's Focus:</h5>
+                        <p>${getWeeklyFocus(pattern)}</p>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('map-analysis').innerHTML = analysis;
+            document.getElementById('map-analysis').style.display = 'block';
+        }
+
+        function getWeeklyFocus(pattern) {
+            const focuses = {
+                'Sunshine Pattern': 'Express gratitude to your positive relationships! Write thank-you notes or give genuine compliments.',
+                'Weather Mix Pattern': 'Spend extra time with your most positive relationships and practice protecting yourself from the challenging ones.',
+                'Stormy Pattern': 'Focus on building one new positive relationship while talking to a trusted adult about the challenging ones.',
+                'Lonely Island Pattern': 'Take one small step toward connection: smile at someone new, join an activity, or help a classmate.'
+            };
+            return focuses[pattern] || 'Focus on building positive relationships one step at a time.';
+        }
+
+        // Echo Flow Chart
+        const ctx = document.getElementById('echoFlowChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Family Love', 'Friend Fun', 'Teacher Support', 'Self-Confidence', 'Community Connection', 'Future Dreams'],
+                datasets: [{
+                    label: 'Positive Echo Strength',
+                    data: [9, 8, 7, 6, 5, 8],
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(75, 192, 192, 1)',
+                    pointRadius: 5
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'Sample Echo Flow Strength (Rate Your Own!)'
+                    }
+                },
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        max: 10,
+                        ticks: {
+                            stepSize: 2
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+
+    <style>
+        .map-demo {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            color: white;
+            flex-wrap: wrap;
+        }
+
+        .map-center {
+            position: relative;
+        }
+
+        .person-island {
+            background: rgba(255,255,255,0.2);
+            padding: 1rem;
+            border-radius: 50%;
+            text-align: center;
+            margin: 0.5rem;
+            font-weight: bold;
+            min-width: 120px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .person-island.you {
+            background: #FFD700;
+            color: #333;
+            font-size: 1.2em;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            0% { box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3); }
+            100% { box-shadow: 0 10px 30px rgba(255, 215, 0, 0.6); }
+        }
+
+        .connection-bridges {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin-left: 2rem;
+        }
+
+        .bridge {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .bridge-line {
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(90deg, #FFD700, rgba(255,255,255,0.5));
+            animation: flow 2s infinite;
+        }
+
+        @keyframes flow {
+            0%, 100% { opacity: 0.7; }
+            50% { opacity: 1; }
+        }
+
+        .bridge-feeling {
+            background: rgba(255,255,255,0.3);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .island-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .island-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #4ECDC4;
+        }
+
+        .step-letter {
+            background: #4ECDC4;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        .mapper-interface {
+            background: #f0f8ff;
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #4169e1;
+        }
+
+        .map-creator {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .circle-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .circle-btn {
+            background: white;
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            padding: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 1em;
+        }
+
+        .circle-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .circle-btn.selected {
+            background: #4169e1;
+            color: white;
+            border-color: #4169e1;
+        }
+
+        .circle-btn.inner {
+            border-color: #ff6b6b;
+        }
+
+        .circle-btn.inner.selected {
+            background: #ff6b6b;
+        }
+
+        .circle-btn.middle {
+            border-color: #4ecdc4;
+        }
+
+        .circle-btn.middle.selected {
+            background: #4ecdc4;
+        }
+
+        .circle-btn.outer {
+            border-color: #45b7d1;
+        }
+
+        .circle-btn.outer.selected {
+            background: #45b7d1;
+        }
+
+        .selected-circle {
+            margin-top: 1rem;
+        }
+
+        .selection-display {
+            background: #e3f2fd;
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #2196f3;
+        }
+
+        .person-adder {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .person-input, .feeling-select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #4169e1;
+            border-radius: 10px;
+            font-size: 1em;
+            margin: 0.5rem 0 1rem 0;
+        }
+
+        .add-btn {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+        }
+
+        .visual-map {
+            position: relative;
+            width: 100%;
+            height: 400px;
+            background: radial-gradient(circle at center, #f0f8ff 0%, #e3f2fd 100%);
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 2px solid #4169e1;
+        }
+
+        .map-center-visual {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 10;
+        }
+
+        .you-center {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #333;
+            padding: 1rem;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.2em;
+            box-shadow: 0 5px 15px rgba(255, 215, 0, 0.3);
+            min-width: 80px;
+            text-align: center;
+        }
+
+        .inner-circle-visual, .middle-circle-visual, .outer-circle-visual {
+            position: absolute;
+            border: 2px dashed rgba(65, 105, 225, 0.5);
+            border-radius: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: space-around;
+            padding: 1rem;
+        }
+
+        .inner-circle-visual {
+            width: 180px;
+            height: 180px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-color: #ff6b6b;
+        }
+
+        .middle-circle-visual {
+            width: 280px;
+            height: 280px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-color: #4ecdc4;
+        }
+
+        .outer-circle-visual {
+            width: 380px;
+            height: 380px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-color: #45b7d1;
+        }
+
+        .circle-label {
+            position: absolute;
+            top: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 10px;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: #4169e1;
+            border: 1px solid #4169e1;
+        }
+
+        .map-person {
+            background: white;
+            padding: 0.8rem;
+            border-radius: 10px;
+            margin: 0.2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            text-align: center;
+            font-size: 0.8em;
+            min-width: 60px;
+        }
+
+        .person-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+
+        .person-feeling {
+            font-size: 0.7em;
+            color: #666;
+        }
+
+        .analyze-map-btn {
+            background: linear-gradient(135deg, #9C27B0, #673AB7);
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 2rem auto;
+            display: block;
+            box-shadow: 0 5px 15px rgba(156, 39, 176, 0.3);
+        }
+
+        .map-analysis {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            border: 3px solid #32cd32;
+        }
+
+        .analysis-results h4 {
+            color: #4CAF50;
+            margin-bottom: 1rem;
+            font-size: 1.3em;
+        }
+
+        .map-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stat {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            text-align: center;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .advice-section, .improvement-focus {
+            background: #e8f5e8;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 4px solid #4CAF50;
+        }
+
+        .pattern-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .pattern {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .pattern.positive {
+            border-top: 6px solid #FFD700;
+        }
+
+        .pattern.mixed {
+            border-top: 6px solid #4ECDC4;
+        }
+
+        .pattern.challenging {
+            border-top: 6px solid #FF6B6B;
+        }
+
+        .pattern.isolated {
+            border-top: 6px solid #95A5A6;
+        }
+
+        .pattern-icon {
+            font-size: 4rem;
+            margin: 1rem 0;
+        }
+
+        .flow-chart-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .flow-insights {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .insight-card {
+            background: linear-gradient(135deg, #e8f5e8 0%, #d4edda 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            border-left: 5px solid #4CAF50;
+            text-align: center;
+        }
+
+        .bridge-strategies {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .strategy {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #FF6B6B;
+        }
+
+        .strategy-letter {
+            background: #FF6B6B;
+            color: white;
+            font-size: 2.5rem;
+            font-weight: bold;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        .strategy-tip {
+            background: #fff3e0;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-style: italic;
+            border-left: 4px solid #ff9800;
+        }
+
+        .research-findings {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .finding {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .finding.verified {
+            border-top: 6px solid #4caf50;
+        }
+
+        .finding.theoretical {
+            border-top: 6px solid #ffc107;
+        }
+
+        .research-detail {
+            background: #e8f5e8;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-style: italic;
+            border-left: 4px solid #4caf50;
+        }
+
+        .warning {
+            background: #fff3cd;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #ffc107;
+        }
+
+        .activity-collection {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .activity {
+            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            border-top: 5px solid #ff8c00;
+        }
+
+        .activity-tip {
+            background: rgba(255,255,255,0.8);
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-style: italic;
+            border-left: 4px solid #ff8c00;
+        }
+
+        .summary-islands {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .summary-island {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #4ecdc4;
+        }
+
+        .island-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .next-preview {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #ff69b4;
+        }
+
+        @media (max-width: 768px) {
+            .map-demo {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .connection-bridges {
+                margin-left: 0;
+                margin-top: 2rem;
+            }
+
+            .bridge {
+                justify-content: center;
+            }
+
+            .visual-map {
+                height: 300px;
+            }
+
+            .outer-circle-visual {
+                width: 280px;
+                height: 280px;
+            }
+
+            .middle-circle-visual {
+                width: 200px;
+                height: 200px;
+            }
+
+            .inner-circle-visual {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</body>
+</html>
