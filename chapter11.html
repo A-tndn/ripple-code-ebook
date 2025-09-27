@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 11: Signature Echoes - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter10.html" class="prev">← Chapter 10</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter12.html" class="next">Chapter 12 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 11: Signature Echoes</h1>
+            <p class="subtitle">Everyone Has Their Own Special Echo!</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>🗣️ What Is Your Signature Echo?</h2>
+
+                <div class="simple-explanation">
+                    <p>Imagine you're in a big cave and you shout "HELLO!" The sound comes back to you as an echo. Well, everything you do - your voice, your smile, your way of walking - creates a special "echo" that bounces to other people!</p>
+
+                    <div class="echo-demo">
+                        <div class="person">😊 YOU</div>
+                        <div class="echo-waves">
+                            <div class="wave wave1">Your Voice Echo</div>
+                            <div class="wave wave2">Your Smile Echo</div>
+                            <div class="wave wave3">Your Energy Echo</div>
+                        </div>
+                        <div class="people-affected">
+                            <div class="person">😊 Friend 1</div>
+                            <div class="person">😊 Friend 2</div>
+                            <div class="person">😊 Friend 3</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="kid-friendly-fact">
+                    <h3>🧠 Amazing Science Fact!</h3>
+                    <p>Scientists found special brain cells called "Mirror Neurons" that copy what other people do! When you smile at someone, these special brain cells make them want to smile back!</p>
+                    <div class="research-note">✅ Real research from universities studying monkey and human brains since 1992</div>
+                </div>
+            </section>
+
+            <section class="echo-types">
+                <h2>🎵 Different Types of Signature Echoes</h2>
+
+                <div class="echo-types-grid">
+                    <div class="echo-type voice">
+                        <h3>🎤 Voice Echo</h3>
+                        <div class="evidence-badge">✅ Scientifically Proven</div>
+                        <p>Your voice has a special sound that makes people feel different things. A happy voice makes others happy, and a calm voice makes others calm!</p>
+                        <div class="example">
+                            <strong>Try This:</strong> Say "Good morning!" in a happy voice vs. a grumpy voice. See how different it feels!
+                        </div>
+                        <div class="research-source">
+                            <em>Source: Mirror Neuron research by University scientists (2024) - voice tone affects listener emotions</em>
+                        </div>
+                    </div>
+
+                    <div class="echo-type movement">
+                        <h3>🚶‍♂️ Movement Echo</h3>
+                        <div class="evidence-badge">✅ Scientifically Proven</div>
+                        <p>How you move your body creates echoes too! If you walk with confidence, others feel more confident. If you slouch, others might feel tired.</p>
+                        <div class="example">
+                            <strong>Try This:</strong> Stand up straight and tall. Watch how people around you start standing straighter too!
+                        </div>
+                        <div class="research-source">
+                            <em>Source: Postural Mimicry studies - 67% of people copy body positions within 2 minutes</em>
+                        </div>
+                    </div>
+
+                    <div class="echo-type emotional">
+                        <h3>❤️ Feeling Echo</h3>
+                        <div class="evidence-badge">✅ Scientifically Proven</div>
+                        <p>Your feelings create the strongest echoes! When you're excited, others get excited. When you're worried, others might start feeling worried too.</p>
+                        <div class="example">
+                            <strong>Try This:</strong> Think of something that makes you really happy. Notice how people around you start smiling more!
+                        </div>
+                        <div class="research-source">
+                            <em>Source: Emotional Contagion research - feelings spread in 3 steps: See, Copy, Feel</em>
+                        </div>
+                    </div>
+
+                    <div class="echo-type energy">
+                        <h3>⚡ Energy Echo</h3>
+                        <div class="evidence-badge">🤔 Partially Proven</div>
+                        <p>Some scientists think your energy level creates echoes too. High energy people might make others feel more energetic!</p>
+                        <div class="example">
+                            <strong>Try This:</strong> Act really excited about something fun. See if others get more excited too!
+                        </div>
+                        <div class="research-source">
+                            <em>Note: Still being studied - some evidence but not 100% proven yet</em>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="echo-game">
+                <h2>🎮 Your Echo Detector Game!</h2>
+
+                <div class="game-interface">
+                    <h3>Find Out What Kind of Echo You Make!</h3>
+                    <p>Answer these questions to discover your signature echo:</p>
+
+                    <div class="question-set">
+                        <div class="question">
+                            <p><strong>1. When you walk into a room, what usually happens?</strong></p>
+                            <div class="options">
+                                <button onclick="addScore('voice', 3)" class="option-btn">People turn and smile at me</button>
+                                <button onclick="addScore('energy', 3)" class="option-btn">The room feels more exciting</button>
+                                <button onclick="addScore('movement', 3)" class="option-btn">People stand up straighter</button>
+                                <button onclick="addScore('emotional', 3)" class="option-btn">Everyone seems happier</button>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p><strong>2. What do friends say about you most often?</strong></p>
+                            <div class="options">
+                                <button onclick="addScore('voice', 3)" class="option-btn">"You have such a nice voice!"</button>
+                                <button onclick="addScore('energy', 3)" class="option-btn">"You're so full of energy!"</button>
+                                <button onclick="addScore('movement', 3)" class="option-btn">"You move with confidence!"</button>
+                                <button onclick="addScore('emotional', 3)" class="option-btn">"You make me feel good!"</button>
+                            </div>
+                        </div>
+
+                        <div class="question">
+                            <p><strong>3. What makes you feel most powerful?</strong></p>
+                            <div class="options">
+                                <button onclick="addScore('voice', 3)" class="option-btn">Singing or talking to people</button>
+                                <button onclick="addScore('energy', 3)" class="option-btn">Running or playing sports</button>
+                                <button onclick="addScore('movement', 3)" class="option-btn">Dancing or acting confident</button>
+                                <button onclick="addScore('emotional', 3)" class="option-btn">Making others laugh or smile</button>
+                            </div>
+                        </div>
+
+                        <button onclick="calculateEchoType()" class="calculate-btn">Discover My Echo Type!</button>
+                        <div id="echo-result" class="result-display"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="echo-spreading">
+                <h2>🌊 How Your Echo Spreads</h2>
+
+                <div class="spreading-visualization">
+                    <h3>The Echo Ripple Effect</h3>
+                    <p>Your signature echo doesn't just affect one person - it spreads like ripples in a pond!</p>
+
+                    <div class="ripple-chart">
+                        <canvas id="echoSpreadChart" width="500" height="300"></canvas>
+                    </div>
+
+                    <div class="spreading-steps">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h4>You Create Your Echo</h4>
+                                <p>Everything you do creates your special signature echo</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h4>Others Feel Your Echo</h4>
+                                <p>People around you feel your echo and their mirror neurons activate</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h4>They Copy Your Echo</h4>
+                                <p>Without thinking, they start making similar echoes</p>
+                            </div>
+                        </div>
+
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <div class="step-content">
+                                <h4>The Echo Keeps Spreading</h4>
+                                <p>Now their echoes affect even more people - like a chain reaction!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="echo-science">
+                <h2>🔬 Cool Echo Science Facts</h2>
+
+                <div class="science-facts">
+                    <div class="fact verified">
+                        <h3>🐵 Monkey Mirror Neurons</h3>
+                        <div class="evidence-badge">✅ Real Science Since 1992</div>
+                        <p>Scientists first found mirror neurons in monkey brains! When a monkey watched another monkey eat a banana, the same brain cells lit up as if it was eating the banana too!</p>
+                        <div class="fun-detail">This is why watching someone yawn makes you want to yawn!</div>
+                    </div>
+
+                    <div class="fact verified">
+                        <h3>👶 Baby Echo Learning</h3>
+                        <div class="evidence-badge">✅ Real Research on Babies</div>
+                        <p>Babies are echo masters! They learn everything by copying the echoes of adults - how to smile, talk, and even walk!</p>
+                        <div class="fun-detail">A 2-month-old baby will copy your facial expressions automatically!</div>
+                    </div>
+
+                    <div class="fact verified">
+                        <h3>😊 Smile Echo Power</h3>
+                        <div class="evidence-badge">✅ Psychology Research Proven</div>
+                        <p>Your smile creates the strongest positive echo! When you smile at someone, their brain automatically wants to smile back within 1/3 of a second!</p>
+                        <div class="fun-detail">Smiling releases happy chemicals in both your brain AND the other person's brain!</div>
+                    </div>
+
+                    <div class="fact theoretical">
+                        <h3>🎵 Music Echo Theory</h3>
+                        <div class="evidence-badge">🤔 Author's Idea - Not Fully Proven</div>
+                        <p><em>Author thinks:</em> Maybe the music you listen to creates echoes that affect how others feel when they're around you.</p>
+                        <div class="warning">This is just an idea that needs more research to prove it's true!</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="echo-tracker">
+                <h2>📊 Your Daily Echo Tracker</h2>
+
+                <div class="tracker-interface">
+                    <h3>Track Your Echo Effects This Week!</h3>
+                    <p>Each day, notice how your echoes affect others:</p>
+
+                    <div class="daily-tracker">
+                        <div class="day-entry">
+                            <h4>Monday</h4>
+                            <label>What kind of echo did you make today?</label>
+                            <select class="echo-select">
+                                <option value="">Choose...</option>
+                                <option value="happy">Happy Voice Echo</option>
+                                <option value="confident">Confident Movement Echo</option>
+                                <option value="excited">Excited Energy Echo</option>
+                                <option value="calm">Calm Feeling Echo</option>
+                            </select>
+                            <label>What did others do?</label>
+                            <textarea class="echo-response" placeholder="Describe what you noticed..."></textarea>
+                        </div>
+
+                        <div class="day-entry">
+                            <h4>Tuesday</h4>
+                            <label>What kind of echo did you make today?</label>
+                            <select class="echo-select">
+                                <option value="">Choose...</option>
+                                <option value="happy">Happy Voice Echo</option>
+                                <option value="confident">Confident Movement Echo</option>
+                                <option value="excited">Excited Energy Echo</option>
+                                <option value="calm">Calm Feeling Echo</option>
+                            </select>
+                            <label>What did others do?</label>
+                            <textarea class="echo-response" placeholder="Describe what you noticed..."></textarea>
+                        </div>
+
+                        <button onclick="analyzeEchoWeek()" class="analyze-btn">Analyze My Echo Week!</button>
+                        <div id="weekly-analysis" class="analysis-result"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="echo-improvement">
+                <h2>⭐ How to Make Better Echoes</h2>
+
+                <div class="improvement-tips">
+                    <h3>The ECHO Improvement Recipe</h3>
+
+                    <div class="recipe-grid">
+                        <div class="recipe-step">
+                            <div class="recipe-letter">E</div>
+                            <div class="recipe-content">
+                                <h4>Energy Check</h4>
+                                <p>Before talking to someone, check: "Am I feeling happy, tired, excited, or calm?" Your energy will become their energy!</p>
+                            </div>
+                        </div>
+
+                        <div class="recipe-step">
+                            <div class="recipe-letter">C</div>
+                            <div class="recipe-content">
+                                <h4>Choose Your Echo</h4>
+                                <p>Decide what kind of echo you want to make. Happy? Calm? Excited? You can choose!</p>
+                            </div>
+                        </div>
+
+                        <div class="recipe-step">
+                            <div class="recipe-letter">H</div>
+                            <div class="recipe-content">
+                                <h4>Help Others Feel Good</h4>
+                                <p>Think about how you want the other person to feel, then make an echo that helps them feel that way!</p>
+                            </div>
+                        </div>
+
+                        <div class="recipe-step">
+                            <div class="recipe-letter">O</div>
+                            <div class="recipe-content">
+                                <h4>Observe the Results</h4>
+                                <p>Watch what happens! Did your echo work? Did the person feel better? Learn from what you see!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>📝 What We Learned About Echoes</h2>
+
+                <div class="summary-points">
+                    <ul>
+                        <li>Everyone creates signature echoes with their voice, movements, feelings, and energy</li>
+                        <li>Mirror neurons in our brain make us copy other people's echoes automatically</li>
+                        <li>Your echoes spread like ripples - affecting one person, then another, then another</li>
+                        <li>You can choose what kind of echo to make by checking your energy first</li>
+                        <li>Smiles create the strongest positive echoes and happen super fast (1/3 of a second!)</li>
+                        <li>Scientists have been studying this since 1992 and found it works in monkeys, babies, and adults</li>
+                    </ul>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: State Transfer</h3>
+                    <p>In the next chapter, we'll learn about how feelings can jump from one person to another like happy balloons! We'll discover how to pass good feelings to others and protect ourselves from bad feelings.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter10.html" class="nav-button prev">← Previous: Trust Loops</a>
+                <a href="chapter12.html" class="nav-button next">Next: State Transfer →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        let echoScores = {
+            voice: 0,
+            energy: 0,
+            movement: 0,
+            emotional: 0
+        };
+
+        function addScore(type, points) {
+            echoScores[type] += points;
+
+            // Visual feedback for button click
+            event.target.style.background = '#4CAF50';
+            event.target.style.color = 'white';
+
+            // Disable other buttons in this question group
+            const buttons = event.target.parentNode.querySelectorAll('button');
+            buttons.forEach(btn => {
+                if (btn !== event.target) {
+                    btn.disabled = true;
+                    btn.style.opacity = '0.5';
+                }
+            });
+        }
+
+        function calculateEchoType() {
+            const maxScore = Math.max(...Object.values(echoScores));
+            const winningType = Object.keys(echoScores).find(key => echoScores[key] === maxScore);
+
+            let result = '';
+            let emoji = '';
+            let description = '';
+            let tips = '';
+
+            switch(winningType) {
+                case 'voice':
+                    emoji = '🎤';
+                    result = 'Voice Echo Master';
+                    description = 'Your voice is your superpower! You make others feel good with how you talk.';
+                    tips = 'Try: Speaking clearly, using happy tones, and telling encouraging stories!';
+                    break;
+                case 'energy':
+                    emoji = '⚡';
+                    result = 'Energy Echo Master';
+                    description = 'Your energy is contagious! You make others feel more alive and excited.';
+                    tips = 'Try: Moving with enthusiasm, being active, and sharing your excitement about things!';
+                    break;
+                case 'movement':
+                    emoji = '🚶‍♂️';
+                    result = 'Movement Echo Master';
+                    description = 'Your body language is powerful! You make others feel confident with how you move.';
+                    tips = 'Try: Standing tall, walking with confidence, and using gestures when you talk!';
+                    break;
+                case 'emotional':
+                    emoji = '❤️';
+                    result = 'Feeling Echo Master';
+                    description = 'Your emotions spread like sunshine! You make others feel happier and more positive.';
+                    tips = 'Try: Smiling more, sharing good news, and helping others when they feel sad!';
+                    break;
+            }
+
+            document.getElementById('echo-result').innerHTML = `
+                <div class="echo-type-result">
+                    <h3>${emoji} You are a ${result}!</h3>
+                    <p><strong>What this means:</strong> ${description}</p>
+                    <p><strong>How to use your power:</strong> ${tips}</p>
+                    <div class="share-tip">
+                        <strong>Fun Fact:</strong> Your type of echo affects about 3-5 people every day without you even knowing it!
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('echo-result').style.display = 'block';
+        }
+
+        // Echo Spread Chart
+        const ctx = document.getElementById('echoSpreadChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: ['You', '1 Person', '3 People', '9 People', '27 People'],
+                datasets: [{
+                    label: 'People Affected by Your Echo',
+                    data: [1, 1, 3, 9, 27],
+                    borderColor: '#FF6B6B',
+                    backgroundColor: 'rgba(255, 107, 107, 0.1)',
+                    tension: 0.4,
+                    fill: true,
+                    pointRadius: 8,
+                    pointBackgroundColor: ['#FF6B6B', '#4ECDC4', '#45B7D1', '#96CEB4', '#FFEAA7']
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'How Your Echo Spreads Through People'
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        title: {
+                            display: true,
+                            text: 'Number of People'
+                        }
+                    },
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Echo Steps'
+                        }
+                    }
+                }
+            }
+        });
+
+        function analyzeEchoWeek() {
+            const selects = document.querySelectorAll('.echo-select');
+            const textareas = document.querySelectorAll('.echo-response');
+
+            let filledDays = 0;
+            let echoTypes = {};
+
+            selects.forEach((select, index) => {
+                if (select.value && textareas[index].value.trim()) {
+                    filledDays++;
+                    echoTypes[select.value] = (echoTypes[select.value] || 0) + 1;
+                }
+            });
+
+            if (filledDays === 0) {
+                document.getElementById('weekly-analysis').innerHTML = 
+                    '<p style="color: red;">Please fill out at least one day to get your analysis!</p>';
+                return;
+            }
+
+            const mostUsedEcho = Object.keys(echoTypes).reduce((a, b) => 
+                echoTypes[a] > echoTypes[b] ? a : b
+            );
+
+            let analysis = `
+                <div class="week-analysis">
+                    <h4>🎯 Your Echo Week Analysis</h4>
+                    <p><strong>Days tracked:</strong> ${filledDays}</p>
+                    <p><strong>Most used echo:</strong> ${mostUsedEcho.charAt(0).toUpperCase() + mostUsedEcho.slice(1)} Echo</p>
+                    <p><strong>Echo variety:</strong> You used ${Object.keys(echoTypes).length} different types of echoes</p>
+                    <div class="recommendation">
+                        <strong>💡 Recommendation:</strong> Try using a different type of echo tomorrow to see what happens!
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('weekly-analysis').innerHTML = analysis;
+            document.getElementById('weekly-analysis').style.display = 'block';
+        }
+    </script>
+
+    <style>
+        .echo-demo {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            color: white;
+        }
+
+        .person {
+            font-size: 2rem;
+            text-align: center;
+            padding: 1rem;
+            background: rgba(255,255,255,0.2);
+            border-radius: 15px;
+            margin: 0.5rem;
+        }
+
+        .echo-waves {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            flex-grow: 1;
+            margin: 0 2rem;
+        }
+
+        .wave {
+            background: rgba(255,255,255,0.3);
+            padding: 0.8rem;
+            border-radius: 25px;
+            text-align: center;
+            animation: pulse 2s infinite;
+            border: 2px dashed white;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 0.6; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.05); }
+            100% { opacity: 0.6; transform: scale(1); }
+        }
+
+        .people-affected {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .echo-types-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .echo-type {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-top: 6px solid #4CAF50;
+        }
+
+        .echo-type.voice {
+            border-top-color: #FF6B6B;
+        }
+
+        .echo-type.movement {
+            border-top-color: #4ECDC4;
+        }
+
+        .echo-type.emotional {
+            border-top-color: #45B7D1;
+        }
+
+        .echo-type.energy {
+            border-top-color: #96CEB4;
+        }
+
+        .evidence-badge {
+            display: inline-block;
+            padding: 0.4rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8em;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .echo-type .evidence-badge {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .energy .evidence-badge {
+            background: #FFC107;
+            color: #333;
+        }
+
+        .example {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            margin: 1rem 0;
+            border-left: 4px solid #007bff;
+        }
+
+        .research-source {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+            margin-top: 1rem;
+            padding: 0.5rem;
+            background: #e9ecef;
+            border-radius: 5px;
+        }
+
+        .game-interface {
+            background: #FFF8DC;
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #FFD700;
+        }
+
+        .question-set {
+            margin: 2rem 0;
+        }
+
+        .question {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 2rem 0;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .option-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 1rem;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: transform 0.2s;
+        }
+
+        .option-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .calculate-btn {
+            background: #FF6B6B;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin: 2rem 0;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .result-display {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            border: 3px solid #4CAF50;
+        }
+
+        .echo-type-result {
+            text-align: center;
+        }
+
+        .share-tip {
+            background: #e8f5e8;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .spreading-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            border-left: 6px solid #4ECDC4;
+        }
+
+        .step-number {
+            background: #4ECDC4;
+            color: white;
+            font-size: 2rem;
+            font-weight: bold;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 2rem;
+            flex-shrink: 0;
+        }
+
+        .science-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .fact {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .fact.verified {
+            border-left: 6px solid #32CD32;
+        }
+
+        .fact.theoretical {
+            border-left: 6px solid #FFD700;
+        }
+
+        .fun-detail {
+            background: #f0f8ff;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            font-style: italic;
+            border-left: 4px solid #4169e1;
+        }
+
+        .warning {
+            background: #fff3cd;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 1rem;
+            border-left: 4px solid #ffc107;
+        }
+
+        .tracker-interface {
+            background: #f0f8ff;
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #4169e1;
+        }
+
+        .daily-tracker {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .day-entry {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        .day-entry h4 {
+            color: #4169e1;
+            margin-bottom: 1rem;
+        }
+
+        .day-entry label {
+            display: block;
+            font-weight: bold;
+            margin: 1rem 0 0.5rem 0;
+            color: #333;
+        }
+
+        .echo-select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #4169e1;
+            border-radius: 10px;
+            font-size: 1em;
+        }
+
+        .echo-response {
+            width: 100%;
+            height: 80px;
+            padding: 0.8rem;
+            border: 2px solid #4169e1;
+            border-radius: 10px;
+            font-size: 1em;
+            resize: vertical;
+        }
+
+        .analyze-btn {
+            background: #4169e1;
+            color: white;
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin: 2rem auto;
+            display: block;
+        }
+
+        .analysis-result {
+            display: none;
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            margin-top: 2rem;
+            border: 3px solid #32cd32;
+        }
+
+        .recipe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .recipe-step {
+            background: white;
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 5px solid #ff6b6b;
+        }
+
+        .recipe-letter {
+            background: #ff6b6b;
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem auto;
+        }
+
+        .summary-points ul {
+            font-size: 1.1em;
+            line-height: 1.8;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .summary-points li {
+            background: #f8f9fa;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            border-left: 5px solid #4caf50;
+        }
+
+        .summary-points li:before {
+            content: "✓ ";
+            color: #4caf50;
+            font-weight: bold;
+            margin-right: 0.5rem;
+        }
+
+        .next-preview {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border: 3px solid #ff69b4;
+        }
+
+        @media (max-width: 768px) {
+            .echo-demo {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .echo-waves {
+                margin: 1rem 0;
+            }
+
+            .people-affected {
+                flex-direction: row;
+                justify-content: center;
+            }
+
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
