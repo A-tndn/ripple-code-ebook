@@ -1,0 +1,3025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 20: Market Ripples - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter19.html" class="prev">← Chapter 19</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter21.html" class="next">Chapter 21 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 20: Market Ripples</h1>
+            <p class="subtitle">How Money, Business, and Economics Create Waves! 💰</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>💹 What Are Market Ripples?</h2>
+
+                <div class="simple-explanation">
+                    <p>Every time someone buys or sells something, they create <strong>Market Ripples</strong>! These ripples affect prices, create trends, and influence the economy. Understanding market ripples can help you make smart decisions about money, whether you\'re buying a video game, choosing a career, or planning your financial future!</p>
+
+                    <div class="amazing-fact">
+                        <h3>🌊 The Power of Market Waves!</h3>
+                        <p>When one person buys a popular stock, it can create a ripple that encourages thousands of others to buy, driving the price up dramatically. Sometimes a single tweet from a famous person can move markets by <strong>billions of dollars</strong> in minutes!</p>
+                    </div>
+
+                    <div class="market-types">
+                        <h3>💼 Different Types of Market Ripples</h3>
+                        <div class="market-grid">
+                            <div class="market-card supply-demand">
+                                <div class="market-icon">📊</div>
+                                <h4>Supply & Demand Ripples</h4>
+                                <p>When lots of people want something but there isn\'t much available, prices go up!</p>
+                                <div class="market-examples">
+                                    <div class="example">🎮 Limited edition games cost more</div>
+                                    <div class="example">🏠 Popular neighborhoods have expensive houses</div>
+                                    <div class="example">⚡ Concert tickets for famous artists</div>
+                                </div>
+                                <div class="ripple-power">Power: Fundamental economic force</div>
+                            </div>
+
+                            <div class="market-card trend-momentum">
+                                <div class="market-icon">📈</div>
+                                <h4>Trend & Momentum Ripples</h4>
+                                <p>When something becomes popular, more people jump on the trend, making it even more popular!</p>
+                                <div class="market-examples">
+                                    <div class="example">📱 Everyone wants the newest phone</div>
+                                    <div class="example">👟 Trendy shoes sell out fast</div>
+                                    <div class="example">🎵 Viral songs top the charts</div>
+                                </div>
+                                <div class="ripple-power">Power: Creates explosive growth</div>
+                            </div>
+
+                            <div class="market-card sentiment-emotion">
+                                <div class="market-icon">😊</div>
+                                <h4>Sentiment & Emotion Ripples</h4>
+                                <p>How people FEEL about the future affects what they buy and sell today!</p>
+                                <div class="market-examples">
+                                    <div class="example">😰 Fear makes people save money</div>
+                                    <div class="example">🎉 Optimism leads to more spending</div>
+                                    <div class="example">📰 Bad news affects stock prices</div>
+                                </div>
+                                <div class="ripple-power">Power: Drives market psychology</div>
+                            </div>
+
+                            <div class="market-card innovation-disruption">
+                                <div class="market-icon">🚀</div>
+                                <h4>Innovation & Disruption Ripples</h4>
+                                <p>New technology can completely change entire industries overnight!</p>
+                                <div class="market-examples">
+                                    <div class="example">📱 Smartphones killed digital cameras</div>
+                                    <div class="example">🎬 Netflix disrupted movie rentals</div>
+                                    <div class="example">🚗 Electric cars changing auto industry</div>
+                                </div>
+                                <div class="ripple-power">Power: Revolutionary transformation</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>🏪 The Market Simulation Laboratory</h2>
+
+                <div class="market-lab">
+                    <h3>Experiment: Create Your Own Market Ripples!</h3>
+                    <p>Let\'s run market simulations to see how different actions create ripple effects in the economy!</p>
+
+                    <div class="lab-stations">
+                        <div class="station-tabs">
+                            <button class="lab-tab active" onclick="showLabStation(\'supply-demand-sim\')">📊 Supply & Demand</button>
+                            <button class="lab-tab" onclick="showLabStation(\'trend-simulator\')">📈 Trend Maker</button>
+                            <button class="lab-tab" onclick="showLabStation(\'sentiment-tracker\')">😊 Sentiment Tracker</button>
+                            <button class="lab-tab" onclick="showLabStation(\'economy-builder\')">🏗️ Economy Builder</button>
+                        </div>
+
+                        <div id="supply-demand-sim-station" class="lab-station active">
+                            <div class="supply-demand-workshop">
+                                <h4>📊 Supply & Demand Simulator</h4>
+                                <p>Change supply and demand levels to see how prices react!</p>
+
+                                <div class="simulation-controls">
+                                    <div class="product-selector">
+                                        <h5>🛍️ Choose Your Product:</h5>
+                                        <div class="product-options">
+                                            <button class="product-btn active" onclick="selectProduct(\'sneakers\')">👟 Limited Sneakers</button>
+                                            <button class="product-btn" onclick="selectProduct(\'concert\')">🎵 Concert Tickets</button>
+                                            <button class="product-btn" onclick="selectProduct(\'phone\')">📱 New Phone</button>
+                                            <button class="product-btn" onclick="selectProduct(\'house\')">🏠 Houses</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="slider-controls">
+                                        <div class="control-group">
+                                            <h6>📦 Supply Level:</h6>
+                                            <input type="range" id="supply-slider" min="1" max="10" value="5" class="slider" oninput="updateMarket()">
+                                            <div class="slider-labels">
+                                                <span>Very Rare</span>
+                                                <span>Very Common</span>
+                                            </div>
+                                            <div id="supply-value" class="slider-value">5</div>
+                                        </div>
+
+                                        <div class="control-group">
+                                            <h6>👥 Demand Level:</h6>
+                                            <input type="range" id="demand-slider" min="1" max="10" value="5" class="slider" oninput="updateMarket()">
+                                            <div class="slider-labels">
+                                                <span>Nobody Wants It</span>
+                                                <span>Everyone Wants It</span>
+                                            </div>
+                                            <div id="demand-value" class="slider-value">5</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="market-display">
+                                    <div class="price-indicator">
+                                        <h5>💰 Current Price:</h5>
+                                        <div id="price-display" class="price-value">$50</div>
+                                        <div id="price-change" class="price-change-indicator"></div>
+                                    </div>
+
+                                    <div class="market-chart">
+                                        <canvas id="market-chart" width="400" height="200"></canvas>
+                                    </div>
+
+                                    <div id="market-explanation" class="market-explanation">
+                                        <h6>📈 Market Analysis</h6>
+                                        <p>Adjust the supply and demand sliders to see how market forces determine price!</p>
+                                    </div>
+                                </div>
+
+                                <div class="scenario-buttons">
+                                    <h5>🎯 Try These Scenarios:</h5>
+                                    <button class="scenario-btn" onclick="runScenario(\'shortage\')">📉 Create Shortage</button>
+                                    <button class="scenario-btn" onclick="runScenario(\'surplus\')">📈 Create Surplus</button>
+                                    <button class="scenario-btn" onclick="runScenario(\'viral\')">🔥 Go Viral</button>
+                                    <button class="scenario-btn" onclick="runScenario(\'reset\')">🔄 Reset Market</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="trend-simulator-station" class="lab-station">
+                            <div class="trend-workshop">
+                                <h4>📈 The Trend Maker Simulator</h4>
+                                <p>Watch how trends spread through social networks and create market ripples!</p>
+
+                                <div class="trend-simulation">
+                                    <h5>🌟 Create a New Trend</h5>
+                                    <div class="trend-creator">
+                                        <div class="trend-inputs">
+                                            <div class="input-group">
+                                                <label>What\'s the trend?</label>
+                                                <select id="trend-type" class="trend-select">
+                                                    <option value="fashion">👗 Fashion Item</option>
+                                                    <option value="food">🍔 Food Craze</option>
+                                                    <option value="app">📱 New App</option>
+                                                    <option value="dance">💃 Dance Move</option>
+                                                    <option value="game">🎮 Video Game</option>
+                                                </select>
+                                            </div>
+
+                                            <div class="input-group">
+                                                <label>Who starts it?</label>
+                                                <select id="trend-starter" class="trend-select">
+                                                    <option value="influencer">🌟 Social Media Influencer</option>
+                                                    <option value="celebrity">⭐ Famous Celebrity</option>
+                                                    <option value="friend">👫 Your Friend Group</option>
+                                                    <option value="brand">🏢 Company Marketing</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <button class="start-trend-btn" onclick="startTrendSimulation()">🚀 Start the Trend!</button>
+                                    </div>
+
+                                    <div id="trend-visualization" class="trend-visualization">
+                                        <h6>📊 Trend Spread Visualization</h6>
+                                        <div class="network-display">
+                                            <div class="network-stats">
+                                                <div class="stat-item">
+                                                    <span class="stat-label">Adopters:</span>
+                                                    <span id="adopters-count" class="stat-value">0</span>
+                                                </div>
+                                                <div class="stat-item">
+                                                    <span class="stat-label">Market Value:</span>
+                                                    <span id="market-value" class="stat-value">$0</span>
+                                                </div>
+                                                <div class="stat-item">
+                                                    <span class="stat-label">Trend Phase:</span>
+                                                    <span id="trend-phase" class="stat-value">Not Started</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="adoption-curve">
+                                                <canvas id="adoption-chart" width="400" height="150"></canvas>
+                                            </div>
+                                        </div>
+
+                                        <div id="trend-timeline" class="trend-timeline">
+                                            <!-- Timeline events will appear here -->
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="trend-insights">
+                                    <h5>🧠 How Trends Create Market Ripples</h5>
+                                    <div class="insight-phases">
+                                        <div class="phase-card early">
+                                            <div class="phase-icon">🌱</div>
+                                            <h6>Early Adoption (2-5%)</h6>
+                                            <p>Innovators try new things first. Small market, high prices, lots of experimentation.</p>
+                                        </div>
+
+                                        <div class="phase-card growth">
+                                            <div class="phase-icon">📈</div>
+                                            <h6>Growth Phase (5-50%)</h6>
+                                            <p>Word spreads, prices may drop as supply increases, businesses start paying attention.</p>
+                                        </div>
+
+                                        <div class="phase-card mainstream">
+                                            <div class="phase-icon">🔥</div>
+                                            <h6>Mainstream (50-80%)</h6>
+                                            <p>Everyone wants it! Maximum market size, competitive pricing, big profits for early movers.</p>
+                                        </div>
+
+                                        <div class="phase-card decline">
+                                            <div class="phase-icon">📉</div>
+                                            <h6>Decline (80%+)</h6>
+                                            <p>Trend gets old, new trends emerge, late adopters miss the opportunity.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="sentiment-tracker-station" class="lab-station">
+                            <div class="sentiment-workshop">
+                                <h4>😊 Market Sentiment Tracker</h4>
+                                <p>See how emotions and news affect market behavior in real time!</p>
+
+                                <div class="sentiment-simulator">
+                                    <h5>📰 News Event Simulator</h5>
+                                    <p>Create news events and watch how market sentiment changes:</p>
+
+                                    <div class="news-controls">
+                                        <div class="news-type-selector">
+                                            <h6>📺 What type of news?</h6>
+                                            <div class="news-buttons">
+                                                <button class="news-btn positive" onclick="createNews(\'positive\')">😊 Great News</button>
+                                                <button class="news-btn negative" onclick="createNews(\'negative\')">😰 Bad News</button>
+                                                <button class="news-btn neutral" onclick="createNews(\'neutral\')">😐 Neutral News</button>
+                                                <button class="news-btn mixed" onclick="createNews(\'mixed\')">🤔 Mixed News</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="news-examples">
+                                            <h6>📋 Example News Events:</h6>
+                                            <div class="example-news">
+                                                <button class="example-btn" onclick="createSpecificNews(\'tech-breakthrough\')">🚀 Major Tech Breakthrough</button>
+                                                <button class="example-btn" onclick="createSpecificNews(\'economic-growth\')">📈 Strong Economic Growth</button>
+                                                <button class="example-btn" onclick="createSpecificNews(\'natural-disaster\')">🌪️ Natural Disaster</button>
+                                                <button class="example-btn" onclick="createSpecificNews(\'political-uncertainty\')">🏛️ Political Uncertainty</button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sentiment-display">
+                                        <div class="sentiment-meter">
+                                            <h6>🌡️ Market Sentiment</h6>
+                                            <div class="meter-container">
+                                                <div class="sentiment-scale">
+                                                    <span class="scale-label fear">😨 Extreme Fear</span>
+                                                    <span class="scale-label neutral">😐 Neutral</span>
+                                                    <span class="scale-label greed">🤑 Extreme Greed</span>
+                                                </div>
+                                                <div class="meter-bar">
+                                                    <div id="sentiment-indicator" class="sentiment-needle" style="left: 50%;"></div>
+                                                </div>
+                                                <div id="sentiment-value" class="sentiment-reading">50 - Neutral</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="market-reactions">
+                                            <h6>📊 Market Reactions</h6>
+                                            <div class="reaction-grid">
+                                                <div class="reaction-item">
+                                                    <span class="reaction-label">Stock Prices:</span>
+                                                    <span id="stock-reaction" class="reaction-value">Stable</span>
+                                                </div>
+                                                <div class="reaction-item">
+                                                    <span class="reaction-label">Trading Volume:</span>
+                                                    <span id="volume-reaction" class="reaction-value">Normal</span>
+                                                </div>
+                                                <div class="reaction-item">
+                                                    <span class="reaction-label">Currency:</span>
+                                                    <span id="currency-reaction" class="reaction-value">Steady</span>
+                                                </div>
+                                                <div class="reaction-item">
+                                                    <span class="reaction-label">Commodities:</span>
+                                                    <span id="commodity-reaction" class="reaction-value">Unchanged</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div id="news-feed" class="news-feed">
+                                            <h6>📰 Recent News Impact</h6>
+                                            <div class="news-items">
+                                                <p>Click on news buttons above to see how different events affect market sentiment!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="sentiment-education">
+                                    <h5>🎓 Understanding Market Psychology</h5>
+                                    <div class="psychology-concepts">
+                                        <div class="concept-card fear">
+                                            <div class="concept-icon">😰</div>
+                                            <h6>Fear & Panic</h6>
+                                            <p>When people are scared, they sell everything and hide their money. This can create market crashes even when businesses are doing fine!</p>
+                                        </div>
+
+                                        <div class="concept-card greed">
+                                            <div class="concept-icon">🤑</div>
+                                            <h6>Greed & Bubbles</h6>
+                                            <p>When everyone thinks they\'ll get rich quick, they buy everything at any price. This creates bubbles that eventually burst!</p>
+                                        </div>
+
+                                        <div class="concept-card herd">
+                                            <div class="concept-icon">🐑</div>
+                                            <h6>Herd Mentality</h6>
+                                            <p>People follow what everyone else is doing, even when it doesn\'t make sense. This amplifies both booms and crashes!</p>
+                                        </div>
+
+                                        <div class="concept-card contrarian">
+                                            <div class="concept-icon">🧠</div>
+                                            <h6>Contrarian Thinking</h6>
+                                            <p>Smart investors often do the opposite of the crowd - buy when others sell, sell when others buy!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="economy-builder-station" class="lab-station">
+                            <div class="economy-workshop">
+                                <h4>🏗️ The Economy Builder</h4>
+                                <p>Build your own mini-economy and see how all the pieces connect!</p>
+
+                                <div class="economy-simulator">
+                                    <h5>🌍 Design Your Economy</h5>
+                                    <p>Add different elements and watch how they create ripples throughout your economic system:</p>
+
+                                    <div class="economy-controls">
+                                        <div class="element-buttons">
+                                            <h6>🏭 Add Economic Elements:</h6>
+                                            <div class="element-grid">
+                                                <button class="element-btn" onclick="addEconomicElement(\'businesses\')">🏢 Businesses</button>
+                                                <button class="element-btn" onclick="addEconomicElement(\'workers\')">👷 Workers</button>
+                                                <button class="element-btn" onclick="addEconomicElement(\'consumers\')">👥 Consumers</button>
+                                                <button class="element-btn" onclick="addEconomicElement(\'investors\')">💰 Investors</button>
+                                                <button class="element-btn" onclick="addEconomicElement(\'government\')">🏛️ Government</button>
+                                                <button class="element-btn" onclick="addEconomicElement(\'banks\')">🏦 Banks</button>
+                                            </div>
+                                        </div>
+
+                                        <div class="policy-controls">
+                                            <h6>⚖️ Economic Policies:</h6>
+                                            <div class="policy-sliders">
+                                                <div class="policy-control">
+                                                    <label>Interest Rates:</label>
+                                                    <input type="range" id="interest-rate" min="0" max="10" value="3" step="0.5" oninput="updateEconomy()">
+                                                    <span id="interest-display">3.0%</span>
+                                                </div>
+                                                <div class="policy-control">
+                                                    <label>Tax Rate:</label>
+                                                    <input type="range" id="tax-rate" min="0" max="50" value="20" oninput="updateEconomy()">
+                                                    <span id="tax-display">20%</span>
+                                                </div>
+                                                <div class="policy-control">
+                                                    <label>Government Spending:</label>
+                                                    <input type="range" id="gov-spending" min="0" max="100" value="30" oninput="updateEconomy()">
+                                                    <span id="spending-display">30%</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="economy-display">
+                                        <div class="economic-indicators">
+                                            <h6>📊 Economic Health</h6>
+                                            <div class="indicator-grid">
+                                                <div class="indicator">
+                                                    <span class="indicator-label">GDP Growth:</span>
+                                                    <span id="gdp-growth" class="indicator-value">+2.5%</span>
+                                                </div>
+                                                <div class="indicator">
+                                                    <span class="indicator-label">Unemployment:</span>
+                                                    <span id="unemployment" class="indicator-value">5.0%</span>
+                                                </div>
+                                                <div class="indicator">
+                                                    <span class="indicator-label">Inflation:</span>
+                                                    <span id="inflation" class="indicator-value">2.1%</span>
+                                                </div>
+                                                <div class="indicator">
+                                                    <span class="indicator-label">Market Confidence:</span>
+                                                    <span id="confidence" class="indicator-value">Moderate</span>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="ripple-connections">
+                                            <h6>🌊 Active Ripple Effects</h6>
+                                            <div id="ripple-feed" class="ripple-feed">
+                                                <p>Add economic elements and adjust policies to see how ripples spread through the economy!</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="scenario-runner">
+                                        <h6>🎯 Try These Economic Scenarios:</h6>
+                                        <div class="scenario-buttons">
+                                            <button class="scenario-btn" onclick="runEconomicScenario(\'boom\')">📈 Economic Boom</button>
+                                            <button class="scenario-btn" onclick="runEconomicScenario(\'recession\')">📉 Recession</button>
+                                            <button class="scenario-btn" onclick="runEconomicScenario(\'inflation\')">💸 High Inflation</button>
+                                            <button class="scenario-btn" onclick="runEconomicScenario(\'balanced\')">⚖️ Balanced Economy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>💡 The Smart Money Challenge</h2>
+
+                <div class="money-game">
+                    <h3>Make Smart Financial Decisions Using Ripple Thinking!</h3>
+                    <p>Test your understanding of market ripples by making financial decisions in different scenarios!</p>
+
+                    <div class="challenge-scenarios">
+                        <div class="scenario-selector">
+                            <h4>💼 Choose Your Financial Challenge:</h4>
+                            <div class="scenario-tabs">
+                                <button class="scenario-tab active" onclick="showScenario(\'investment\')">📈 Investment Decision</button>
+                                <button class="scenario-tab" onclick="showScenario(\'career\')">🎯 Career Choice</button>
+                                <button class="scenario-tab" onclick="showScenario(\'spending\')">🛍️ Spending Decision</button>
+                                <button class="scenario-tab" onclick="showScenario(\'saving\')">💰 Saving Strategy</button>
+                            </div>
+                        </div>
+
+                        <div id="investment-scenario" class="financial-scenario active">
+                            <div class="scenario-content">
+                                <h5>📈 Investment Decision Challenge</h5>
+                                <div class="scenario-setup">
+                                    <p><strong>Situation:</strong> You have $1,000 to invest and these options:</p>
+
+                                    <div class="investment-options">
+                                        <div class="option-card">
+                                            <h6>🚀 Tech Startup Stock</h6>
+                                            <div class="option-details">
+                                                <p><strong>Potential:</strong> Could grow 500% or lose 80%</p>
+                                                <p><strong>Risk:</strong> Very High</p>
+                                                <p><strong>Ripple Signals:</strong> Lots of hype, young company, revolutionary product</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="option-card">
+                                            <h6>📊 Index Fund</h6>
+                                            <div class="option-details">
+                                                <p><strong>Potential:</strong> Steady 7-10% annual growth</p>
+                                                <p><strong>Risk:</strong> Low to Moderate</p>
+                                                <p><strong>Ripple Signals:</strong> Follows overall market trends, diversified</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="option-card">
+                                            <h6>🏠 Real Estate Fund</h6>
+                                            <div class="option-details">
+                                                <p><strong>Potential:</strong> 4-8% plus rental income</p>
+                                                <p><strong>Risk:</strong> Moderate</p>
+                                                <p><strong>Ripple Signals:</strong> Population growing, housing demand up</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="option-card">
+                                            <h6>💰 High-Yield Savings</h6>
+                                            <div class="option-details">
+                                                <p><strong>Potential:</strong> Safe 3-5% annual return</p>
+                                                <p><strong>Risk:</strong> Very Low</p>
+                                                <p><strong>Ripple Signals:</strong> Guaranteed, inflation-protected</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="decision-maker">
+                                        <h6>🤔 Your Investment Decision:</h6>
+                                        <p>Using ripple thinking, which investment makes the most sense for a young person just starting out?</p>
+
+                                        <div class="decision-options">
+                                            <label class="decision-option">
+                                                <input type="radio" name="investment-choice" value="tech">
+                                                <span>🚀 Go all-in on the tech startup - high risk, high reward!</span>
+                                            </label>
+                                            <label class="decision-option">
+                                                <input type="radio" name="investment-choice" value="index">
+                                                <span>📊 Choose the index fund - steady growth over time</span>
+                                            </label>
+                                            <label class="decision-option">
+                                                <input type="radio" name="investment-choice" value="real-estate">
+                                                <span>🏠 Invest in real estate - tangible asset with income</span>
+                                            </label>
+                                            <label class="decision-option">
+                                                <input type="radio" name="investment-choice" value="savings">
+                                                <span>💰 Keep it safe in high-yield savings</span>
+                                            </label>
+                                            <label class="decision-option">
+                                                <input type="radio" name="investment-choice" value="diversify">
+                                                <span>🎯 Diversify: split among multiple options</span>
+                                            </label>
+                                        </div>
+
+                                        <button class="analyze-decision-btn" onclick="analyzeInvestmentDecision()">🧠 Analyze My Decision!</button>
+
+                                        <div id="investment-analysis" class="decision-analysis">
+                                            <!-- Analysis will appear here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="career-scenario" class="financial-scenario">
+                            <div class="scenario-content">
+                                <h5>🎯 Career Choice Challenge</h5>
+                                <div class="scenario-setup">
+                                    <p><strong>Situation:</strong> You\'re choosing between these career paths:</p>
+
+                                    <div class="career-options">
+                                        <div class="option-card">
+                                            <h6>💻 Software Developer</h6>
+                                            <div class="option-details">
+                                                <p><strong>Starting Salary:</strong> $70,000</p>
+                                                <p><strong>Growth Potential:</strong> High demand, remote work</p>
+                                                <p><strong>Ripple Trends:</strong> AI and tech expanding rapidly</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="option-card">
+                                            <h6>🎬 Content Creator</h6>
+                                            <div class="option-details">
+                                                <p><strong>Starting Income:</strong> $0-20,000 (variable)</p>
+                                                <p><strong>Growth Potential:</strong> Unlimited if successful</p>
+                                                <p><strong>Ripple Trends:</strong> Creator economy booming</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="option-card">
+                                            <h6>⚕️ Healthcare Worker</h6>
+                                            <div class="option-details">
+                                                <p><strong>Starting Salary:</strong> $50,000</p>
+                                                <p><strong>Growth Potential:</strong> Stable, always needed</p>
+                                                <p><strong>Ripple Trends:</strong> Aging population, job security</p>
+                                            </div>
+                                        </div>
+
+                                        <div class="option-card">
+                                            <h6>🌱 Green Energy Tech</h6>
+                                            <div class="option-details">
+                                                <p><strong>Starting Salary:</strong> $55,000</p>
+                                                <p><strong>Growth Potential:</strong> Emerging field, government support</p>
+                                                <p><strong>Ripple Trends:</strong> Climate focus, massive investment</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="career-factors">
+                                        <h6>🔍 Consider These Ripple Factors:</h6>
+                                        <div class="factor-list">
+                                            <div class="factor-item">📊 Which industries are growing vs declining?</div>
+                                            <div class="factor-item">🤖 How might AI and automation affect each career?</div>
+                                            <div class="factor-item">🌍 What global trends support each option?</div>
+                                            <div class="factor-item">💰 What\'s the long-term earning potential?</div>
+                                            <div class="factor-item">😊 Which aligns best with your interests?</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="decision-maker">
+                                        <h6>🎯 Your Career Choice:</h6>
+                                        <select id="career-choice" class="career-selector">
+                                            <option value="">Choose your career path...</option>
+                                            <option value="software">💻 Software Developer</option>
+                                            <option value="content">🎬 Content Creator</option>
+                                            <option value="healthcare">⚕️ Healthcare Worker</option>
+                                            <option value="green-energy">🌱 Green Energy Tech</option>
+                                        </select>
+
+                                        <textarea id="career-reasoning" class="reasoning-input" placeholder="Explain your choice using ripple thinking - what trends and signals influenced your decision?"></textarea>
+
+                                        <button class="analyze-decision-btn" onclick="analyzeCareerDecision()">🧠 Analyze My Career Choice!</button>
+
+                                        <div id="career-analysis" class="decision-analysis">
+                                            <!-- Analysis will appear here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="spending-scenario" class="financial-scenario">
+                            <div class="scenario-content">
+                                <h5>🛍️ Smart Spending Challenge</h5>
+                                <div class="scenario-setup">
+                                    <p><strong>Situation:</strong> You have $500 to spend. Using ripple thinking, how should you spend it for maximum benefit?</p>
+
+                                    <div class="spending-categories">
+                                        <div class="category-card">
+                                            <h6>📚 Skills & Education</h6>
+                                            <p>Online courses, books, certifications</p>
+                                            <div class="ripple-impact">🌊 Ripple Impact: Increases future earning potential</div>
+                                        </div>
+
+                                        <div class="category-card">
+                                            <h6>🛠️ Tools & Equipment</h6>
+                                            <p>Computer upgrades, professional tools</p>
+                                            <div class="ripple-impact">🌊 Ripple Impact: Improves productivity and capabilities</div>
+                                        </div>
+
+                                        <div class="category-card">
+                                            <h6>🤝 Networking & Events</h6>
+                                            <p>Conferences, meetups, professional memberships</p>
+                                            <div class="ripple-impact">🌊 Ripple Impact: Creates valuable connections</div>
+                                        </div>
+
+                                        <div class="category-card">
+                                            <h6>💡 Business Investment</h6>
+                                            <p>Start a side business, buy inventory</p>
+                                            <div class="ripple-impact">🌊 Ripple Impact: Potential for income generation</div>
+                                        </div>
+
+                                        <div class="category-card">
+                                            <h6>❤️ Health & Wellness</h6>
+                                            <p>Gym membership, healthy food, medical checkup</p>
+                                            <div class="ripple-impact">🌊 Ripple Impact: Long-term health saves money</div>
+                                        </div>
+
+                                        <div class="category-card">
+                                            <h6>🎉 Entertainment & Fun</h6>
+                                            <p>Games, movies, social activities</p>
+                                            <div class="ripple-impact">🌊 Ripple Impact: Immediate enjoyment, stress relief</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="spending-allocator">
+                                        <h6>💰 Allocate Your $500:</h6>
+                                        <div class="allocation-sliders">
+                                            <div class="allocation-item">
+                                                <label>📚 Skills & Education: $<span id="skills-amount">0</span></label>
+                                                <input type="range" id="skills-slider" min="0" max="500" value="0" step="25" oninput="updateSpendingAllocation()">
+                                            </div>
+                                            <div class="allocation-item">
+                                                <label>🛠️ Tools & Equipment: $<span id="tools-amount">0</span></label>
+                                                <input type="range" id="tools-slider" min="0" max="500" value="0" step="25" oninput="updateSpendingAllocation()">
+                                            </div>
+                                            <div class="allocation-item">
+                                                <label>🤝 Networking & Events: $<span id="networking-amount">0</span></label>
+                                                <input type="range" id="networking-slider" min="0" max="500" value="0" step="25" oninput="updateSpendingAllocation()">
+                                            </div>
+                                            <div class="allocation-item">
+                                                <label>💡 Business Investment: $<span id="business-amount">0</span></label>
+                                                <input type="range" id="business-slider" min="0" max="500" value="0" step="25" oninput="updateSpendingAllocation()">
+                                            </div>
+                                            <div class="allocation-item">
+                                                <label>❤️ Health & Wellness: $<span id="health-amount">0</span></label>
+                                                <input type="range" id="health-slider" min="0" max="500" value="0" step="25" oninput="updateSpendingAllocation()">
+                                            </div>
+                                            <div class="allocation-item">
+                                                <label>🎉 Entertainment & Fun: $<span id="fun-amount">0</span></label>
+                                                <input type="range" id="fun-slider" min="0" max="500" value="0" step="25" oninput="updateSpendingAllocation()">
+                                            </div>
+                                        </div>
+
+                                        <div class="spending-summary">
+                                            <div class="total-spent">Total Allocated: $<span id="total-spent">0</span> / $500</div>
+                                            <div class="remaining-budget">Remaining: $<span id="remaining-budget">500</span></div>
+                                        </div>
+
+                                        <button class="analyze-decision-btn" onclick="analyzeSpendingDecision()">🧠 Analyze My Spending Plan!</button>
+
+                                        <div id="spending-analysis" class="decision-analysis">
+                                            <!-- Analysis will appear here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="saving-scenario" class="financial-scenario">
+                            <div class="scenario-content">
+                                <h5>💰 Saving Strategy Challenge</h5>
+                                <div class="scenario-setup">
+                                    <p><strong>Situation:</strong> You want to save $10,000 for your future. What\'s the best strategy based on current economic ripples?</p>
+
+                                    <div class="saving-goals">
+                                        <div class="goal-card">
+                                            <h6>🚗 Emergency Fund</h6>
+                                            <p>3-6 months of expenses for unexpected situations</p>
+                                            <div class="goal-urgency">Urgency: Very High</div>
+                                        </div>
+
+                                        <div class="goal-card">
+                                            <h6>🏠 House Down Payment</h6>
+                                            <p>20% down payment to avoid mortgage insurance</p>
+                                            <div class="goal-urgency">Urgency: Medium (5-10 years)</div>
+                                        </div>
+
+                                        <div class="goal-card">
+                                            <h6>🎓 Further Education</h6>
+                                            <p>Master\'s degree or professional certification</p>
+                                            <div class="goal-urgency">Urgency: Medium (2-5 years)</div>
+                                        </div>
+
+                                        <div class="goal-card">
+                                            <h6>🚀 Business Startup</h6>
+                                            <p>Capital to start your own business or side hustle</p>
+                                            <div class="goal-urgency">Urgency: Low (when opportunity arises)</div>
+                                        </div>
+
+                                        <div class="goal-card">
+                                            <h6>🌴 Retirement</h6>
+                                            <p>Long-term wealth building for financial independence</p>
+                                            <div class="goal-urgency">Urgency: Very Low (20+ years)</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="saving-strategies">
+                                        <h6>💡 Choose Your Saving Strategy:</h6>
+                                        <div class="strategy-options">
+                                            <label class="strategy-option">
+                                                <input type="radio" name="saving-strategy" value="aggressive">
+                                                <div class="strategy-details">
+                                                    <h7>📈 Aggressive Growth</h7>
+                                                    <p>80% stocks, 20% bonds - higher risk, higher potential returns</p>
+                                                </div>
+                                            </label>
+
+                                            <label class="strategy-option">
+                                                <input type="radio" name="saving-strategy" value="balanced">
+                                                <div class="strategy-details">
+                                                    <h7>⚖️ Balanced Approach</h7>
+                                                    <p>60% stocks, 40% bonds - moderate risk, steady growth</p>
+                                                </div>
+                                            </label>
+
+                                            <label class="strategy-option">
+                                                <input type="radio" name="saving-strategy" value="conservative">
+                                                <div class="strategy-details">
+                                                    <h7>🛡️ Conservative Safety</h7>
+                                                    <p>20% stocks, 80% bonds/savings - low risk, slow growth</p>
+                                                </div>
+                                            </label>
+
+                                            <label class="strategy-option">
+                                                <input type="radio" name="saving-strategy" value="ladder">
+                                                <div class="strategy-details">
+                                                    <h7>📅 Goal-Based Ladder</h7>
+                                                    <p>Match investment timeline to goal urgency</p>
+                                                </div>
+                                            </label>
+                                        </div>
+
+                                        <div class="timeline-input">
+                                            <label>🎯 When do you need this money?</label>
+                                            <select id="saving-timeline" class="timeline-selector">
+                                                <option value="1">Within 1 year</option>
+                                                <option value="3">In 2-3 years</option>
+                                                <option value="5">In 3-5 years</option>
+                                                <option value="10">In 5-10 years</option>
+                                                <option value="20">More than 10 years</option>
+                                            </select>
+                                        </div>
+
+                                        <button class="analyze-decision-btn" onclick="analyzeSavingDecision()">🧠 Analyze My Saving Strategy!</button>
+
+                                        <div id="saving-analysis" class="decision-analysis">
+                                            <!-- Analysis will appear here -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>🎯 What You\'ve Mastered About Market Ripples</h2>
+
+                <div class="mastery-overview">
+                    <div class="key-discoveries">
+                        <div class="discovery-card">
+                            <div class="discovery-icon">💹</div>
+                            <h4>Everything Is Connected</h4>
+                            <p>Markets are giant networks where every action creates ripples that affect prices, jobs, and opportunities everywhere!</p>
+                        </div>
+
+                        <div class="discovery-card">
+                            <div class="discovery-icon">📊</div>
+                            <h4>Supply and Demand Rules</h4>
+                            <p>When more people want something than can be provided, prices go up. When there\'s too much of something, prices go down!</p>
+                        </div>
+
+                        <div class="discovery-card">
+                            <div class="discovery-icon">😊</div>
+                            <h4>Emotions Drive Markets</h4>
+                            <p>Fear and greed often matter more than facts! Understanding market psychology gives you a huge advantage!</p>
+                        </div>
+
+                        <div class="discovery-card">
+                            <div class="discovery-icon">📈</div>
+                            <h4>Trends Create Opportunities</h4>
+                            <p>Spotting trends early and riding them wisely can create amazing opportunities for wealth and career growth!</p>
+                        </div>
+
+                        <div class="discovery-card">
+                            <div class="discovery-icon">🧠</div>
+                            <h4>Smart Money Thinks Differently</h4>
+                            <p>Successful investors often do the opposite of what everyone else is doing - they buy when others sell!</p>
+                        </div>
+
+                        <div class="discovery-card">
+                            <div class="discovery-icon">⏰</div>
+                            <h4>Time Amplifies Everything</h4>
+                            <p>Small, consistent actions compound over time to create massive wealth - the earlier you start, the more powerful the effect!</p>
+                        </div>
+                    </div>
+
+                    <div class="practical-applications">
+                        <h3>💡 Your Market Ripple Toolkit</h3>
+
+                        <div class="application-sections">
+                            <div class="app-section">
+                                <h4>🎯 Making Investment Decisions</h4>
+                                <ul>
+                                    <li>Look for growing trends, not just current popularity</li>
+                                    <li>Diversify to reduce risk - don\'t put all eggs in one basket</li>
+                                    <li>Start early and invest regularly for compound growth</li>
+                                    <li>Don\'t panic sell during market drops</li>
+                                    <li>Invest in what you understand</li>
+                                </ul>
+                            </div>
+
+                            <div class="app-section">
+                                <h4>💼 Career and Skills</h4>
+                                <ul>
+                                    <li>Choose growing industries over declining ones</li>
+                                    <li>Develop skills that can\'t be easily automated</li>
+                                    <li>Build multiple income streams for security</li>
+                                    <li>Network and build relationships in your field</li>
+                                    <li>Keep learning and adapting to changes</li>
+                                </ul>
+                            </div>
+
+                            <div class="app-section">
+                                <h4>🛍️ Smart Spending</h4>
+                                <ul>
+                                    <li>Invest in yourself first - education and skills</li>
+                                    <li>Buy quality items that last longer</li>
+                                    <li>Avoid emotional spending during market hype</li>
+                                    <li>Consider the long-term ripple effects of purchases</li>
+                                    <li>Balance present enjoyment with future security</li>
+                                </ul>
+                            </div>
+
+                            <div class="app-section">
+                                <h4>💰 Building Wealth</h4>
+                                <ul>
+                                    <li>Live below your means to create investment capital</li>
+                                    <li>Automate your savings and investments</li>
+                                    <li>Use compound interest to your advantage</li>
+                                    <li>Take calculated risks when you\'re young</li>
+                                    <li>Focus on creating value for others</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ripple-wisdom">
+                        <h3>🌟 Your Market Ripple Wisdom</h3>
+                        <div class="wisdom-cards">
+                            <div class="wisdom-card">
+                                <div class="wisdom-icon">🔮</div>
+                                <h4>Think in Ripples</h4>
+                                <p>Before making any financial decision, ask: "What ripple effects will this create? How will this affect my future opportunities?"</p>
+                            </div>
+
+                            <div class="wisdom-card">
+                                <div class="wisdom-icon">🌊</div>
+                                <h4>Ride the Waves</h4>
+                                <p>Learn to identify market cycles and position yourself to benefit from both ups and downs instead of fighting them.</p>
+                            </div>
+
+                            <div class="wisdom-card">
+                                <div class="wisdom-icon">🎯</div>
+                                <h4>Value Creation</h4>
+                                <p>The best way to build wealth is to create genuine value for others - solve problems, meet needs, improve lives.</p>
+                            </div>
+
+                            <div class="wisdom-card">
+                                <div class="wisdom-icon">⚖️</div>
+                                <h4>Balance Risk and Reward</h4>
+                                <p>Higher returns usually mean higher risks. Find the right balance for your situation and timeline.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Sentiment as a Carrier</h3>
+                    <p>In Chapter 21, we\'ll dive deep into how emotions and feelings become the most powerful carriers of all - spreading faster than facts and shaping reality itself!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter19.html" class="nav-button prev">← Previous: Religion and Myth as Deep Carriers</a>
+                <a href="chapter21.html" class="nav-button next">Next: Sentiment as a Carrier →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Global variables
+        let currentProduct = 'sneakers';
+        let currentSupply = 5;
+        let currentDemand = 5;
+        let currentSentiment = 50;
+        let economicElements = [];
+        let trendSimulation = null;
+
+        // Lab station switching
+        function showLabStation(stationId) {
+            document.querySelectorAll('.lab-station').forEach(station => {
+                station.classList.remove('active');
+            });
+
+            document.querySelectorAll('.lab-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(stationId + '-station').classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // Supply & Demand Simulator
+        function selectProduct(product) {
+            document.querySelectorAll('.product-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+            event.target.classList.add('active');
+
+            currentProduct = product;
+            updateMarket();
+        }
+
+        function updateMarket() {
+            currentSupply = parseInt(document.getElementById('supply-slider').value);
+            currentDemand = parseInt(document.getElementById('demand-slider').value);
+
+            document.getElementById('supply-value').textContent = currentSupply;
+            document.getElementById('demand-value').textContent = currentDemand;
+
+            // Calculate price based on supply and demand
+            const basePrice = 50;
+            const priceMultiplier = (currentDemand / currentSupply);
+            const newPrice = Math.round(basePrice * priceMultiplier);
+
+            // Update price display
+            const priceDisplay = document.getElementById('price-display');
+            const currentPrice = parseInt(priceDisplay.textContent.replace('$', ''));
+            priceDisplay.textContent = '$' + newPrice;
+
+            // Show price change
+            const priceChange = document.getElementById('price-change');
+            const change = newPrice - currentPrice;
+            if (change > 0) {
+                priceChange.textContent = '+$' + change;
+                priceChange.className = 'price-change-indicator positive';
+            } else if (change < 0) {
+                priceChange.textContent = '-$' + Math.abs(change);
+                priceChange.className = 'price-change-indicator negative';
+            } else {
+                priceChange.textContent = 'No change';
+                priceChange.className = 'price-change-indicator neutral';
+            }
+
+            // Update explanation
+            updateMarketExplanation(newPrice);
+        }
+
+        function updateMarketExplanation(price) {
+            const explanation = document.getElementById('market-explanation');
+            const products = {
+                'sneakers': 'limited edition sneakers',
+                'concert': 'concert tickets',
+                'phone': 'new smartphone',
+                'house': 'houses in this area'
+            };
+
+            let message = '';
+            if (currentDemand > currentSupply + 2) {
+                message = `🔥 High demand, low supply! Everyone wants these ${products[currentProduct]} but there aren't enough. Price shoots up to $${price}!`;
+            } else if (currentSupply > currentDemand + 2) {
+                message = `📉 Low demand, high supply! Too many ${products[currentProduct]} available, not enough buyers. Price drops to $${price}.`;
+            } else {
+                message = `⚖️ Balanced market! Supply and demand for ${products[currentProduct]} are roughly equal. Fair price at $${price}.`;
+            }
+
+            explanation.innerHTML = `<h6>📈 Market Analysis</h6><p>${message}</p>`;
+        }
+
+        function runScenario(scenario) {
+            const supplySlider = document.getElementById('supply-slider');
+            const demandSlider = document.getElementById('demand-slider');
+
+            switch(scenario) {
+                case 'shortage':
+                    supplySlider.value = 2;
+                    demandSlider.value = 9;
+                    break;
+                case 'surplus':
+                    supplySlider.value = 9;
+                    demandSlider.value = 2;
+                    break;
+                case 'viral':
+                    supplySlider.value = 3;
+                    demandSlider.value = 10;
+                    break;
+                case 'reset':
+                    supplySlider.value = 5;
+                    demandSlider.value = 5;
+                    break;
+            }
+            updateMarket();
+        }
+
+        // Trend Simulator
+        function startTrendSimulation() {
+            const trendType = document.getElementById('trend-type').value;
+            const trendStarter = document.getElementById('trend-starter').value;
+
+            const trendName = getTrendName(trendType);
+            const starterName = getStarterName(trendStarter);
+
+            // Reset counters
+            document.getElementById('adopters-count').textContent = '0';
+            document.getElementById('market-value').textContent = '$0';
+            document.getElementById('trend-phase').textContent = 'Starting...';
+
+            // Start the simulation
+            simulateTrendSpread(trendName, starterName);
+        }
+
+        function getTrendName(type) {
+            const names = {
+                'fashion': 'Cosmic Glow Hoodies',
+                'food': 'Rainbow Bubble Tea',
+                'app': 'MindSync Social',
+                'dance': 'The Ripple Wave',
+                'game': 'Quantum Quest VR'
+            };
+            return names[type] || 'New Trend';
+        }
+
+        function getStarterName(starter) {
+            const names = {
+                'influencer': 'TikTok Star with 5M followers',
+                'celebrity': 'A-List Celebrity',
+                'friend': 'Your Cool Friend',
+                'brand': 'Major Brand Campaign'
+            };
+            return names[starter] || 'Someone';
+        }
+
+        function simulateTrendSpread(trendName, starterName) {
+            let day = 0;
+            let adopters = 0;
+            const timeline = document.getElementById('trend-timeline');
+            timeline.innerHTML = '<h6>📅 Trend Timeline</h6>';
+
+            const phases = [
+                { day: 1, adopters: 1000, value: 10000, phase: 'Early Adoption', event: `${starterName} posts about ${trendName}` },
+                { day: 3, adopters: 5000, value: 75000, phase: 'Initial Spread', event: 'Friends and followers start trying it' },
+                { day: 7, adopters: 25000, value: 500000, phase: 'Growing Interest', event: 'Other influencers notice and join in' },
+                { day: 14, adopters: 100000, value: 2500000, phase: 'Mainstream Attention', event: 'Traditional media covers the trend' },
+                { day: 21, adopters: 500000, value: 15000000, phase: 'Peak Popularity', event: 'Everyone is doing it!' },
+                { day: 30, adopters: 750000, value: 25000000, phase: 'Market Saturation', event: 'Brands rush to capitalize' },
+                { day: 45, adopters: 600000, value: 18000000, phase: 'Decline Begins', event: 'New trends emerge, some people move on' }
+            ];
+
+            let phaseIndex = 0;
+            const interval = setInterval(() => {
+                if (phaseIndex >= phases.length) {
+                    clearInterval(interval);
+                    return;
+                }
+
+                const phase = phases[phaseIndex];
+
+                // Update stats
+                document.getElementById('adopters-count').textContent = phase.adopters.toLocaleString();
+                document.getElementById('market-value').textContent = '$' + phase.value.toLocaleString();
+                document.getElementById('trend-phase').textContent = phase.phase;
+
+                // Add timeline event
+                const eventDiv = document.createElement('div');
+                eventDiv.className = 'timeline-event';
+                eventDiv.innerHTML = `
+                    <div class="event-day">Day ${phase.day}</div>
+                    <div class="event-content">
+                        <strong>${phase.phase}:</strong> ${phase.event}
+                        <div class="event-stats">${phase.adopters.toLocaleString()} people, $${phase.value.toLocaleString()} market value</div>
+                    </div>
+                `;
+                timeline.appendChild(eventDiv);
+
+                phaseIndex++;
+            }, 2000);
+        }
+
+        // Sentiment Tracker
+        function createNews(type) {
+            const newsExamples = {
+                'positive': [
+                    { headline: '🚀 Tech Company Announces Revolutionary Breakthrough!', impact: 75 },
+                    { headline: '📈 Unemployment Drops to Record Low!', impact: 70 },
+                    { headline: '🌟 Major Trade Deal Signed!', impact: 65 }
+                ],
+                'negative': [
+                    { headline: '📉 Market Crashes on Banking Concerns', impact: 25 },
+                    { headline: '😰 Supply Chain Disruptions Worsen', impact: 30 },
+                    { headline: '⚠️ Economic Uncertainty Grows', impact: 20 }
+                ],
+                'neutral': [
+                    { headline: '📊 Federal Reserve Maintains Interest Rates', impact: 50 },
+                    { headline: '📰 Quarterly Earnings Meet Expectations', impact: 52 },
+                    { headline: '🏛️ Government Budget Passes Congress', impact: 48 }
+                ],
+                'mixed': [
+                    { headline: '🤔 Strong Jobs Report, But Inflation Concerns Rise', impact: 55 },
+                    { headline: '⚖️ Tech Stocks Up, Energy Stocks Down', impact: 45 },
+                    { headline: '🌍 Global Growth Slows, But Innovation Accelerates', impact: 50 }
+                ]
+            };
+
+            const news = newsExamples[type][Math.floor(Math.random() * newsExamples[type].length)];
+            updateSentiment(news.impact);
+            addNewsToFeed(news.headline, news.impact);
+        }
+
+        function createSpecificNews(newsType) {
+            const specificNews = {
+                'tech-breakthrough': { headline: '🚀 AI Breakthrough Promises to Revolutionize Medicine!', impact: 80 },
+                'economic-growth': { headline: '📈 GDP Growth Exceeds All Expectations!', impact: 75 },
+                'natural-disaster': { headline: '🌪️ Major Hurricane Causes Widespread Damage', impact: 25 },
+                'political-uncertainty': { headline: '🏛️ Election Results Create Political Deadlock', impact: 35 }
+            };
+
+            const news = specificNews[newsType];
+            updateSentiment(news.impact);
+            addNewsToFeed(news.headline, news.impact);
+        }
+
+        function updateSentiment(newSentiment) {
+            currentSentiment = newSentiment;
+
+            // Update sentiment indicator
+            const indicator = document.getElementById('sentiment-indicator');
+            indicator.style.left = newSentiment + '%';
+
+            // Update sentiment value display
+            const valueDisplay = document.getElementById('sentiment-value');
+            if (newSentiment >= 80) {
+                valueDisplay.textContent = newSentiment + ' - Extreme Greed 🤑';
+                valueDisplay.className = 'sentiment-reading extreme-greed';
+            } else if (newSentiment >= 60) {
+                valueDisplay.textContent = newSentiment + ' - Greed 😊';
+                valueDisplay.className = 'sentiment-reading greed';
+            } else if (newSentiment >= 40) {
+                valueDisplay.textContent = newSentiment + ' - Neutral 😐';
+                valueDisplay.className = 'sentiment-reading neutral';
+            } else if (newSentiment >= 20) {
+                valueDisplay.textContent = newSentiment + ' - Fear 😰';
+                valueDisplay.className = 'sentiment-reading fear';
+            } else {
+                valueDisplay.textContent = newSentiment + ' - Extreme Fear 😨';
+                valueDisplay.className = 'sentiment-reading extreme-fear';
+            }
+
+            // Update market reactions
+            updateMarketReactions(newSentiment);
+        }
+
+        function updateMarketReactions(sentiment) {
+            const stockReaction = document.getElementById('stock-reaction');
+            const volumeReaction = document.getElementById('volume-reaction');
+            const currencyReaction = document.getElementById('currency-reaction');
+            const commodityReaction = document.getElementById('commodity-reaction');
+
+            if (sentiment >= 70) {
+                stockReaction.textContent = '📈 Rising Sharply';
+                volumeReaction.textContent = '🔥 Very High';
+                currencyReaction.textContent = '💪 Strengthening';
+                commodityReaction.textContent = '⬆️ Increasing';
+            } else if (sentiment >= 60) {
+                stockReaction.textContent = '📊 Rising';
+                volumeReaction.textContent = '📈 High';
+                currencyReaction.textContent = '➡️ Stable-Strong';
+                commodityReaction.textContent = '↗️ Slight Increase';
+            } else if (sentiment >= 40) {
+                stockReaction.textContent = '➡️ Stable';
+                volumeReaction.textContent = '📊 Normal';
+                currencyReaction.textContent = '⚖️ Steady';
+                commodityReaction.textContent = '➡️ Unchanged';
+            } else if (sentiment >= 30) {
+                stockReaction.textContent = '📉 Declining';
+                volumeReaction.textContent = '📈 High (Selling)';
+                currencyReaction.textContent = '⬇️ Weakening';
+                commodityReaction.textContent = '↘️ Slight Decrease';
+            } else {
+                stockReaction.textContent = '💥 Plummeting';
+                volumeReaction.textContent = '🌋 Extremely High';
+                currencyReaction.textContent = '💔 Sharp Decline';
+                commodityReaction.textContent = '⬇️ Falling';
+            }
+        }
+
+        function addNewsToFeed(headline, impact) {
+            const newsItems = document.querySelector('.news-items');
+
+            const newsItem = document.createElement('div');
+            newsItem.className = 'news-item';
+            const impactClass = impact >= 60 ? 'positive' : impact >= 40 ? 'neutral' : 'negative';
+            newsItem.innerHTML = `
+                <div class="news-headline ${impactClass}">${headline}</div>
+                <div class="news-impact">Market Impact: ${impact}/100</div>
+                <div class="news-timestamp">Just now</div>
+            `;
+
+            // Add to top of feed
+            if (newsItems.children.length === 1 && newsItems.children[0].textContent.includes('Click on news buttons')) {
+                newsItems.innerHTML = '';
+            }
+
+            newsItems.insertBefore(newsItem, newsItems.firstChild);
+
+            // Keep only last 5 news items
+            while (newsItems.children.length > 5) {
+                newsItems.removeChild(newsItems.lastChild);
+            }
+        }
+
+        // Economy Builder
+        function addEconomicElement(element) {
+            if (!economicElements.includes(element)) {
+                economicElements.push(element);
+                updateEconomy();
+
+                const rippleFeed = document.getElementById('ripple-feed');
+                const rippleMessage = document.createElement('div');
+                rippleMessage.className = 'ripple-message';
+                rippleMessage.textContent = `➕ Added ${element.charAt(0).toUpperCase() + element.slice(1)} to the economy`;
+
+                if (rippleFeed.children[0] && rippleFeed.children[0].textContent.includes('Add economic elements')) {
+                    rippleFeed.innerHTML = '';
+                }
+
+                rippleFeed.appendChild(rippleMessage);
+            }
+        }
+
+        function updateEconomy() {
+            const interestRate = parseFloat(document.getElementById('interest-rate').value);
+            const taxRate = parseInt(document.getElementById('tax-rate').value);
+            const govSpending = parseInt(document.getElementById('gov-spending').value);
+
+            // Update displays
+            document.getElementById('interest-display').textContent = interestRate + '%';
+            document.getElementById('tax-display').textContent = taxRate + '%';
+            document.getElementById('spending-display').textContent = govSpending + '%';
+
+            // Calculate economic indicators based on elements and policies
+            const baseGDP = 2.5;
+            const baseUnemployment = 5.0;
+            const baseInflation = 2.1;
+
+            let gdpModifier = 0;
+            let unemploymentModifier = 0;
+            let inflationModifier = 0;
+
+            // Element effects
+            if (economicElements.includes('businesses')) gdpModifier += 0.5;
+            if (economicElements.includes('workers')) unemploymentModifier -= 0.5;
+            if (economicElements.includes('consumers')) gdpModifier += 0.3;
+            if (economicElements.includes('investors')) gdpModifier += 0.4;
+            if (economicElements.includes('government')) {
+                gdpModifier += govSpending * 0.01;
+                inflationModifier += govSpending * 0.005;
+            }
+            if (economicElements.includes('banks')) {
+                gdpModifier += (5 - interestRate) * 0.1;
+                inflationModifier += (5 - interestRate) * 0.05;
+            }
+
+            // Policy effects
+            gdpModifier -= taxRate * 0.02; // Higher taxes reduce growth
+            unemploymentModifier += interestRate * 0.2; // Higher rates increase unemployment
+
+            const finalGDP = (baseGDP + gdpModifier).toFixed(1);
+            const finalUnemployment = Math.max(0.1, baseUnemployment + unemploymentModifier).toFixed(1);
+            const finalInflation = (baseInflation + inflationModifier).toFixed(1);
+
+            document.getElementById('gdp-growth').textContent = (finalGDP >= 0 ? '+' : '') + finalGDP + '%';
+            document.getElementById('unemployment').textContent = finalUnemployment + '%';
+            document.getElementById('inflation').textContent = finalInflation + '%';
+
+            // Update confidence based on overall health
+            const healthScore = (parseFloat(finalGDP) * 2) - parseFloat(finalUnemployment) - Math.abs(parseFloat(finalInflation) - 2);
+            let confidence = 'Poor';
+            if (healthScore >= 3) confidence = 'Excellent';
+            else if (healthScore >= 1) confidence = 'Good';
+            else if (healthScore >= -1) confidence = 'Moderate';
+
+            document.getElementById('confidence').textContent = confidence;
+        }
+
+        function runEconomicScenario(scenario) {
+            const interestSlider = document.getElementById('interest-rate');
+            const taxSlider = document.getElementById('tax-rate');
+            const spendingSlider = document.getElementById('gov-spending');
+
+            // Reset elements
+            economicElements = [];
+
+            switch(scenario) {
+                case 'boom':
+                    economicElements = ['businesses', 'workers', 'consumers', 'investors'];
+                    interestSlider.value = 2;
+                    taxSlider.value = 15;
+                    spendingSlider.value = 25;
+                    break;
+                case 'recession':
+                    economicElements = ['government', 'banks'];
+                    interestSlider.value = 8;
+                    taxSlider.value = 35;
+                    spendingSlider.value = 50;
+                    break;
+                case 'inflation':
+                    economicElements = ['consumers', 'government'];
+                    interestSlider.value = 1;
+                    taxSlider.value = 10;
+                    spendingSlider.value = 60;
+                    break;
+                case 'balanced':
+                    economicElements = ['businesses', 'workers', 'consumers', 'investors', 'government', 'banks'];
+                    interestSlider.value = 4;
+                    taxSlider.value = 25;
+                    spendingSlider.value = 35;
+                    break;
+            }
+
+            updateEconomy();
+
+            const rippleFeed = document.getElementById('ripple-feed');
+            rippleFeed.innerHTML = `<div class="ripple-message">🎯 Applied ${scenario} scenario - watch the economic ripples!</div>`;
+        }
+
+        // Financial Scenarios
+        function showScenario(scenarioId) {
+            document.querySelectorAll('.financial-scenario').forEach(scenario => {
+                scenario.classList.remove('active');
+            });
+
+            document.querySelectorAll('.scenario-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(scenarioId + '-scenario').classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function analyzeInvestmentDecision() {
+            const choice = document.querySelector('input[name="investment-choice"]:checked');
+            if (!choice) {
+                alert('Please make an investment choice first!');
+                return;
+            }
+
+            const analysisDiv = document.getElementById('investment-analysis');
+            const analyses = {
+                'tech': {
+                    verdict: 'High Risk, High Reward Choice',
+                    pros: ['Potential for massive returns', 'Learning about individual companies', 'Exciting and engaging'],
+                    cons: ['Could lose most of your money', 'Very volatile', 'Requires lots of research'],
+                    rippleThinking: 'You\'re betting on one trend. If you\'re right about this company\'s future ripples, you could do very well. But one bad news story could crash the stock.',
+                    recommendation: 'Only invest what you can afford to lose. Consider putting just 10-20% in individual stocks.'
+                },
+                'index': {
+                    verdict: 'Smart Long-Term Choice',
+                    pros: ['Diversified across many companies', 'Historically reliable returns', 'Low fees', 'Perfect for beginners'],
+                    cons: ['Won\'t make you rich overnight', 'Less exciting than individual stocks'],
+                    rippleThinking: 'You\'re riding the overall economic growth ripples. As the economy grows over time, so does your investment.',
+                    recommendation: 'Excellent choice for young investors. This is how most millionaires actually built their wealth.'
+                },
+                'real-estate': {
+                    verdict: 'Solid Middle Ground',
+                    pros: ['Real assets people always need', 'Rental income potential', 'Inflation protection'],
+                    cons: ['Less liquid than stocks', 'Property management required', 'Geographic risk'],
+                    rippleThinking: 'You\'re betting on population and income growth ripples. More people + higher incomes = higher real estate values.',
+                    recommendation: 'Good diversification, but REITs give you real estate exposure without the hassles.'
+                },
+                'savings': {
+                    verdict: 'Very Conservative Choice',
+                    pros: ['No risk of losing money', 'Always available when needed', 'Good for emergency fund'],
+                    cons: ['Returns barely beat inflation', 'Opportunity cost of missing growth'],
+                    rippleThinking: 'You\'re playing it safe but missing out on compound growth ripples that could build serious wealth.',
+                    recommendation: 'Keep 3-6 months expenses in savings, but invest the rest for long-term growth.'
+                },
+                'diversify': {
+                    verdict: 'Excellent Strategic Thinking!',
+                    pros: ['Reduces risk through diversification', 'Captures multiple types of growth', 'Balanced approach'],
+                    cons: ['More complex to manage', 'Average returns (not spectacular)'],
+                    rippleThinking: 'You\'re hedging your bets across multiple ripple patterns. Smart risk management for uncertain futures.',
+                    recommendation: 'This shows mature financial thinking. Maybe 60% index funds, 20% real estate, 10% individual stocks, 10% cash.'
+                }
+            };
+
+            const analysis = analyses[choice.value];
+
+            analysisDiv.innerHTML = `
+                <div class="analysis-result">
+                    <h6>🧠 Your Investment Analysis: ${analysis.verdict}</h6>
+
+                    <div class="pros-cons">
+                        <div class="pros-section">
+                            <strong>✅ Pros:</strong>
+                            <ul>${analysis.pros.map(pro => '<li>' + pro + '</li>').join('')}</ul>
+                        </div>
+
+                        <div class="cons-section">
+                            <strong>❌ Cons:</strong>
+                            <ul>${analysis.cons.map(con => '<li>' + con + '</li>').join('')}</ul>
+                        </div>
+                    </div>
+
+                    <div class="ripple-analysis">
+                        <strong>🌊 Ripple Thinking Analysis:</strong>
+                        <p>${analysis.rippleThinking}</p>
+                    </div>
+
+                    <div class="recommendation">
+                        <strong>💡 Smart Money Recommendation:</strong>
+                        <p>${analysis.recommendation}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function analyzeCareerDecision() {
+            const choice = document.getElementById('career-choice').value;
+            const reasoning = document.getElementById('career-reasoning').value;
+
+            if (!choice || !reasoning) {
+                alert('Please choose a career and explain your reasoning!');
+                return;
+            }
+
+            const analysisDiv = document.getElementById('career-analysis');
+            const analyses = {
+                'software': {
+                    trendAnalysis: 'EXCELLENT choice! Software development is riding multiple positive ripples: AI expansion, digital transformation, remote work acceptance.',
+                    futureOutlook: 'Very bright. Demand will likely grow for decades as every industry becomes more digital.',
+                    risks: 'Some coding jobs may be automated by AI, but creative problem-solving roles will remain strong.'
+                },
+                'content': {
+                    trendAnalysis: 'PROMISING but risky! Creator economy is booming, but it\'s highly competitive and unpredictable.',
+                    futureOutlook: 'Mixed. Huge potential for success, but most creators struggle to make consistent income.',
+                    risks: 'Platform dependency, algorithm changes, and market saturation could affect earnings.'
+                },
+                'healthcare': {
+                    trendAnalysis: 'SOLID choice! Aging population and healthcare needs create strong, stable demand ripples.',
+                    futureOutlook: 'Very stable. Healthcare will always be needed, and aging demographics increase demand.',
+                    risks: 'Some roles may be automated, but patient care and complex medical decisions will remain human.'
+                },
+                'green-energy': {
+                    trendAnalysis: 'FORWARD-THINKING! Climate change concerns and government policies are creating massive green energy ripples.',
+                    futureOutlook: 'Excellent. Trillions being invested globally in clean energy transition.',
+                    risks: 'Still developing field, so some uncertainty about which technologies will dominate.'
+                }
+            };
+
+            const analysis = analyses[choice];
+
+            analysisDiv.innerHTML = `
+                <div class="career-analysis-result">
+                    <h6>🎯 Your Career Choice Analysis</h6>
+
+                    <div class="trend-analysis">
+                        <strong>📊 Trend Analysis:</strong>
+                        <p>${analysis.trendAnalysis}</p>
+                    </div>
+
+                    <div class="future-outlook">
+                        <strong>🔮 Future Outlook:</strong>
+                        <p>${analysis.futureOutlook}</p>
+                    </div>
+
+                    <div class="risk-assessment">
+                        <strong>⚠️ Risk Assessment:</strong>
+                        <p>${analysis.risks}</p>
+                    </div>
+
+                    <div class="your-reasoning">
+                        <strong>🧠 Your Ripple Thinking:</strong>
+                        <p>"${reasoning}"</p>
+                    </div>
+
+                    <div class="final-verdict">
+                        <strong>💡 Smart Career Strategy:</strong>
+                        <p>Whatever career you choose, focus on developing skills that are uniquely human: creativity, emotional intelligence, complex problem-solving, and adaptability. These will serve you well in any field!</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateSpendingAllocation() {
+            const categories = ['skills', 'tools', 'networking', 'business', 'health', 'fun'];
+            let total = 0;
+
+            categories.forEach(category => {
+                const value = parseInt(document.getElementById(category + '-slider').value);
+                document.getElementById(category + '-amount').textContent = value;
+                total += value;
+            });
+
+            document.getElementById('total-spent').textContent = total;
+            document.getElementById('remaining-budget').textContent = 500 - total;
+
+            // Update color based on budget
+            const remainingElement = document.getElementById('remaining-budget');
+            if (total > 500) {
+                remainingElement.style.color = 'red';
+            } else if (total === 500) {
+                remainingElement.style.color = 'green';
+            } else {
+                remainingElement.style.color = 'black';
+            }
+        }
+
+        function analyzeSpendingDecision() {
+            const total = parseInt(document.getElementById('total-spent').textContent);
+
+            if (total === 0) {
+                alert('Please allocate some money first!');
+                return;
+            }
+
+            const categories = ['skills', 'tools', 'networking', 'business', 'health', 'fun'];
+            const allocations = {};
+
+            categories.forEach(category => {
+                allocations[category] = parseInt(document.getElementById(category + '-amount').textContent);
+            });
+
+            const analysisDiv = document.getElementById('spending-analysis');
+
+            // Analyze the allocation
+            let score = 0;
+            let feedback = [];
+
+            // Skills investment (high value)
+            if (allocations.skills >= 100) {
+                score += 3;
+                feedback.push('✅ Great investment in your skills! This will pay dividends for years.');
+            } else if (allocations.skills >= 50) {
+                score += 2;
+                feedback.push('👍 Good skills investment, consider allocating even more.');
+            } else {
+                score += 1;
+                feedback.push('⚠️ Consider investing more in skills - your future self will thank you!');
+            }
+
+            // Tools investment (medium-high value)
+            if (allocations.tools >= 75 && allocations.tools <= 150) {
+                score += 2;
+                feedback.push('✅ Smart tool investment! Quality tools boost productivity.');
+            } else if (allocations.tools > 150) {
+                score += 1;
+                feedback.push('⚠️ Might be overspending on tools. Focus on essentials first.');
+            }
+
+            // Balance check
+            if (allocations.health >= 50) {
+                score += 2;
+                feedback.push('✅ Wise health investment! Health is wealth.');
+            }
+
+            if (allocations.fun >= 25 && allocations.fun <= 100) {
+                score += 1;
+                feedback.push('✅ Good balance with some fun spending!');
+            } else if (allocations.fun > 100) {
+                feedback.push('⚠️ Lots of fun spending - make sure it doesn\'t hurt your future goals.');
+            }
+
+            // Future focus score
+            const futureInvestment = allocations.skills + allocations.tools + allocations.networking + allocations.business;
+            const immediateSpending = allocations.health + allocations.fun;
+
+            if (futureInvestment > immediateSpending) {
+                score += 2;
+                feedback.push('🚀 You\'re thinking long-term! Future-focused spending builds wealth.');
+            }
+
+            let verdict = '';
+            if (score >= 8) {
+                verdict = 'EXCELLENT financial thinking! 🌟';
+            } else if (score >= 6) {
+                verdict = 'GOOD spending strategy! 👍';
+            } else if (score >= 4) {
+                verdict = 'DECENT plan, room for improvement! 💡';
+            } else {
+                verdict = 'Consider more future-focused spending! 📈';
+            }
+
+            analysisDiv.innerHTML = `
+                <div class="spending-analysis-result">
+                    <h6>💰 Your Spending Analysis: ${verdict}</h6>
+
+                    <div class="allocation-summary">
+                        <strong>📊 Your Allocation:</strong>
+                        <div class="allocation-breakdown">
+                            ${categories.map(cat => `<div class="allocation-item">${cat.charAt(0).toUpperCase() + cat.slice(1)}: $${allocations[cat]}</div>`).join('')}
+                        </div>
+                        <div class="total-line">Total: $${total}</div>
+                    </div>
+
+                    <div class="ripple-feedback">
+                        <strong>🌊 Ripple Effect Analysis:</strong>
+                        <ul>${feedback.map(item => '<li>' + item + '</li>').join('')}</ul>
+                    </div>
+
+                    <div class="spending-wisdom">
+                        <strong>💡 Smart Spending Wisdom:</strong>
+                        <p>The best spending creates positive ripples that benefit your future self. Invest in things that grow in value: skills, relationships, health, and income-generating assets!</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        function analyzeSavingDecision() {
+            const strategy = document.querySelector('input[name="saving-strategy"]:checked');
+            const timeline = document.getElementById('saving-timeline').value;
+
+            if (!strategy) {
+                alert('Please choose a saving strategy!');
+                return;
+            }
+
+            const analysisDiv = document.getElementById('saving-analysis');
+
+            const strategies = {
+                'aggressive': {
+                    name: 'Aggressive Growth Strategy',
+                    suitableFor: 'Long-term goals (10+ years)',
+                    pros: ['Highest potential returns', 'Beats inflation easily', 'Compound growth'],
+                    cons: ['High volatility', 'Possible short-term losses', 'Requires patience'],
+                    bestTimeline: timeline >= 10
+                },
+                'balanced': {
+                    name: 'Balanced Approach',
+                    suitableFor: 'Medium-term goals (5-10 years)',
+                    pros: ['Good growth with moderate risk', 'More stable than all-stocks', 'Flexible'],
+                    cons: ['Lower returns than aggressive', 'Still some volatility'],
+                    bestTimeline: timeline >= 5 && timeline <= 10
+                },
+                'conservative': {
+                    name: 'Conservative Safety',
+                    suitableFor: 'Short-term goals (1-5 years)',
+                    pros: ['Very safe', 'Predictable returns', 'Good for near-term needs'],
+                    cons: ['Low returns', 'May not beat inflation', 'Opportunity cost'],
+                    bestTimeline: timeline <= 5
+                },
+                'ladder': {
+                    name: 'Goal-Based Ladder',
+                    suitableFor: 'Multiple timeframes',
+                    pros: ['Matches risk to timeline', 'Diversified approach', 'Flexible'],
+                    cons: ['More complex', 'Requires rebalancing'],
+                    bestTimeline: true // Always appropriate
+                }
+            };
+
+            const chosenStrategy = strategies[strategy.value];
+            const timelineSuitability = chosenStrategy.bestTimeline;
+
+            analysisDiv.innerHTML = `
+                <div class="saving-analysis-result">
+                    <h6>💰 Your Saving Strategy Analysis</h6>
+
+                    <div class="strategy-overview">
+                        <strong>📈 Chosen Strategy:</strong> ${chosenStrategy.name}
+                        <br><strong>⏰ Your Timeline:</strong> ${timeline} years
+                        <br><strong>🎯 Best For:</strong> ${chosenStrategy.suitableFor}
+                    </div>
+
+                    <div class="timeline-match">
+                        <strong>⚖️ Timeline Match:</strong>
+                        ${timelineSuitability ? 
+                            '<span style="color: green;">✅ Good match for your timeline!</span>' : 
+                            '<span style="color: orange;">⚠️ Consider adjusting based on your timeline</span>'}
+                    </div>
+
+                    <div class="strategy-analysis">
+                        <div class="pros-section">
+                            <strong>✅ Advantages:</strong>
+                            <ul>${chosenStrategy.pros.map(pro => '<li>' + pro + '</li>').join('')}</ul>
+                        </div>
+
+                        <div class="cons-section">
+                            <strong>❌ Considerations:</strong>
+                            <ul>${chosenStrategy.cons.map(con => '<li>' + con + '</li>').join('')}</ul>
+                        </div>
+                    </div>
+
+                    <div class="compound-power">
+                        <strong>🚀 The Power of Compound Interest:</strong>
+                        <p>If you save $100/month for ${timeline} years with 7% annual returns, you\'ll have approximately $${Math.round(100 * 12 * timeline * Math.pow(1.07, timeline/2) / 1000)}K!</p>
+                    </div>
+
+                    <div class="final-advice">
+                        <strong>💡 Smart Saving Wisdom:</strong>
+                        <p>The most important thing is to START saving regularly. Time is your biggest advantage - even small amounts saved consistently can grow into substantial wealth through compound interest!</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        // Initialize with default market values
+        updateMarket();
+    </script>
+
+    <style>
+        /* Chapter 20 Specific Styles */
+        .amazing-fact {
+            background: linear-gradient(135deg, #E1F5FE, #81D4FA);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            border-left: 5px solid var(--ripple-blue);
+            margin: 2rem 0;
+        }
+
+        .market-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .market-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: transform var(--transition-normal);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .market-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .market-card.supply-demand {
+            border-top: 5px solid #4CAF50;
+        }
+
+        .market-card.trend-momentum {
+            border-top: 5px solid #2196F3;
+        }
+
+        .market-card.sentiment-emotion {
+            border-top: 5px solid #FF9800;
+        }
+
+        .market-card.innovation-disruption {
+            border-top: 5px solid #9C27B0;
+        }
+
+        .market-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .market-card h4 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .market-examples {
+            margin: 1rem 0;
+        }
+
+        .example {
+            background: var(--bg-secondary);
+            padding: 0.5rem 1rem;
+            margin: 0.3rem 0;
+            border-radius: var(--radius-sm);
+            border-left: 3px solid var(--ripple-teal);
+            font-size: 0.9rem;
+        }
+
+        .ripple-power {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 0.8rem;
+            border-radius: var(--radius-sm);
+            margin-top: 1rem;
+            font-weight: bold;
+            color: var(--ripple-purple);
+        }
+
+        .market-lab {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .station-tabs {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .lab-tab {
+            padding: 1rem 1.5rem;
+            background: var(--bg-secondary);
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            font-weight: bold;
+        }
+
+        .lab-tab.active {
+            background: var(--ripple-blue);
+            color: white;
+        }
+
+        .lab-station {
+            display: none;
+            margin: 2rem 0;
+        }
+
+        .lab-station.active {
+            display: block;
+        }
+
+        /* Supply & Demand Simulator */
+        .product-options {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1rem 0;
+        }
+
+        .product-btn {
+            padding: 1rem 1.5rem;
+            background: var(--bg-secondary);
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: bold;
+            transition: all var(--transition-normal);
+        }
+
+        .product-btn.active {
+            background: var(--ripple-green);
+            color: white;
+            border-color: var(--ripple-green);
+        }
+
+        .slider-controls {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .control-group {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+        }
+
+        .control-group h6 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .slider {
+            width: 100%;
+            height: 8px;
+            background: #ddd;
+            border-radius: var(--radius-sm);
+            outline: none;
+            margin: 1rem 0;
+        }
+
+        .slider-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .slider-value {
+            text-align: center;
+            font-weight: bold;
+            color: var(--ripple-purple);
+            font-size: 1.2rem;
+        }
+
+        .market-display {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .price-indicator {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .price-value {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--ripple-green);
+        }
+
+        .price-change-indicator {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .price-change-indicator.positive {
+            color: #4CAF50;
+        }
+
+        .price-change-indicator.negative {
+            color: #f44336;
+        }
+
+        .price-change-indicator.neutral {
+            color: #666;
+        }
+
+        .market-explanation {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            margin: 2rem 0;
+        }
+
+        .scenario-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .scenario-btn {
+            padding: 1rem 1.5rem;
+            background: var(--ripple-orange);
+            color: white;
+            border: none;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: bold;
+            transition: all var(--transition-normal);
+        }
+
+        .scenario-btn:hover {
+            background: #FF8C00;
+            transform: translateY(-2px);
+        }
+
+        /* Trend Simulator */
+        .trend-creator {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .trend-inputs {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .input-group label {
+            display: block;
+            font-weight: bold;
+            color: var(--ripple-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .trend-select {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+        }
+
+        .start-trend-btn {
+            background: var(--ripple-purple);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .start-trend-btn:hover {
+            background: #673AB7;
+            transform: translateY(-2px);
+        }
+
+        .trend-visualization {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .network-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .stat-item {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            text-align: center;
+        }
+
+        .stat-label {
+            display: block;
+            font-weight: bold;
+            color: var(--ripple-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--ripple-purple);
+        }
+
+        .trend-timeline {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            margin: 2rem 0;
+            min-height: 200px;
+        }
+
+        .timeline-event {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-teal);
+        }
+
+        .event-day {
+            font-weight: bold;
+            color: var(--ripple-blue);
+            min-width: 60px;
+        }
+
+        .event-stats {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 0.3rem;
+        }
+
+        .insight-phases {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .phase-card {
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .phase-card.early {
+            background: linear-gradient(135deg, #E8F5E8, #C8E6C9);
+        }
+
+        .phase-card.growth {
+            background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+        }
+
+        .phase-card.mainstream {
+            background: linear-gradient(135deg, #FFF3E0, #FFCC02);
+        }
+
+        .phase-card.decline {
+            background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+        }
+
+        .phase-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .phase-card h6 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        /* Sentiment Tracker */
+        .sentiment-simulator {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .news-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .news-btn {
+            padding: 1rem;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+
+        .news-btn.positive {
+            background: #4CAF50;
+            color: white;
+        }
+
+        .news-btn.negative {
+            background: #f44336;
+            color: white;
+        }
+
+        .news-btn.neutral {
+            background: #607D8B;
+            color: white;
+        }
+
+        .news-btn.mixed {
+            background: #FF9800;
+            color: white;
+        }
+
+        .news-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .example-news {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .example-btn {
+            padding: 0.8rem;
+            background: var(--ripple-teal);
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all var(--transition-normal);
+        }
+
+        .example-btn:hover {
+            background: #00695C;
+            transform: translateY(-1px);
+        }
+
+        .sentiment-display {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .sentiment-meter {
+            margin: 2rem 0;
+        }
+
+        .sentiment-meter h6 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .meter-container {
+            position: relative;
+            margin: 2rem 0;
+        }
+
+        .sentiment-scale {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .scale-label.fear {
+            color: #f44336;
+        }
+
+        .scale-label.neutral {
+            color: #666;
+        }
+
+        .scale-label.greed {
+            color: #4CAF50;
+        }
+
+        .meter-bar {
+            height: 20px;
+            background: linear-gradient(90deg, #f44336, #FF9800, #4CAF50);
+            border-radius: var(--radius-sm);
+            position: relative;
+        }
+
+        .sentiment-needle {
+            position: absolute;
+            top: -5px;
+            width: 4px;
+            height: 30px;
+            background: #000;
+            border-radius: 2px;
+            transform: translateX(-50%);
+            transition: left var(--transition-normal);
+        }
+
+        .sentiment-reading {
+            text-align: center;
+            font-weight: bold;
+            margin: 1rem 0;
+            padding: 0.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .sentiment-reading.extreme-fear {
+            background: #FFEBEE;
+            color: #C62828;
+        }
+
+        .sentiment-reading.fear {
+            background: #FFF3E0;
+            color: #E65100;
+        }
+
+        .sentiment-reading.neutral {
+            background: #F5F5F5;
+            color: #424242;
+        }
+
+        .sentiment-reading.greed {
+            background: #E8F5E8;
+            color: #2E7D32;
+        }
+
+        .sentiment-reading.extreme-greed {
+            background: #C8E6C9;
+            color: #1B5E20;
+        }
+
+        .reaction-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .reaction-item {
+            display: flex;
+            justify-content: space-between;
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .reaction-label {
+            font-weight: bold;
+            color: var(--ripple-blue);
+        }
+
+        .reaction-value {
+            font-weight: bold;
+        }
+
+        .news-feed {
+            margin: 2rem 0;
+        }
+
+        .news-feed h6 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .news-item {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin: 0.5rem 0;
+            border-left: 5px solid #ddd;
+        }
+
+        .news-headline.positive {
+            border-left-color: #4CAF50;
+        }
+
+        .news-headline.negative {
+            border-left-color: #f44336;
+        }
+
+        .news-headline.neutral {
+            border-left-color: #666;
+        }
+
+        .news-impact {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 0.3rem 0;
+        }
+
+        .news-timestamp {
+            font-size: 0.8rem;
+            color: #999;
+        }
+
+        .psychology-concepts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .concept-card {
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: transform var(--transition-normal);
+        }
+
+        .concept-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .concept-card.fear {
+            background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+        }
+
+        .concept-card.greed {
+            background: linear-gradient(135deg, #E8F5E8, #C8E6C9);
+        }
+
+        .concept-card.herd {
+            background: linear-gradient(135deg, #FFF3E0, #FFCC02);
+        }
+
+        .concept-card.contrarian {
+            background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+        }
+
+        .concept-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .concept-card h6 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        /* Economy Builder */
+        .element-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .element-btn {
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: bold;
+            transition: all var(--transition-normal);
+        }
+
+        .element-btn:hover {
+            border-color: var(--ripple-blue);
+            transform: translateY(-2px);
+        }
+
+        .policy-sliders {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .policy-control {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .policy-control label {
+            font-weight: bold;
+            color: var(--ripple-blue);
+            min-width: 120px;
+        }
+
+        .policy-control input[type="range"] {
+            flex: 1;
+        }
+
+        .policy-control span {
+            font-weight: bold;
+            color: var(--ripple-purple);
+            min-width: 60px;
+        }
+
+        .economic-indicators {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .indicator-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .indicator {
+            display: flex;
+            justify-content: space-between;
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .indicator-label {
+            font-weight: bold;
+            color: var(--ripple-blue);
+        }
+
+        .indicator-value {
+            font-weight: bold;
+            color: var(--ripple-purple);
+        }
+
+        .ripple-connections {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .ripple-feed {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            min-height: 100px;
+            max-height: 200px;
+            overflow-y: auto;
+        }
+
+        .ripple-message {
+            background: white;
+            padding: 0.8rem;
+            border-radius: var(--radius-sm);
+            margin: 0.3rem 0;
+            border-left: 3px solid var(--ripple-teal);
+        }
+
+        /* Financial Challenge Styles */
+        .money-game {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .scenario-tabs {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .scenario-tab {
+            padding: 1rem 1.5rem;
+            background: var(--bg-secondary);
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .scenario-tab.active {
+            background: var(--ripple-blue);
+            color: white;
+        }
+
+        .financial-scenario {
+            display: none;
+            margin: 2rem 0;
+        }
+
+        .financial-scenario.active {
+            display: block;
+        }
+
+        .investment-options {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .option-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+        }
+
+        .option-card h6 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .decision-options {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .decision-option {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: transform var(--transition-normal);
+        }
+
+        .decision-option:hover {
+            transform: translateX(5px);
+        }
+
+        .decision-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .analyze-decision-btn {
+            background: var(--ripple-purple);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .analyze-decision-btn:hover {
+            background: #673AB7;
+            transform: translateY(-2px);
+        }
+
+        .decision-analysis {
+            margin: 2rem 0;
+        }
+
+        .analysis-result, .career-analysis-result, .spending-analysis-result, .saving-analysis-result {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .pros-cons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .pros-section, .cons-section {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .pros-section {
+            border-left: 5px solid #4CAF50;
+        }
+
+        .cons-section {
+            border-left: 5px solid #FF5722;
+        }
+
+        .ripple-analysis, .recommendation, .trend-analysis, .future-outlook, .risk-assessment {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            margin: 1rem 0;
+        }
+
+        .career-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .career-factors {
+            background: var(--bg-accent);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .factor-list {
+            display: grid;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .factor-item {
+            background: white;
+            padding: 0.8rem;
+            border-radius: var(--radius-sm);
+            border-left: 3px solid var(--ripple-teal);
+        }
+
+        .career-selector {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            margin: 1rem 0;
+        }
+
+        .reasoning-input {
+            width: 100%;
+            min-height: 100px;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            resize: vertical;
+            margin: 1rem 0;
+        }
+
+        .spending-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .category-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: transform var(--transition-normal);
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .category-card h6 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .ripple-impact {
+            background: var(--ripple-teal);
+            color: white;
+            padding: 0.5rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .allocation-sliders {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .allocation-item {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .allocation-item label {
+            display: block;
+            font-weight: bold;
+            color: var(--ripple-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .allocation-item input[type="range"] {
+            width: 100%;
+            margin: 0.5rem 0;
+        }
+
+        .spending-summary {
+            background: var(--bg-accent);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .total-spent, .remaining-budget {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin: 0.5rem 0;
+        }
+
+        .saving-goals {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .goal-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .goal-card h6 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .goal-urgency {
+            background: var(--ripple-orange);
+            color: white;
+            padding: 0.5rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            margin-top: 1rem;
+        }
+
+        .strategy-options {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .strategy-option {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: transform var(--transition-normal);
+        }
+
+        .strategy-option:hover {
+            transform: translateX(5px);
+        }
+
+        .strategy-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+        }
+
+        .strategy-details h7 {
+            font-weight: bold;
+            color: var(--ripple-blue);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .timeline-selector {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: var(--radius-sm);
+            font-family: inherit;
+            margin: 1rem 0;
+        }
+
+        /* Chapter Summary */
+        .mastery-overview {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .key-discoveries {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .discovery-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: transform var(--transition-normal);
+        }
+
+        .discovery-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .discovery-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .discovery-card h4 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .practical-applications {
+            margin: 3rem 0;
+        }
+
+        .practical-applications h3 {
+            color: var(--ripple-blue);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .application-sections {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .app-section {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .app-section h4 {
+            color: var(--ripple-purple);
+            margin-bottom: 1rem;
+        }
+
+        .app-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .app-section li {
+            background: white;
+            padding: 0.8rem;
+            margin: 0.3rem 0;
+            border-radius: var(--radius-sm);
+            border-left: 3px solid var(--ripple-teal);
+        }
+
+        .ripple-wisdom {
+            margin: 3rem 0;
+        }
+
+        .ripple-wisdom h3 {
+            color: var(--ripple-blue);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .wisdom-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .wisdom-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            transition: transform var(--transition-normal);
+        }
+
+        .wisdom-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .wisdom-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .wisdom-card h4 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .station-tabs, .scenario-tabs {
+                flex-direction: column;
+            }
+
+            .market-grid, .key-discoveries {
+                grid-template-columns: 1fr;
+            }
+
+            .pros-cons {
+                grid-template-columns: 1fr;
+            }
+
+            .network-stats, .reaction-grid, .indicator-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .product-options, .news-buttons {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>
