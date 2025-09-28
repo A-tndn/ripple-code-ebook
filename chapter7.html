@@ -1,0 +1,1594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 7: Emotional Ripples and Tone Control - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter6.html" class="prev">← Chapter 6</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter8.html" class="next">Chapter 8 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 7: Emotional Ripples and Tone Control</h1>
+            <p class="subtitle">Keeping Your Feelings Calm and Your Ripples Clear!</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>🎭 What Are Emotional Ripples?</h2>
+
+                <div class="simple-explanation">
+                    <p>Your feelings are like colors that paint your ripples! When you're happy, your ripples glow with sunshine. When you're angry, they get all stormy and dark.</p>
+
+                    <div class="emotion-colors">
+                        <div class="grid-3">
+                            <div class="emotion-card happy">
+                                <div class="emotion-icon">😊</div>
+                                <h3>Happy Ripples</h3>
+                                <p>Bright, warm, golden like sunshine</p>
+                                <div class="emotion-effect">Make others feel welcomed and joyful</div>
+                            </div>
+
+                            <div class="emotion-card angry">
+                                <div class="emotion-icon">😡</div>
+                                <h3>Angry Ripples</h3>
+                                <p>Dark red, sharp, stormy like thunder</p>
+                                <div class="emotion-effect">Make others feel scared or defensive</div>
+                            </div>
+
+                            <div class="emotion-card calm">
+                                <div class="emotion-icon">😌</div>
+                                <h3>Calm Ripples</h3>
+                                <p>Clear blue, peaceful like still water</p>
+                                <div class="emotion-effect">Help others feel safe and relaxed</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>The amazing thing is, you can learn to choose which color your ripples have! When you control your emotions, you control the power of your ripples.</p>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>🌡️ The Emotion Thermometer</h2>
+
+                <div class="emotion-thermometer">
+                    <h3>Check Your Emotional Temperature!</h3>
+                    <p>Before you send any ripples, it helps to know how you're feeling. Use our Emotion Thermometer to check your emotional temperature!</p>
+
+                    <div class="thermometer-interface">
+                        <div class="temperature-scale">
+                            <div class="temp-level boiling" onclick="setEmotionLevel('boiling')">
+                                <div class="temp-number">🔥 10</div>
+                                <div class="temp-label">BOILING MAD</div>
+                                <div class="temp-description">Steam coming out of ears!</div>
+                            </div>
+
+                            <div class="temp-level hot" onclick="setEmotionLevel('hot')">
+                                <div class="temp-number">😤 8</div>
+                                <div class="temp-label">REALLY UPSET</div>
+                                <div class="temp-description">Face getting red, hands shaking</div>
+                            </div>
+
+                            <div class="temp-level warm" onclick="setEmotionLevel('warm')">
+                                <div class="temp-number">😠 6</div>
+                                <div class="temp-label">ANNOYED</div>
+                                <div class="temp-description">Grumpy but not explosive</div>
+                            </div>
+
+                            <div class="temp-level neutral" onclick="setEmotionLevel('neutral')">
+                                <div class="temp-number">😐 4</div>
+                                <div class="temp-label">NEUTRAL</div>
+                                <div class="temp-description">Not happy, not sad, just okay</div>
+                            </div>
+
+                            <div class="temp-level cool" onclick="setEmotionLevel('cool')">
+                                <div class="temp-number">🙂 2</div>
+                                <div class="temp-label">PRETTY GOOD</div>
+                                <div class="temp-description">Feeling positive and relaxed</div>
+                            </div>
+
+                            <div class="temp-level cold" onclick="setEmotionLevel('cold')">
+                                <div class="temp-number">😊 0</div>
+                                <div class="temp-label">SUPER HAPPY</div>
+                                <div class="temp-description">Calm, joyful, and peaceful</div>
+                            </div>
+                        </div>
+
+                        <div id="emotion-advice" class="emotion-advice">
+                            <p>Click on a temperature level to see what kind of ripples you might create and how to improve them!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-interface">
+                <h2>❄️ The Cool-Down Toolkit</h2>
+
+                <div class="cooldown-toolkit">
+                    <h3>When Your Emotions Get Too Hot, Use These Cool-Down Tools!</h3>
+                    <p>Just like a fire needs water to cool down, hot emotions need special tools to become calm. Try these!</p>
+
+                    <div class="cooldown-tools">
+                        <div class="tool-card" onclick="useCoolDownTool('breathing')">
+                            <div class="tool-icon">🫁</div>
+                            <h4>Magic Breathing</h4>
+                            <p>Breathe in for 4, hold for 4, breathe out for 6</p>
+                            <div class="tool-button">Try It! 🌬️</div>
+                            <div id="breathing-exercise" class="tool-result"></div>
+                        </div>
+
+                        <div class="tool-card" onclick="useCoolDownTool('counting')">
+                            <div class="tool-icon">🔢</div>
+                            <h4>Calm Counting</h4>
+                            <p>Count backwards from 10 to 1 very slowly</p>
+                            <div class="tool-button">Try It! 🧮</div>
+                            <div id="counting-exercise" class="tool-result"></div>
+                        </div>
+
+                        <div class="tool-card" onclick="useCoolDownTool('visualization')">
+                            <div class="tool-icon">🌊</div>
+                            <h4>Peaceful Place</h4>
+                            <p>Imagine your favorite calm, happy place</p>
+                            <div class="tool-button">Try It! 🏝️</div>
+                            <div id="visualization-exercise" class="tool-result"></div>
+                        </div>
+
+                        <div class="tool-card" onclick="useCoolDownTool('movement')">
+                            <div class="tool-icon">🤸</div>
+                            <h4>Shake It Off</h4>
+                            <p>Shake your hands, roll your shoulders</p>
+                            <div class="tool-button">Try It! 💃</div>
+                            <div id="movement-exercise" class="tool-result"></div>
+                        </div>
+
+                        <div class="tool-card" onclick="useCoolDownTool('words')">
+                            <div class="tool-icon">💭</div>
+                            <h4>Calm Words</h4>
+                            <p>Say "I am calm and in control" 3 times</p>
+                            <div class="tool-button">Try It! 🗣️</div>
+                            <div id="words-exercise" class="tool-result"></div>
+                        </div>
+
+                        <div class="tool-card" onclick="useCoolDownTool('pause')">
+                            <div class="tool-icon">⏸️</div>
+                            <h4>Super Pause</h4>
+                            <p>Stop everything and wait 30 seconds</p>
+                            <div class="tool-button">Try It! ⏰</div>
+                            <div id="pause-exercise" class="tool-result"></div>
+                        </div>
+                    </div>
+
+                    <div class="toolkit-tracker">
+                        <h4>🎯 Tools You've Used Today:</h4>
+                        <div id="tools-used" class="tools-list">
+                            <p>Try some cool-down tools above to build your emotional toolkit!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>🎮 Emotion Ripple Scenarios Game</h2>
+
+                <div class="scenarios-game">
+                    <h3>Practice Choosing the Right Emotional Response!</h3>
+                    <p>In each scenario, you'll see what emotion you might feel and choose the best way to handle it.</p>
+
+                    <div class="scenario-interface">
+                        <div id="scenario-display" class="scenario-card">
+                            <!-- Scenario loads here -->
+                        </div>
+
+                        <div class="emotion-meter">
+                            <h4>😤 First, your emotion might be:</h4>
+                            <div id="initial-emotion" class="initial-emotion-display"></div>
+                        </div>
+
+                        <div class="response-choices">
+                            <h4>🤔 How should you handle this feeling?</h4>
+                            <div id="response-options" class="response-grid">
+                                <!-- Response options load here -->
+                            </div>
+
+                            <button onclick="checkEmotionalResponse()" class="btn btn-success">Choose My Response! 🎭</button>
+
+                            <div id="scenario-feedback" class="feedback-display"></div>
+                        </div>
+
+                        <div class="scenario-controls">
+                            <button onclick="nextScenario()" class="btn btn-warning">Next Scenario →</button>
+                            <div id="scenario-score" class="score-display">Emotional Wisdom: 0/0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>🎯 The Tone Control Challenge</h2>
+
+                <div class="tone-control">
+                    <h3>Practice Saying Things in Different Tones!</h3>
+                    <p>The same words can create totally different ripples depending on your tone. Let's practice!</p>
+
+                    <div class="tone-practice">
+                        <div class="practice-scenario">
+                            <h4>🎭 Practice Phrase: "I need to talk to you"</h4>
+                            <p>This phrase can sound scary or friendly depending on your tone. Let's see the difference!</p>
+
+                            <div class="tone-variations">
+                                <div class="tone-option" onclick="demonstrateTone('aggressive')">
+                                    <div class="tone-emoji">😠</div>
+                                    <h5>Angry/Aggressive Tone</h5>
+                                    <p>Loud, harsh, demanding</p>
+                                    <div id="aggressive-demo" class="tone-demo-result"></div>
+                                </div>
+
+                                <div class="tone-option" onclick="demonstrateTone('friendly')">
+                                    <div class="tone-emoji">😊</div>
+                                    <h5>Friendly/Kind Tone</h5>
+                                    <p>Warm, gentle, caring</p>
+                                    <div id="friendly-demo" class="tone-demo-result"></div>
+                                </div>
+
+                                <div class="tone-option" onclick="demonstrateTone('neutral')">
+                                    <div class="tone-emoji">😐</div>
+                                    <h5>Neutral/Calm Tone</h5>
+                                    <p>Even, peaceful, no drama</p>
+                                    <div id="neutral-demo" class="tone-demo-result"></div>
+                                </div>
+
+                                <div class="tone-option" onclick="demonstrateTone('playful')">
+                                    <div class="tone-emoji">😄</div>
+                                    <h5>Playful/Light Tone</h5>
+                                    <p>Fun, happy, not serious</p>
+                                    <div id="playful-demo" class="tone-demo-result"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tone-practice-activities">
+                            <h4>🎤 Your Turn to Practice!</h4>
+                            <p>Pick a situation and practice saying it with the BEST tone:</p>
+
+                            <div class="practice-activities">
+                                <div class="practice-item">
+                                    <div class="practice-phrase">"Can you help me with this?"</div>
+                                    <div class="practice-instruction">Practice saying this in a polite, grateful tone</div>
+                                    <button onclick="practiceToneControl('help-request')" class="btn btn-primary">Practice This! 🎤</button>
+                                    <div id="help-request-feedback" class="practice-feedback"></div>
+                                </div>
+
+                                <div class="practice-item">
+                                    <div class="practice-phrase">"I made a mistake"</div>
+                                    <div class="practice-instruction">Practice saying this in a sincere, responsible tone</div>
+                                    <button onclick="practiceToneControl('mistake-admission')" class="btn btn-primary">Practice This! 🎤</button>
+                                    <div id="mistake-admission-feedback" class="practice-feedback"></div>
+                                </div>
+
+                                <div class="practice-item">
+                                    <div class="practice-phrase">"That's not fair!"</div>
+                                    <div class="practice-instruction">Practice saying this in a calm, reasonable tone (not whiny!)</div>
+                                    <button onclick="practiceToneControl('fairness-concern')" class="btn btn-primary">Practice This! 🎤</button>
+                                    <div id="fairness-concern-feedback" class="practice-feedback"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-interface">
+                <h2>🛡️ Emotion Shield Challenge</h2>
+
+                <div class="emotion-shield">
+                    <h3>Protect Your Ripples from Emotional Storms!</h3>
+                    <p>Sometimes other people's bad emotions try to make YOUR emotions stormy too. Practice using your Emotion Shield!</p>
+
+                    <div class="shield-scenarios">
+                        <div id="shield-scenario" class="shield-scenario-display">
+                            <!-- Shield scenario loads here -->
+                        </div>
+
+                        <div class="shield-options">
+                            <h4>⚔️ How do you protect your emotions?</h4>
+                            <div id="shield-strategies" class="shield-strategy-grid">
+                                <!-- Shield strategies load here -->
+                            </div>
+
+                            <button onclick="useEmotionShield()" class="btn btn-success">Activate Emotion Shield! 🛡️</button>
+
+                            <div id="shield-result" class="shield-feedback"></div>
+                        </div>
+
+                        <div class="shield-controls">
+                            <button onclick="nextShieldScenario()" class="btn btn-warning">Next Challenge →</button>
+                            <div id="shield-score" class="score-display">Shield Mastery: 0/0</div>
+                        </div>
+                    </div>
+
+                    <div class="shield-power">
+                        <h4>⚡ Your Emotion Shield Power</h4>
+                        <div class="power-bar">
+                            <div class="power-fill" id="shield-power-bar"></div>
+                        </div>
+                        <div id="shield-power-text" class="power-text">Shield Power: 0%</div>
+                        <p><small>Your shield gets stronger every time you handle emotions well!</small></p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>📊 Daily Emotion Tracker</h2>
+
+                <div class="emotion-tracker">
+                    <h3>Track Your Emotional Ripples Each Day!</h3>
+                    <p>Keep track of how you handle your emotions throughout the day. The more you practice, the better you get!</p>
+
+                    <div class="tracking-interface">
+                        <div class="emotion-buttons">
+                            <div class="emotion-tracker-card">
+                                <div class="tracker-icon">😊</div>
+                                <h4>Stayed Calm</h4>
+                                <div class="tracker-count" id="calm-count">0</div>
+                                <button onclick="trackEmotion('calm')" class="btn btn-success">I Stayed Calm! +1</button>
+                            </div>
+
+                            <div class="emotion-tracker-card">
+                                <div class="tracker-icon">🛡️</div>
+                                <h4>Used Shield</h4>
+                                <div class="tracker-count" id="shield-count">0</div>
+                                <button onclick="trackEmotion('shield')" class="btn btn-primary">I Used My Shield! +1</button>
+                            </div>
+
+                            <div class="emotion-tracker-card">
+                                <div class="tracker-icon">❄️</div>
+                                <h4>Cooled Down</h4>
+                                <div class="tracker-count" id="cooldown-count">0</div>
+                                <button onclick="trackEmotion('cooldown')" class="btn btn-warning">I Cooled Down! +1</button>
+                            </div>
+
+                            <div class="emotion-tracker-card">
+                                <div class="tracker-icon">🎯</div>
+                                <h4>Chose Good Tone</h4>
+                                <div class="tracker-count" id="tone-count">0</div>
+                                <button onclick="trackEmotion('tone')" class="btn btn-purple">I Used Good Tone! +1</button>
+                            </div>
+                        </div>
+
+                        <div class="emotion-stats">
+                            <div class="stat-card">
+                                <div class="stat-number" id="total-emotional-wins">0</div>
+                                <div class="stat-label">Total Emotional Wins</div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-number" id="emotional-level">Beginner</div>
+                                <div class="stat-label">Emotional Control Level</div>
+                            </div>
+
+                            <div class="stat-card">
+                                <div class="stat-number" id="ripple-quality">Clear</div>
+                                <div class="stat-label">Ripple Quality Today</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="emotional-goals">
+                        <h4>🎯 Daily Emotional Goals</h4>
+                        <div class="goals-progress">
+                            <div class="goal-item">
+                                <span class="goal-name">Stay calm in 1 difficult situation</span>
+                                <div class="goal-progress-bar">
+                                    <div class="goal-progress-fill" id="goal1-progress"></div>
+                                </div>
+                                <span class="goal-status" id="goal1-status">0/1</span>
+                            </div>
+
+                            <div class="goal-item">
+                                <span class="goal-name">Use cool-down tools 3 times</span>
+                                <div class="goal-progress-bar">
+                                    <div class="goal-progress-fill" id="goal2-progress"></div>
+                                </div>
+                                <span class="goal-status" id="goal2-status">0/3</span>
+                            </div>
+
+                            <div class="goal-item">
+                                <span class="goal-name">Practice good tone 5 times</span>
+                                <div class="goal-progress-bar">
+                                    <div class="goal-progress-fill" id="goal3-progress"></div>
+                                </div>
+                                <span class="goal-status" id="goal3-status">0/5</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>🎯 What You Learned About Emotional Ripples</h2>
+
+                <div class="summary-points grid-2">
+                    <div class="summary-point">
+                        <div class="point-icon">🎨</div>
+                        <h4>Emotions Are Colors</h4>
+                        <p>Your feelings paint your ripples with different colors - happy emotions create bright ripples, angry ones create dark ripples!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🌡️</div>
+                        <h4>Check Your Temperature</h4>
+                        <p>Before sending ripples, check your emotional temperature. Hot emotions need cooling down first!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">❄️</div>
+                        <h4>Cool-Down Tools Work</h4>
+                        <p>Breathing, counting, visualization, and other tools can help you cool down hot emotions quickly!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🎭</div>
+                        <h4>Tone Changes Everything</h4>
+                        <p>The same words can sound friendly or scary depending on your tone. Practice saying things kindly!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🛡️</div>
+                        <h4>Emotion Shield Protection</h4>
+                        <p>You can protect your emotions from other people's bad moods by using your Emotion Shield techniques!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">📈</div>
+                        <h4>Practice Makes Perfect</h4>
+                        <p>The more you practice controlling emotions and tone, the clearer and more powerful your ripples become!</p>
+                    </div>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Your Personal Ripple Field</h3>
+                    <p>In Chapter 8, we'll explore how your daily habits and routines create a special energy field around you!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter6.html" class="nav-button prev">← Previous: Daily Carriers</a>
+                <a href="chapter8.html" class="nav-button next">Next: Your Personal Ripple Field →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Emotion level advice
+        const emotionAdvice = {
+            'boiling': {
+                color: '#ff4444',
+                advice: 'DANGER ZONE! 🚨 Your ripples will be very destructive right now. Use ALL your cool-down tools before talking to anyone!',
+                ripples: 'Creating angry, hurtful ripples that damage relationships',
+                action: 'STOP! Cool down first with breathing, counting, or taking a break!'
+            },
+            'hot': {
+                color: '#ff8800',
+                advice: 'WARNING! ⚠️ Your emotions are too hot for good ripples. Take time to cool down before responding.',
+                ripples: 'Creating tense, defensive ripples that make others uncomfortable',
+                action: 'Use 2-3 cool-down tools before talking to others'
+            },
+            'warm': {
+                color: '#ffaa00',
+                advice: 'CAUTION! 🟨 Your emotions are getting warm. A little cool-down would help your ripples be clearer.',
+                ripples: 'Creating slightly grumpy ripples, but manageable',
+                action: 'Try one cool-down tool and choose your words carefully'
+            },
+            'neutral': {
+                color: '#888888',
+                advice: 'OKAY 😐 You're emotionally neutral. Your ripples will be clear but not very energetic.',
+                ripples: 'Creating neutral ripples - not bad, but not inspiring either',
+                action: 'This is a good time to focus on positive thoughts to brighten your ripples'
+            },
+            'cool': {
+                color: '#4CAF50',
+                advice: 'GOOD! 👍 You're in a positive emotional space. Your ripples will be pretty clear and pleasant.',
+                ripples: 'Creating positive, welcoming ripples that others enjoy',
+                action: 'Great time to send ripples! Others will respond well to you'
+            },
+            'cold': {
+                color: '#2196F3',
+                advice: 'EXCELLENT! 🌟 You're emotionally calm and happy. Your ripples will be crystal clear and powerful!',
+                ripples: 'Creating beautiful, clear ripples that inspire and uplift others',
+                action: 'Perfect time for important conversations and building relationships!'
+            }
+        };
+
+        // Cool-down tools
+        const coolDownTools = {
+            'breathing': {
+                instructions: 'Let's do the 4-4-6 breathing together!',
+                steps: [
+                    'Breathe in slowly for 4 seconds... 1... 2... 3... 4...',
+                    'Hold your breath for 4 seconds... 1... 2... 3... 4...',
+                    'Breathe out slowly for 6 seconds... 1... 2... 3... 4... 5... 6...',
+                    'Great job! Do this 3 more times and your emotions will cool down!'
+                ],
+                result: '🌬️ Amazing! Your emotional temperature just dropped by 2 degrees!'
+            },
+            'counting': {
+                instructions: 'Count backwards from 10 to 1 slowly with me!',
+                steps: [
+                    '10... (take your time)',
+                    '9... (breathe)',
+                    '8... (relax)', 
+                    '7... (let go)',
+                    '6... (calm down)',
+                    '5... (peaceful)',
+                    '4... (serene)',
+                    '3... (tranquil)',
+                    '2... (still)',
+                    '1... (perfectly calm)'
+                ],
+                result: '🧮 Excellent! Counting backward helped your brain slow down and cool off!'
+            },
+            'visualization': {
+                instructions: 'Close your eyes and imagine your favorite peaceful place...',
+                steps: [
+                    'Picture a place that makes you feel completely calm and safe',
+                    'Maybe it's a beach, a forest, your bedroom, or grandma's house',
+                    'See the colors, hear the sounds, feel how peaceful it is',
+                    'Take 3 deep breaths while you're in this peaceful place',
+                    'When you open your eyes, bring that calm feeling with you'
+                ],
+                result: '🏝️ Beautiful! Your mind visited a peaceful place and brought back calmness!'
+            },
+            'movement': {
+                instructions: 'Let's shake off those hot emotions with movement!',
+                steps: [
+                    'Shake your hands really fast for 10 seconds',
+                    'Roll your shoulders backward 5 times',
+                    'Stretch your arms up high toward the sky',
+                    'Take 3 jumping jacks or marching steps',
+                    'Shake your whole body for 5 more seconds'
+                ],
+                result: '💃 Awesome! Moving your body helped shake off the emotional tension!'
+            },
+            'words': {
+                instructions: 'Say these calm, powerful words with me:',
+                steps: [
+                    '"I am calm and in control" (say it slowly)',
+                    '"I can handle this situation" (believe it)',
+                    '"I choose peace over anger" (feel it)',
+                    'Now say your own positive words about staying calm'
+                ],
+                result: '🗣️ Perfect! Positive words helped reprogram your emotional state!'
+            },
+            'pause': {
+                instructions: 'Let's take a super pause together...',
+                steps: [
+                    'Stop whatever you were thinking or planning to do',
+                    'Count to 30 slowly (I'll help you)',
+                    '30... 29... 28... (keep going)',
+                    '15... 14... 13... (almost there)',
+                    '5... 4... 3... 2... 1... PAUSE COMPLETE!'
+                ],
+                result: '⏰ Brilliant! Taking a pause gave your emotions time to settle down!'
+            }
+        };
+
+        // Scenario game data
+        const emotionalScenarios = [
+            {
+                situation: 'Your little brother just broke your favorite toy by accident.',
+                initialEmotion: '😡 ANGRY (Level 8) - He always breaks my stuff!',
+                options: [
+                    { response: 'Yell at him: "You always ruin everything!"', type: 'reactive', feedback: 'This will create angry ripples and hurt his feelings. He already feels bad!' },
+                    { response: 'Take 3 deep breaths, then say: "I'm upset, but I know you didn't mean to."', type: 'controlled', feedback: 'Perfect! You controlled your emotion and created understanding ripples instead of angry ones.' },
+                    { response: 'Storm off to your room and slam the door', type: 'avoidant', feedback: 'Better than yelling, but you missed a chance to teach him and show emotional maturity.' },
+                    { response: 'Break one of his toys to get even', type: 'revenge', feedback: 'This creates a negative ripple cycle that will make everything worse!' }
+                ],
+                correct: 1
+            },
+            {
+                situation: 'Your friend forgot to invite you to their birthday party, but invited everyone else.',
+                initialEmotion: '😢 HURT (Level 7) - Why don't they like me anymore?',
+                options: [
+                    { response: 'Post mean comments about them online', type: 'revenge', feedback: 'This will destroy the friendship and create terrible ripples that spread to others.' },
+                    { response: 'Talk to them privately: "I felt left out. Did I do something wrong?"', type: 'mature', feedback: 'Excellent! You handled hurt feelings maturely and opened the door for honest communication.' },
+                    { response: 'Ignore them completely and never talk to them again', type: 'avoidant', feedback: 'You're letting hurt feelings end a friendship without even finding out what happened.' },
+                    { response: 'Tell all your other friends how mean they are', type: 'gossipy', feedback: 'This spreads negative ripples and makes you look like the problem.' }
+                ],
+                correct: 1
+            },
+            {
+                situation: 'You studied really hard for a test but still got a bad grade.',
+                initialEmotion: '😞 DISAPPOINTED (Level 6) - All that work for nothing!',
+                options: [
+                    { response: 'Crumple up the test and throw it away angrily', type: 'destructive', feedback: 'This wastes a learning opportunity and creates negative ripples toward yourself.' },
+                    { response: 'Say: "I'm disappointed, but I'll ask the teacher how to improve next time."', type: 'growth', feedback: 'Amazing! You turned disappointment into a learning ripple that will help you grow.' },
+                    { response: 'Decide you're just bad at this subject and stop trying', type: 'giving-up', feedback: 'You're letting disappointment create limiting ripples about your abilities.' },
+                    { response: 'Blame the teacher for making the test too hard', type: 'blaming', feedback: 'This creates victim ripples instead of taking responsibility for your learning.' }
+                ],
+                correct: 1
+            }
+        ];
+
+        // Shield scenarios
+        const shieldScenarios = [
+            {
+                challenge: 'Someone at school is being really mean to you, calling you names and trying to make you angry.',
+                threat: 'Their anger is trying to make YOU angry too!',
+                strategies: [
+                    { name: 'Mirror Shield', description: 'Imagine their mean words bouncing off you like a mirror', effectiveness: 'high', result: 'Their negativity bounced right off you and didn't affect your emotions!' },
+                    { name: 'Bubble Shield', description: 'Picture yourself inside a protective bubble of calm', effectiveness: 'high', result: 'You stayed calm inside your protective bubble while their meanness stayed outside!' },
+                    { name: 'Get angry back at them', description: 'Let their anger make you angry too', effectiveness: 'low', result: 'Their negative emotions infected yours - now you both have angry ripples!' },
+                    { name: 'Ignore it completely', description: 'Pretend you don't hear them', effectiveness: 'medium', result: 'Better than getting angry, but you could use active shield techniques to feel even stronger!' }
+                ],
+                bestStrategies: [0, 1]
+            },
+            {
+                challenge: 'Your parent is having a really stressful day and is being grumpy with everyone in the family.',
+                threat: 'Their stress is trying to make YOU stressed and grumpy too!',
+                strategies: [
+                    { name: 'Compassion Shield', description: 'Remember they're stressed, not really mad at you', effectiveness: 'high', result: 'You stayed loving while understanding they need space - your calmness even helped them feel better!' },
+                    { name: 'Distraction Shield', description: 'Focus on something positive instead of their grumpiness', effectiveness: 'high', result: 'You protected your mood by focusing on good things instead of absorbing their stress!' },
+                    { name: 'Become grumpy too', description: 'Let their bad mood rub off on you', effectiveness: 'low', result: 'Now the whole family is grumpy - their stress ripple infected everyone!' },
+                    { name: 'Argue with them about being grumpy', description: 'Tell them they're being unfair', effectiveness: 'low', result: 'This made their stress worse and created conflict ripples instead of helping!' }
+                ],
+                bestStrategies: [0, 1]
+            }
+        ];
+
+        // Game state variables
+        let currentScenario = 0;
+        let selectedResponse = -1;
+        let scenarioScore = 0;
+        let scenarioTotal = 0;
+
+        let currentShieldScenario = 0;
+        let selectedShieldStrategy = -1;
+        let shieldScore = 0;
+        let shieldTotal = 0;
+        let shieldPower = 0;
+
+        let toolsUsed = [];
+        let emotionalStats = {
+            calm: 0,
+            shield: 0,
+            cooldown: 0,
+            tone: 0
+        };
+
+        // Emotion thermometer
+        function setEmotionLevel(level) {
+            const advice = emotionAdvice[level];
+            const adviceElement = document.getElementById('emotion-advice');
+
+            adviceElement.innerHTML = `
+                <div class="emotion-reading" style="border-left: 5px solid ${advice.color}">
+                    <h4>📊 Your Emotional Reading:</h4>
+                    <p><strong>${advice.advice}</strong></p>
+                    <p><strong>Your ripples right now:</strong> ${advice.ripples}</p>
+                    <p><strong>What to do:</strong> ${advice.action}</p>
+                </div>
+            `;
+
+            adviceElement.classList.add('animate-slideIn');
+        }
+
+        // Cool-down tools
+        function useCoolDownTool(toolName) {
+            const tool = coolDownTools[toolName];
+            const resultElement = document.getElementById(`${toolName}-exercise`);
+
+            let stepIndex = 0;
+            resultElement.innerHTML = `<div class="tool-active"><h5>${tool.instructions}</h5><div id="tool-steps"></div></div>`;
+
+            const stepsElement = document.getElementById('tool-steps');
+
+            function showNextStep() {
+                if (stepIndex < tool.steps.length) {
+                    const stepDiv = document.createElement('div');
+                    stepDiv.className = 'tool-step';
+                    stepDiv.textContent = tool.steps[stepIndex];
+                    stepsElement.appendChild(stepDiv);
+                    stepIndex++;
+                    setTimeout(showNextStep, 2000);
+                } else {
+                    setTimeout(() => {
+                        resultElement.innerHTML = `
+                            <div class="tool-complete">
+                                ${tool.result}
+                                <br><small>Keep practicing this tool whenever you need it!</small>
+                            </div>
+                        `;
+
+                        // Add to tools used
+                        if (!toolsUsed.includes(toolName)) {
+                            toolsUsed.push(toolName);
+                            updateToolsList();
+                        }
+                    }, 1000);
+                }
+            }
+
+            showNextStep();
+        }
+
+        function updateToolsList() {
+            const toolNames = {
+                'breathing': '🫁 Magic Breathing',
+                'counting': '🔢 Calm Counting',
+                'visualization': '🌊 Peaceful Place',
+                'movement': '🤸 Shake It Off',
+                'words': '💭 Calm Words',
+                'pause': '⏸️ Super Pause'
+            };
+
+            const toolsList = document.getElementById('tools-used');
+            if (toolsUsed.length > 0) {
+                toolsList.innerHTML = `
+                    <h5>Your Cool-Down Toolkit Today:</h5>
+                    ${toolsUsed.map(tool => `<div class="tool-used">${toolNames[tool]}</div>`).join('')}
+                    <p class="tool-encouragement">🎯 You're building a powerful emotional toolkit!</p>
+                `;
+            }
+        }
+
+        // Scenario game
+        function loadScenario() {
+            const scenario = emotionalScenarios[currentScenario];
+
+            document.getElementById('scenario-display').innerHTML = `
+                <h4>🎬 Situation:</h4>
+                <p class="scenario-text">${scenario.situation}</p>
+            `;
+
+            document.getElementById('initial-emotion').innerHTML = `
+                <div class="emotion-indicator">${scenario.initialEmotion}</div>
+                <p><small>This is a normal first reaction! The key is what you do next...</small></p>
+            `;
+
+            const optionsContainer = document.getElementById('response-options');
+            optionsContainer.innerHTML = scenario.options.map((option, index) => 
+                `<button class="response-btn" onclick="selectResponse(${index})" id="response${index}">
+                    ${option.response}
+                </button>`
+            ).join('');
+
+            selectedResponse = -1;
+            document.getElementById('scenario-feedback').innerHTML = '';
+        }
+
+        function selectResponse(index) {
+            document.querySelectorAll('.response-btn').forEach(btn => btn.classList.remove('selected'));
+            document.getElementById(`response${index}`).classList.add('selected');
+            selectedResponse = index;
+        }
+
+        function checkEmotionalResponse() {
+            if (selectedResponse === -1) {
+                alert('Please choose how you would respond!');
+                return;
+            }
+
+            const scenario = emotionalScenarios[currentScenario];
+            const response = scenario.options[selectedResponse];
+            scenarioTotal++;
+
+            const feedback = document.getElementById('scenario-feedback');
+
+            if (selectedResponse === scenario.correct) {
+                scenarioScore++;
+                feedback.innerHTML = `
+                    <div class="feedback correct">
+                        <h4>🌟 Excellent Emotional Control!</h4>
+                        <p>${response.feedback}</p>
+                    </div>
+                `;
+            } else {
+                feedback.innerHTML = `
+                    <div class="feedback incorrect">
+                        <h4>🤔 Let's Learn Together!</h4>
+                        <p>${response.feedback}</p>
+                        <p><strong>Better choice:</strong> ${scenario.options[scenario.correct].response}</p>
+                    </div>
+                `;
+            }
+
+            updateScenarioScore();
+        }
+
+        function nextScenario() {
+            currentScenario = (currentScenario + 1) % emotionalScenarios.length;
+            loadScenario();
+        }
+
+        function updateScenarioScore() {
+            document.getElementById('scenario-score').textContent = `Emotional Wisdom: ${scenarioScore}/${scenarioTotal}`;
+        }
+
+        // Tone demonstration
+        function demonstrateTone(toneType) {
+            const demonstrations = {
+                'aggressive': {
+                    effect: '😰 SCARY RIPPLE! The other person would feel attacked and scared. They might get defensive or run away.',
+                    example: 'Sounds like: "I NEED TO TALK TO YOU!" (loud, demanding, threatening)'
+                },
+                'friendly': {
+                    effect: '😊 WELCOMING RIPPLE! The other person feels safe and curious. They want to listen to what you have to say.',
+                    example: 'Sounds like: "I need to talk to you" (warm, caring, with a smile in your voice)'
+                },
+                'neutral': {
+                    effect: '😐 CALM RIPPLE! The other person doesn't feel scared, but also not particularly welcomed or excited.',
+                    example: 'Sounds like: "I need to talk to you." (even tone, no emotion, just stating facts)'
+                },
+                'playful': {
+                    effect: '😄 FUN RIPPLE! The other person thinks something interesting or fun is about to happen!',
+                    example: 'Sounds like: "I need to talk to you!" (light, happy, maybe with a little laugh)'
+                }
+            };
+
+            const demo = demonstrations[toneType];
+            document.getElementById(`${toneType}-demo`).innerHTML = `
+                <div class="tone-result">
+                    <p><strong>${demo.effect}</strong></p>
+                    <p><em>${demo.example}</em></p>
+                </div>
+            `;
+        }
+
+        // Tone practice
+        function practiceToneControl(practiceType) {
+            const practices = {
+                'help-request': '🎤 Great practice! When asking for help, a polite and grateful tone makes people WANT to help you instead of feeling like they HAVE to help you.',
+                'mistake-admission': '🎤 Perfect! When admitting mistakes, a sincere (not defensive) tone shows maturity and makes others more likely to forgive and help you learn.',
+                'fairness-concern': '🎤 Excellent! When something feels unfair, a calm reasonable tone gets much better results than a whiny or angry tone!'
+            };
+
+            document.getElementById(`${practiceType}-feedback`).innerHTML = `
+                <div class="practice-success">
+                    <p>${practices[practiceType]}</p>
+                    <small>Keep practicing this tone - it creates the best ripples!</small>
+                </div>
+            `;
+        }
+
+        // Shield game
+        function loadShieldScenario() {
+            const scenario = shieldScenarios[currentShieldScenario];
+
+            document.getElementById('shield-scenario').innerHTML = `
+                <h4>⚔️ Challenge:</h4>
+                <p class="scenario-text">${scenario.challenge}</p>
+                <p class="threat-warning"><strong>🚨 Emotional Threat:</strong> ${scenario.threat}</p>
+            `;
+
+            const strategiesContainer = document.getElementById('shield-strategies');
+            strategiesContainer.innerHTML = scenario.strategies.map((strategy, index) => 
+                `<button class="shield-btn" onclick="selectShieldStrategy(${index})" id="shield${index}">
+                    <div class="strategy-name">${strategy.name}</div>
+                    <div class="strategy-desc">${strategy.description}</div>
+                </button>`
+            ).join('');
+
+            selectedShieldStrategy = -1;
+            document.getElementById('shield-result').innerHTML = '';
+        }
+
+        function selectShieldStrategy(index) {
+            document.querySelectorAll('.shield-btn').forEach(btn => btn.classList.remove('selected'));
+            document.getElementById(`shield${index}`).classList.add('selected');
+            selectedShieldStrategy = index;
+        }
+
+        function useEmotionShield() {
+            if (selectedShieldStrategy === -1) {
+                alert('Please choose a shield strategy first!');
+                return;
+            }
+
+            const scenario = shieldScenarios[currentShieldScenario];
+            const strategy = scenario.strategies[selectedShieldStrategy];
+            shieldTotal++;
+
+            const result = document.getElementById('shield-result');
+
+            if (scenario.bestStrategies.includes(selectedShieldStrategy)) {
+                shieldScore++;
+                shieldPower += 20;
+                result.innerHTML = `
+                    <div class="feedback correct">
+                        <h4>🛡️ Shield Activated Successfully!</h4>
+                        <p>${strategy.result}</p>
+                        <p><strong>Shield Power +20!</strong></p>
+                    </div>
+                `;
+            } else {
+                result.innerHTML = `
+                    <div class="feedback incorrect">
+                        <h4>⚠️ Shield Needs Improvement!</h4>
+                        <p>${strategy.result}</p>
+                        <p><strong>Try:</strong> ${scenario.strategies[scenario.bestStrategies[0]].name} - ${scenario.strategies[scenario.bestStrategies[0]].description}</p>
+                    </div>
+                `;
+            }
+
+            updateShieldScore();
+            updateShieldPower();
+        }
+
+        function nextShieldScenario() {
+            currentShieldScenario = (currentShieldScenario + 1) % shieldScenarios.length;
+            loadShieldScenario();
+        }
+
+        function updateShieldScore() {
+            document.getElementById('shield-score').textContent = `Shield Mastery: ${shieldScore}/${shieldTotal}`;
+        }
+
+        function updateShieldPower() {
+            const maxPower = 100;
+            const percentage = Math.min(shieldPower, maxPower);
+
+            document.getElementById('shield-power-bar').style.width = percentage + '%';
+            document.getElementById('shield-power-text').textContent = `Shield Power: ${percentage}%`;
+
+            if (percentage >= 100) {
+                document.getElementById('shield-power-text').innerHTML = 'Shield Power: <strong>MAXIMUM! 🏆</strong>';
+            }
+        }
+
+        // Emotion tracking
+        function trackEmotion(emotionType) {
+            emotionalStats[emotionType]++;
+            updateEmotionalDisplay();
+            updateEmotionalGoals();
+        }
+
+        function updateEmotionalDisplay() {
+            document.getElementById('calm-count').textContent = emotionalStats.calm;
+            document.getElementById('shield-count').textContent = emotionalStats.shield;
+            document.getElementById('cooldown-count').textContent = emotionalStats.cooldown;
+            document.getElementById('tone-count').textContent = emotionalStats.tone;
+
+            const total = Object.values(emotionalStats).reduce((a, b) => a + b, 0);
+            document.getElementById('total-emotional-wins').textContent = total;
+
+            // Update level
+            let level = 'Beginner';
+            if (total >= 20) level = 'Master';
+            else if (total >= 12) level = 'Advanced';
+            else if (total >= 6) level = 'Intermediate';
+
+            document.getElementById('emotional-level').textContent = level;
+
+            // Update quality
+            let quality = 'Cloudy';
+            if (total >= 10) quality = 'Crystal Clear';
+            else if (total >= 5) quality = 'Clear';
+            else if (total >= 2) quality = 'Pretty Clear';
+
+            document.getElementById('ripple-quality').textContent = quality;
+        }
+
+        function updateEmotionalGoals() {
+            // Goal 1: Stay calm once
+            const goal1Progress = Math.min(emotionalStats.calm, 1);
+            document.getElementById('goal1-progress').style.width = (goal1Progress * 100) + '%';
+            document.getElementById('goal1-status').textContent = `${goal1Progress}/1`;
+
+            // Goal 2: Use cool-down tools 3 times
+            const goal2Progress = Math.min(emotionalStats.cooldown, 3);
+            document.getElementById('goal2-progress').style.width = (goal2Progress / 3 * 100) + '%';
+            document.getElementById('goal2-status').textContent = `${goal2Progress}/3`;
+
+            // Goal 3: Practice good tone 5 times
+            const goal3Progress = Math.min(emotionalStats.tone, 5);
+            document.getElementById('goal3-progress').style.width = (goal3Progress / 5 * 100) + '%';
+            document.getElementById('goal3-status').textContent = `${goal3Progress}/5`;
+        }
+
+        // Initialize everything
+        window.addEventListener('load', function() {
+            loadScenario();
+            loadShieldScenario();
+            updateShieldPower();
+        });
+    </script>
+
+    <style>
+        .emotion-card {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            box-shadow: var(--shadow-md);
+            transition: transform var(--transition-normal);
+        }
+
+        .emotion-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .emotion-card.happy {
+            border-top: 5px solid #FFD700;
+        }
+
+        .emotion-card.angry {
+            border-top: 5px solid #ff4444;
+        }
+
+        .emotion-card.calm {
+            border-top: 5px solid #2196F3;
+        }
+
+        .emotion-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .emotion-effect {
+            background: var(--bg-accent);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .emotion-thermometer {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .temperature-scale {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .temp-level {
+            display: flex;
+            align-items: center;
+            padding: 1rem 2rem;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            border: 3px solid transparent;
+        }
+
+        .temp-level.boiling {
+            background: linear-gradient(135deg, #ff4444, #cc0000);
+            color: white;
+        }
+
+        .temp-level.hot {
+            background: linear-gradient(135deg, #ff8800, #e65100);
+            color: white;
+        }
+
+        .temp-level.warm {
+            background: linear-gradient(135deg, #ffaa00, #f57c00);
+            color: white;
+        }
+
+        .temp-level.neutral {
+            background: linear-gradient(135deg, #888888, #555555);
+            color: white;
+        }
+
+        .temp-level.cool {
+            background: linear-gradient(135deg, #4CAF50, #388E3C);
+            color: white;
+        }
+
+        .temp-level.cold {
+            background: linear-gradient(135deg, #2196F3, #1976D2);
+            color: white;
+        }
+
+        .temp-level:hover {
+            transform: scale(1.02);
+            border-color: white;
+        }
+
+        .temp-number {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-right: 1rem;
+            min-width: 80px;
+        }
+
+        .temp-label {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-right: 1rem;
+            min-width: 120px;
+        }
+
+        .temp-description {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .emotion-advice {
+            margin: 2rem 0;
+        }
+
+        .emotion-reading {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 1rem 0;
+        }
+
+        .cooldown-toolkit {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .cooldown-tools {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .tool-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            border: 3px solid transparent;
+        }
+
+        .tool-card:hover {
+            border-color: var(--ripple-blue);
+            transform: translateY(-5px);
+        }
+
+        .tool-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .tool-button {
+            background: var(--ripple-blue);
+            color: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin: 1rem 0;
+            font-weight: bold;
+        }
+
+        .tool-result {
+            margin-top: 1rem;
+        }
+
+        .tool-active {
+            background: var(--bg-warning);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-orange);
+        }
+
+        .tool-complete {
+            background: var(--bg-success);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-green);
+            font-weight: bold;
+        }
+
+        .tool-step {
+            margin: 0.5rem 0;
+            padding: 0.5rem;
+            background: white;
+            border-radius: var(--radius-sm);
+            animation: slideIn 0.5s ease-out;
+        }
+
+        .toolkit-tracker {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .tool-used {
+            background: white;
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-blue);
+        }
+
+        .tool-encouragement {
+            text-align: center;
+            font-weight: bold;
+            color: var(--ripple-blue);
+            margin-top: 1rem;
+        }
+
+        .scenarios-game {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .scenario-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .emotion-meter {
+            background: var(--bg-warning);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .initial-emotion-display {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--ripple-red);
+            margin: 1rem 0;
+        }
+
+        .response-grid {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .response-btn {
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid var(--ripple-purple);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            text-align: left;
+        }
+
+        .response-btn:hover {
+            background: var(--bg-accent);
+            transform: translateX(10px);
+        }
+
+        .response-btn.selected {
+            background: var(--ripple-purple);
+            color: white;
+        }
+
+        .tone-control {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .tone-variations {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .tone-option {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            border: 3px solid transparent;
+        }
+
+        .tone-option:hover {
+            border-color: var(--ripple-orange);
+            transform: scale(1.05);
+        }
+
+        .tone-emoji {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .tone-demo-result {
+            margin-top: 1rem;
+        }
+
+        .tone-result {
+            background: var(--bg-accent);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+        }
+
+        .practice-activities {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .practice-item {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .practice-phrase {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .practice-instruction {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .practice-feedback {
+            margin-top: 1rem;
+        }
+
+        .practice-success {
+            background: var(--bg-success);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-green);
+        }
+
+        .emotion-shield {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .shield-scenario-display {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .threat-warning {
+            background: var(--bg-error);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin: 1rem 0;
+            color: var(--ripple-red);
+        }
+
+        .shield-strategy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .shield-btn {
+            padding: 1.5rem;
+            background: white;
+            border: 2px solid var(--ripple-teal);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            text-align: center;
+        }
+
+        .shield-btn:hover {
+            background: var(--bg-accent);
+            transform: scale(1.05);
+        }
+
+        .shield-btn.selected {
+            background: var(--ripple-teal);
+            color: white;
+        }
+
+        .strategy-name {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .strategy-desc {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .shield-feedback {
+            margin: 2rem 0;
+        }
+
+        .shield-power {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        .power-bar {
+            background: #E0E0E0;
+            height: 30px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .power-fill {
+            background: linear-gradient(90deg, var(--ripple-teal), #26A69A);
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+            border-radius: var(--radius-md);
+        }
+
+        .power-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--ripple-teal);
+        }
+
+        .emotion-tracker {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .emotion-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .emotion-tracker-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .tracker-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .tracker-count {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--ripple-blue);
+            margin: 1rem 0;
+        }
+
+        .emotion-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .stat-card {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--ripple-blue);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .emotional-goals {
+            margin-top: 3rem;
+        }
+
+        .goals-progress {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .goal-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--bg-secondary);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .goal-name {
+            flex-grow: 1;
+            font-weight: bold;
+        }
+
+        .goal-progress-bar {
+            background: #E0E0E0;
+            height: 20px;
+            width: 150px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+        }
+
+        .goal-progress-fill {
+            background: linear-gradient(90deg, var(--ripple-green), #66BB6A);
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .goal-status {
+            min-width: 40px;
+            font-weight: bold;
+            color: var(--ripple-green);
+        }
+
+        @media (max-width: 768px) {
+            .temperature-scale .temp-level {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .temp-number, .temp-label {
+                margin: 0.5rem 0;
+                min-width: auto;
+            }
+
+            .cooldown-tools {
+                grid-template-columns: 1fr;
+            }
+
+            .tone-variations {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .shield-strategy-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .emotion-buttons {
+                grid-template-columns: 1fr;
+            }
+
+            .goal-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .goal-progress-bar {
+                width: 100%;
+            }
+        }
+    </style>
+</body>
+</html>
