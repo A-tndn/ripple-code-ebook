@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 5: The Ripple Log - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter4.html" class="prev">← Chapter 4</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter6.html" class="next">Chapter 6 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 5: The Ripple Log</h1>
+            <p class="subtitle">Your Personal Detective Notebook for Tracking Ripples!</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>🕵️ What Is a Ripple Log?</h2>
+
+                <div class="simple-explanation">
+                    <p>A Ripple Log is like being a detective of your own life! Just like detectives write down clues to solve mysteries, you'll write down your ripples to discover amazing patterns.</p>
+
+                    <div class="detective-comparison">
+                        <div class="grid-2">
+                            <div class="card">
+                                <h3>🕵️ Regular Detective</h3>
+                                <ul>
+                                    <li>📝 Writes down clues</li>
+                                    <li>🔍 Looks for patterns</li>
+                                    <li>🧩 Solves mysteries</li>
+                                    <li>📈 Tracks what happened</li>
+                                </ul>
+                            </div>
+
+                            <div class="card">
+                                <h3>🌊 Ripple Detective (You!)</h3>
+                                <ul>
+                                    <li>📓 Writes down ripples</li>
+                                    <li>🔍 Looks for echo patterns</li>
+                                    <li>🧩 Solves ripple mysteries</li>
+                                    <li>📈 Tracks cause and effect</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>Without tracking your ripples, they just disappear like invisible bubbles. But when you write them down, you start to see incredible patterns that repeat over and over!</p>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>📝 Your Ripple Detective Kit</h2>
+
+                <div class="detective-kit">
+                    <h3>What Every Good Ripple Detective Needs:</h3>
+
+                    <div class="kit-items grid-3">
+                        <div class="kit-item">
+                            <div class="kit-icon">📓</div>
+                            <h4>A Special Notebook</h4>
+                            <p>This can be a real notebook, your phone notes, or even a special journal just for ripples!</p>
+                        </div>
+
+                        <div class="kit-item">
+                            <div class="kit-icon">🖊️</div>
+                            <h4>Your Favorite Pen</h4>
+                            <p>Pick a pen or pencil that feels good to write with. Maybe even a special color!</p>
+                        </div>
+
+                        <div class="kit-item">
+                            <div class="kit-icon">🕒</div>
+                            <h4>Detective Time</h4>
+                            <p>Just 5 minutes each day to write down what you noticed. That's it!</p>
+                        </div>
+
+                        <div class="kit-item">
+                            <div class="kit-icon">🧠</div>
+                            <h4>Your Curious Mind</h4>
+                            <p>Always asking: "What caused this?" and "What happened next?"</p>
+                        </div>
+
+                        <div class="kit-item">
+                            <div class="kit-icon">👁️</div>
+                            <h4>Detective Eyes</h4>
+                            <p>Looking for connections and patterns that other people might miss!</p>
+                        </div>
+
+                        <div class="kit-item">
+                            <div class="kit-icon">❤️</div>
+                            <h4>Kindness</h4>
+                            <p>Remember, we're tracking ripples to make the world more awesome!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>🔍 The Simple Ripple Formula</h2>
+
+                <div class="formula-demo">
+                    <p>Every ripple entry in your log follows this simple pattern:</p>
+
+                    <div class="formula-visual">
+                        <div class="formula-box">
+                            <div class="formula-part cause">
+                                <h3>1️⃣ CAUSE</h3>
+                                <p>What did you do?</p>
+                                <div class="example">"I helped my friend with homework"</div>
+                            </div>
+
+                            <div class="arrow">→</div>
+
+                            <div class="formula-part carrier">
+                                <h3>2️⃣ CARRIER</h3>
+                                <p>How did it travel?</p>
+                                <div class="example">"Face-to-face conversation"</div>
+                            </div>
+
+                            <div class="arrow">→</div>
+
+                            <div class="formula-part echo">
+                                <h3>3️⃣ ECHO</h3>
+                                <p>What came back?</p>
+                                <div class="example">"They helped me in art class"</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bonus-questions">
+                        <h4>🎯 Bonus Detective Questions:</h4>
+                        <div class="question-grid grid-2">
+                            <div class="question">
+                                <strong>⏰ When:</strong> How long did it take for the echo to come back?
+                            </div>
+                            <div class="question">
+                                <strong>😊 Feeling:</strong> What emotion did the echo carry?
+                            </div>
+                            <div class="question">
+                                <strong>🔄 Pattern:</strong> Have you seen this ripple before?
+                            </div>
+                            <div class="question">
+                                <strong>⭐ Surprise:</strong> Was the echo what you expected?
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-interface">
+                <h2>🎮 Interactive Ripple Logger</h2>
+
+                <div class="logging-interface">
+                    <h3>Practice Making Your First Ripple Entry!</h3>
+                    <p>Think of something that happened to you today and let's log it together:</p>
+
+                    <div class="log-form">
+                        <div class="form-section">
+                            <label for="ripple-cause">🌟 What did you do? (The Cause)</label>
+                            <textarea id="ripple-cause" placeholder="Example: I smiled at someone new at school..."></textarea>
+                        </div>
+
+                        <div class="form-section">
+                            <label for="ripple-carrier">🚀 How did it happen? (The Carrier)</label>
+                            <select id="ripple-carrier">
+                                <option value="">Choose how your ripple traveled...</option>
+                                <option value="face-to-face">Face-to-face conversation</option>
+                                <option value="text">Text message</option>
+                                <option value="actions">My actions/body language</option>
+                                <option value="tone">My tone of voice</option>
+                                <option value="silence">Being quiet/not saying anything</option>
+                                <option value="help">Helping someone</option>
+                                <option value="sharing">Sharing something</option>
+                                <option value="other">Something else</option>
+                            </select>
+                        </div>
+
+                        <div class="form-section">
+                            <label for="ripple-echo">✨ What came back? (The Echo)</label>
+                            <textarea id="ripple-echo" placeholder="Example: They smiled back and said 'thanks for being friendly'..."></textarea>
+                        </div>
+
+                        <div class="form-section">
+                            <label for="ripple-timing">⏱️ How long did it take?</label>
+                            <select id="ripple-timing">
+                                <option value="">Choose timing...</option>
+                                <option value="instant">Right away (within minutes)</option>
+                                <option value="same-day">Same day</option>
+                                <option value="next-day">Next day</option>
+                                <option value="few-days">A few days later</option>
+                                <option value="week">About a week later</option>
+                                <option value="longer">Even longer</option>
+                            </select>
+                        </div>
+
+                        <div class="form-section">
+                            <label for="ripple-feeling">💝 What feeling came with the echo?</label>
+                            <select id="ripple-feeling">
+                                <option value="">Choose the feeling...</option>
+                                <option value="happy">😊 Happy and positive</option>
+                                <option value="grateful">🙏 Grateful and thankful</option>
+                                <option value="surprised">😮 Surprised</option>
+                                <option value="neutral">😐 Neutral (no strong feeling)</option>
+                                <option value="confused">🤔 Confused</option>
+                                <option value="sad">😢 Sad or disappointed</option>
+                                <option value="excited">🎉 Excited</option>
+                            </select>
+                        </div>
+
+                        <button onclick="createRippleEntry()" class="btn btn-primary">Create My Ripple Entry! 📝</button>
+
+                        <div id="ripple-entry-display" class="entry-display"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>📊 Ripple Pattern Detective Game</h2>
+
+                <div class="pattern-game">
+                    <h3>Can You Spot the Patterns?</h3>
+                    <p>Look at these ripple entries from other kids and see if you can spot the patterns!</p>
+
+                    <div class="pattern-examples">
+                        <div id="pattern-scenario" class="scenario-display">
+                            <!-- Pattern scenarios will load here -->
+                        </div>
+
+                        <div class="pattern-questions">
+                            <h4>🔍 Detective Questions:</h4>
+                            <div id="pattern-question" class="question-display"></div>
+
+                            <div class="answer-options" id="pattern-options">
+                                <!-- Answer options load here -->
+                            </div>
+
+                            <button onclick="checkPatternAnswer()" class="btn btn-success">Submit Detective Answer! 🕵️</button>
+
+                            <div id="pattern-feedback" class="feedback-display"></div>
+                        </div>
+
+                        <div class="game-controls">
+                            <button onclick="nextPatternScenario()" class="btn btn-warning">Next Mystery →</button>
+                            <div id="pattern-score" class="score-display">Detective Score: 0/0</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>📈 Your Personal Ripple Chart</h2>
+
+                <div class="chart-container">
+                    <h3>Track Your Daily Ripples!</h3>
+                    <p>This chart shows how many ripples you track each day. The more you notice, the better detective you become!</p>
+
+                    <canvas id="rippleChart" width="400" height="200"></canvas>
+
+                    <div class="chart-controls">
+                        <button onclick="addRippleToChart()" class="btn btn-primary">I Logged a Ripple Today! +1 📝</button>
+                        <button onclick="resetChart()" class="btn btn-secondary">Start Fresh 🔄</button>
+                    </div>
+
+                    <div class="chart-stats">
+                        <div class="stat-box">
+                            <div class="stat-number" id="total-ripples">0</div>
+                            <div class="stat-label">Total Ripples Logged</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" id="current-streak">0</div>
+                            <div class="stat-label">Days in a Row</div>
+                        </div>
+                        <div class="stat-box">
+                            <div class="stat-number" id="detective-level">Beginner</div>
+                            <div class="stat-label">Detective Level</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-interface">
+                <h2>🏆 7-Day Ripple Detective Challenge</h2>
+
+                <div class="challenge-container">
+                    <h3>Become a Master Ripple Detective in One Week!</h3>
+                    <p>Each day, you'll learn a new detective skill and track different types of ripples.</p>
+
+                    <div class="challenge-days">
+                        <div class="challenge-day">
+                            <div class="day-number">1</div>
+                            <div class="day-task">
+                                <h4>🔍 Basic Detective Day</h4>
+                                <p>Log any 1 ripple you notice - cause, carrier, echo. Just practice the basics!</p>
+                                <div class="day-tip"><strong>Tip:</strong> Start with something simple like saying "hi" to someone.</div>
+                            </div>
+                            <input type="checkbox" class="day-checkbox" id="detective-day1">
+                            <label for="detective-day1">Completed! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">2</div>
+                            <div class="day-task">
+                                <h4>⏰ Timing Detective Day</h4>
+                                <p>Log 1 ripple and pay special attention to HOW LONG it took for the echo to come back.</p>
+                                <div class="day-tip"><strong>Tip:</strong> Some echoes are instant, others take days!</div>
+                            </div>
+                            <input type="checkbox" class="day-checkbox" id="detective-day2">
+                            <label for="detective-day2">Completed! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">3</div>
+                            <div class="day-task">
+                                <h4>💝 Feeling Detective Day</h4>
+                                <p>Log 1 ripple and focus on what EMOTION or FEELING came back with the echo.</p>
+                                <div class="day-tip"><strong>Tip:</strong> Happy? Grateful? Confused? Write it down!</div>
+                            </div>
+                            <input type="checkbox" class="day-checkbox" id="detective-day3">
+                            <label for="detective-day3">Completed! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">4</div>
+                            <div class="day-task">
+                                <h4>🚀 Carrier Detective Day</h4>
+                                <p>Try the SAME cause through 2 different carriers. See how the echoes change!</p>
+                                <div class="day-tip"><strong>Example:</strong> Say "thank you" in person vs. in a text message.</div>
+                            </div>
+                            <input type="checkbox" class="day-checkbox" id="detective-day4">
+                            <label for="detective-day4">Completed! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">5</div>
+                            <div class="day-task">
+                                <h4>🔄 Pattern Detective Day</h4>
+                                <p>Look through your week's entries. Do you see any ripples that are similar or repeating?</p>
+                                <div class="day-tip"><strong>Tip:</strong> Maybe you always get grateful echoes when you help others!</div>
+                            </div>
+                            <input type="checkbox" class="day-checkbox" id="detective-day5">
+                            <label for="detective-day5">Completed! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">6</div>
+                            <div class="day-task">
+                                <h4>😮 Surprise Detective Day</h4>
+                                <p>Log a ripple where the echo was DIFFERENT from what you expected.</p>
+                                <div class="day-tip"><strong>Tip:</strong> Sometimes ripples surprise us in good ways!</div>
+                            </div>
+                            <input type="checkbox" class="day-checkbox" id="detective-day6">
+                            <label for="detective-day6">Completed! ✅</label>
+                        </div>
+
+                        <div class="challenge-day">
+                            <div class="day-number">7</div>
+                            <div class="day-task">
+                                <h4>🏆 Master Detective Day</h4>
+                                <p>Log 3 different ripples in one day! Show off all your new detective skills!</p>
+                                <div class="day-tip"><strong>Celebration:</strong> You're now a Certified Ripple Detective! 🎉</div>
+                            </div>
+                            <input type="checkbox" class="day-checkbox" id="detective-day7">
+                            <label for="detective-day7">Completed! ✅</label>
+                        </div>
+                    </div>
+
+                    <div class="progress-tracker">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="detectiveProgress"></div>
+                        </div>
+                        <div id="detective-progress-text" class="progress-text">0/7 days complete</div>
+                    </div>
+
+                    <div class="master-badge" id="master-badge" style="display: none;">
+                        <h3>🏆 CONGRATULATIONS! 🏆</h3>
+                        <p>You are now a <strong>Certified Ripple Detective!</strong></p>
+                        <p>You have the power to see patterns that most people miss!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>🎯 What You Learned About Ripple Logging</h2>
+
+                <div class="summary-points grid-2">
+                    <div class="summary-point">
+                        <div class="point-icon">🕵️</div>
+                        <h4>Detective Skills</h4>
+                        <p>You learned how to track ripples like a detective tracks clues - writing down cause, carrier, and echo!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">📝</div>
+                        <h4>Simple Formula</h4>
+                        <p>Every ripple entry follows the same easy pattern: What did you do? → How did it travel? → What came back?</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🔍</div>
+                        <h4>Pattern Recognition</h4>
+                        <p>By writing ripples down, you start to see amazing patterns that repeat in your life!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">⏰</div>
+                        <h4>Timing Matters</h4>
+                        <p>Some echoes come back right away, others take days or even weeks - and that's totally normal!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">💝</div>
+                        <h4>Feelings Count</h4>
+                        <p>Every echo carries a feeling with it - happy, grateful, surprised, or even confused!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🏆</div>
+                        <h4>Practice Makes Perfect</h4>
+                        <p>The more you log your ripples, the better detective you become at spotting them everywhere!</p>
+                    </div>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Daily Carriers</h3>
+                    <p>In Chapter 6, we'll explore how your words, tone, and actions are like different vehicles that carry your ripples to others!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter4.html" class="nav-button prev">← Previous: Distortions and Neutrality</a>
+                <a href="chapter6.html" class="nav-button next">Next: Daily Carriers →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Pattern detection game scenarios
+        const patternScenarios = [
+            {
+                title: "Sarah's Week of Ripples",
+                entries: [
+                    "Mon: I helped Jake with math → Face-to-face → He helped me carry books",
+                    "Wed: I helped Emma with science → Face-to-face → She shared her lunch with me", 
+                    "Fri: I helped Mom with dishes → Actions → She made my favorite cookies"
+                ],
+                question: "What pattern do you see in Sarah's ripples?",
+                options: [
+                    "When Sarah helps others, they help her back",
+                    "Sarah only gets help on weekdays", 
+                    "Face-to-face carriers work better",
+                    "Sarah always gets food as echoes"
+                ],
+                correct: 0,
+                explanation: "Great detective work! Sarah discovered that when she helps others, they naturally want to help her back. This is the 'kindness loop' pattern!"
+            },
+            {
+                title: "Tom's Text Messages",
+                entries: [
+                    "Tom: 'Hi!' via text → 2 hours later → 'Hey' back",
+                    "Tom: 'Hi!' face-to-face → Right away → Big smile and 'Good morning!'",
+                    "Tom: 'Hi!' via text → Next day → Short reply"
+                ],
+                question: "What does Tom learn about different carriers?",
+                options: [
+                    "Text messages are always better",
+                    "Face-to-face gets warmer, faster echoes",
+                    "People don't like saying hi",
+                    "Timing doesn't matter"
+                ],
+                correct: 1, 
+                explanation: "Excellent observation! Tom learned that face-to-face carriers often create warmer and faster echoes than text messages."
+            },
+            {
+                title: "Maya's Mood Experiment",
+                entries: [
+                    "Maya smiled at 3 people → Actions → All 3 smiled back within minutes",
+                    "Maya complained to 3 people → Words → They avoided her later",
+                    "Maya complimented 3 people → Words → They complimented others too"
+                ],
+                question: "What pattern shows up in Maya's echoes?",
+                options: [
+                    "Maya always talks to 3 people",
+                    "Positive ripples create positive echoes, negative ripples create negative echoes",
+                    "Actions work better than words",
+                    "People copy whatever Maya does"
+                ],
+                correct: 1,
+                explanation: "Fantastic pattern spotting! Maya learned that positive ripples tend to echo back as positive, and negative ripples echo back as negative."
+            }
+        ];
+
+        let currentPatternScenario = 0;
+        let selectedPatternAnswer = -1;
+        let patternScore = 0;
+        let patternTotal = 0;
+
+        // Chart setup
+        let rippleChart;
+        let dailyRipples = [0, 0, 0, 0, 0, 0, 0]; // 7 days
+        let currentDay = 0;
+        let totalRipples = 0;
+        let currentStreak = 0;
+
+        // Initialize chart
+        function initializeChart() {
+            const ctx = document.getElementById('rippleChart').getContext('2d');
+            rippleChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+                    datasets: [{
+                        label: 'Ripples Logged',
+                        data: dailyRipples,
+                        backgroundColor: 'rgba(33, 150, 243, 0.8)',
+                        borderColor: 'rgba(33, 150, 243, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    scales: {
+                        y: {
+                            beginAtZero: true,
+                            max: 10
+                        }
+                    }
+                }
+            });
+        }
+
+        // Create ripple entry
+        function createRippleEntry() {
+            const cause = document.getElementById('ripple-cause').value;
+            const carrier = document.getElementById('ripple-carrier').value;
+            const echo = document.getElementById('ripple-echo').value;
+            const timing = document.getElementById('ripple-timing').value;
+            const feeling = document.getElementById('ripple-feeling').value;
+
+            if (!cause || !carrier || !echo) {
+                alert('Please fill in the cause, carrier, and echo to create your ripple entry!');
+                return;
+            }
+
+            const display = document.getElementById('ripple-entry-display');
+            const timingText = timing ? `⏱️ Timing: ${timing}` : '';
+            const feelingText = feeling ? `💝 Feeling: ${feeling}` : '';
+
+            display.innerHTML = `
+                <div class="ripple-entry-card">
+                    <h4>🎉 Your Ripple Entry is Complete!</h4>
+                    <div class="entry-content">
+                        <p><strong>🌟 Cause:</strong> ${cause}</p>
+                        <p><strong>🚀 Carrier:</strong> ${carrier}</p>
+                        <p><strong>✨ Echo:</strong> ${echo}</p>
+                        ${timingText ? `<p><strong>${timingText}</strong></p>` : ''}
+                        ${feelingText ? `<p><strong>${feelingText}</strong></p>` : ''}
+                    </div>
+                    <div class="entry-encouragement">
+                        <p>🏆 Great detective work! You've just created your first official ripple log entry!</p>
+                        <p>💡 <strong>Tip:</strong> Try logging one ripple like this every day for a week and watch for patterns!</p>
+                    </div>
+                </div>
+            `;
+
+            display.classList.add('animate-slideIn');
+        }
+
+        // Load pattern scenario
+        function loadPatternScenario() {
+            const scenario = patternScenarios[currentPatternScenario];
+
+            document.getElementById('pattern-scenario').innerHTML = `
+                <h4>${scenario.title}</h4>
+                <div class="scenario-entries">
+                    ${scenario.entries.map(entry => `<div class="entry-line">📝 ${entry}</div>`).join('')}
+                </div>
+            `;
+
+            document.getElementById('pattern-question').innerHTML = `<p><strong>${scenario.question}</strong></p>`;
+
+            const optionsContainer = document.getElementById('pattern-options');
+            optionsContainer.innerHTML = scenario.options.map((option, index) => 
+                `<button class="option-btn" onclick="selectPatternAnswer(${index})" id="option${index}">${option}</button>`
+            ).join('');
+
+            selectedPatternAnswer = -1;
+            document.getElementById('pattern-feedback').innerHTML = '';
+        }
+
+        function selectPatternAnswer(index) {
+            document.querySelectorAll('.option-btn').forEach(btn => btn.classList.remove('selected'));
+            document.getElementById(`option${index}`).classList.add('selected');
+            selectedPatternAnswer = index;
+        }
+
+        function checkPatternAnswer() {
+            if (selectedPatternAnswer === -1) {
+                alert('Please select an answer first!');
+                return;
+            }
+
+            const scenario = patternScenarios[currentPatternScenario];
+            patternTotal++;
+
+            const feedback = document.getElementById('pattern-feedback');
+
+            if (selectedPatternAnswer === scenario.correct) {
+                patternScore++;
+                feedback.innerHTML = `
+                    <div class="feedback correct">
+                        <h4>🎉 Excellent Detective Work!</h4>
+                        <p>${scenario.explanation}</p>
+                    </div>
+                `;
+            } else {
+                feedback.innerHTML = `
+                    <div class="feedback incorrect">
+                        <h4>🤔 Good Try! Let's Learn Together</h4>
+                        <p>${scenario.explanation}</p>
+                    </div>
+                `;
+            }
+
+            updatePatternScore();
+        }
+
+        function nextPatternScenario() {
+            currentPatternScenario = (currentPatternScenario + 1) % patternScenarios.length;
+            loadPatternScenario();
+        }
+
+        function updatePatternScore() {
+            document.getElementById('pattern-score').textContent = `Detective Score: ${patternScore}/${patternTotal}`;
+        }
+
+        // Chart functions
+        function addRippleToChart() {
+            dailyRipples[currentDay]++;
+            totalRipples++;
+
+            // Update streak
+            if (dailyRipples[currentDay] === 1) {
+                currentStreak++;
+            }
+
+            updateChart();
+            updateStats();
+        }
+
+        function updateChart() {
+            rippleChart.data.datasets[0].data = dailyRipples;
+            rippleChart.update();
+        }
+
+        function updateStats() {
+            document.getElementById('total-ripples').textContent = totalRipples;
+            document.getElementById('current-streak').textContent = currentStreak;
+
+            let level = 'Beginner';
+            if (totalRipples >= 30) level = 'Master Detective';
+            else if (totalRipples >= 15) level = 'Advanced';
+            else if (totalRipples >= 5) level = 'Intermediate';
+
+            document.getElementById('detective-level').textContent = level;
+        }
+
+        function resetChart() {
+            dailyRipples = [0, 0, 0, 0, 0, 0, 0];
+            totalRipples = 0;
+            currentStreak = 0;
+            currentDay = 0;
+            updateChart();
+            updateStats();
+        }
+
+        // Challenge tracker
+        const detectiveCheckboxes = document.querySelectorAll('.day-checkbox');
+        const detectiveProgressBar = document.getElementById('detectiveProgress');
+        const detectiveProgressText = document.getElementById('detective-progress-text');
+
+        detectiveCheckboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', updateDetectiveProgress);
+        });
+
+        function updateDetectiveProgress() {
+            const completed = document.querySelectorAll('.day-checkbox:checked').length;
+            const total = detectiveCheckboxes.length;
+            const percentage = (completed / total) * 100;
+
+            detectiveProgressBar.style.width = percentage + '%';
+            detectiveProgressText.textContent = `${completed}/${total} days complete`;
+
+            if (completed === total) {
+                detectiveProgressText.innerHTML = `🏆 Master Detective Achieved! 🏆`;
+                document.getElementById('master-badge').style.display = 'block';
+                celebrateCompletion();
+            }
+        }
+
+        function celebrateCompletion() {
+            // Celebration animation
+            for (let i = 0; i < 30; i++) {
+                setTimeout(() => {
+                    const emojis = ['🏆', '🎉', '🕵️', '📝', '✨'];
+                    const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+                    const celebration = document.createElement('div');
+                    celebration.innerHTML = emoji;
+                    celebration.style.position = 'fixed';
+                    celebration.style.left = Math.random() * 100 + 'vw';
+                    celebration.style.top = '-50px';
+                    celebration.style.fontSize = '2rem';
+                    celebration.style.pointerEvents = 'none';
+                    celebration.style.zIndex = '1000';
+                    celebration.style.animation = 'fall 3s linear forwards';
+                    document.body.appendChild(celebration);
+
+                    setTimeout(() => {
+                        if (document.body.contains(celebration)) {
+                            document.body.removeChild(celebration);
+                        }
+                    }, 3000);
+                }, i * 100);
+            }
+        }
+
+        // Initialize everything when page loads
+        window.addEventListener('load', function() {
+            loadPatternScenario();
+            initializeChart();
+        });
+    </script>
+
+    <style>
+        .detective-comparison {
+            margin: 2rem 0;
+        }
+
+        .detective-comparison ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .detective-comparison li {
+            padding: 0.5rem 0;
+            font-size: 1.1em;
+        }
+
+        .detective-kit {
+            text-align: center;
+        }
+
+        .kit-items {
+            margin: 2rem 0;
+        }
+
+        .kit-item {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            box-shadow: var(--shadow-sm);
+            text-align: center;
+            transition: transform var(--transition-normal);
+        }
+
+        .kit-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .kit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .formula-visual {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .formula-box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .formula-part {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            text-align: center;
+            min-width: 200px;
+        }
+
+        .formula-part.cause {
+            border-top: 5px solid var(--ripple-green);
+        }
+
+        .formula-part.carrier {
+            border-top: 5px solid var(--ripple-orange);
+        }
+
+        .formula-part.echo {
+            border-top: 5px solid var(--ripple-purple);
+        }
+
+        .arrow {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--ripple-blue);
+        }
+
+        .example {
+            background: var(--bg-accent);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin-top: 1rem;
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+
+        .bonus-questions {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #fff9c4, #fff59d);
+            border-radius: var(--radius-lg);
+        }
+
+        .question-grid {
+            margin-top: 1rem;
+        }
+
+        .question {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .log-form {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin: 2rem 0;
+        }
+
+        .form-section {
+            margin: 1.5rem 0;
+        }
+
+        .form-section label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            color: var(--ripple-blue);
+        }
+
+        .ripple-entry-card {
+            background: linear-gradient(135deg, var(--bg-success), #c8e6c8);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+            border-left: 5px solid var(--ripple-green);
+        }
+
+        .entry-content p {
+            margin: 0.5rem 0;
+            font-size: 1.1em;
+        }
+
+        .entry-encouragement {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin-top: 1rem;
+        }
+
+        .pattern-game {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .scenario-entries {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            margin: 1rem 0;
+        }
+
+        .entry-line {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid #e0e0e0;
+            font-family: 'Courier New', monospace;
+        }
+
+        .entry-line:last-child {
+            border-bottom: none;
+        }
+
+        .option-btn {
+            display: block;
+            width: 100%;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            background: white;
+            border: 2px solid var(--ripple-blue);
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            text-align: left;
+        }
+
+        .option-btn:hover {
+            background: var(--bg-accent);
+            transform: translateX(10px);
+        }
+
+        .option-btn.selected {
+            background: var(--ripple-blue);
+            color: white;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin: 2rem 0;
+        }
+
+        .chart-controls {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .chart-stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 2rem 0;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .stat-box {
+            background: var(--bg-accent);
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--ripple-blue);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .challenge-days {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .challenge-day {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .day-number {
+            background: var(--ripple-blue);
+            color: white;
+            width: 50px;
+            height: 50px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+
+        .day-task {
+            flex-grow: 1;
+        }
+
+        .day-task h4 {
+            color: var(--ripple-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .day-tip {
+            background: var(--bg-warning);
+            padding: 0.8rem;
+            border-radius: var(--radius-sm);
+            margin-top: 1rem;
+            font-size: 0.9em;
+        }
+
+        .master-badge {
+            background: linear-gradient(135deg, var(--ripple-yellow), #FFA500);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin: 2rem 0;
+            box-shadow: var(--shadow-lg);
+            animation: pulse 2s infinite;
+        }
+
+        .progress-tracker {
+            margin-top: 3rem;
+        }
+
+        .game-controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 2rem;
+        }
+
+        .score-display {
+            font-weight: bold;
+            color: var(--ripple-green);
+        }
+
+        @media (max-width: 768px) {
+            .formula-box {
+                flex-direction: column;
+            }
+
+            .formula-part {
+                min-width: auto;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+
+            .chart-stats {
+                flex-direction: column;
+            }
+
+            .challenge-days {
+                grid-template-columns: 1fr;
+            }
+
+            .game-controls {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</body>
+</html>
