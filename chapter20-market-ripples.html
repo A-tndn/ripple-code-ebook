@@ -1,0 +1,1390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 20: Market Ripples - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter19.html" class="prev">← Chapter 19</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter21.html" class="next">Chapter 21 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 20: Market Ripples</h1>
+            <p class="subtitle">How Money and Trading Create Waves Around the World! 💰</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>💸 What Are Market Ripples?</h2>
+                
+                <div class="simple-explanation">
+                    <p>Think of money and trading like a giant pool where everyone is making ripples! When people buy and sell things - like toys, food, houses, or company shares - they create <strong>market ripples</strong> that spread around the world and affect everyone!</p>
+                    
+                    <div class="market-analogy">
+                        <div class="analogy-card">
+                            <div class="analogy-icon">🏪</div>
+                            <h3>Imagine a Giant Marketplace</h3>
+                            <p>The whole world is like one enormous marketplace where people are constantly buying and selling things. Every purchase creates a ripple!</p>
+                        </div>
+                        
+                        <div class="analogy-examples">
+                            <div class="example-ripple">
+                                <span class="ripple-icon">🍎</span>
+                                <div class="ripple-text">
+                                    <strong>Food Ripple:</strong> Bad weather ruins apple crops → apples become expensive → apple juice costs more!
+                                </div>
+                            </div>
+                            
+                            <div class="example-ripple">
+                                <span class="ripple-icon">⛽</span>
+                                <div class="ripple-text">
+                                    <strong>Gas Ripple:</strong> Oil prices go up → gas becomes expensive → everything costs more to transport!
+                                </div>
+                            </div>
+                            
+                            <div class="example-ripple">
+                                <span class="ripple-icon">🎮</span>
+                                <div class="ripple-text">
+                                    <strong>Toy Ripple:</strong> New video game is super popular → everyone wants it → stores charge higher prices!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <p><strong>The Amazing Truth:</strong> When someone buys coffee in Japan, it can affect the price of coffee in your local store! That's how connected our world markets are!</p>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>🎯 The Trading Post Game</h2>
+
+                <div class="trading-game">
+                    <h3>Learn How Supply and Demand Create Market Ripples!</h3>
+                    <p>You're running a lemonade stand! Watch how different events create ripples that change your business.</p>
+
+                    <div class="lemonade-stand">
+                        <div class="stand-display">
+                            <h4>🍋 Your Lemonade Stand</h4>
+                            <div class="stand-stats">
+                                <div class="stat">
+                                    <span class="stat-label">Cups Available:</span>
+                                    <span class="stat-value" id="cups-available">50</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Current Price:</span>
+                                    <span class="stat-value" id="current-price">$1.00</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Customers Waiting:</span>
+                                    <span class="stat-value" id="customers-waiting">5</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-label">Your Money:</span>
+                                    <span class="stat-value" id="total-money">$0.00</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="market-events">
+                            <h4>📰 Market Events (Click to See What Happens!)</h4>
+                            <div class="event-buttons">
+                                <button class="event-btn hot-day" onclick="triggerEvent('hot-day')">
+                                    🌞 Super Hot Day!
+                                </button>
+                                
+                                <button class="event-btn competition" onclick="triggerEvent('competition')">
+                                    🏪 New Ice Cream Truck Arrives!
+                                </button>
+                                
+                                <button class="event-btn celebrity" onclick="triggerEvent('celebrity')">
+                                    ⭐ Celebrity Recommends Lemonade!
+                                </button>
+                                
+                                <button class="event-btn shortage" onclick="triggerEvent('shortage')">
+                                    🍋 Lemon Shortage!
+                                </button>
+                                
+                                <button class="event-btn rain" onclick="triggerEvent('rain')">
+                                    🌧️ Rainy Weather!
+                                </button>
+                                
+                                <button class="event-btn festival" onclick="triggerEvent('festival')">
+                                    🎪 Town Festival!
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="event-result" class="event-result">
+                            <p>Click on an event above to see how it creates market ripples!</p>
+                        </div>
+
+                        <div class="market-lesson">
+                            <h4>📚 What You're Learning:</h4>
+                            <ul>
+                                <li><strong>Supply & Demand:</strong> When many people want something but there's not much available, prices go up!</li>
+                                <li><strong>Competition:</strong> When there are more choices, prices usually go down!</li>
+                                <li><strong>External Events:</strong> Things happening in the world (weather, news, celebrations) affect markets!</li>
+                                <li><strong>Ripple Effects:</strong> One change can create a chain reaction affecting many things!</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>🌊 The Great Market Ripple Chain</h2>
+
+                <div class="ripple-chain">
+                    <h3>Follow the Amazing Chain Reactions in Markets!</h3>
+                    <p>Markets are connected like dominoes - when one thing changes, it creates a chain reaction. Let's follow some real examples!</p>
+
+                    <div class="chain-examples">
+                        <div class="chain-card">
+                            <h4>🎮 The Video Game Console Ripple Chain</h4>
+                            <div class="chain-steps">
+                                <div class="chain-step start">
+                                    <span class="step-number">1</span>
+                                    <div class="step-content">
+                                        <h5>The Start</h5>
+                                        <p>🏭 Factory makes fewer game consoles due to chip shortage</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="chain-arrow">↓</div>
+                                
+                                <div class="chain-step">
+                                    <span class="step-number">2</span>
+                                    <div class="step-content">
+                                        <h5>Immediate Effect</h5>
+                                        <p>📦 Stores run out of consoles to sell</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="chain-arrow">↓</div>
+                                
+                                <div class="chain-step">
+                                    <span class="step-number">3</span>
+                                    <div class="step-content">
+                                        <h5>Market Reaction</h5>
+                                        <p>💰 Prices of available consoles go way up</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="chain-arrow">↓</div>
+                                
+                                <div class="chain-step">
+                                    <span class="step-number">4</span>
+                                    <div class="step-content">
+                                        <h5>Ripple Effect</h5>
+                                        <p>🎯 People buy competing consoles instead</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="chain-arrow">↓</div>
+                                
+                                <div class="chain-step end">
+                                    <span class="step-number">5</span>
+                                    <div class="step-content">
+                                        <h5>Final Result</h5>
+                                        <p>🏆 Competing console company makes more money!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chain-card">
+                            <h4>🚗 The Gas Price Ripple Chain</h4>
+                            <div class="chain-steps">
+                                <div class="chain-step start">
+                                    <span class="step-number">1</span>
+                                    <div class="step-content">
+                                        <h5>The Start</h5>
+                                        <p>⛽ Gas prices suddenly increase everywhere</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="chain-arrow">↓</div>
+                                
+                                <div class="chain-step">
+                                    <span class="step-number">2</span>
+                                    <div class="step-content">
+                                        <h5>Transportation Impact</h5>
+                                        <p>🚚 Trucks cost more money to deliver goods</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="chain-arrow">↓</div>
+                                
+                                <div class="chain-step">
+                                    <span class="step-number">3</span>
+                                    <div class="step-content">
+                                        <h5>Store Prices</h5>
+                                        <p>🏪 Stores raise prices to cover higher delivery costs</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="chain-arrow">↓</div>
+                                
+                                <div class="chain-step">
+                                    <span class="step-number">4</span>
+                                    <div class="step-content">
+                                        <h5>Family Impact</h5>
+                                        <p>👨‍👩‍👧‍👦 Families spend more money on everyday things</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="chain-arrow">↓</div>
+                                
+                                <div class="chain-step end">
+                                    <span class="step-number">5</span>
+                                    <div class="step-content">
+                                        <h5>Behavior Change</h5>
+                                        <p>🚶 People walk/bike more and drive less!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="chain-insights">
+                        <h4>🧠 Chain Reaction Insights</h4>
+                        <div class="insight-grid">
+                            <div class="insight-item">
+                                <span class="insight-icon">🔗</span>
+                                <strong>Everything is Connected:</strong> Markets link things you wouldn't expect - gas prices affect food prices!
+                            </div>
+                            
+                            <div class="insight-item">
+                                <span class="insight-icon">⚡</span>
+                                <strong>Speed Matters:</strong> Some ripples happen instantly (stock prices) while others take months (new stores opening)
+                            </div>
+                            
+                            <div class="insight-item">
+                                <span class="insight-icon">🎯</span>
+                                <strong>Winners and Losers:</strong> The same event that hurts one business often helps another!
+                            </div>
+                            
+                            <div class="insight-item">
+                                <span class="insight-icon">🌍</span>
+                                <strong>Global Impact:</strong> Events in one country create ripples that reach every corner of the world!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-interface">
+                <h2>📊 The Market Mood Detector</h2>
+
+                <div class="mood-detector">
+                    <h3>Markets Have Moods Just Like People!</h3>
+                    <p>Sometimes markets are happy and optimistic, sometimes scared and worried. These moods create different types of ripples!</p>
+
+                    <div class="market-moods">
+                        <div class="mood-card bull">
+                            <div class="mood-icon">📈</div>
+                            <h4>Bull Market (Happy Market)</h4>
+                            <div class="mood-description">
+                                <p>When most people feel good about the future and want to buy things!</p>
+                                <div class="mood-characteristics">
+                                    <div class="characteristic">🟢 Prices generally going up</div>
+                                    <div class="characteristic">😊 People feeling confident</div>
+                                    <div class="characteristic">💰 Lots of buying and investing</div>
+                                    <div class="characteristic">🚀 New businesses starting</div>
+                                </div>
+                            </div>
+                            <div class="mood-example">
+                                <strong>Example:</strong> New amazing invention announced → Everyone excited → Stock prices rise → More people invest!
+                            </div>
+                        </div>
+
+                        <div class="mood-card bear">
+                            <div class="mood-icon">📉</div>
+                            <h4>Bear Market (Worried Market)</h4>
+                            <div class="mood-description">
+                                <p>When most people are concerned about the future and want to sell things!</p>
+                                <div class="mood-characteristics">
+                                    <div class="characteristic">🔴 Prices generally going down</div>
+                                    <div class="characteristic">😰 People feeling uncertain</div>
+                                    <div class="characteristic">💸 Lots of selling</div>
+                                    <div class="characteristic">🏠 People saving money instead of spending</div>
+                                </div>
+                            </div>
+                            <div class="mood-example">
+                                <strong>Example:</strong> Bad economic news → People get worried → Start selling stocks → Prices drop → More people sell!
+                            </div>
+                        </div>
+
+                        <div class="mood-card volatile">
+                            <div class="mood-icon">🎢</div>
+                            <h4>Volatile Market (Confused Market)</h4>
+                            <div class="mood-description">
+                                <p>When the market can't decide if it's happy or worried - like a roller coaster!</p>
+                                <div class="mood-characteristics">
+                                    <div class="characteristic">🎯 Prices jumping up and down quickly</div>
+                                    <div class="characteristic">🤔 People can't agree on what will happen</div>
+                                    <div class="characteristic">⚡ Very fast changes</div>
+                                    <div class="characteristic">🎰 Feels like gambling</div>
+                                </div>
+                            </div>
+                            <div class="mood-example">
+                                <strong>Example:</strong> Conflicting news reports → Some people buy, others sell → Prices swing wildly up and down!
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mood-activity">
+                        <h4>🎯 Mood Reading Practice</h4>
+                        <p>Can you guess the market mood from these news headlines?</p>
+                        
+                        <div class="headline-examples">
+                            <div class="headline-card">
+                                <div class="headline">"Scientists Discover Amazing New Clean Energy Source!"</div>
+                                <div class="mood-guess">Market Mood: <span class="mood-answer bull-answer">📈 Bull (Happy) - People excited about future energy!</span></div>
+                            </div>
+                            
+                            <div class="headline-card">
+                                <div class="headline">"Major Factory Closes, Thousands Lose Jobs"</div>
+                                <div class="mood-guess">Market Mood: <span class="mood-answer bear-answer">📉 Bear (Worried) - Economic concerns affect confidence!</span></div>
+                            </div>
+                            
+                            <div class="headline-card">
+                                <div class="headline">"Experts Can't Agree: Will New Technology Help or Hurt?"</div>
+                                <div class="mood-guess">Market Mood: <span class="mood-answer volatile-answer">🎢 Volatile (Confused) - Uncertainty creates wild swings!</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>🌍 Global Market Ripple Map</h2>
+
+                <div class="global-map">
+                    <h3>See How Events in One Country Affect the Whole World!</h3>
+                    <p>Markets are connected globally. Let's see how a ripple starting in one place spreads everywhere!</p>
+
+                    <div class="ripple-scenarios">
+                        <div class="scenario-selector">
+                            <h4>📰 Choose a Global Event:</h4>
+                            <div class="scenario-buttons">
+                                <button class="scenario-btn" onclick="showGlobalRipple('tech-breakthrough')">
+                                    💻 Amazing Tech Breakthrough in Silicon Valley
+                                </button>
+                                
+                                <button class="scenario-btn" onclick="showGlobalRipple('oil-discovery')">
+                                    ⛽ Huge Oil Discovery in Middle East
+                                </button>
+                                
+                                <button class="scenario-btn" onclick="showGlobalRipple('crop-failure')">
+                                    🌾 Major Crop Failure in Agricultural Region
+                                </button>
+                                
+                                <button class="scenario-btn" onclick="showGlobalRipple('currency-change')">
+                                    💱 Major Country Changes Currency Value
+                                </button>
+                            </div>
+                        </div>
+
+                        <div id="global-ripple-display" class="ripple-display">
+                            <p>Choose an event above to see how it creates ripples around the world!</p>
+                        </div>
+                    </div>
+
+                    <div class="global-insights">
+                        <h4>🌐 Global Connection Insights</h4>
+                        <div class="connection-facts">
+                            <div class="fact-card">
+                                <div class="fact-icon">⚡</div>
+                                <h5>Lightning Speed</h5>
+                                <p>Financial news travels around the world in milliseconds through computer networks!</p>
+                            </div>
+                            
+                            <div class="fact-card">
+                                <div class="fact-icon">🕐</div>
+                                <h5>24/7 Markets</h5>
+                                <p>When it's nighttime in New York, markets are open in Tokyo - trading never stops!</p>
+                            </div>
+                            
+                            <div class="fact-card">
+                                <div class="fact-icon">🔗</div>
+                                <h5>Supply Chains</h5>
+                                <p>Your phone parts might come from 20 different countries - all connected by markets!</p>
+                            </div>
+                            
+                            <div class="fact-card">
+                                <div class="fact-icon">💫</div>
+                                <h5>Butterfly Effect</h5>
+                                <p>A small event in one country can create huge changes somewhere else!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>🧠 Market Ripple Wisdom for Kids</h2>
+
+                <div class="market-wisdom">
+                    <h3>Important Things to Know About Market Ripples!</h3>
+                    <p>Understanding market ripples helps you make smarter decisions about money and life!</p>
+
+                    <div class="wisdom-cards">
+                        <div class="wisdom-card">
+                            <div class="wisdom-icon">💡</div>
+                            <h4>Smart Shopping</h4>
+                            <div class="wisdom-tips">
+                                <div class="tip">🛒 Prices change based on supply and demand</div>
+                                <div class="tip">⏰ Best deals often come when demand is low</div>
+                                <div class="tip">🎯 Compare prices - competition keeps prices fair</div>
+                                <div class="tip">📅 Seasonal patterns affect prices (swimsuits cost less in winter!)</div>
+                            </div>
+                        </div>
+
+                        <div class="wisdom-card">
+                            <div class="wisdom-icon">🎯</div>
+                            <h4>Future Planning</h4>
+                            <div class="wisdom-tips">
+                                <div class="tip">📈 Markets go up and down - this is normal</div>
+                                <div class="tip">⏳ Long-term thinking usually beats short-term panic</div>
+                                <div class="tip">🎲 Never invest money you can't afford to lose</div>
+                                <div class="tip">🌍 Global events can affect local prices</div>
+                            </div>
+                        </div>
+
+                        <div class="wisdom-card">
+                            <div class="wisdom-icon">🔍</div>
+                            <h4>Reading Market Signals</h4>
+                            <div class="wisdom-tips">
+                                <div class="tip">📰 News affects market moods</div>
+                                <div class="tip">😊 Happy markets = higher prices generally</div>
+                                <div class="tip">😰 Worried markets = lower prices generally</div>
+                                <div class="tip">🎢 Volatile markets = unpredictable changes</div>
+                            </div>
+                        </div>
+
+                        <div class="wisdom-card">
+                            <div class="wisdom-icon">🌟</div>
+                            <h4>Creating Positive Ripples</h4>
+                            <div class="wisdom-tips">
+                                <div class="tip">🏪 Supporting local businesses creates local jobs</div>
+                                <div class="tip">♻️ Buying eco-friendly products encourages more green options</div>
+                                <div class="tip">🎓 Investing in education creates long-term economic benefits</div>
+                                <div class="tip">🤝 Fair trade purchases help workers in other countries</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="practical-activity">
+                        <h4>🏠 Family Market Ripple Project</h4>
+                        <p>Try this fun project with your family to see market ripples in action!</p>
+                        
+                        <div class="project-steps">
+                            <div class="project-step">
+                                <span class="step-icon">1️⃣</span>
+                                <div class="step-text">
+                                    <strong>Price Detective:</strong> Track the price of your favorite snack for 2 weeks at different stores
+                                </div>
+                            </div>
+                            
+                            <div class="project-step">
+                                <span class="step-icon">2️⃣</span>
+                                <div class="step-text">
+                                    <strong>News Watcher:</strong> Look for news that might affect prices (weather, new products, holidays)
+                                </div>
+                            </div>
+                            
+                            <div class="project-step">
+                                <span class="step-icon">3️⃣</span>
+                                <div class="step-text">
+                                    <strong>Pattern Finder:</strong> See if you can connect news events to price changes
+                                </div>
+                            </div>
+                            
+                            <div class="project-step">
+                                <span class="step-icon">4️⃣</span>
+                                <div class="step-text">
+                                    <strong>Ripple Predictor:</strong> Try to guess how future events might affect prices
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>🎯 What You Learned About Market Ripples</h2>
+
+                <div class="summary-points grid-2">
+                    <div class="summary-point">
+                        <div class="point-icon">🌊</div>
+                        <h4>Everything is Connected</h4>
+                        <p>Markets link the whole world together - an event in one country creates ripples that reach everywhere!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">⚖️</div>
+                        <h4>Supply and Demand</h4>
+                        <p>When lots of people want something but there isn't much available, prices go up. When there's plenty, prices go down!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🎭</div>
+                        <h4>Market Moods</h4>
+                        <p>Markets have feelings too! Happy markets (bull) push prices up, worried markets (bear) push prices down!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🔗</div>
+                        <h4>Chain Reactions</h4>
+                        <p>One change creates a domino effect - gas prices affect transportation, which affects store prices, which affects families!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">⚡</div>
+                        <h4>Lightning Speed</h4>
+                        <p>Financial news travels around the world in milliseconds, creating instant global reactions!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🎯</div>
+                        <h4>Smart Choices</h4>
+                        <p>Understanding market ripples helps you make better decisions about spending, saving, and supporting businesses!</p>
+                    </div>
+                </div>
+
+                <div class="market-wisdom-summary">
+                    <h3>💰 The Big Market Ripple Truth</h3>
+                    <p>Markets might seem like grown-up stuff, but they affect everyone every day! When you understand how market ripples work, you become a smarter consumer, a better planner, and someone who can create positive economic ripples through your choices. Remember: every purchase you make is a vote for the kind of world you want to live in!</p>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Sentiment as a Carrier</h3>
+                    <p>In Chapter 21, we'll discover how feelings and emotions themselves become carriers that move market ripples faster than facts!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter19.html" class="nav-button prev">← Previous: Religion and Myth</a>
+                <a href="chapter21.html" class="nav-button next">Next: Sentiment as a Carrier →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Trading game data
+        let gameState = {
+            cups: 50,
+            price: 1.00,
+            customers: 5,
+            money: 0
+        };
+
+        const events = {
+            'hot-day': {
+                title: '🌞 Super Hot Day!',
+                description: 'It\'s 95°F outside and everyone wants cold drinks!',
+                effects: {
+                    customers: +20,
+                    price: +0.50,
+                    demand: 'HIGH'
+                },
+                result: 'More customers want lemonade, so you can charge higher prices! Supply and demand in action!'
+            },
+            'competition': {
+                title: '🏪 New Ice Cream Truck Arrives!',
+                description: 'A competitor is selling cold treats nearby!',
+                effects: {
+                    customers: -10,
+                    price: -0.25,
+                    demand: 'LOW'
+                },
+                result: 'Competition means fewer customers and lower prices. You need to make your lemonade more appealing!'
+            },
+            'celebrity': {
+                title: '⭐ Celebrity Recommends Lemonade!',
+                description: 'A famous person posts about loving lemonade on social media!',
+                effects: {
+                    customers: +30,
+                    price: +0.75,
+                    demand: 'VERY HIGH'
+                },
+                result: 'Celebrity endorsement creates huge demand! You can raise prices and still have long lines!'
+            },
+            'shortage': {
+                title: '🍋 Lemon Shortage!',
+                description: 'Bad weather ruined lemon crops - lemons are expensive now!',
+                effects: {
+                    customers: 0,
+                    price: +1.00,
+                    demand: 'NORMAL'
+                },
+                result: 'Your costs went up, so you need to raise prices. Some customers might not buy at higher prices.'
+            },
+            'rain': {
+                title: '🌧️ Rainy Weather!',
+                description: 'Nobody wants cold drinks when it\'s raining and cold!',
+                effects: {
+                    customers: -15,
+                    price: -0.50,
+                    demand: 'LOW'
+                },
+                result: 'Weather affects demand! You might need to lower prices or wait for better weather.'
+            },
+            'festival': {
+                title: '🎪 Town Festival!',
+                description: 'Thousands of people are visiting for the annual festival!',
+                effects: {
+                    customers: +25,
+                    price: +0.30,
+                    demand: 'HIGH'
+                },
+                result: 'More people in town means more potential customers! Special events boost business.'
+            }
+        };
+
+        function triggerEvent(eventType) {
+            const event = events[eventType];
+            
+            // Update game state
+            gameState.customers = Math.max(0, gameState.customers + event.effects.customers);
+            gameState.price = Math.max(0.25, gameState.price + event.effects.price);
+            
+            // Simulate sales
+            const sales = Math.min(gameState.cups, gameState.customers);
+            gameState.money += sales * gameState.price;
+            gameState.cups = Math.max(0, gameState.cups - sales);
+            
+            // Update display
+            document.getElementById('cups-available').textContent = gameState.cups;
+            document.getElementById('current-price').textContent = '$' + gameState.price.toFixed(2);
+            document.getElementById('customers-waiting').textContent = gameState.customers;
+            document.getElementById('total-money').textContent = '$' + gameState.money.toFixed(2);
+            
+            // Show result
+            const resultDiv = document.getElementById('event-result');
+            resultDiv.innerHTML = `
+                <div class="event-notification">
+                    <h4>${event.title}</h4>
+                    <p><strong>What Happened:</strong> ${event.description}</p>
+                    <p><strong>Market Effect:</strong> ${event.result}</p>
+                    <div class="event-stats">
+                        <div class="stat-change">Customers: ${event.effects.customers > 0 ? '+' : ''}${event.effects.customers}</div>
+                        <div class="stat-change">Price: ${event.effects.price > 0 ? '+' : ''}$${event.effects.price.toFixed(2)}</div>
+                        <div class="stat-change">You sold ${sales} cups and made $${(sales * gameState.price).toFixed(2)}!</div>
+                    </div>
+                </div>
+            `;
+            
+            // Reset for next round
+            setTimeout(() => {
+                gameState.cups = 50;
+                gameState.customers = 5;
+                gameState.price = 1.00;
+                document.getElementById('cups-available').textContent = gameState.cups;
+                document.getElementById('customers-waiting').textContent = gameState.customers;
+                document.getElementById('current-price').textContent = '$' + gameState.price.toFixed(2);
+            }, 5000);
+        }
+
+        // Global ripple scenarios
+        const globalScenarios = {
+            'tech-breakthrough': {
+                title: '💻 Amazing Tech Breakthrough in Silicon Valley',
+                ripples: [
+                    { region: '🇺🇸 United States', effect: 'Tech company stocks soar! Investors rush to buy tech shares.' },
+                    { region: '🇯🇵 Japan', effect: 'Electronics manufacturers prepare to use new technology.' },
+                    { region: '🇩🇪 Germany', effect: 'Auto companies explore how tech can improve cars.' },
+                    { region: '🇨🇳 China', effect: 'Manufacturing plants gear up to produce new tech components.' },
+                    { region: '🇮🇳 India', effect: 'Software companies get ready to develop apps for new technology.' },
+                    { region: '🌍 Global', effect: 'Universities worldwide increase tech research funding!' }
+                ]
+            },
+            'oil-discovery': {
+                title: '⛽ Huge Oil Discovery in Middle East',
+                ripples: [
+                    { region: '🏜️ Middle East', effect: 'Local economy booms! New jobs and infrastructure development.' },
+                    { region: '🇺🇸 United States', effect: 'Gas prices start dropping, affecting transportation costs.' },
+                    { region: '🇪🇺 Europe', effect: 'Energy companies adjust pricing, heating costs may decrease.' },
+                    { region: '🇯🇵 Japan', effect: 'Import costs drop, manufacturing becomes cheaper.' },
+                    { region: '🌍 Airlines', effect: 'Fuel costs decrease, potentially lowering flight prices.' },
+                    { region: '🌱 Green Energy', effect: 'Renewable energy stocks drop as oil competition increases.' }
+                ]
+            },
+            'crop-failure': {
+                title: '🌾 Major Crop Failure in Agricultural Region',
+                ripples: [
+                    { region: '🌾 Farming Region', effect: 'Local farmers face financial difficulties, seek government aid.' },
+                    { region: '🏪 Grocery Stores', effect: 'Food prices increase due to reduced supply.' },
+                    { region: '🍞 Food Companies', effect: 'Manufacturing costs rise, product prices go up.' },
+                    { region: '🐄 Livestock Industry', effect: 'Animal feed becomes expensive, meat prices rise.' },
+                    { region: '🌍 Other Countries', effect: 'Food exporting countries see increased demand and higher prices.' },
+                    { region: '👨‍👩‍👧‍👦 Families', effect: 'Household food budgets increase, affecting spending on other items.' }
+                ]
+            },
+            'currency-change': {
+                title: '💱 Major Country Changes Currency Value',
+                ripples: [
+                    { region: '🏦 Local Banks', effect: 'Exchange rates fluctuate, affecting international transactions.' },
+                    { region: '✈️ Tourism', effect: 'Country becomes more/less expensive for foreign tourists.' },
+                    { region: '📦 Imports/Exports', effect: 'Trade relationships shift based on new exchange rates.' },
+                    { region: '💼 International Business', effect: 'Companies adjust pricing for international markets.' },
+                    { region: '🎓 Students Abroad', effect: 'Cost of studying in foreign countries changes significantly.' },
+                    { region: '🌍 Global Markets', effect: 'Other currencies adjust in response, creating worldwide effects.' }
+                ]
+            }
+        };
+
+        function showGlobalRipple(scenarioType) {
+            const scenario = globalScenarios[scenarioType];
+            const display = document.getElementById('global-ripple-display');
+            
+            display.innerHTML = `
+                <div class="global-scenario">
+                    <h4>${scenario.title}</h4>
+                    <div class="ripple-effects">
+                        ${scenario.ripples.map((ripple, index) => `
+                            <div class="ripple-effect" style="animation-delay: ${index * 0.3}s">
+                                <div class="effect-region">${ripple.region}</div>
+                                <div class="effect-description">${ripple.effect}</div>
+                            </div>
+                        `).join('')}
+                    </div>
+                    <div class="scenario-lesson">
+                        <strong>Key Learning:</strong> This shows how interconnected our global economy is! 
+                        A single event creates ripples that reach every corner of the world.
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+
+    <style>
+        .market-analogy {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin: 2rem 0;
+        }
+
+        .analogy-card {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .analogy-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        .analogy-examples {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .example-ripple {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-blue);
+        }
+
+        .ripple-icon {
+            font-size: 2rem;
+            min-width: 50px;
+        }
+
+        .ripple-text {
+            font-size: 0.95rem;
+        }
+
+        .trading-game {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .lemonade-stand {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .stand-display {
+            background: linear-gradient(135deg, #FFF9C4, #FFEB3B);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .stand-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stat {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .stat-value {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--ripple-blue);
+        }
+
+        .event-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .event-btn {
+            padding: 1rem;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            font-weight: bold;
+        }
+
+        .event-btn.hot-day {
+            background: linear-gradient(135deg, #FFE082, #FFC107);
+        }
+
+        .event-btn.competition {
+            background: linear-gradient(135deg, #FFCDD2, #E57373);
+        }
+
+        .event-btn.celebrity {
+            background: linear-gradient(135deg, #E1BEE7, #BA68C8);
+        }
+
+        .event-btn.shortage {
+            background: linear-gradient(135deg, #FFCCBC, #FF8A65);
+        }
+
+        .event-btn.rain {
+            background: linear-gradient(135deg, #B3E5FC, #4FC3F7);
+        }
+
+        .event-btn.festival {
+            background: linear-gradient(135deg, #C8E6C9, #66BB6A);
+        }
+
+        .event-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .event-result {
+            min-height: 150px;
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .event-notification {
+            text-align: center;
+        }
+
+        .event-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .stat-change {
+            background: white;
+            padding: 0.5rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+            color: var(--ripple-green);
+        }
+
+        .market-lesson {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .market-lesson ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .market-lesson li {
+            background: white;
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-blue);
+        }
+
+        .ripple-chain {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .chain-examples {
+            display: grid;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+
+        .chain-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .chain-card h4 {
+            text-align: center;
+            color: var(--ripple-blue);
+            margin-bottom: 2rem;
+        }
+
+        .chain-steps {
+            display: grid;
+            gap: 1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .chain-step {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .chain-step.start {
+            border-left: 5px solid var(--ripple-green);
+        }
+
+        .chain-step.end {
+            border-left: 5px solid var(--ripple-purple);
+        }
+
+        .step-number {
+            background: var(--ripple-blue);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            flex-shrink: 0;
+        }
+
+        .step-content h5 {
+            margin: 0 0 0.5rem 0;
+            color: var(--ripple-blue);
+        }
+
+        .step-content p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        .chain-arrow {
+            text-align: center;
+            font-size: 2rem;
+            color: var(--ripple-orange);
+        }
+
+        .chain-insights {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 3rem 0;
+        }
+
+        .insight-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .insight-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .insight-icon {
+            font-size: 1.8rem;
+            min-width: 40px;
+        }
+
+        .mood-detector {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .market-moods {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .mood-card {
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .mood-card.bull {
+            background: linear-gradient(135deg, #E8F5E8, #C8E6C9);
+        }
+
+        .mood-card.bear {
+            background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+        }
+
+        .mood-card.volatile {
+            background: linear-gradient(135deg, #FFF3E0, #FFCC02);
+        }
+
+        .mood-icon {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .mood-card h4 {
+            text-align: center;
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .mood-characteristics {
+            display: grid;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .characteristic {
+            background: white;
+            padding: 0.8rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+        }
+
+        .mood-example {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin-top: 1rem;
+            font-style: italic;
+        }
+
+        .headline-examples {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .headline-card {
+            background: var(--bg-secondary);
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .headline {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+            margin-bottom: 1rem;
+            border-left: 5px solid var(--ripple-blue);
+        }
+
+        .mood-guess {
+            font-size: 0.9rem;
+        }
+
+        .mood-answer {
+            font-weight: bold;
+            padding: 0.5rem;
+            border-radius: var(--radius-sm);
+            margin-left: 1rem;
+        }
+
+        .bull-answer {
+            background: var(--bg-success);
+            color: var(--ripple-green);
+        }
+
+        .bear-answer {
+            background: var(--bg-warning);
+            color: var(--ripple-orange);
+        }
+
+        .volatile-answer {
+            background: var(--bg-accent);
+            color: var(--ripple-purple);
+        }
+
+        .global-map {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .scenario-buttons {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .scenario-btn {
+            padding: 1rem;
+            background: linear-gradient(135deg, var(--ripple-teal), #26A69A);
+            color: white;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+        }
+
+        .scenario-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .ripple-display {
+            min-height: 200px;
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .global-scenario h4 {
+            color: var(--ripple-blue);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .ripple-effects {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .ripple-effect {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-orange);
+            opacity: 0;
+            animation: rippleAppear 0.5s ease-out forwards;
+        }
+
+        .effect-region {
+            font-weight: bold;
+            color: var(--ripple-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .effect-description {
+            font-size: 0.9rem;
+        }
+
+        .scenario-lesson {
+            background: var(--bg-accent);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin-top: 2rem;
+            font-style: italic;
+        }
+
+        .connection-facts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .fact-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .fact-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .fact-card h5 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .market-wisdom {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .wisdom-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .wisdom-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .wisdom-icon {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .wisdom-card h4 {
+            text-align: center;
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .wisdom-tips {
+            display: grid;
+            gap: 0.8rem;
+        }
+
+        .tip {
+            background: white;
+            padding: 0.8rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+            border-left: 3px solid var(--ripple-green);
+        }
+
+        .practical-activity {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 3rem 0;
+        }
+
+        .project-steps {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .project-step {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .step-icon {
+            font-size: 2rem;
+            min-width: 50px;
+        }
+
+        .step-text {
+            font-size: 0.9rem;
+        }
+
+        .market-wisdom-summary {
+            background: linear-gradient(135deg, var(--ripple-green), #388E3C);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+            text-align: center;
+        }
+
+        @keyframes rippleAppear {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .stand-stats {
+                grid-template-columns: 1fr;
+            }
+            
+            .event-buttons {
+                grid-template-columns: 1fr;
+            }
+            
+            .chain-step {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .insight-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .wisdom-cards {
+                grid-template-columns: 1fr;
+            }
+            
+            .connection-facts {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

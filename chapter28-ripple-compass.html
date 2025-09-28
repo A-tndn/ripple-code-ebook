@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 28: The Ripple Compass - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter27.html" class="prev">← Chapter 27</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter29.html" class="next">Chapter 29 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 28: The Ripple Compass</h1>
+            <p class="subtitle">Your Daily Navigation Tool for Creating Positive Ripples! 🧭</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>🧭 What is the Ripple Compass?</h2>
+                
+                <div class="simple-explanation">
+                    <p>Just like sailors use a compass to find their way across the ocean, you can use a <strong>Ripple Compass</strong> to navigate your day and make sure your actions create positive ripples!</p>
+                    
+                    <div class="compass-analogy">
+                        <div class="analogy-visual">
+                            <div class="compass-circle">
+                                <div class="compass-center">🧭</div>
+                                <div class="compass-point north">
+                                    <span class="point-label">Morning Check</span>
+                                    <span class="point-emoji">🌅</span>
+                                </div>
+                                <div class="compass-point east">
+                                    <span class="point-label">Action Guide</span>
+                                    <span class="point-emoji">🎯</span>
+                                </div>
+                                <div class="compass-point south">
+                                    <span class="point-label">Evening Reflect</span>
+                                    <span class="point-emoji">🌙</span>
+                                </div>
+                                <div class="compass-point west">
+                                    <span class="point-label">Course Correct</span>
+                                    <span class="point-emoji">🔄</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="compass-explanation">
+                            <h3>The Four Directions of Your Ripple Compass:</h3>
+                            <div class="directions-grid">
+                                <div class="direction-card">
+                                    <div class="direction-icon">🌅</div>
+                                    <h4>Morning Check (North)</h4>
+                                    <p>Start each day by setting your ripple intention - what positive ripples do you want to create today?</p>
+                                </div>
+                                
+                                <div class="direction-card">
+                                    <div class="direction-icon">🎯</div>
+                                    <h4>Action Guide (East)</h4>
+                                    <p>Use your compass to make decisions throughout the day - will this action create positive or negative ripples?</p>
+                                </div>
+                                
+                                <div class="direction-card">
+                                    <div class="direction-icon">🌙</div>
+                                    <h4>Evening Reflect (South)</h4>
+                                    <p>Before bed, review the ripples you created - what went well? What could you improve tomorrow?</p>
+                                </div>
+                                
+                                <div class="direction-card">
+                                    <div class="direction-icon">🔄</div>
+                                    <h4>Course Correct (West)</h4>
+                                    <p>If you notice negative ripples, use your compass to adjust and create positive ripples instead!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>🌅 Morning Compass Check</h2>
+
+                <div class="morning-check">
+                    <h3>Start Your Day with Positive Ripple Intentions!</h3>
+                    <p>Every morning, use your Ripple Compass to set the direction for your day. Answer these simple questions to create a positive ripple plan!</p>
+
+                    <div class="compass-questions">
+                        <div class="question-card">
+                            <div class="question-icon">❤️</div>
+                            <h4>Heart Check: How am I feeling today?</h4>
+                            <div class="feeling-options">
+                                <button class="feeling-btn happy" onclick="selectFeeling('happy')">😊 Happy & Energetic</button>
+                                <button class="feeling-btn calm" onclick="selectFeeling('calm')">😌 Calm & Peaceful</button>
+                                <button class="feeling-btn tired" onclick="selectFeeling('tired')">😴 Tired or Stressed</button>
+                                <button class="feeling-btn sad" onclick="selectFeeling('sad')">😢 Sad or Worried</button>
+                                <button class="feeling-btn excited" onclick="selectFeeling('excited')">🤩 Excited & Ready</button>
+                            </div>
+                            <div id="feeling-guidance" class="guidance-text"></div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-icon">🎯</div>
+                            <h4>Purpose Check: What positive ripples do I want to create today?</h4>
+                            <div class="purpose-options">
+                                <button class="purpose-btn kindness" onclick="selectPurpose('kindness')">💝 Spread Kindness</button>
+                                <button class="purpose-btn learning" onclick="selectPurpose('learning')">📚 Learn Something New</button>
+                                <button class="purpose-btn helping" onclick="selectPurpose('helping')">🤝 Help Others</button>
+                                <button class="purpose-btn creating" onclick="selectPurpose('creating')">🎨 Create Something</button>
+                                <button class="purpose-btn connecting" onclick="selectPurpose('connecting')">👥 Connect with People</button>
+                            </div>
+                            <div id="purpose-guidance" class="guidance-text"></div>
+                        </div>
+
+                        <div class="question-card">
+                            <div class="question-icon">⚠️</div>
+                            <h4>Challenge Check: What might create negative ripples today?</h4>
+                            <div class="challenge-options">
+                                <button class="challenge-btn stress" onclick="selectChallenge('stress')">😤 Feeling Stressed</button>
+                                <button class="challenge-btn conflicts" onclick="selectChallenge('conflicts')">😠 Possible Arguments</button>
+                                <button class="challenge-btn tired" onclick="selectChallenge('tired')">😴 Very Tired</button>
+                                <button class="challenge-btn overwhelmed" onclick="selectChallenge('overwhelmed')">🤯 Too Much to Do</button>
+                                <button class="challenge-btn none" onclick="selectChallenge('none')">✨ No Big Challenges Expected</button>
+                            </div>
+                            <div id="challenge-guidance" class="guidance-text"></div>
+                        </div>
+                    </div>
+
+                    <div class="daily-compass-result">
+                        <h4>🧭 Your Personal Ripple Compass for Today</h4>
+                        <div id="compass-result" class="compass-display">
+                            <p>Answer the questions above to get your personalized ripple guidance for today!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>🎯 Ripple Decision Helper</h2>
+
+                <div class="decision-helper">
+                    <h3>Use Your Compass When Making Decisions!</h3>
+                    <p>Throughout the day, when you're not sure what to do, ask yourself these Ripple Compass questions to make choices that create positive ripples!</p>
+
+                    <div class="decision-scenarios">
+                        <h4>🤔 Common Daily Decisions - What Would You Do?</h4>
+                        
+                        <div class="scenario-examples">
+                            <div class="scenario-card">
+                                <h5>Scenario 1: Your Homework Response</h5>
+                                <p>Your friend asks to copy your homework because they forgot to do it. What do you do?</p>
+                                
+                                <div class="choice-options">
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario1" value="copy" id="s1-copy">
+                                        <label for="s1-copy">Let them copy - it's easier</label>
+                                    </div>
+                                    
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario1" value="help" id="s1-help">
+                                        <label for="s1-help">Help them understand the problems instead</label>
+                                    </div>
+                                    
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario1" value="refuse" id="s1-refuse">
+                                        <label for="s1-refuse">Say no and walk away</label>
+                                    </div>
+                                </div>
+                                
+                                <button onclick="showRippleAnalysis('scenario1')" class="analyze-btn">🧭 Analyze Ripple Effects</button>
+                                <div id="analysis-scenario1" class="ripple-analysis"></div>
+                            </div>
+
+                            <div class="scenario-card">
+                                <h5>Scenario 2: The Playground Situation</h5>
+                                <p>You see someone being mean to a younger kid at school. What do you do?</p>
+                                
+                                <div class="choice-options">
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario2" value="ignore" id="s2-ignore">
+                                        <label for="s2-ignore">Ignore it - not my problem</label>
+                                    </div>
+                                    
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario2" value="help" id="s2-help">
+                                        <label for="s2-help">Step in and help the younger kid</label>
+                                    </div>
+                                    
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario2" value="teacher" id="s2-teacher">
+                                        <label for="s2-teacher">Get a teacher or adult to help</label>
+                                    </div>
+                                </div>
+                                
+                                <button onclick="showRippleAnalysis('scenario2')" class="analyze-btn">🧭 Analyze Ripple Effects</button>
+                                <div id="analysis-scenario2" class="ripple-analysis"></div>
+                            </div>
+
+                            <div class="scenario-card">
+                                <h5>Scenario 3: Social Media Choice</h5>
+                                <p>You see a funny but mean meme about someone at school. What do you do?</p>
+                                
+                                <div class="choice-options">
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario3" value="share" id="s3-share">
+                                        <label for="s3-share">Share it - it's really funny</label>
+                                    </div>
+                                    
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario3" value="ignore" id="s3-ignore">
+                                        <label for="s3-ignore">Don't share it, but don't say anything</label>
+                                    </div>
+                                    
+                                    <div class="choice-option">
+                                        <input type="radio" name="scenario3" value="defend" id="s3-defend">
+                                        <label for="s3-defend">Speak up and defend the person</label>
+                                    </div>
+                                </div>
+                                
+                                <button onclick="showRippleAnalysis('scenario3')" class="analyze-btn">🧭 Analyze Ripple Effects</button>
+                                <div id="analysis-scenario3" class="ripple-analysis"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="decision-framework">
+                        <h4>🗺️ The Quick Decision Framework</h4>
+                        <p>When facing any choice, quickly ask yourself these compass questions:</p>
+                        
+                        <div class="framework-questions">
+                            <div class="framework-item">
+                                <span class="framework-icon">💭</span>
+                                <div class="framework-text">
+                                    <strong>Ripple Question:</strong> "What kind of ripples will this choice create?"
+                                </div>
+                            </div>
+                            
+                            <div class="framework-item">
+                                <span class="framework-icon">❤️</span>
+                                <div class="framework-text">
+                                    <strong>Heart Question:</strong> "Will this help or hurt other people?"
+                                </div>
+                            </div>
+                            
+                            <div class="framework-item">
+                                <span class="framework-icon">🪞</span>
+                                <div class="framework-text">
+                                    <strong>Mirror Question:</strong> "Would I want someone to make this choice if I were in their position?"
+                                </div>
+                            </div>
+                            
+                            <div class="framework-item">
+                                <span class="framework-icon">🌟</span>
+                                <div class="framework-text">
+                                    <strong>Future Question:</strong> "Will I be proud of this choice tomorrow?"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="game-interface">
+                <h2>🌙 Evening Ripple Review</h2>
+
+                <div class="evening-review">
+                    <h3>Reflect on Your Day's Ripples!</h3>
+                    <p>Before bed, use your Ripple Compass to look back on the day. This helps you learn and grow as a ripple creator!</p>
+
+                    <div class="review-categories">
+                        <div class="review-card positive">
+                            <div class="review-icon">🌟</div>
+                            <h4>Positive Ripples I Created Today</h4>
+                            <div class="review-examples">
+                                <div class="example-item">
+                                    <input type="checkbox" id="helped-friend">
+                                    <label for="helped-friend">Helped a friend with something</label>
+                                </div>
+                                <div class="example-item">
+                                    <input type="checkbox" id="said-thanks">
+                                    <label for="said-thanks">Said thank you to someone</label>
+                                </div>
+                                <div class="example-item">
+                                    <input type="checkbox" id="shared-something">
+                                    <label for="shared-something">Shared something with others</label>
+                                </div>
+                                <div class="example-item">
+                                    <input type="checkbox" id="learned-new">
+                                    <label for="learned-new">Learned something new</label>
+                                </div>
+                                <div class="example-item">
+                                    <input type="checkbox" id="made-smile">
+                                    <label for="made-smile">Made someone smile or laugh</label>
+                                </div>
+                                <div class="example-item">
+                                    <input type="checkbox" id="listened-well">
+                                    <label for="listened-well">Really listened to someone</label>
+                                </div>
+                            </div>
+                            <textarea class="review-input" placeholder="Write about other positive ripples you created..."></textarea>
+                        </div>
+
+                        <div class="review-card neutral">
+                            <div class="review-icon">🤔</div>
+                            <h4>Ripples I Want to Improve Tomorrow</h4>
+                            <div class="improvement-areas">
+                                <div class="improvement-item">
+                                    <input type="checkbox" id="better-listening">
+                                    <label for="better-listening">Listen better when others are talking</label>
+                                </div>
+                                <div class="improvement-item">
+                                    <input type="checkbox" id="more-patience">
+                                    <label for="more-patience">Be more patient with others</label>
+                                </div>
+                                <div class="improvement-item">
+                                    <input type="checkbox" id="kinder-words">
+                                    <label for="kinder-words">Use kinder words when frustrated</label>
+                                </div>
+                                <div class="improvement-item">
+                                    <input type="checkbox" id="help-more">
+                                    <label for="help-more">Offer to help without being asked</label>
+                                </div>
+                                <div class="improvement-item">
+                                    <input type="checkbox" id="include-others">
+                                    <label for="include-others">Include others who seem left out</label>
+                                </div>
+                                <div class="improvement-item">
+                                    <input type="checkbox" id="control-emotions">
+                                    <label for="control-emotions">Control my emotions better</label>
+                                </div>
+                            </div>
+                            <textarea class="review-input" placeholder="Write about what you want to improve tomorrow..."></textarea>
+                        </div>
+
+                        <div class="review-card learning">
+                            <div class="review-icon">💡</div>
+                            <h4>Ripple Lessons I Learned Today</h4>
+                            <div class="learning-prompts">
+                                <div class="prompt-item">
+                                    <strong>What surprised me about ripples today?</strong>
+                                    <textarea class="learning-input" placeholder="I was surprised when..."></textarea>
+                                </div>
+                                <div class="prompt-item">
+                                    <strong>How did other people's ripples affect me?</strong>
+                                    <textarea class="learning-input" placeholder="When someone did/said... it made me feel..."></textarea>
+                                </div>
+                                <div class="prompt-item">
+                                    <strong>What would I do differently if I could replay one moment?</strong>
+                                    <textarea class="learning-input" placeholder="If I could do it again, I would..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="review-summary">
+                        <h4>📊 Daily Ripple Score</h4>
+                        <p>Rate yourself honestly on creating positive ripples today:</p>
+                        
+                        <div class="score-slider">
+                            <label for="daily-score">Today's Ripple Impact:</label>
+                            <input type="range" id="daily-score" min="1" max="10" value="5" oninput="updateScoreDisplay(this.value)">
+                            <div class="score-labels">
+                                <span>😢 Mostly Negative</span>
+                                <span id="score-display">5 - Mixed</span>
+                                <span>😊 Very Positive</span>
+                            </div>
+                        </div>
+                        
+                        <div id="score-feedback" class="score-feedback">
+                            <p>Keep working on creating more positive ripples! Every day is a chance to improve.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>🔄 Course Correction Tools</h2>
+
+                <div class="course-correction">
+                    <h3>When Things Go Wrong, Use Your Compass to Fix It!</h3>
+                    <p>Sometimes we create negative ripples by accident. The Ripple Compass helps you quickly turn things around!</p>
+
+                    <div class="correction-scenarios">
+                        <div class="correction-card">
+                            <h4>🔄 The Quick Fix Formula</h4>
+                            <div class="fix-steps">
+                                <div class="fix-step">
+                                    <span class="step-icon">1️⃣</span>
+                                    <div class="step-text">
+                                        <strong>STOP:</strong> Pause and take a deep breath
+                                    </div>
+                                </div>
+                                <div class="fix-step">
+                                    <span class="step-icon">2️⃣</span>
+                                    <div class="step-text">
+                                        <strong>THINK:</strong> What negative ripple did I just create?
+                                    </div>
+                                </div>
+                                <div class="fix-step">
+                                    <span class="step-icon">3️⃣</span>
+                                    <div class="step-text">
+                                        <strong>FIX:</strong> How can I create a positive ripple right now?
+                                    </div>
+                                </div>
+                                <div class="fix-step">
+                                    <span class="step-icon">4️⃣</span>
+                                    <div class="step-text">
+                                        <strong>ACT:</strong> Do it immediately - don't wait!
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="correction-examples">
+                            <h4>🛠️ Quick Fix Examples</h4>
+                            <div class="example-fixes">
+                                <div class="fix-example">
+                                    <div class="problem">😤 Problem: I got angry and said something mean</div>
+                                    <div class="solution">💚 Quick Fix: Apologize immediately and say what I really meant</div>
+                                </div>
+                                
+                                <div class="fix-example">
+                                    <div class="problem">😔 Problem: I ignored someone who needed help</div>
+                                    <div class="solution">💚 Quick Fix: Go back and offer help right now</div>
+                                </div>
+                                
+                                <div class="fix-example">
+                                    <div class="problem">😣 Problem: I complained and brought down the mood</div>
+                                    <div class="solution">💚 Quick Fix: Share something positive or grateful instead</div>
+                                </div>
+                                
+                                <div class="fix-example">
+                                    <div class="problem">😬 Problem: I shared gossip or said something unkind</div>
+                                    <div class="solution">💚 Quick Fix: Say something genuinely nice about that person instead</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="emergency-compass">
+                            <h4>🚨 Emergency Ripple Repair Kit</h4>
+                            <p>When you've created a big negative ripple, use these powerful repair tools:</p>
+                            
+                            <div class="repair-tools">
+                                <div class="repair-tool">
+                                    <span class="tool-icon">🙏</span>
+                                    <div class="tool-content">
+                                        <strong>The Sincere Apology</strong>
+                                        <p>"I'm sorry. I was wrong. How can I make this better?"</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="repair-tool">
+                                    <span class="tool-icon">🎁</span>
+                                    <div class="tool-content">
+                                        <strong>The Kindness Overcompensation</strong>
+                                        <p>Do something extra kind to make up for the negative ripple</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="repair-tool">
+                                    <span class="tool-icon">🔧</span>
+                                    <div class="tool-content">
+                                        <strong>The Problem Solver</strong>
+                                        <p>Fix what you broke or help solve the problem you created</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="repair-tool">
+                                    <span class="tool-icon">📢</span>
+                                    <div class="tool-content">
+                                        <strong>The Public Correction</strong>
+                                        <p>If you spoke negatively in public, correct yourself in public too</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>🎯 Your Complete Ripple Compass Toolkit</h2>
+
+                <div class="summary-points grid-2">
+                    <div class="summary-point">
+                        <div class="point-icon">🌅</div>
+                        <h4>Morning Direction</h4>
+                        <p>Start each day by checking your feelings, setting positive intentions, and preparing for challenges!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🎯</div>
+                        <h4>Decision Navigation</h4>
+                        <p>Use compass questions to make choices that create positive ripples throughout your day!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🌙</div>
+                        <h4>Evening Reflection</h4>
+                        <p>Review your ripples each night to learn, celebrate successes, and plan improvements!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🔄</div>
+                        <h4>Quick Corrections</h4>
+                        <p>When negative ripples happen, use the STOP-THINK-FIX-ACT method to turn things around fast!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">💡</div>
+                        <h4>Daily Learning</h4>
+                        <p>Each day teaches you more about creating better ripples - keep growing and improving!</p>
+                    </div>
+
+                    <div class="summary-point">
+                        <div class="point-icon">🌟</div>
+                        <h4>Positive Impact</h4>
+                        <p>Your Ripple Compass helps you become someone who consistently creates positive change in the world!</p>
+                    </div>
+                </div>
+
+                <div class="compass-mastery">
+                    <h3>🧭 Becoming a Ripple Compass Master</h3>
+                    <p>The more you use your Ripple Compass, the more automatic it becomes! Soon you'll naturally:</p>
+                    <ul class="mastery-list">
+                        <li>🎯 Make decisions that create positive ripples without thinking about it</li>
+                        <li>👁️ Spot potential negative ripples before they happen and avoid them</li>
+                        <li>🛠️ Fix negative ripples quickly and effectively when they do occur</li>
+                        <li>🌟 Inspire others through your consistent positive impact</li>
+                        <li>📈 Create stronger and more positive ripples over time</li>
+                        <li>🌍 Understand how your daily actions affect the whole world</li>
+                    </ul>
+                    <div class="mastery-message">
+                        <p><strong>Remember:</strong> Every master was once a beginner. Use your Ripple Compass daily, be patient with yourself, and celebrate every positive ripple you create. You're learning one of the most powerful skills in the world - the ability to make life better for yourself and everyone around you!</p>
+                    </div>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Network Fluency</h3>
+                    <p>In Chapter 29, we'll learn advanced skills for reading and working with group ripples - how to understand and navigate complex social networks like a pro!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter27.html" class="nav-button prev">← Previous: Multipolar Echoes</a>
+                <a href="chapter29.html" class="nav-button next">Next: Network Fluency →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Morning compass state
+        let selectedFeeling = '';
+        let selectedPurpose = '';
+        let selectedChallenge = '';
+
+        const feelingGuidance = {
+            'happy': 'Great energy for creating positive ripples! Channel your happiness to uplift others around you.',
+            'calm': 'Perfect state for clear thinking and gentle, steady positive influence.',
+            'tired': 'Be extra gentle with yourself and others. Focus on small, manageable positive actions.',
+            'sad': 'Your emotions are valid. Sometimes helping others can help you feel better too.',
+            'excited': 'Amazing energy! Use your excitement to inspire and motivate others!'
+        };
+
+        const purposeGuidance = {
+            'kindness': 'Look for opportunities to be kind - small gestures can create the biggest ripples!',
+            'learning': 'Every new thing you learn is a positive ripple that grows throughout your life!',
+            'helping': 'Helping others creates ripples of gratitude and community - be on the lookout for chances to help!',
+            'creating': 'Creating something new adds beauty and value to the world!',
+            'connecting': 'Strong connections create networks of positive ripples between people!'
+        };
+
+        const challengeGuidance = {
+            'stress': 'When stressed, take deep breaths and remember that your calm response can prevent negative ripples.',
+            'conflicts': 'If arguments arise, try to listen first and respond with kindness rather than react with anger.',
+            'tired': 'When tired, be extra patient with yourself and others. Rest when you can.',
+            'overwhelmed': 'Break big tasks into smaller pieces and ask for help when you need it.',
+            'none': 'Great! You have extra energy to create positive ripples and help others today!'
+        };
+
+        function selectFeeling(feeling) {
+            selectedFeeling = feeling;
+            document.querySelectorAll('.feeling-btn').forEach(btn => btn.classList.remove('selected'));
+            event.target.classList.add('selected');
+            document.getElementById('feeling-guidance').innerHTML = `<p>💡 ${feelingGuidance[feeling]}</p>`;
+            updateCompassResult();
+        }
+
+        function selectPurpose(purpose) {
+            selectedPurpose = purpose;
+            document.querySelectorAll('.purpose-btn').forEach(btn => btn.classList.remove('selected'));
+            event.target.classList.add('selected');
+            document.getElementById('purpose-guidance').innerHTML = `<p>🎯 ${purposeGuidance[purpose]}</p>`;
+            updateCompassResult();
+        }
+
+        function selectChallenge(challenge) {
+            selectedChallenge = challenge;
+            document.querySelectorAll('.challenge-btn').forEach(btn => btn.classList.remove('selected'));
+            event.target.classList.add('selected');
+            document.getElementById('challenge-guidance').innerHTML = `<p>⚠️ ${challengeGuidance[challenge]}</p>`;
+            updateCompassResult();
+        }
+
+        function updateCompassResult() {
+            if (selectedFeeling && selectedPurpose && selectedChallenge) {
+                const resultDiv = document.getElementById('compass-result');
+                resultDiv.innerHTML = `
+                    <div class="compass-summary">
+                        <h5>🧭 Your Personal Ripple Navigation for Today:</h5>
+                        <div class="compass-points">
+                            <div class="compass-point-result">
+                                <strong>Feeling:</strong> ${selectedFeeling}
+                                <p>${feelingGuidance[selectedFeeling]}</p>
+                            </div>
+                            <div class="compass-point-result">
+                                <strong>Purpose:</strong> ${selectedPurpose}
+                                <p>${purposeGuidance[selectedPurpose]}</p>
+                            </div>
+                            <div class="compass-point-result">
+                                <strong>Challenge:</strong> ${selectedChallenge}
+                                <p>${challengeGuidance[selectedChallenge]}</p>
+                            </div>
+                        </div>
+                        <div class="daily-mantra">
+                            <strong>Today's Ripple Mantra:</strong>
+                            <p>"I will create positive ripples through ${selectedPurpose}, staying mindful of my ${selectedFeeling} energy, and being prepared for ${selectedChallenge === 'none' ? 'any unexpected challenges' : selectedChallenge}."</p>
+                        </div>
+                    </div>
+                `;
+            }
+        }
+
+        // Scenario analysis data
+        const scenarioAnalysis = {
+            'scenario1': {
+                'copy': {
+                    type: 'negative',
+                    ripples: [
+                        '🔴 Negative: Your friend doesn\'t learn the material',
+                        '🔴 Negative: They might get in trouble for cheating',
+                        '🔴 Negative: You become complicit in dishonesty',
+                        '🔴 Negative: Sets precedent for future requests'
+                    ],
+                    better: 'Offering to help them understand creates learning ripples instead of cheating ripples!'
+                },
+                'help': {
+                    type: 'positive',
+                    ripples: [
+                        '🟢 Positive: Your friend actually learns the material',
+                        '🟢 Positive: They feel supported and grateful',
+                        '🟢 Positive: You reinforce your own learning by teaching',
+                        '🟢 Positive: Creates a culture of helping vs cheating'
+                    ],
+                    praise: 'Excellent choice! Teaching creates positive ripples for both of you!'
+                },
+                'refuse': {
+                    type: 'neutral',
+                    ripples: [
+                        '🟡 Neutral: Prevents cheating but doesn\'t help',
+                        '🟡 Neutral: Friend might be upset but learns lesson',
+                        '🟡 Neutral: You stay honest but don\'t create positive impact',
+                        '🔴 Negative: Missed opportunity to help and teach'
+                    ],
+                    better: 'While honest, you could turn this into a positive ripple by offering to help them learn instead!'
+                }
+            },
+            'scenario2': {
+                'ignore': {
+                    type: 'negative',
+                    ripples: [
+                        '🔴 Negative: Bullying continues and potentially gets worse',
+                        '🔴 Negative: Younger kid feels alone and unsupported',
+                        '🔴 Negative: You miss chance to be a positive influence',
+                        '🔴 Negative: Bully learns that their behavior is acceptable'
+                    ],
+                    better: 'Ignoring bullying allows negative ripples to spread. Taking action creates positive change!'
+                },
+                'help': {
+                    type: 'positive',
+                    ripples: [
+                        '🟢 Positive: Show younger kid they\'re not alone',
+                        '🟢 Positive: Demonstrate that bullying is not okay',
+                        '🟢 Positive: You develop courage and leadership',
+                        '🟢 Positive: May inspire others to stand up too'
+                    ],
+                    praise: 'Brave choice! Standing up for others creates powerful positive ripples!'
+                },
+                'teacher': {
+                    type: 'positive',
+                    ripples: [
+                        '🟢 Positive: Gets appropriate adult help',
+                        '🟢 Positive: Ensures the situation is handled properly',
+                        '🟢 Positive: Shows wisdom in seeking help',
+                        '🟢 Positive: Adult can create lasting change'
+                    ],
+                    praise: 'Smart approach! Getting adult help creates safe and effective positive ripples!'
+                }
+            },
+            'scenario3': {
+                'share': {
+                    type: 'negative',
+                    ripples: [
+                        '🔴 Negative: Hurts the person being mocked',
+                        '🔴 Negative: Spreads meanness through your network',
+                        '🔴 Negative: Others might create similar content',
+                        '🔴 Negative: Damages your reputation as a kind person'
+                    ],
+                    better: 'Sharing mean content spreads negative ripples. Choose kindness instead!'
+                },
+                'ignore': {
+                    type: 'neutral',
+                    ripples: [
+                        '🟡 Neutral: Doesn\'t spread the meanness further',
+                        '🟡 Neutral: You avoid participating in bullying',
+                        '🔴 Negative: Missed opportunity to defend the person',
+                        '🔴 Negative: Silent approval of mean behavior'
+                    ],
+                    better: 'While you don\'t make it worse, you could create positive ripples by defending the person!'
+                },
+                'defend': {
+                    type: 'positive',
+                    ripples: [
+                        '🟢 Positive: Shows the person they have support',
+                        '🟢 Positive: Discourages others from sharing mean content',
+                        '🟢 Positive: You become known as someone who stands up for others',
+                        '🟢 Positive: Creates a culture of kindness in your network'
+                    ],
+                    praise: 'Courageous choice! Defending others online creates ripples of kindness and support!'
+                }
+            }
+        };
+
+        function showRippleAnalysis(scenario) {
+            const selectedChoice = document.querySelector(`input[name="${scenario}"]:checked`);
+            if (!selectedChoice) {
+                alert('Please select a choice first!');
+                return;
+            }
+
+            const choice = selectedChoice.value;
+            const analysis = scenarioAnalysis[scenario][choice];
+            const resultDiv = document.getElementById(`analysis-${scenario}`);
+
+            resultDiv.innerHTML = `
+                <div class="analysis-result ${analysis.type}">
+                    <h6>🧭 Ripple Analysis:</h6>
+                    <div class="ripple-effects">
+                        ${analysis.ripples.map(ripple => `<div class="ripple-effect">${ripple}</div>`).join('')}
+                    </div>
+                    <div class="analysis-feedback">
+                        ${analysis.type === 'positive' ? 
+                            `<p class="positive-feedback">🌟 ${analysis.praise}</p>` :
+                            `<p class="improvement-feedback">💡 ${analysis.better}</p>`
+                        }
+                    </div>
+                </div>
+            `;
+        }
+
+        function updateScoreDisplay(value) {
+            const scoreDisplay = document.getElementById('score-display');
+            const scoreFeedback = document.getElementById('score-feedback');
+            
+            const scoreLabels = {
+                1: '😢 Very Negative',
+                2: '😔 Mostly Negative', 
+                3: '😐 Somewhat Negative',
+                4: '🤔 Slightly Negative',
+                5: '😐 Mixed',
+                6: '🙂 Slightly Positive',
+                7: '😊 Mostly Positive',
+                8: '😄 Very Positive',
+                9: '🌟 Extremely Positive',
+                10: '✨ Perfectly Positive'
+            };
+
+            const scoreFeedbacks = {
+                1: 'Tomorrow is a fresh start! Use your compass to create more positive ripples.',
+                2: 'You can do better! Focus on small positive actions tomorrow.',
+                3: 'Improvement is possible! Try the morning compass check tomorrow.',
+                4: 'Getting better! Look for more opportunities to help and be kind.',
+                5: 'Balanced day! Try to tip the scales toward more positive ripples.',
+                6: 'Good work! You\'re creating more positive than negative ripples.',
+                7: 'Excellent job! Your positive ripples are making a real difference.',
+                8: 'Amazing day! You\'re becoming a master ripple creator.',
+                9: 'Outstanding! Your positive impact is inspiring others.',
+                10: 'Perfect ripple day! You\'re a true positive force in the world!'
+            };
+
+            scoreDisplay.textContent = `${value} - ${scoreLabels[value]}`;
+            scoreFeedback.innerHTML = `<p>${scoreFeedbacks[value]}</p>`;
+        }
+    </script>
+
+    <style>
+        .compass-analogy {
+            background: white;
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            margin: 2rem 0;
+        }
+
+        .analogy-visual {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 3rem;
+        }
+
+        .compass-circle {
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border: 5px solid var(--ripple-blue);
+            border-radius: 50%;
+            background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+        }
+
+        .compass-center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            background: white;
+            padding: 1rem;
+            border-radius: 50%;
+            border: 3px solid var(--ripple-blue);
+        }
+
+        .compass-point {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .compass-point.north {
+            top: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .compass-point.east {
+            top: 50%;
+            right: -20px;
+            transform: translateY(-50%);
+        }
+
+        .compass-point.south {
+            bottom: -20px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .compass-point.west {
+            top: 50%;
+            left: -20px;
+            transform: translateY(-50%);
+        }
+
+        .point-emoji {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .point-label {
+            background: var(--ripple-blue);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: var(--radius-md);
+            font-size: 0.9rem;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .directions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .direction-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .direction-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .direction-card h4 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .morning-check {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .compass-questions {
+            display: grid;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+
+        .question-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .question-icon {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .question-card h4 {
+            text-align: center;
+            color: var(--ripple-blue);
+            margin-bottom: 2rem;
+        }
+
+        .feeling-options, .purpose-options, .challenge-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .feeling-btn, .purpose-btn, .challenge-btn {
+            padding: 1rem;
+            border: 2px solid transparent;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            font-weight: bold;
+            background: white;
+        }
+
+        .feeling-btn:hover, .purpose-btn:hover, .challenge-btn:hover {
+            border-color: var(--ripple-blue);
+            transform: translateY(-3px);
+        }
+
+        .feeling-btn.selected, .purpose-btn.selected, .challenge-btn.selected {
+            background: var(--ripple-blue);
+            color: white;
+            border-color: var(--ripple-blue);
+        }
+
+        .guidance-text {
+            background: var(--bg-accent);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin: 1rem 0;
+            min-height: 50px;
+        }
+
+        .compass-display {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+            min-height: 200px;
+        }
+
+        .compass-summary h5 {
+            color: var(--ripple-purple);
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .compass-points {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .compass-point-result {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-green);
+        }
+
+        .daily-mantra {
+            background: linear-gradient(135deg, var(--ripple-purple), #673AB7);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .decision-helper {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .scenario-examples {
+            display: grid;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+
+        .scenario-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .scenario-card h5 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .choice-options {
+            display: grid;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .choice-option {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .choice-option input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--ripple-blue);
+        }
+
+        .choice-option label {
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .analyze-btn {
+            background: var(--ripple-blue);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+            font-weight: bold;
+            transition: all var(--transition-normal);
+            margin: 1rem 0;
+        }
+
+        .analyze-btn:hover {
+            background: #1976D2;
+            transform: translateY(-2px);
+        }
+
+        .ripple-analysis {
+            margin: 2rem 0;
+            min-height: 100px;
+        }
+
+        .analysis-result {
+            padding: 2rem;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid;
+        }
+
+        .analysis-result.positive {
+            background: var(--bg-success);
+            border-left-color: var(--ripple-green);
+        }
+
+        .analysis-result.negative {
+            background: var(--bg-warning);
+            border-left-color: var(--ripple-orange);
+        }
+
+        .analysis-result.neutral {
+            background: var(--bg-accent);
+            border-left-color: var(--ripple-purple);
+        }
+
+        .ripple-effects {
+            display: grid;
+            gap: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        .ripple-effect {
+            padding: 0.5rem;
+            background: rgba(255, 255, 255, 0.7);
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+        }
+
+        .analysis-feedback {
+            margin-top: 1rem;
+        }
+
+        .positive-feedback {
+            color: var(--ripple-green);
+            font-weight: bold;
+        }
+
+        .improvement-feedback {
+            color: var(--ripple-orange);
+            font-weight: bold;
+        }
+
+        .decision-framework {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 3rem 0;
+        }
+
+        .framework-questions {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .framework-item {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .framework-icon {
+            font-size: 1.8rem;
+            min-width: 40px;
+        }
+
+        .framework-text strong {
+            color: var(--ripple-blue);
+        }
+
+        .evening-review {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .review-categories {
+            display: grid;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+
+        .review-card {
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .review-card.positive {
+            background: linear-gradient(135deg, #E8F5E8, #C8E6C9);
+        }
+
+        .review-card.neutral {
+            background: linear-gradient(135deg, #FFF3E0, #FFCC02);
+        }
+
+        .review-card.learning {
+            background: linear-gradient(135deg, #E3F2FD, #BBDEFB);
+        }
+
+        .review-icon {
+            font-size: 3rem;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .review-card h4 {
+            text-align: center;
+            color: var(--ripple-blue);
+            margin-bottom: 2rem;
+        }
+
+        .review-examples, .improvement-areas {
+            display: grid;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .example-item, .improvement-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .example-item input[type="checkbox"], .improvement-item input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            accent-color: var(--ripple-green);
+        }
+
+        .example-item label, .improvement-item label {
+            cursor: pointer;
+        }
+
+        .review-input, .learning-input {
+            width: 100%;
+            min-height: 80px;
+            padding: 1rem;
+            border: 2px solid #ddd;
+            border-radius: var(--radius-sm);
+            resize: vertical;
+            margin: 1rem 0;
+        }
+
+        .learning-prompts {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .prompt-item {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .prompt-item strong {
+            color: var(--ripple-blue);
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .review-summary {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .score-slider {
+            margin: 2rem 0;
+        }
+
+        .score-slider label {
+            display: block;
+            font-weight: bold;
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .score-slider input[type="range"] {
+            width: 100%;
+            margin: 1rem 0;
+            accent-color: var(--ripple-blue);
+        }
+
+        .score-labels {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .score-labels #score-display {
+            font-weight: bold;
+            color: var(--ripple-blue);
+        }
+
+        .score-feedback {
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            margin: 1rem 0;
+        }
+
+        .course-correction {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .correction-scenarios {
+            display: grid;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+
+        .correction-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .fix-steps {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .fix-step {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .step-icon {
+            font-size: 2rem;
+            min-width: 50px;
+        }
+
+        .step-text {
+            font-size: 0.9rem;
+        }
+
+        .step-text strong {
+            color: var(--ripple-blue);
+        }
+
+        .correction-examples {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .example-fixes {
+            display: grid;
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .fix-example {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .problem {
+            color: var(--ripple-orange);
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .solution {
+            color: var(--ripple-green);
+            font-weight: bold;
+        }
+
+        .emergency-compass {
+            background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .repair-tools {
+            display: grid;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .repair-tool {
+            display: flex;
+            gap: 1rem;
+            align-items: flex-start;
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .tool-icon {
+            font-size: 2rem;
+            min-width: 50px;
+        }
+
+        .tool-content strong {
+            color: var(--ripple-blue);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .compass-mastery {
+            background: linear-gradient(135deg, var(--ripple-blue), #1976D2);
+            color: white;
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .mastery-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .mastery-list li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.8rem;
+            margin: 0.5rem 0;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid white;
+        }
+
+        .mastery-message {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .compass-circle {
+                width: 250px;
+                height: 250px;
+            }
+            
+            .directions-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .feeling-options, .purpose-options, .challenge-options {
+                grid-template-columns: 1fr;
+            }
+            
+            .fix-step, .framework-item, .repair-tool {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .score-labels {
+                flex-direction: column;
+                gap: 0.5rem;
+                text-align: center;
+            }
+        }
+    </style>
+</body>
+</html>
