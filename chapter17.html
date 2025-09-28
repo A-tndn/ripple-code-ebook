@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 17: Media and Meme Ripples - The Ripple Code</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="chapter-nav">
+            <a href="chapter16.html" class="prev">← Chapter 16</a>
+            <a href="index.html" class="home">Home</a>
+            <a href="chapter18.html" class="next">Chapter 18 →</a>
+        </nav>
+
+        <header>
+            <h1>Chapter 17: Media and Meme Ripples</h1>
+            <p class="subtitle">How Ideas Go Viral and Travel at Lightning Speed! ⚡</p>
+        </header>
+
+        <main>
+            <section class="simple-intro">
+                <h2>📱 What Are Media and Meme Ripples?</h2>
+
+                <div class="simple-explanation">
+                    <p>In the digital world, ripples can travel <strong>super fast</strong>! A single tweet, TikTok video, or funny meme can reach <strong>millions of people in just hours</strong>. These are called <strong>Media and Meme Ripples</strong> - special ripples that use technology to spread ideas faster than ever before in history!</p>
+
+                    <div class="amazing-fact">
+                        <h3>🚀 Internet Speed Ripples!</h3>
+                        <p>A viral TikTok can get <strong>10 million views in 24 hours</strong>! That means an idea can travel from one person to more people than live in entire countries - all in a single day!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-demo">
+                <h2>🧪 The Viral Content Laboratory</h2>
+
+                <div class="viral-lab">
+                    <h3>Experiment: What Makes Content Go Viral?</h3>
+                    <p>Let\'s discover the secret ingredients that make some ideas spread like wildfire while others disappear!</p>
+
+                    <div class="lab-stations">
+                        <div class="station-tabs">
+                            <button class="lab-tab active" onclick="showLabStation(\'ingredients\')">🧪 Viral Ingredients</button>
+                            <button class="lab-tab" onclick="showLabStation(\'speed-test\')">⚡ Speed Test</button>
+                            <button class="lab-tab" onclick="showLabStation(\'echo-tracker\')">📊 Echo Tracker</button>
+                        </div>
+
+                        <div id="ingredients-station" class="lab-station active">
+                            <div class="ingredients-workshop">
+                                <h4>🧪 The Viral Recipe Lab</h4>
+                                <p>Scientists have discovered that viral content usually has these special ingredients:</p>
+
+                                <div class="ingredient-cards">
+                                    <div class="ingredient-card emotion">
+                                        <div class="ingredient-icon">😂</div>
+                                        <h5>Strong Emotion</h5>
+                                        <p>Makes people FEEL something - funny, surprising, exciting, or heartwarming</p>
+                                        <div class="viral-meter">
+                                            <div class="meter-fill" style="width: 95%">95% Viral Power</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ingredient-card simple">
+                                        <div class="ingredient-icon">✨</div>
+                                        <h5>Simple & Clear</h5>
+                                        <p>Easy to understand in seconds - no complicated explanations needed</p>
+                                        <div class="viral-meter">
+                                            <div class="meter-fill" style="width: 90%">90% Viral Power</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ingredient-card relatable">
+                                        <div class="ingredient-icon">🤝</div>
+                                        <h5>Relatable</h5>
+                                        <p>Something lots of people can connect with - shared experiences or feelings</p>
+                                        <div class="viral-meter">
+                                            <div class="meter-fill" style="width: 85%">85% Viral Power</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ingredient-card timing">
+                                        <div class="ingredient-icon">⏰</div>
+                                        <h5>Perfect Timing</h5>
+                                        <p>Posted at the right moment when lots of people are online and ready to share</p>
+                                        <div class="viral-meter">
+                                            <div class="meter-fill" style="width: 75%">75% Viral Power</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="recipe-builder">
+                                    <h4>🍳 Build Your Viral Recipe</h4>
+                                    <p>Select ingredients to see your content\'s viral potential:</p>
+
+                                    <div class="ingredient-checkboxes">
+                                        <label class="ingredient-checkbox">
+                                            <input type="checkbox" value="emotion" onchange="updateViralScore()">
+                                            <span class="checkbox-text">Strong Emotion (95 points)</span>
+                                        </label>
+                                        <label class="ingredient-checkbox">
+                                            <input type="checkbox" value="simple" onchange="updateViralScore()">
+                                            <span class="checkbox-text">Simple & Clear (90 points)</span>
+                                        </label>
+                                        <label class="ingredient-checkbox">
+                                            <input type="checkbox" value="relatable" onchange="updateViralScore()">
+                                            <span class="checkbox-text">Relatable (85 points)</span>
+                                        </label>
+                                        <label class="ingredient-checkbox">
+                                            <input type="checkbox" value="timing" onchange="updateViralScore()">
+                                            <span class="checkbox-text">Perfect Timing (75 points)</span>
+                                        </label>
+                                    </div>
+
+                                    <div class="viral-score-display">
+                                        <h5>🎯 Your Viral Potential Score:</h5>
+                                        <div class="score-meter">
+                                            <div id="score-fill" class="score-fill" style="width: 0%"></div>
+                                            <span id="score-text" class="score-text">0 / 345 points</span>
+                                        </div>
+                                        <div id="score-verdict" class="score-verdict"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="speed-test-station" class="lab-station">
+                            <div class="speed-lab">
+                                <h4>⚡ The Ripple Speed Test</h4>
+                                <p>See how fast different types of content spread through the digital world!</p>
+
+                                <div class="speed-simulator">
+                                    <h5>🏁 Digital Ripple Race</h5>
+                                    <p>Watch different types of content race to reach 1 million people:</p>
+
+                                    <div class="race-controls">
+                                        <button class="race-btn" onclick="startSpeedRace()">🚀 Start the Race!</button>
+                                        <button class="race-btn secondary" onclick="resetSpeedRace()">🔄 Reset</button>
+                                    </div>
+
+                                    <div class="speed-tracks">
+                                        <div class="speed-track">
+                                            <div class="track-label">
+                                                <span class="track-icon">😂</span>
+                                                <span class="track-name">Funny Video</span>
+                                            </div>
+                                            <div class="track-progress">
+                                                <div class="progress-bar">
+                                                    <div id="funny-progress" class="progress-fill funny"></div>
+                                                </div>
+                                                <span class="track-time" id="funny-time">0 hours</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="speed-track">
+                                            <div class="track-label">
+                                                <span class="track-icon">📰</span>
+                                                <span class="track-name">Breaking News</span>
+                                            </div>
+                                            <div class="track-progress">
+                                                <div class="progress-bar">
+                                                    <div id="news-progress" class="progress-fill news"></div>
+                                                </div>
+                                                <span class="track-time" id="news-time">0 hours</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="speed-track">
+                                            <div class="track-label">
+                                                <span class="track-icon">📚</span>
+                                                <span class="track-name">Educational Post</span>
+                                            </div>
+                                            <div class="track-progress">
+                                                <div class="progress-bar">
+                                                    <div id="edu-progress" class="progress-fill education"></div>
+                                                </div>
+                                                <span class="track-time" id="edu-time">0 hours</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="speed-track">
+                                            <div class="track-label">
+                                                <span class="track-icon">💰</span>
+                                                <span class="track-name">Advertisement</span>
+                                            </div>
+                                            <div class="track-progress">
+                                                <div class="progress-bar">
+                                                    <div id="ad-progress" class="progress-fill ad"></div>
+                                                </div>
+                                                <span class="track-time" id="ad-time">0 hours</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div id="race-commentary" class="race-commentary">
+                                        <h5>📊 Race Commentary</h5>
+                                        <p>Click "Start the Race" to see which type of content spreads fastest!</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="echo-tracker-station" class="lab-station">
+                            <div class="echo-lab">
+                                <h4>📊 The Echo Tracker</h4>
+                                <p>Follow a viral ripple\'s journey as it travels around the world and comes back as echoes!</p>
+
+                                <div class="echo-simulator">
+                                    <h5>🌍 Global Echo Journey</h5>
+                                    <p>Watch how a viral video creates different echoes in different places:</p>
+
+                                    <div class="journey-map">
+                                        <div class="journey-step">
+                                            <div class="step-number">1</div>
+                                            <div class="step-content">
+                                                <h6>📱 Original Post</h6>
+                                                <p>Someone posts a funny dance video</p>
+                                                <div class="step-stats">👀 100 views</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="journey-arrow">→</div>
+
+                                        <div class="journey-step">
+                                            <div class="step-number">2</div>
+                                            <div class="step-content">
+                                                <h6>🔄 First Shares</h6>
+                                                <p>Friends share it with their friends</p>
+                                                <div class="step-stats">👀 10,000 views</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="journey-arrow">→</div>
+
+                                        <div class="journey-step">
+                                            <div class="step-number">3</div>
+                                            <div class="step-content">
+                                                <h6>🎭 Remixes Begin</h6>
+                                                <p>People make their own versions</p>
+                                                <div class="step-stats">👀 1M views total</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="journey-arrow">→</div>
+
+                                        <div class="journey-step">
+                                            <div class="step-number">4</div>
+                                            <div class="step-content">
+                                                <h6>📺 Media Picks It Up</h6>
+                                                <p>TV shows and news talk about it</p>
+                                                <div class="step-stats">👀 50M views total</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="journey-arrow">→</div>
+
+                                        <div class="journey-step">
+                                            <div class="step-number">5</div>
+                                            <div class="step-content">
+                                                <h6>🔄 Echo Returns</h6>
+                                                <p>Original creator gets invited on TV!</p>
+                                                <div class="step-stats">🌟 Internet Famous!</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <button class="start-tracking-btn" onclick="startEchoTracking()">🎯 Track a Viral Ripple!</button>
+
+                                    <div id="echo-tracking-result" class="tracking-result">
+                                        <!-- Results will appear here -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="activity-container">
+                <h2>🕵️ The Digital Detective Challenge</h2>
+
+                <div class="detective-game">
+                    <h3>Solve the Mystery: Why Did This Go Viral?</h3>
+                    <p>You\'re a digital detective! Can you figure out why some content explodes while others disappear?</p>
+
+                    <div class="mystery-cases">
+                        <div class="case-selector">
+                            <h4>🕵️ Choose Your Case:</h4>
+                            <div class="case-buttons">
+                                <button class="case-btn active" onclick="showCase(\'cat-video\')">😺 The Cat Video Mystery</button>
+                                <button class="case-btn" onclick="showCase(\'dance-craze\')">💃 The Dance Craze Case</button>
+                                <button class="case-btn" onclick="showCase(\'fail-mystery\')">😭 The Epic Fail Mystery</button>
+                            </div>
+                        </div>
+
+                        <div id="cat-video-case" class="mystery-case active">
+                            <div class="case-file">
+                                <h5>📁 Case File: The Keyboard Cat Phenomenon</h5>
+                                <div class="case-facts">
+                                    <h6>🔍 The Facts:</h6>
+                                    <ul>
+                                        <li>A 54-second video of a cat "playing" piano</li>
+                                        <li>Posted by an unknown user</li>
+                                        <li>Reached 100 million views in 2 years</li>
+                                        <li>Spawned thousands of remixes</li>
+                                        <li>Cat became internet famous</li>
+                                    </ul>
+                                </div>
+
+                                <div class="case-clues">
+                                    <h6>🧩 Your Detective Clues:</h6>
+                                    <div class="clue-grid">
+                                        <div class="clue-card">
+                                            <div class="clue-icon">😂</div>
+                                            <div class="clue-text">Video was genuinely funny and unexpected</div>
+                                        </div>
+                                        <div class="clue-card">
+                                            <div class="clue-icon">⏰</div>
+                                            <div class="clue-text">Perfect length - not too long or short</div>
+                                        </div>
+                                        <div class="clue-card">
+                                            <div class="clue-icon">🐱</div>
+                                            <div class="clue-text">Featured a cute animal (universal appeal)</div>
+                                        </div>
+                                        <div class="clue-card">
+                                            <div class="clue-icon">📤</div>
+                                            <div class="clue-text">Easy to share and remix</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detective-conclusion">
+                                    <h6>🎯 Detective\'s Conclusion:</h6>
+                                    <p>The Keyboard Cat went viral because it combined multiple viral ingredients: <strong>cute animals</strong>, <strong>unexpected humor</strong>, <strong>perfect timing</strong>, and <strong>universal appeal</strong>!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="dance-craze-case" class="mystery-case">
+                            <div class="case-file">
+                                <h5>📁 Case File: The Floss Dance Explosion</h5>
+                                <div class="case-facts">
+                                    <h6>🔍 The Facts:</h6>
+                                    <ul>
+                                        <li>Simple arm-swinging dance move</li>
+                                        <li>Started by a teenage gamer</li>
+                                        <li>Spread to millions of kids worldwide</li>
+                                        <li>Appeared in video games and TV shows</li>
+                                    </ul>
+                                </div>
+
+                                <div class="case-clues">
+                                    <h6>🧩 Your Detective Clues:</h6>
+                                    <div class="clue-grid">
+                                        <div class="clue-card">
+                                            <div class="clue-icon">🎮</div>
+                                            <div class="clue-text">Started in popular video game streams</div>
+                                        </div>
+                                        <div class="clue-card">
+                                            <div class="clue-icon">🤸</div>
+                                            <div class="clue-text">Easy to learn and copy</div>
+                                        </div>
+                                        <div class="clue-card">
+                                            <div class="clue-icon">👥</div>
+                                            <div class="clue-text">Perfect for group activities</div>
+                                        </div>
+                                        <div class="clue-card">
+                                            <div class="clue-icon">📱</div>
+                                            <div class="clue-text">Perfect for short video apps</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detective-conclusion">
+                                    <h6>🎯 Detective\'s Conclusion:</h6>
+                                    <p>The Floss Dance went viral because it was <strong>simple to learn</strong>, <strong>fun to do with friends</strong>, and <strong>made people feel part of a trend</strong>!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="fail-mystery-case" class="mystery-case">
+                            <div class="case-file">
+                                <h5>📁 Case File: Why Some Content Fails to Go Viral</h5>
+                                <div class="case-facts">
+                                    <h6>🔍 The Facts:</h6>
+                                    <ul>
+                                        <li>Millions of videos are posted daily</li>
+                                        <li>Only a tiny fraction go viral</li>
+                                        <li>Sometimes great content gets ignored</li>
+                                        <li>Timing and luck matter too</li>
+                                    </ul>
+                                </div>
+
+                                <div class="case-clues">
+                                    <h6>🧩 Common Reasons Content Fails:</h6>
+                                    <div class="clue-grid">
+                                        <div class="clue-card fail">
+                                            <div class="clue-icon">😴</div>
+                                            <div class="clue-text">Too boring or predictable</div>
+                                        </div>
+                                        <div class="clue-card fail">
+                                            <div class="clue-icon">⏰</div>
+                                            <div class="clue-text">Posted at wrong time</div>
+                                        </div>
+                                        <div class="clue-card fail">
+                                            <div class="clue-icon">👤</div>
+                                            <div class="clue-text">Too specific - only appeals to few</div>
+                                        </div>
+                                        <div class="clue-card fail">
+                                            <div class="clue-icon">📱</div>
+                                            <div class="clue-text">Hard to share or find</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="detective-conclusion">
+                                    <h6>🎯 Detective\'s Conclusion:</h6>
+                                    <p>Content fails when it lacks key ingredients: <strong>emotion</strong>, <strong>simplicity</strong>, and <strong>shareability</strong>. Even great content needs the right timing and luck!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="chapter-summary">
+                <h2>🎯 What You\'ve Discovered About Media and Meme Ripples</h2>
+
+                <div class="discovery-summary">
+                    <div class="key-learnings">
+                        <div class="learning-card">
+                            <div class="learning-icon">⚡</div>
+                            <h4>Lightning Speed</h4>
+                            <p>Digital ripples travel faster than anything in history - from one person to millions in just hours!</p>
+                        </div>
+
+                        <div class="learning-card">
+                            <div class="learning-icon">🧪</div>
+                            <h4>Viral Ingredients</h4>
+                            <p>Content goes viral when it combines emotion, simplicity, relatability, shareability, and timing!</p>
+                        </div>
+
+                        <div class="learning-card">
+                            <div class="learning-icon">🔄</div>
+                            <h4>Echo Amplification</h4>
+                            <p>Digital echoes can come back bigger than the original - remixes and reactions multiply the ripple!</p>
+                        </div>
+
+                        <div class="learning-card">
+                            <div class="learning-icon">🎯</div>
+                            <h4>Not Everything Goes Viral</h4>
+                            <p>Even great content needs the right ingredients, timing, and sometimes luck to spread widely!</p>
+                        </div>
+                    </div>
+
+                    <div class="master-insights">
+                        <h3>💡 Your Digital Ripple Wisdom</h3>
+                        <div class="wisdom-grid">
+                            <div class="wisdom-card create">
+                                <h4>🎨 When Creating Content</h4>
+                                <ul>
+                                    <li>Make it emotional and relatable</li>
+                                    <li>Keep it simple and clear</li>
+                                    <li>Consider your timing</li>
+                                    <li>Make it easy to share</li>
+                                </ul>
+                            </div>
+
+                            <div class="wisdom-card share">
+                                <h4>📤 When Sharing Content</h4>
+                                <ul>
+                                    <li>Share positive, uplifting content</li>
+                                    <li>Think before sharing</li>
+                                    <li>Check if it\'s true</li>
+                                    <li>Give credit to creators</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="next-preview">
+                    <h3>🔮 Coming Next: Education and Belief Systems</h3>
+                    <p>In Chapter 18, we\'ll explore how schools, teachers, and learning create powerful ripples that shape how we think and what we believe!</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="chapter-navigation">
+                <a href="chapter16.html" class="nav-button prev">← Previous: Cultural Carriers</a>
+                <a href="chapter18.html" class="nav-button next">Next: Education and Belief Systems →</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function showLabStation(stationId) {
+            document.querySelectorAll('.lab-station').forEach(station => {
+                station.classList.remove('active');
+            });
+
+            document.querySelectorAll('.lab-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            document.getElementById(stationId + '-station').classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function updateViralScore() {
+            const checkboxes = document.querySelectorAll('.ingredient-checkbox input[type="checkbox"]');
+            const scoreValues = {
+                'emotion': 95,
+                'simple': 90,
+                'relatable': 85,
+                'timing': 75
+            };
+
+            let totalScore = 0;
+            let maxScore = 345;
+
+            checkboxes.forEach(checkbox => {
+                if (checkbox.checked) {
+                    totalScore += scoreValues[checkbox.value];
+                }
+            });
+
+            const percentage = (totalScore / maxScore) * 100;
+
+            document.getElementById('score-fill').style.width = percentage + '%';
+            document.getElementById('score-text').textContent = totalScore + ' / ' + maxScore + ' points';
+
+            const verdictElement = document.getElementById('score-verdict');
+            if (totalScore >= 300) {
+                verdictElement.innerHTML = '<div class="verdict-excellent">🚀 VIRAL SUPERSTAR! Maximum potential!</div>';
+            } else if (totalScore >= 200) {
+                verdictElement.innerHTML = '<div class="verdict-great">🌟 VIRAL READY! Strong potential!</div>';
+            } else if (totalScore >= 100) {
+                verdictElement.innerHTML = '<div class="verdict-good">👍 GOOD POTENTIAL! Add more ingredients!</div>';
+            } else {
+                verdictElement.innerHTML = '<div class="verdict-poor">📈 START HERE! Select ingredients!</div>';
+            }
+        }
+
+        let raceInterval;
+        function startSpeedRace() {
+            if (raceInterval) clearInterval(raceInterval);
+
+            const racers = {
+                'funny': { speed: 5, time: 0 },
+                'news': { speed: 4, time: 0 },
+                'edu': { speed: 2, time: 0 },
+                'ad': { speed: 1, time: 0 }
+            };
+
+            const commentary = document.getElementById('race-commentary');
+            let raceTime = 0;
+
+            raceInterval = setInterval(() => {
+                raceTime++;
+                let raceFinished = false;
+
+                for (let racer in racers) {
+                    racers[racer].time += racers[racer].speed;
+                    const progress = Math.min(100, racers[racer].time);
+
+                    document.getElementById(racer + '-progress').style.width = progress + '%';
+                    document.getElementById(racer + '-time').textContent = Math.round(progress / 4) + ' hours';
+
+                    if (progress >= 100 && !raceFinished) {
+                        raceFinished = true;
+                        commentary.innerHTML = '<h5>📊 Race Commentary</h5><p>🏆 ' + getRacerName(racer) + ' wins!</p>';
+                    }
+                }
+
+                if (raceFinished) {
+                    clearInterval(raceInterval);
+                }
+            }, 1000);
+        }
+
+        function resetSpeedRace() {
+            if (raceInterval) clearInterval(raceInterval);
+
+            document.querySelectorAll('[id$="-progress"]').forEach(bar => {
+                bar.style.width = '0%';
+            });
+
+            document.querySelectorAll('[id$="-time"]').forEach(time => {
+                time.textContent = '0 hours';
+            });
+
+            document.getElementById('race-commentary').innerHTML = '<h5>📊 Race Commentary</h5><p>Click "Start the Race" to begin!</p>';
+        }
+
+        function getRacerName(racer) {
+            const names = {
+                'funny': 'Funny Video',
+                'news': 'Breaking News', 
+                'edu': 'Educational Post',
+                'ad': 'Advertisement'
+            };
+            return names[racer] || racer;
+        }
+
+        let echoInterval;
+        function startEchoTracking() {
+            const resultDiv = document.getElementById('echo-tracking-result');
+
+            const stages = [
+                "🎬 Original video posted...",
+                "👀 First 100 views in 1 hour...",
+                "📤 Friends start sharing - 10K views!",
+                "🎭 People making remixes...",
+                "📱 Trending - 1M views!",
+                "📺 TV shows discussing it...",
+                "🌍 Global phenomenon - 50M views!",
+                "🔄 Creator becomes famous!"
+            ];
+
+            let currentStage = 0;
+            resultDiv.innerHTML = '<div class="tracking-progress"><h5>🎯 Tracking Journey...</h5></div>';
+
+            echoInterval = setInterval(() => {
+                if (currentStage < stages.length) {
+                    const progressDiv = resultDiv.querySelector('.tracking-progress');
+                    progressDiv.innerHTML += '<div class="tracking-stage">' + stages[currentStage] + '</div>';
+                    currentStage++;
+                } else {
+                    clearInterval(echoInterval);
+                    resultDiv.innerHTML += '<div class="tracking-complete">✅ Tracking complete!</div>';
+                }
+            }, 1500);
+        }
+
+        function showCase(caseId) {
+            document.querySelectorAll('.mystery-case').forEach(case_ => {
+                case_.classList.remove('active');
+            });
+
+            document.querySelectorAll('.case-btn').forEach(btn => {
+                btn.classList.remove('active');
+            });
+
+            document.getElementById(caseId + '-case').classList.add('active');
+            event.target.classList.add('active');
+        }
+    </script>
+
+    <style>
+        .amazing-fact {
+            background: linear-gradient(135deg, #E1F5FE, #81D4FA);
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            margin: 2rem 0;
+        }
+
+        .viral-lab {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .station-tabs {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .lab-tab {
+            padding: 1rem 1.5rem;
+            background: var(--bg-secondary);
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            font-weight: bold;
+        }
+
+        .lab-tab.active {
+            background: var(--ripple-blue);
+            color: white;
+        }
+
+        .lab-station {
+            display: none;
+            margin: 2rem 0;
+        }
+
+        .lab-station.active {
+            display: block;
+        }
+
+        .ingredient-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .ingredient-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .ingredient-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .ingredient-card h5 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .viral-meter {
+            background: white;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            margin-top: 1rem;
+        }
+
+        .meter-fill {
+            height: 30px;
+            background: linear-gradient(90deg, #FF6B6B, #4ECDC4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+        }
+
+        .recipe-builder {
+            background: var(--bg-accent);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            margin: 2rem 0;
+        }
+
+        .ingredient-checkboxes {
+            display: grid;
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .ingredient-checkbox {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            cursor: pointer;
+        }
+
+        .viral-score-display {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .score-meter {
+            background: #e0e0e0;
+            height: 30px;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            position: relative;
+            margin: 1rem 0;
+        }
+
+        .score-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #FF6B6B, #4ECDC4);
+            transition: width var(--transition-normal);
+        }
+
+        .score-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+        }
+
+        .verdict-excellent {
+            background: var(--bg-success);
+            color: var(--ripple-green);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+        }
+
+        .verdict-great {
+            background: linear-gradient(135deg, #E8F5E8, #C8E6C9);
+            color: var(--ripple-green);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+        }
+
+        .verdict-good {
+            background: linear-gradient(135deg, #FFF3E0, #FFCC02);
+            color: var(--ripple-orange);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+        }
+
+        .verdict-poor {
+            background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+            color: var(--ripple-red, #d32f2f);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+        }
+
+        .race-controls {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .race-btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: bold;
+            cursor: pointer;
+            transition: all var(--transition-normal);
+            margin: 0 0.5rem;
+        }
+
+        .race-btn:not(.secondary) {
+            background: var(--ripple-green);
+            color: white;
+        }
+
+        .race-btn.secondary {
+            background: var(--bg-secondary);
+            border: 2px solid #ddd;
+        }
+
+        .speed-tracks {
+            margin: 2rem 0;
+        }
+
+        .speed-track {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 1rem 0;
+            background: white;
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .track-label {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            min-width: 150px;
+        }
+
+        .track-progress {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .progress-bar {
+            flex: 1;
+            height: 20px;
+            background: #e0e0e0;
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+
+        .progress-fill.funny { background: #FF6B6B; }
+        .progress-fill.news { background: #4ECDC4; }
+        .progress-fill.education { background: #45B7D1; }
+        .progress-fill.ad { background: #FECA57; }
+
+        .race-commentary {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            margin: 2rem 0;
+        }
+
+        .journey-map {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 2rem 0;
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .journey-step {
+            background: var(--bg-accent);
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .step-number {
+            background: var(--ripple-blue);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1rem;
+            font-weight: bold;
+        }
+
+        .step-stats {
+            background: var(--ripple-green);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.9rem;
+            font-weight: bold;
+            margin-top: 0.5rem;
+        }
+
+        .journey-arrow {
+            font-size: 2rem;
+            color: var(--ripple-orange);
+        }
+
+        .start-tracking-btn {
+            background: var(--ripple-purple);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: var(--radius-md);
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+            margin: 2rem auto;
+        }
+
+        .tracking-progress {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .tracking-stage {
+            background: var(--bg-secondary);
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border-radius: var(--radius-sm);
+            border-left: 5px solid var(--ripple-teal);
+        }
+
+        .tracking-complete {
+            background: var(--bg-success);
+            color: var(--ripple-green);
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            font-weight: bold;
+        }
+
+        .detective-game {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .case-buttons {
+            display: flex;
+            gap: 1rem;
+            margin: 2rem 0;
+            justify-content: center;
+        }
+
+        .case-btn {
+            padding: 1rem 1.5rem;
+            background: var(--bg-secondary);
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .case-btn.active {
+            background: var(--ripple-blue);
+            color: white;
+        }
+
+        .mystery-case {
+            display: none;
+            margin: 2rem 0;
+        }
+
+        .mystery-case.active {
+            display: block;
+        }
+
+        .case-file {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .case-facts, .case-clues {
+            background: white;
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+            margin: 1.5rem 0;
+        }
+
+        .clue-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+        }
+
+        .clue-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background: var(--bg-accent);
+            padding: 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .clue-card.fail {
+            background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+        }
+
+        .clue-icon {
+            font-size: 1.5rem;
+        }
+
+        .detective-conclusion {
+            background: var(--bg-success);
+            padding: 1.5rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .discovery-summary {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+        }
+
+        .key-learnings {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .learning-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .learning-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .learning-card h4 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        .wisdom-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .wisdom-card {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: var(--radius-md);
+        }
+
+        .wisdom-card h4 {
+            color: var(--ripple-blue);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .station-tabs, .case-buttons {
+                flex-direction: column;
+            }
+
+            .ingredient-cards, .key-learnings {
+                grid-template-columns: 1fr;
+            }
+
+            .speed-track {
+                flex-direction: column;
+                gap: 0.5rem;
+            }
+
+            .journey-map {
+                flex-direction: column;
+            }
+
+            .journey-arrow {
+                transform: rotate(90deg);
+            }
+        }
+    </style>
+</body>
+</html>
